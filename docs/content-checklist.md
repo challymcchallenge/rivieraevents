@@ -166,8 +166,8 @@ Rezolvate:
 
 Rămase:
 - ☐ **P1** Intervalele de buget pe invitat (nuntă, botez, corporate) în `content/buget.json`. Fără ele calculatorul arată doar butonul de WhatsApp.
-- ☐ Turul Grande (nou) urcat pe annaevents.ro + link.
-- ☐ Turul apartamentului mirilor generat din cele 8 panorame + link.
-- ☐ Capacitate de conferință la saloanele Riviera (acum nu se afișează).
-- ☐ Logo vectorial.
+- ✅ Turul Grande: https://annaevents.ro/tur-virtual/Salon-Grande/tour.html
+- ✅ Tururi pentru apartamentul mirilor al fiecărui salon Riviera (Rosa, Noblesse, Premiere), pe annaevents.ro.
+- ✅ Capacitate de conferință: fără cifre, „în funcție de amenajare” (decizie client).
+- ✅ Logo vectorial: 4 SVG în `assets/brand/` (verificate: fără scripturi sau linkuri externe). Culori: negru #000000 / #1e1e1e, roșu #ff3131, alb cald #fffefa, gri deschis #d9d9d9.
 - ☐ Evenimentele pentru portofoliu (format în `content/portofoliu/exemplu-format.json`).

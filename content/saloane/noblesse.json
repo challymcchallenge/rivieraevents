@@ -5,8 +5,8 @@
   "ordine": 2,
   "capacitate": {
     "nunta": 300,
-    "conferinta": null,
-    "min": null
+    "min": null,
+    "conferinta": "la cerere, în funcție de amenajare"
   },
   "suprafataMp": null,
   "potrivitPentru": [
@@ -16,13 +16,15 @@
   ],
   "puncteForte": [
     "Ferestre din podea până în tavan, spre grădină și aleea de piatră",
+    "Sistem automatizat de lumini, în orice culoare doriți",
     "Tavan drapat în alb și draperii gri, neutre",
     "Paletă discretă, ușor de transformat după tema dumneavoastră",
     "Scaune capitonate, elegante",
     "Apartamentul mirilor propriu"
   ],
   "dotari": [
-    "Apartamentul mirilor propriu, inclus în prețul evenimentului"
+    "Apartamentul mirilor propriu, inclus în prețul evenimentului",
+    "Sistem automatizat de lumini, în orice culoare doriți"
   ],
   "descriereScurta": "Salon pentru până la 300 de invitați la Riviera, pe malul Jiului. Potrivit pentru nunți, botezuri și evenimente de firmă.",
   "descriere": "Salonul Noblesse primește până la 300 de invitați, în complexul Riviera de pe malul Jiului. E o alegere bună pentru o nuntă de mărime medie, pentru un botez la care vine toată familia sau pentru un eveniment de firmă. Noblesse e salonul cu cea mai mare deschidere spre grădină: ferestrele merg din podea până în tavan, iar dincolo de ele se vede aleea de piatră printre flori. Tavanul alb și draperiile gri formează un fundal neutru, pe care orice paletă de culori arată bine, de la roșu aprins la pastel. Îl aleg mai ales cei care vor ca decorul lor să fie vedeta serii. Meniul, tortul, barurile tematice și decorul le alegeți din oferta Grupului ANNA, iar oaspeții din alt oraș pot fi cazați la Hotel ANNA. Salonul are propriul apartament al mirilor, inclus în prețul evenimentului, iar turul virtual vă arată salonul de pe telefon.",
@@ -33,5 +35,6 @@
   "galerie": [],
   "tur360": "https://annaevents.ro/tur-virtual/2024/nobles/tour.html",
   "video": [],
-  "_sursaText": "Puncte forte și descriere scrise din pozele salonului (2026-10-28). De verificat de client."
+  "_sursaText": "Puncte forte și descriere scrise din pozele salonului (2026-10-28). De verificat de client.",
+  "turApartament": "https://annaevents.ro/apartamente-riviera/nobles/tour.html"
 }

@@ -33,7 +33,7 @@ content/
 | `complex` | `"riviera"` \| `"insulita"` | da | determină ordinea și adresa |
 | `ordine` | număr | da | 1–7; Riviera are 1–3 |
 | `capacitate.nunta` | număr | da | `400` (invitați la masă, din catalog) |
-| `capacitate.conferinta` | număr \| null | nu | `1200` (capacitate maximă tip conferință) |
+| `capacitate.conferinta` | text \| null | nu | `"la cerere, în funcție de amenajare"` (fără cifre, decizie client 2026-10-28) |
 | `capacitate.min` | număr \| null | nu | invitați la masă |
 | `suprafataMp` | număr \| null | nu | |
 | `potrivitPentru` | listă din `nunta`, `botez`, `corporate`, `eveniment-mic` | da | |

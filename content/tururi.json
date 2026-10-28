@@ -1,5 +1,5 @@
 {
-  "_instructiuni": "Tururile sunt găzduite pe annaevents.ro (decizie client, 2026-10-28) și se încarcă doar la click (ADR-004). Linkuri găsite în paginile saloanelor de pe annaevents.ro, 2026-10-28.",
+  "_instructiuni": "Tururile sunt găzduite pe annaevents.ro (decizie client) și se încarcă doar la click (ADR-004). Linkuri confirmate de client sau găsite pe annaevents.ro, 2026-10-28.",
   "tururi": [
     {
       "id": "noblesse",
@@ -18,15 +18,6 @@
       "status": "online"
     },
     {
-      "id": "apartamentul-mirilor",
-      "titlu": "Apartamentul mirilor",
-      "complex": "riviera",
-      "sursa": "Media/Tur Virtual Saloane/Apartamentul Mirilor (8 panorame JPG, fără tur generat)",
-      "url": null,
-      "status": "de generat",
-      "_nota": "[NEED: turul trebuie generat în krpano din cele 8 panorame și urcat pe annaevents.ro]"
-    },
-    {
       "id": "rosa",
       "titlu": "Salon Rosa",
       "complex": "riviera",
@@ -35,13 +26,36 @@
       "status": "online"
     },
     {
+      "id": "apartament-rosa",
+      "titlu": "Apartamentul mirilor, salon Rosa",
+      "complex": "riviera",
+      "sursa": "annaevents.ro",
+      "url": "https://annaevents.ro/apartamente-riviera/rosa/tour.html",
+      "status": "online"
+    },
+    {
+      "id": "apartament-noblesse",
+      "titlu": "Apartamentul mirilor, salon Noblesse",
+      "complex": "riviera",
+      "sursa": "annaevents.ro",
+      "url": "https://annaevents.ro/apartamente-riviera/nobles/tour.html",
+      "status": "online"
+    },
+    {
+      "id": "apartament-premiere",
+      "titlu": "Apartamentul mirilor, salon Premiere",
+      "complex": "riviera",
+      "sursa": "annaevents.ro",
+      "url": "https://annaevents.ro/apartamente-riviera/premier/tour.html",
+      "status": "online"
+    },
+    {
       "id": "grande",
       "titlu": "Salon Grande",
       "complex": "insulita",
-      "sursa": "Media/Tur Virtual Saloane/Salon Grande (krpano, tur nou)",
-      "url": null,
-      "status": "de urcat",
-      "_nota": "[NEED: urcați folderul pe annaevents.ro, de ex. /tur-virtual/2026/grande/, și trimiteți linkul]"
+      "sursa": "annaevents.ro (tur nou)",
+      "url": "https://annaevents.ro/tur-virtual/Salon-Grande/tour.html",
+      "status": "online"
     },
     {
       "id": "ronda",

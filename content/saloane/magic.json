@@ -5,8 +5,8 @@
   "ordine": 6,
   "capacitate": {
     "nunta": 300,
-    "conferinta": 700,
-    "min": null
+    "min": null,
+    "conferinta": "la cerere, în funcție de amenajare"
   },
   "suprafataMp": null,
   "potrivitPentru": [
@@ -15,14 +15,16 @@
     "corporate"
   ],
   "puncteForte": [
-    "Tavan drapat, cu lumini ambientale în culori la alegere",
     "Structură de lumini de scenă deasupra ringului",
+    "Sistem automatizat de lumini, în orice culoare doriți",
     "Ferestre înalte spre grădină",
     "Perete verde pentru fotografii"
   ],
-  "dotari": [],
+  "dotari": [
+    "Sistem automatizat de lumini, în orice culoare doriți"
+  ],
   "descriereScurta": "Salon pentru până la 300 de invitați, pe Insulița din Parcul Central, în complexul ANNA Events.",
-  "descriere": "Salonul Magic găzduiește până la 300 de invitați, în complexul ANNA Events de pe Insulița din Parcul Central. Se potrivește nunților, botezurilor și evenimentelor de firmă de mărime medie. Pentru conferințe, prezentări și seminarii, salonul primește până la 700 de participanți. Magic își schimbă atmosfera după cum o doriți: tavanul drapat se luminează în culoarea aleasă, de la alb cald la mov, iar structura de lumini de scenă transformă ringul într-un loc de concert. Ferestrele înalte deschid salonul spre grădină, iar peretele verde e locul preferat pentru fotografiile de grup. Meniul din catalogul ANNA, tortul, barurile tematice și cazarea oaspeților sunt incluse în aceeași ofertă a Grupului ANNA.",
+  "descriere": "Salonul Magic găzduiește până la 300 de invitați, în complexul ANNA Events de pe Insulița din Parcul Central. Se potrivește nunților, botezurilor și evenimentelor de firmă de mărime medie. Pentru conferințe, prezentări și seminarii, numărul de locuri depinde de amenajarea aleasă; vi-l calculăm noi după configurația dorită. Magic e salonul cu cel mai mult spectacol deasupra ringului: structura de lumini de scenă îl transformă într-un loc de concert, iar tavanul drapat preia orice culoare alegeți. Ferestrele înalte deschid salonul spre grădină, iar peretele verde e locul preferat pentru fotografiile de grup. Meniul din catalogul ANNA, tortul, barurile tematice și cazarea oaspeților sunt incluse în aceeași ofertă a Grupului ANNA.",
   "seo": {
     "titlu": "Salon Magic, până la 300 de invitați | ANNA Events",
     "descriere": "Salonul Magic, pe Insulița din Parcul Central, Târgu Jiu: nunți, botezuri și evenimente de firmă cu până la 300 de invitați."

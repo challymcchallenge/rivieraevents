@@ -5,8 +5,8 @@
   "ordine": 1,
   "capacitate": {
     "nunta": 400,
-    "conferinta": null,
-    "min": null
+    "min": null,
+    "conferinta": "la cerere, în funcție de amenajare"
   },
   "suprafataMp": null,
   "potrivitPentru": [
@@ -16,13 +16,15 @@
   ],
   "puncteForte": [
     "Pereți de sticlă de jur împrejur, cu grădina la vedere",
+    "Sistem automatizat de lumini, în orice culoare doriți",
     "Tavan drapat în valuri de voal, cu un candelabru central impunător",
     "Scenă cu lumini de concert, pregătită pentru formație",
     "Lumina caldă a apusului, care intră seara pe ferestre",
     "Apartamentul mirilor propriu"
   ],
   "dotari": [
-    "Apartamentul mirilor propriu, inclus în prețul evenimentului"
+    "Apartamentul mirilor propriu, inclus în prețul evenimentului",
+    "Sistem automatizat de lumini, în orice culoare doriți"
   ],
   "descriereScurta": "Cel mai încăpător salon de la Riviera: până la 400 de invitați, pentru nunți, botezuri și evenimente de firmă.",
   "descriere": "Salonul Rosa primește până la 400 de invitați și este cel mai mare dintre cele trei saloane ale complexului Riviera, de pe malul Jiului. Îl aleg de obicei familiile care fac o nuntă mare sau un botez cu multă lume, și firmele care adună toată echipa la petrecerea de final de an. Rosa e cel mai luminos salon de la Riviera: pereții de sticlă lasă grădina să intre în decor, iar tavanul drapat în valuri de voal și candelabrul central îi dau un aer de poveste. Scena cu lumini de concert e pregătită pentru formație, iar spre seară apusul învăluie mesele într-un auriu cald. Meniul îl alegeți din catalogul ANNA, iar tortul, barurile tematice, decorul și cazarea oaspeților le rezolvați tot în Grupul ANNA. Salonul are propriul apartament al mirilor, inclus în prețul evenimentului. Vă așteptăm să-l vedeți pe viu, înainte să vă hotărâți.",
@@ -33,5 +35,6 @@
   "galerie": [],
   "tur360": "https://annaevents.ro/tur-virtual/2024/rosa/tour.html",
   "video": [],
-  "_sursaText": "Puncte forte și descriere scrise din pozele salonului (2026-10-28). De verificat de client."
+  "_sursaText": "Puncte forte și descriere scrise din pozele salonului (2026-10-28). De verificat de client.",
+  "turApartament": "https://annaevents.ro/apartamente-riviera/rosa/tour.html"
 }
