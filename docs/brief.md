@@ -42,7 +42,7 @@
 - formulare trimise;
 - click-uri pe telefon.
 
-**Ținta:** `[DESCHIS]`. Nu știm câte cereri primiți azi și câte devin contracte. Propunerea:
+**Ținta:** volumul actual de cereri și de contracte **nu este cunoscut** (confirmat de client). De aceea site-ul trebuie să măsoare cererile de la prima zi. Propunerea:
 1. Primele 60 de zile după lansare măsurăm nivelul de bază (`[PRESUPUNERE]`: cu analytics fără cookies, decis în Faza 2).
 2. Ținta: **+30% cereri calificate** față de nivelul de bază, după 6 luni. `[PRESUPUNERE]`, cifră de discutat.
 
@@ -50,7 +50,7 @@
 - rata de folosire a calculatorului de buget (pornit → trimis pe WhatsApp);
 - rata de click pe WhatsApp per pagină de salon.
 
-**Termen:** site-ul ar trebui să fie live **înainte de sezonul de rezervări pentru nunțile din 2027**. Cu cât timp înainte rezervă cuplurile nu știm. `[DESCHIS]`
+**Termen:** **cât mai repede** (confirmat de client), ideal înainte de sezonul de rezervări pentru nunțile din 2027. Prioritatea e o v1 lansabilă rapid. Ce nu e esențial trece în v2.
 
 ## 3. Public
 
@@ -111,7 +111,7 @@
 
 **Note:**
 - **Pagini per tip de eveniment** (`/nunti`, `/botezuri`, `/corporate`) există la Royal Hall și Villa Trevi și ajută la SEO. **Nu le-am inclus**, pentru că structura ta de conținut din Faza 3 nu le are. `[DESCHIS: le vrem?]`
-- **Saloanele de pe Insulița** apar și pe annaevents.ro. Ca să nu concureze cele două site-uri în Google: texte scrise separat (nu copiate), link reciproc și, `[PRESUPUNERE]`, pagini mai scurte pentru Insulița pe noul site. Detaliile tehnice se decid în Faza 2. `[DESCHIS: pagini complete sau scurte pentru Insulița?]`
+- **Saloanele de pe Insulița** au **pagini complete** pe noul site (decizie client), cu același șablon ca Riviera. Ele apar și pe annaevents.ro, deci ca să nu concureze cele două site-uri în Google: texte scrise separat (nu copiate), link reciproc spre annaevents.ro, Riviera în centrul paginii principale și al titlurilor. Detaliile tehnice (de ex. canonical) se decid în Faza 2.
 
 ## 7. Cerințe funcționale
 
@@ -163,7 +163,7 @@ Legendă: ✅ există (confirmat de client sau vizibil pe annaevents.ro) · ❓ 
   - capacitate maximă ✅
   - capacitate minimă ❌
   - suprafață m² ❌
-  - complex și adresă ❓ (adresa Riviera lipsește de pe annaevents.ro)
+  - complex și adresă: Riviera ✅ (Aleea Digului nr. 5); Insulița ❓
   - potrivit pentru ✅
   - dotări ❌ (aer condiționat, scenă, camera mirilor, acces separat, parcare)
 - **Poze:** 8–15 per salon, amenajat ✅ (9 pe annaevents.ro, de verificat calitatea și sursa originală)
@@ -198,7 +198,7 @@ Legendă: ✅ există (confirmat de client sau vizibil pe annaevents.ro) · ❓ 
 ### Contact
 - **Telefoane:** 4 numere ✅. Trebuie stabilit ce rol are fiecare (rezervări, WhatsApp, corporate) ❓
 - **Email:** rezervari@annaevents.ro ✅. Folosim același sau unul nou pe domeniul Riviera? ❓
-- **Adrese:** Riviera ❌; Insulița ✅ (doar descriere generală, fără stradă și număr)
+- **Adrese:** Riviera ✅ **Aleea Digului nr. 5, Târgu Jiu**; Insulița ❓ (doar descriere generală, fără stradă și număr)
 - **Program de vizitare a saloanelor** ❓
 - **Social:** Facebook, Instagram, YouTube ✅. Riviera are conturi separate? ❓
 
@@ -215,20 +215,25 @@ Legendă: ✅ există (confirmat de client sau vizibil pe annaevents.ro) · ❓ 
 - **Buget:** minim. Trafic mic. Întreținut de **o singură persoană**.
 - **Limba:** doar română. Adresare cu „dumneavoastră”.
 - **GDPR:** politica de confidențialitate, consimțământ doar pentru cookies neesențiale, găzduire și formular în UE sau documentate.
-- **Domeniu:** `rivieraevents.ro` `[PRESUPUNERE]`. Disponibilitatea și cine îl cumpără sau deține `[DESCHIS]`.
+- **Domeniu:** **www.rivieraevents.ro** (confirmat de client). Dacă e deja cumpărat și la ce registrar `[DESCHIS]`, necesar pentru DNS în Faza 6.
 - **Repo / hosting:** GitHub `challymcchallenge/rivieraevents`, proiect Vercel `rivieraevents` (create pe 2026-10-28). Stack-ul final se decide în Faza 2.
 
 ## 10. Întrebări deschise (pentru GATE 1)
 
-1. **Volum actual:** câte cereri de ofertă pe lună și câte devin contracte? Din asta stabilim ținta.
-2. **Cu cât timp înainte** rezervă un cuplu nunta? Din asta reiese termenul de lansare.
-3. **Ce tip de eveniment vreți să crească?** (`[PRESUPUNERE]`: nunțile.)
-4. **Pagini per tip de eveniment** (nunți, botezuri, corporate): da sau nu?
-5. **Saloanele de pe Insulița:** pagini complete sau scurte cu link spre annaevents.ro?
-6. **Cine urcă pozele** după lansare: tu sau cineva din echipa ANNA?
-7. **Adresa exactă Riviera** și adresa exactă a complexului de pe Insulița.
-8. **Numărul de WhatsApp** pentru Riviera: același 0746 085 555?
-9. **În cât timp răspundeți** la o cerere (pentru mesajul de disponibilitate)?
-10. **Oferte de extrasezon** sau de zile din săptămână: există?
-11. **Domeniul:** e `rivieraevents.ro`? E deja cumpărat?
-12. **Testimonialele și pozele** de pe annaevents.ro: le putem refolosi?
+**Rezolvate (2026-10-28):**
+- Volumul actual de cereri: necunoscut, deci măsurăm de la lansare.
+- Termen: cât mai repede.
+- Saloanele de pe Insulița: pagini complete.
+- Adresa Riviera: Aleea Digului nr. 5, Târgu Jiu.
+- Domeniu: www.rivieraevents.ro.
+
+**Încă deschise (nu blochează Faza 2):**
+1. **Ce tip de eveniment vreți să crească?** (`[PRESUPUNERE]`: nunțile.)
+2. **Pagini per tip de eveniment** (nunți, botezuri, corporate): da sau nu?
+3. **Cine urcă pozele** după lansare: tu sau cineva din echipa ANNA?
+4. **Adresa exactă** a complexului de pe Insulița.
+5. **Numărul de WhatsApp** pentru Riviera: același 0746 085 555?
+6. **În cât timp răspundeți** la o cerere (pentru mesajul de disponibilitate)?
+7. **Oferte de extrasezon** sau de zile din săptămână: există?
+8. **Domeniul rivieraevents.ro**: e deja cumpărat? La ce registrar?
+9. **Testimonialele și pozele** de pe annaevents.ro: le putem refolosi?
