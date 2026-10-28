@@ -29,8 +29,87 @@
     "titlu": "Salon Magic, până la 300 de invitați | ANNA Events",
     "descriere": "Salonul Magic, pe Insulița din Parcul Central, Târgu Jiu: nunți, botezuri și evenimente de firmă cu până la 300 de invitați."
   },
-  "galerie": [],
+  "galerie": [
+    {
+      "src": "/images/saloane/magic/magic-022.jpg",
+      "alt": "Salon Magic, amenajat pentru un eveniment (1)",
+      "w": 2560,
+      "h": 1707
+    },
+    {
+      "src": "/images/saloane/magic/magic-001.jpg",
+      "alt": "Salon Magic, amenajat pentru un eveniment (2)",
+      "w": 1200,
+      "h": 1600
+    },
+    {
+      "src": "/images/saloane/magic/magic-003.jpg",
+      "alt": "Salon Magic, amenajat pentru un eveniment (3)",
+      "w": 1200,
+      "h": 1600
+    },
+    {
+      "src": "/images/saloane/magic/magic-005.jpg",
+      "alt": "Salon Magic, amenajat pentru un eveniment (4)",
+      "w": 1600,
+      "h": 1200
+    },
+    {
+      "src": "/images/saloane/magic/magic-007.jpg",
+      "alt": "Salon Magic, amenajat pentru un eveniment (5)",
+      "w": 1600,
+      "h": 1067
+    },
+    {
+      "src": "/images/saloane/magic/magic-009.jpg",
+      "alt": "Salon Magic, amenajat pentru un eveniment (6)",
+      "w": 1920,
+      "h": 2560
+    },
+    {
+      "src": "/images/saloane/magic/magic-011.jpg",
+      "alt": "Salon Magic, amenajat pentru un eveniment (7)",
+      "w": 1920,
+      "h": 2560
+    },
+    {
+      "src": "/images/saloane/magic/magic-013.jpg",
+      "alt": "Salon Magic, amenajat pentru un eveniment (8)",
+      "w": 1920,
+      "h": 2560
+    },
+    {
+      "src": "/images/saloane/magic/magic-015.jpg",
+      "alt": "Salon Magic, amenajat pentru un eveniment (9)",
+      "w": 1920,
+      "h": 2560
+    },
+    {
+      "src": "/images/saloane/magic/magic-017.jpg",
+      "alt": "Salon Magic, amenajat pentru un eveniment (10)",
+      "w": 1920,
+      "h": 2560
+    },
+    {
+      "src": "/images/saloane/magic/magic-019.jpg",
+      "alt": "Salon Magic, amenajat pentru un eveniment (11)",
+      "w": 2048,
+      "h": 1365
+    },
+    {
+      "src": "/images/saloane/magic/magic-021.jpg",
+      "alt": "Salon Magic, amenajat pentru un eveniment (12)",
+      "w": 1365,
+      "h": 2047
+    }
+  ],
   "tur360": "https://www.annaevents.ro/tur-virtual/anna_events/sala-noua/tour.html",
   "video": [],
-  "_sursaText": "Puncte forte și descriere scrise din pozele salonului (2026-10-28). De verificat de client."
+  "_sursaText": "Puncte forte și descriere scrise din pozele salonului (2026-10-28). De verificat de client.",
+  "imaginePrincipala": {
+    "src": "/images/saloane/magic/magic-022.jpg",
+    "alt": "Salon Magic, vedere de ansamblu",
+    "w": 2560,
+    "h": 1707
+  }
 }

@@ -8,24 +8,34 @@
   "descriere": "Pentru ceremonie, grădina s-a transformat într-un salon în aer liber: alee albă, trandafiri roșii de-a lungul rândurilor și candelabre de cristal suspendate printre copaci.",
   "poze": [
     {
-      "src": "portofoliu-riviera/portofoliu-riviera-017.jpg",
-      "alt": "Mirii pe aleea albă, între trandafiri roșii și candelabre de cristal"
+      "src": "/images/portofoliu/ceremonie-candelabre-gradina-riviera/portofoliu-riviera-017.jpg",
+      "alt": "Mirii pe aleea albă, între trandafiri roșii și candelabre de cristal",
+      "w": 1440,
+      "h": 959
     },
     {
-      "src": "complex-riviera/complex-riviera-007.jpg",
-      "alt": "Aleea ceremoniei, cu trandafiri roșii și scaune albe, în grădina Riviera"
+      "src": "/images/portofoliu/ceremonie-candelabre-gradina-riviera/complex-riviera-007.jpg",
+      "alt": "Aleea ceremoniei, cu trandafiri roșii și scaune albe, în grădina Riviera",
+      "w": 1440,
+      "h": 960
     },
     {
-      "src": "complex-riviera/complex-riviera-008.jpg",
-      "alt": "Arcada ceremoniei și candelabrele suspendate în grădină"
+      "src": "/images/portofoliu/ceremonie-candelabre-gradina-riviera/complex-riviera-008.jpg",
+      "alt": "Arcada ceremoniei și candelabrele suspendate în grădină",
+      "w": 1440,
+      "h": 960
     },
     {
-      "src": "complex-riviera/complex-riviera-009.jpg",
-      "alt": "Scaunele invitaților de-a lungul aleii albe"
+      "src": "/images/portofoliu/ceremonie-candelabre-gradina-riviera/complex-riviera-009.jpg",
+      "alt": "Scaunele invitaților de-a lungul aleii albe",
+      "w": 1440,
+      "h": 959
     },
     {
-      "src": "complex-riviera/complex-riviera-006.jpg",
-      "alt": "Masa ceremoniei, sub un candelabru de cristal"
+      "src": "/images/portofoliu/ceremonie-candelabre-gradina-riviera/complex-riviera-006.jpg",
+      "alt": "Masa ceremoniei, sub un candelabru de cristal",
+      "w": 1440,
+      "h": 960
     }
   ],
   "acordClient": true,

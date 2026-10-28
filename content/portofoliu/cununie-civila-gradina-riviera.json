@@ -8,28 +8,40 @@
   "descriere": "Mirii au spus „da” în grădină, sub arcade de flori albe, cu invitații așezați pe scaune albe între straturile de flori. Ședința foto a continuat pe aleile de piatră, printre lavandă și trandafiri.",
   "poze": [
     {
-      "src": "portofoliu-riviera/portofoliu-riviera-004.jpg",
-      "alt": "Mirii sub arcadele de flori albe, la cununia civilă din grădina Riviera"
+      "src": "/images/portofoliu/cununie-civila-gradina-riviera/portofoliu-riviera-004.jpg",
+      "alt": "Mirii sub arcadele de flori albe, la cununia civilă din grădina Riviera",
+      "w": 1600,
+      "h": 1066
     },
     {
-      "src": "portofoliu-riviera/portofoliu-riviera-005.jpg",
-      "alt": "Ofițerul de stare civilă oficiază cununia în grădină"
+      "src": "/images/portofoliu/cununie-civila-gradina-riviera/portofoliu-riviera-005.jpg",
+      "alt": "Ofițerul de stare civilă oficiază cununia în grădină",
+      "w": 1600,
+      "h": 1066
     },
     {
-      "src": "portofoliu-riviera/portofoliu-riviera-006.jpg",
-      "alt": "Mirii se sărută după semnarea actelor"
+      "src": "/images/portofoliu/cununie-civila-gradina-riviera/portofoliu-riviera-006.jpg",
+      "alt": "Mirii se sărută după semnarea actelor",
+      "w": 1139,
+      "h": 1600
     },
     {
-      "src": "portofoliu-riviera/portofoliu-riviera-001.jpg",
-      "alt": "Mirii se plimbă pe aleea de piatră din grădină"
+      "src": "/images/portofoliu/cununie-civila-gradina-riviera/portofoliu-riviera-001.jpg",
+      "alt": "Mirii se plimbă pe aleea de piatră din grădină",
+      "w": 1600,
+      "h": 1066
     },
     {
-      "src": "portofoliu-riviera/portofoliu-riviera-002.jpg",
-      "alt": "Mireasa cu buchetul, printre straturile de flori"
+      "src": "/images/portofoliu/cununie-civila-gradina-riviera/portofoliu-riviera-002.jpg",
+      "alt": "Mireasa cu buchetul, printre straturile de flori",
+      "w": 1600,
+      "h": 1066
     },
     {
-      "src": "portofoliu-riviera/portofoliu-riviera-011.jpg",
-      "alt": "Mirii în grădina Riviera, la apus"
+      "src": "/images/portofoliu/cununie-civila-gradina-riviera/portofoliu-riviera-011.jpg",
+      "alt": "Mirii în grădina Riviera, la apus",
+      "w": 1600,
+      "h": 1066
     }
   ],
   "acordClient": true,

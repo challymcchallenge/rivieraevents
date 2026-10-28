@@ -8,24 +8,34 @@
   "descriere": "Arcade albe, flori roșii și portocalii și frunze de palmier uscate: un decor boem pentru o ceremonie lângă apă.",
   "poze": [
     {
-      "src": "portofoliu-insulita/portofoliu-insulita-040.jpg",
-      "alt": "Mirii lângă arcadele albe cu flori roșii, la piscină"
+      "src": "/images/portofoliu/ceremonie-flori-rosii-piscina-anna-events/portofoliu-insulita-040.jpg",
+      "alt": "Mirii lângă arcadele albe cu flori roșii, la piscină",
+      "w": 2048,
+      "h": 1366
     },
     {
-      "src": "portofoliu-insulita/portofoliu-insulita-039.jpg",
-      "alt": "Mirii în fața decorului cu flori roșii"
+      "src": "/images/portofoliu/ceremonie-flori-rosii-piscina-anna-events/portofoliu-insulita-039.jpg",
+      "alt": "Mirii în fața decorului cu flori roșii",
+      "w": 1366,
+      "h": 2048
     },
     {
-      "src": "complex-insulita/complex-insulita-016.jpg",
-      "alt": "Aleea ceremoniei, cu panou de bun venit"
+      "src": "/images/portofoliu/ceremonie-flori-rosii-piscina-anna-events/complex-insulita-016.jpg",
+      "alt": "Aleea ceremoniei, cu panou de bun venit",
+      "w": 2048,
+      "h": 1365
     },
     {
-      "src": "complex-insulita/complex-insulita-017.jpg",
-      "alt": "Aranjament cu flori roșii și frunze de palmier, lângă piscină"
+      "src": "/images/portofoliu/ceremonie-flori-rosii-piscina-anna-events/complex-insulita-017.jpg",
+      "alt": "Aranjament cu flori roșii și frunze de palmier, lângă piscină",
+      "w": 1365,
+      "h": 2047
     },
     {
-      "src": "complex-insulita/complex-insulita-015.jpg",
-      "alt": "Arcadă albă cu flori roșii, lângă piscină"
+      "src": "/images/portofoliu/ceremonie-flori-rosii-piscina-anna-events/complex-insulita-015.jpg",
+      "alt": "Arcadă albă cu flori roșii, lângă piscină",
+      "w": 2048,
+      "h": 1365
     }
   ],
   "acordClient": true,

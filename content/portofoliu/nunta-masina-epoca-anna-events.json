@@ -8,24 +8,34 @@
   "descriere": "Mirii au sosit cu o mașină de epocă, iar seara a continuat în salon, sub lumini de concert, cu un moment de dans în costume colorate.",
   "poze": [
     {
-      "src": "portofoliu-insulita/portofoliu-insulita-014.jpg",
-      "alt": "Mirii lângă mașina de epocă"
+      "src": "/images/portofoliu/nunta-masina-epoca-anna-events/portofoliu-insulita-014.jpg",
+      "alt": "Mirii lângă mașina de epocă",
+      "w": 1707,
+      "h": 2560
     },
     {
-      "src": "portofoliu-insulita/portofoliu-insulita-013.jpg",
-      "alt": "Mirii și familia lângă mașina de epocă"
+      "src": "/images/portofoliu/nunta-masina-epoca-anna-events/portofoliu-insulita-013.jpg",
+      "alt": "Mirii și familia lângă mașina de epocă",
+      "w": 2560,
+      "h": 1707
     },
     {
-      "src": "portofoliu-insulita/portofoliu-insulita-024.jpg",
-      "alt": "Mireasa, între luminițe"
+      "src": "/images/portofoliu/nunta-masina-epoca-anna-events/portofoliu-insulita-024.jpg",
+      "alt": "Mireasa, între luminițe",
+      "w": 1707,
+      "h": 2560
     },
     {
-      "src": "portofoliu-insulita/portofoliu-insulita-032.jpg",
-      "alt": "Ringul de dans sub lumini de concert"
+      "src": "/images/portofoliu/nunta-masina-epoca-anna-events/portofoliu-insulita-032.jpg",
+      "alt": "Ringul de dans sub lumini de concert",
+      "w": 2560,
+      "h": 1707
     },
     {
-      "src": "portofoliu-insulita/portofoliu-insulita-033.jpg",
-      "alt": "Moment de dans în costume colorate"
+      "src": "/images/portofoliu/nunta-masina-epoca-anna-events/portofoliu-insulita-033.jpg",
+      "alt": "Moment de dans în costume colorate",
+      "w": 2560,
+      "h": 1707
     }
   ],
   "acordClient": true,

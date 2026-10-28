@@ -40,31 +40,31 @@
       "nume": "Premium Platinum",
       "ordine": 1,
       "descriereScurta": "Cel mai generos meniu ANNA. Fiecare fel ajunge la masă ca într-un restaurant bun, cu platouri bogate și o prezentare care arată bine și în poze.",
-      "copertaCatalog": "meniuri/pagina-27.jpg",
-      "fotografiiCatalog": "meniuri/pagina-28.jpg",
+      "copertaCatalog": "/images/meniuri/pagina-27.jpg",
+      "fotografiiCatalog": "/images/meniuri/pagina-28.jpg",
       "sectiuni": [
         {
           "id": "starter",
           "titlu": "Starter",
-          "imagine": "meniuri/pagina-29.jpg",
+          "imagine": "/images/meniuri/pagina-29.jpg",
           "descriere": "Primul platou de pe masă: gustări reci, aranjate să deschidă pofta și conversațiile."
         },
         {
           "id": "starter-cald",
           "titlu": "Starter cald",
-          "imagine": "meniuri/pagina-30.jpg",
+          "imagine": "/images/meniuri/pagina-30.jpg",
           "descriere": "Un preparat cald, servit la farfurie, cât invitații își trag sufletul după primele dansuri."
         },
         {
           "id": "traditional",
           "titlu": "Tradițional",
-          "imagine": "meniuri/pagina-31.jpg",
+          "imagine": "/images/meniuri/pagina-31.jpg",
           "descriere": "Felul pe care îl așteaptă toată lumea la o nuntă în Gorj, gătit ca acasă."
         },
         {
           "id": "main",
           "titlu": "Fel principal",
-          "imagine": "meniuri/pagina-32.jpg",
+          "imagine": "/images/meniuri/pagina-32.jpg",
           "descriere": "Felul principal, servit la farfurie, cu garnitură și sos, la mijlocul petrecerii."
         }
       ]
@@ -74,31 +74,31 @@
       "nume": "Gold",
       "ordine": 2,
       "descriereScurta": "Un meniu rafinat, cu preparate alese pentru o seară lungă, în care invitații revin cu plăcere la masă între dansuri.",
-      "copertaCatalog": "meniuri/pagina-03.jpg",
-      "fotografiiCatalog": "meniuri/pagina-04.jpg",
+      "copertaCatalog": "/images/meniuri/pagina-03.jpg",
+      "fotografiiCatalog": "/images/meniuri/pagina-04.jpg",
       "sectiuni": [
         {
           "id": "starter",
           "titlu": "Starter",
-          "imagine": "meniuri/pagina-05.jpg",
+          "imagine": "/images/meniuri/pagina-05.jpg",
           "descriere": "Primul platou de pe masă: gustări reci, aranjate să deschidă pofta și conversațiile."
         },
         {
           "id": "starter-cald",
           "titlu": "Starter cald",
-          "imagine": "meniuri/pagina-06.jpg",
+          "imagine": "/images/meniuri/pagina-06.jpg",
           "descriere": "Un preparat cald, servit la farfurie, cât invitații își trag sufletul după primele dansuri."
         },
         {
           "id": "traditional",
           "titlu": "Tradițional",
-          "imagine": "meniuri/pagina-07.jpg",
+          "imagine": "/images/meniuri/pagina-07.jpg",
           "descriere": "Felul pe care îl așteaptă toată lumea la o nuntă în Gorj, gătit ca acasă."
         },
         {
           "id": "main",
           "titlu": "Fel principal",
-          "imagine": "meniuri/pagina-08.jpg",
+          "imagine": "/images/meniuri/pagina-08.jpg",
           "descriere": "Felul principal, servit la farfurie, cu garnitură și sos, la mijlocul petrecerii."
         }
       ]
@@ -108,31 +108,31 @@
       "nume": "Silver",
       "ordine": 3,
       "descriereScurta": "Meniul complet, cu gusturi pe care le recunoaște toată familia, de la bunici până la cei mai tineri invitați.",
-      "copertaCatalog": "meniuri/pagina-09.jpg",
-      "fotografiiCatalog": "meniuri/pagina-10.jpg",
+      "copertaCatalog": "/images/meniuri/pagina-09.jpg",
+      "fotografiiCatalog": "/images/meniuri/pagina-10.jpg",
       "sectiuni": [
         {
           "id": "starter",
           "titlu": "Starter",
-          "imagine": "meniuri/pagina-11.jpg",
+          "imagine": "/images/meniuri/pagina-11.jpg",
           "descriere": "Primul platou de pe masă: gustări reci, aranjate să deschidă pofta și conversațiile."
         },
         {
           "id": "starter-cald",
           "titlu": "Starter cald",
-          "imagine": "meniuri/pagina-12.jpg",
+          "imagine": "/images/meniuri/pagina-12.jpg",
           "descriere": "Un preparat cald, servit la farfurie, cât invitații își trag sufletul după primele dansuri."
         },
         {
           "id": "traditional",
           "titlu": "Tradițional",
-          "imagine": "meniuri/pagina-13.jpg",
+          "imagine": "/images/meniuri/pagina-13.jpg",
           "descriere": "Felul pe care îl așteaptă toată lumea la o nuntă în Gorj, gătit ca acasă."
         },
         {
           "id": "main",
           "titlu": "Fel principal",
-          "imagine": "meniuri/pagina-14.jpg",
+          "imagine": "/images/meniuri/pagina-14.jpg",
           "descriere": "Felul principal, servit la farfurie, cu garnitură și sos, la mijlocul petrecerii."
         }
       ]
@@ -142,31 +142,31 @@
       "nume": "Bronze",
       "ordine": 4,
       "descriereScurta": "Toate cele patru momente ale mesei, gătite cu aceeași grijă, pentru un buget mai atent.",
-      "copertaCatalog": "meniuri/pagina-15.jpg",
-      "fotografiiCatalog": "meniuri/pagina-16.jpg",
+      "copertaCatalog": "/images/meniuri/pagina-15.jpg",
+      "fotografiiCatalog": "/images/meniuri/pagina-16.jpg",
       "sectiuni": [
         {
           "id": "starter",
           "titlu": "Starter",
-          "imagine": "meniuri/pagina-17.jpg",
+          "imagine": "/images/meniuri/pagina-17.jpg",
           "descriere": "Primul platou de pe masă: gustări reci, aranjate să deschidă pofta și conversațiile."
         },
         {
           "id": "starter-cald",
           "titlu": "Starter cald",
-          "imagine": "meniuri/pagina-18.jpg",
+          "imagine": "/images/meniuri/pagina-18.jpg",
           "descriere": "Un preparat cald, servit la farfurie, cât invitații își trag sufletul după primele dansuri."
         },
         {
           "id": "traditional",
           "titlu": "Tradițional",
-          "imagine": "meniuri/pagina-19.jpg",
+          "imagine": "/images/meniuri/pagina-19.jpg",
           "descriere": "Felul pe care îl așteaptă toată lumea la o nuntă în Gorj, gătit ca acasă."
         },
         {
           "id": "main",
           "titlu": "Fel principal",
-          "imagine": "meniuri/pagina-20.jpg",
+          "imagine": "/images/meniuri/pagina-20.jpg",
           "descriere": "Felul principal, servit la farfurie, cu garnitură și sos, la mijlocul petrecerii."
         }
       ]
@@ -176,31 +176,31 @@
       "nume": "Vegetarian",
       "ordine": 5,
       "descriereScurta": "Patru feluri fără carne, gândite să-i bucure și pe invitații care nu sunt vegetarieni.",
-      "copertaCatalog": "meniuri/pagina-21.jpg",
-      "fotografiiCatalog": "meniuri/pagina-22.jpg",
+      "copertaCatalog": "/images/meniuri/pagina-21.jpg",
+      "fotografiiCatalog": "/images/meniuri/pagina-22.jpg",
       "sectiuni": [
         {
           "id": "starter",
           "titlu": "Starter",
-          "imagine": "meniuri/pagina-23.jpg",
+          "imagine": "/images/meniuri/pagina-23.jpg",
           "descriere": "Primul platou de pe masă: gustări reci, aranjate să deschidă pofta și conversațiile."
         },
         {
           "id": "starter-cald",
           "titlu": "Starter cald",
-          "imagine": "meniuri/pagina-24.jpg",
+          "imagine": "/images/meniuri/pagina-24.jpg",
           "descriere": "Un preparat cald, servit la farfurie, cât invitații își trag sufletul după primele dansuri."
         },
         {
           "id": "traditional",
           "titlu": "Tradițional",
-          "imagine": "meniuri/pagina-25.jpg",
+          "imagine": "/images/meniuri/pagina-25.jpg",
           "descriere": "Felul pe care îl așteaptă toată lumea la o nuntă în Gorj, gătit ca acasă."
         },
         {
           "id": "main",
           "titlu": "Fel principal",
-          "imagine": "meniuri/pagina-26.jpg",
+          "imagine": "/images/meniuri/pagina-26.jpg",
           "descriere": "Felul principal, servit la farfurie, cu garnitură și sos, la mijlocul petrecerii."
         }
       ]

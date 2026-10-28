@@ -30,8 +30,87 @@
     "titlu": "Salon Estuar, evenimente până la 100 de invitați",
     "descriere": "Salonul Estuar, pe Insulița din Târgu Jiu: botezuri, aniversări și întâlniri de firmă de până la 100 de invitați, cu meniu din catalogul ANNA."
   },
-  "galerie": [],
+  "galerie": [
+    {
+      "src": "/images/saloane/estuar/estuar-001.jpg",
+      "alt": "Salon Estuar, amenajat pentru un eveniment (1)",
+      "w": 1920,
+      "h": 2560
+    },
+    {
+      "src": "/images/saloane/estuar/estuar-002.jpg",
+      "alt": "Salon Estuar, amenajat pentru un eveniment (2)",
+      "w": 1920,
+      "h": 2560
+    },
+    {
+      "src": "/images/saloane/estuar/estuar-003.jpg",
+      "alt": "Salon Estuar, amenajat pentru un eveniment (3)",
+      "w": 1920,
+      "h": 2560
+    },
+    {
+      "src": "/images/saloane/estuar/estuar-004.jpg",
+      "alt": "Salon Estuar, amenajat pentru un eveniment (4)",
+      "w": 1920,
+      "h": 2560
+    },
+    {
+      "src": "/images/saloane/estuar/estuar-005.jpg",
+      "alt": "Salon Estuar, amenajat pentru un eveniment (5)",
+      "w": 1920,
+      "h": 2560
+    },
+    {
+      "src": "/images/saloane/estuar/estuar-006.jpg",
+      "alt": "Salon Estuar, amenajat pentru un eveniment (6)",
+      "w": 1920,
+      "h": 2560
+    },
+    {
+      "src": "/images/saloane/estuar/estuar-007.jpg",
+      "alt": "Salon Estuar, amenajat pentru un eveniment (7)",
+      "w": 1920,
+      "h": 2560
+    },
+    {
+      "src": "/images/saloane/estuar/estuar-008.jpg",
+      "alt": "Salon Estuar, amenajat pentru un eveniment (8)",
+      "w": 1920,
+      "h": 2560
+    },
+    {
+      "src": "/images/saloane/estuar/estuar-009.jpg",
+      "alt": "Salon Estuar, amenajat pentru un eveniment (9)",
+      "w": 1920,
+      "h": 2560
+    },
+    {
+      "src": "/images/saloane/estuar/estuar-010.jpg",
+      "alt": "Salon Estuar, amenajat pentru un eveniment (10)",
+      "w": 1920,
+      "h": 2560
+    },
+    {
+      "src": "/images/saloane/estuar/estuar-011.jpg",
+      "alt": "Salon Estuar, amenajat pentru un eveniment (11)",
+      "w": 1920,
+      "h": 2560
+    },
+    {
+      "src": "/images/saloane/estuar/estuar-012.jpg",
+      "alt": "Salon Estuar, amenajat pentru un eveniment (12)",
+      "w": 1920,
+      "h": 2560
+    }
+  ],
   "tur360": "https://www.annaevents.ro/tur-virtual/anna_events/sala-estuar/salon_estuar.html",
   "video": [],
-  "_sursaText": "Puncte forte și descriere scrise din pozele salonului (2026-10-28). De verificat de client."
+  "_sursaText": "Puncte forte și descriere scrise din pozele salonului (2026-10-28). De verificat de client.",
+  "imaginePrincipala": {
+    "src": "/images/saloane/estuar/estuar-001.jpg",
+    "alt": "Salon Estuar, vedere de ansamblu",
+    "w": 1920,
+    "h": 2560
+  }
 }

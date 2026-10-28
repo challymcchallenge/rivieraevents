@@ -45,40 +45,58 @@
       ],
       "galerieExterior": [
         {
-          "src": "complex-riviera/complex-riviera-015.jpg",
-          "alt": "Grădina Riviera văzută de sus, pregătită pentru o ceremonie"
+          "src": "/images/complex/riviera/complex-riviera-015.jpg",
+          "alt": "Grădina Riviera văzută de sus, pregătită pentru o ceremonie",
+          "w": 2560,
+          "h": 1707
         },
         {
-          "src": "complex-riviera/complex-riviera-017.jpg",
-          "alt": "Gazonul și aleile grădinii Riviera, cu scaune pentru ceremonie"
+          "src": "/images/complex/riviera/complex-riviera-017.jpg",
+          "alt": "Gazonul și aleile grădinii Riviera, cu scaune pentru ceremonie",
+          "w": 2560,
+          "h": 1707
         },
         {
-          "src": "complex-riviera/complex-riviera-016.jpg",
-          "alt": "Arcada ceremoniei în grădina Riviera"
+          "src": "/images/complex/riviera/complex-riviera-016.jpg",
+          "alt": "Arcada ceremoniei în grădina Riviera",
+          "w": 1707,
+          "h": 2560
         },
         {
-          "src": "complex-riviera/complex-riviera-011.jpg",
-          "alt": "Cină în aer liber sub candelabre de cristal, în grădina Riviera"
+          "src": "/images/complex/riviera/complex-riviera-011.jpg",
+          "alt": "Cină în aer liber sub candelabre de cristal, în grădina Riviera",
+          "w": 1440,
+          "h": 1440
         },
         {
-          "src": "complex-riviera/complex-riviera-012.jpg",
-          "alt": "Mese rotunde aranjate în grădină, printre copaci"
+          "src": "/images/complex/riviera/complex-riviera-012.jpg",
+          "alt": "Mese rotunde aranjate în grădină, printre copaci",
+          "w": 1440,
+          "h": 1440
         },
         {
-          "src": "complex-riviera/complex-riviera-013.jpg",
-          "alt": "Masă festivă în grădină, cu candelabre suspendate"
+          "src": "/images/complex/riviera/complex-riviera-013.jpg",
+          "alt": "Masă festivă în grădină, cu candelabre suspendate",
+          "w": 1440,
+          "h": 1440
         },
         {
-          "src": "complex-riviera/complex-riviera-014.jpg",
-          "alt": "Detaliu de masă în grădina Riviera"
+          "src": "/images/complex/riviera/complex-riviera-014.jpg",
+          "alt": "Detaliu de masă în grădina Riviera",
+          "w": 1440,
+          "h": 1440
         },
         {
-          "src": "complex-riviera/complex-riviera-007.jpg",
-          "alt": "Aleea albă a ceremoniei, cu trandafiri roșii"
+          "src": "/images/complex/riviera/complex-riviera-007.jpg",
+          "alt": "Aleea albă a ceremoniei, cu trandafiri roșii",
+          "w": 1440,
+          "h": 960
         },
         {
-          "src": "complex-riviera/complex-riviera-010.jpg",
-          "alt": "Turn de șampanie sub o arcadă de flori albe"
+          "src": "/images/complex/riviera/complex-riviera-010.jpg",
+          "alt": "Turn de șampanie sub o arcadă de flori albe",
+          "w": 1440,
+          "h": 1440
         }
       ]
     },
@@ -90,52 +108,76 @@
       "site": "https://www.annaevents.ro",
       "galerieExterior": [
         {
-          "src": "complex-insulita/complex-insulita-023.jpg",
-          "alt": "Piscina complexului ANNA Events, luminată seara, văzută de sus"
+          "src": "/images/complex/insulita/complex-insulita-023.jpg",
+          "alt": "Piscina complexului ANNA Events, luminată seara, văzută de sus",
+          "w": 2560,
+          "h": 1707
         },
         {
-          "src": "complex-insulita/complex-insulita-022.jpg",
-          "alt": "Complexul ANNA Events noaptea, cu piscina în centru"
+          "src": "/images/complex/insulita/complex-insulita-022.jpg",
+          "alt": "Complexul ANNA Events noaptea, cu piscina în centru",
+          "w": 2560,
+          "h": 1707
         },
         {
-          "src": "complex-insulita/complex-insulita-024.jpg",
-          "alt": "Piscina cu sigla ANNA Events, seara"
+          "src": "/images/complex/insulita/complex-insulita-024.jpg",
+          "alt": "Piscina cu sigla ANNA Events, seara",
+          "w": 2560,
+          "h": 1707
         },
         {
-          "src": "complex-insulita/complex-insulita-026.jpg",
-          "alt": "Terasa și piscina, cu lumini de seară"
+          "src": "/images/complex/insulita/complex-insulita-026.jpg",
+          "alt": "Terasa și piscina, cu lumini de seară",
+          "w": 2560,
+          "h": 1707
         },
         {
-          "src": "complex-insulita/complex-insulita-027.jpg",
-          "alt": "Aleile din jurul piscinei, seara"
+          "src": "/images/complex/insulita/complex-insulita-027.jpg",
+          "alt": "Aleile din jurul piscinei, seara",
+          "w": 2560,
+          "h": 1707
         },
         {
-          "src": "complex-insulita/complex-insulita-013.jpg",
-          "alt": "Podul de lemn spre salonul Grande, sub ghirlande de lumini"
+          "src": "/images/complex/insulita/complex-insulita-013.jpg",
+          "alt": "Podul de lemn spre salonul Grande, sub ghirlande de lumini",
+          "w": 2560,
+          "h": 1708
         },
         {
-          "src": "complex-insulita/complex-insulita-014.jpg",
-          "alt": "Intrarea în salonul Grande, seara"
+          "src": "/images/complex/insulita/complex-insulita-014.jpg",
+          "alt": "Intrarea în salonul Grande, seara",
+          "w": 2560,
+          "h": 1708
         },
         {
-          "src": "complex-insulita/complex-insulita-028.jpg",
-          "alt": "Aleea albă spre intrarea salonului Grande"
+          "src": "/images/complex/insulita/complex-insulita-028.jpg",
+          "alt": "Aleea albă spre intrarea salonului Grande",
+          "w": 2560,
+          "h": 1707
         },
         {
-          "src": "complex-insulita/complex-insulita-012.jpg",
-          "alt": "Terasa de lângă piscină, seara"
+          "src": "/images/complex/insulita/complex-insulita-012.jpg",
+          "alt": "Terasa de lângă piscină, seara",
+          "w": 2560,
+          "h": 1708
         },
         {
-          "src": "complex-insulita/complex-insulita-021.jpg",
-          "alt": "Arcade de flori albe pe aleea de lângă piscină"
+          "src": "/images/complex/insulita/complex-insulita-021.jpg",
+          "alt": "Arcade de flori albe pe aleea de lângă piscină",
+          "w": 2560,
+          "h": 1707
         },
         {
-          "src": "complex-insulita/complex-insulita-033.jpg",
-          "alt": "Foișorul cu flori albe de lângă piscină, seara"
+          "src": "/images/complex/insulita/complex-insulita-033.jpg",
+          "alt": "Foișorul cu flori albe de lângă piscină, seara",
+          "w": 2560,
+          "h": 1707
         },
         {
-          "src": "complex-insulita/complex-insulita-029.jpg",
-          "alt": "Cvartet de coarde pe terasă"
+          "src": "/images/complex/insulita/complex-insulita-029.jpg",
+          "alt": "Cvartet de coarde pe terasă",
+          "w": 2560,
+          "h": 1707
         }
       ]
     },
