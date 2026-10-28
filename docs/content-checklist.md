@@ -26,7 +26,7 @@ Format: JPG, latura lungă de minimum 2000 px, **originalele**, nu capturi de ec
 | Informație | Rosa | Noblesse | Premiere | Grande | Ronda | Magic | Estuar | Prioritate |
 |---|---|---|---|---|---|---|---|---|
 | Capacitate minimă (invitați) | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | P2 |
-| Capacitate maximă | 400 ✅ | 300 ✅ | 300 ✅ | 1200 ✅ | 900 ✅ | 700 ✅ | 100 ✅ | — |
+| Capacitate maximă | 400 ✅ | 300 ✅ | 300 ✅ | 800 ✅ | 400 ✅ | 300 ✅ | 100 ✅ | — |
 | Suprafață (m²) | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | P3 |
 | 3–5 puncte forte (ex. terasă, ring de dans, lumină naturală, scenă) | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | **P1** |
 | Dotări (aer condiționat, camera mirilor, intrare separată, sistem de sunet) | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | P2 |
@@ -125,7 +125,7 @@ Recomand cel puțin 3 nunți, 1 botez și 1 eveniment corporate, cu Riviera majo
 
 ## 12. Diferențe între catalog și ce am confirmat (regula 8, nu am modificat nimic)
 
-- **Capacitățile de pe Insulița** diferă. Catalogul 2026 (pag. 51): Grande **800**, Ronda **400**, Magic **300**, Estuar 100. Brief-ul și textele site-ului: Grande **1.200**, Ronda **900**, Magic **700**. Poate fi diferența dintre așezare la masă (nuntă) și așezare tip conferință. ☐ **P1** Care cifre le afișăm?
+- **Capacitățile de pe Insulița** diferă. Catalogul 2026 (pag. 51): Grande **800**, Ronda **400**, Magic **300**, Estuar 100. Brief-ul și textele site-ului: Grande **1.200**, Ronda **900**, Magic **700**. ✅ **Decis 2026-10-28: afișăm cifrele din catalog** (800 / 400 / 300 / 100).
 - **Numele salonului**: catalogul scrie „Premier”, site-ul folosește „Premiere”, confirmat de client.
 - **Decorul, florile, foto/video** sunt prin parteneri (pag. 74–75), nu de echipa proprie. Textele spun acum asta explicit.
 

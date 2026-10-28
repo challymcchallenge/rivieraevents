@@ -24,9 +24,9 @@
 | **Riviera** (malul Jiului) | Premiere | 300 | nuntă, botez, corporate |
 | | Noblesse | 300 | nuntă, botez, corporate |
 | | Rosa | 400 | nuntă, botez, corporate |
-| **ANNA Events** (Insulița) | Grande | 1200 | nuntă, botez, corporate |
-| | Ronda | 900 | nuntă, botez, corporate |
-| | Magic | 700 | nuntă, botez, corporate |
+| **ANNA Events** (Insulița) | Grande | 800 | nuntă, botez, corporate |
+| | Ronda | 400 | nuntă, botez, corporate |
+| | Magic | 300 | nuntă, botez, corporate |
 | | Estuar | 100 | evenimente mici |
 
 **Reguli de funcționare:**
@@ -74,14 +74,14 @@
 **Ce vă diferențiază, în ordinea importanței:**
 1. **Locația pe malul Jiului**: cadru natural, poze.
 2. **Totul într-un singur loc, în grup**: meniuri, torturi de la Cofetăria Anna, baruri tematice, decor, flori, cazare la Hotel ANNA, apartamentul mirilor, parcare.
-3. **Flexibilitate**: 3 saloane Riviera plus 4 în grup, de la 100 la 1200 de invitați.
+3. **Flexibilitate**: 3 saloane Riviera plus 4 în grup, de la 100 la 800 de invitați.
 4. **Calitatea mâncării** și reputația ANNA în Târgu Jiu.
 5. **Experiență**: peste 20 de ani (afirmație de pe annaevents.ro).
 
 **Prețul nu e argument de vânzare.** Site-ul nu se poziționează pe „ieftin”.
 
 **Formulare de lucru** (nu e text final; textele finale se scriu în Faza 3):
-> Nunta voastră pe malul Jiului, cu tot ce ține de ea într-un singur loc: saloane pentru 100 până la 1200 de invitați, bucătăria ANNA, tort, baruri și cazare pentru oaspeți.
+> Nunta voastră pe malul Jiului, cu tot ce ține de ea într-un singur loc: saloane pentru 100 până la 800 de invitați, bucătăria ANNA, tort, baruri și cazare pentru oaspeți.
 
 ## 5. Obiecții și cum le tratează site-ul
 
@@ -243,3 +243,5 @@ Legendă: ✅ există (confirmat de client sau vizibil pe annaevents.ro) · ❓ 
 7. **Oferte de extrasezon** sau de zile din săptămână: există?
 8. **Domeniul rivieraevents.ro**: e deja cumpărat? La ce registrar?
 9. **Testimonialele și pozele** de pe annaevents.ro: le putem refolosi?
+
+> **Modificare 2026-10-28 (regula 8):** capacitățile de pe Insulița erau 1.200 / 900 / 700. Clientul a ales cifrele din catalogul 2026: Grande 800, Ronda 400, Magic 300, Estuar 100.
