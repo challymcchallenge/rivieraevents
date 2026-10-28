@@ -1,0 +1,69 @@
+{
+  "_instructiuni": "Tururile se încarcă doar la click (ADR-004). 'url' se completează după ce alegem unde se găzduiesc.",
+  "tururi": [
+    {
+      "id": "noblesse",
+      "titlu": "Salon Noblesse",
+      "complex": "riviera",
+      "sursa": "Media/Tur Virtual Saloane/Salon Noblesse (krpano)",
+      "url": null,
+      "status": "gata"
+    },
+    {
+      "id": "premiere",
+      "titlu": "Salon Premiere",
+      "complex": "riviera",
+      "sursa": "Media/Tur Virtual Saloane/Salon Premiere (krpano)",
+      "url": null,
+      "status": "gata"
+    },
+    {
+      "id": "apartamentul-mirilor",
+      "titlu": "Apartamentul mirilor",
+      "complex": "riviera",
+      "sursa": "Media/Tur Virtual Saloane/Apartamentul Mirilor (8 panorame JPG, fără tur generat)",
+      "url": null,
+      "status": "de generat"
+    },
+    {
+      "id": "rosa",
+      "titlu": "Salon Rosa",
+      "complex": "riviera",
+      "sursa": null,
+      "url": null,
+      "status": "lipsește"
+    },
+    {
+      "id": "grande",
+      "titlu": "Salon Grande",
+      "complex": "insulita",
+      "sursa": "Media/Tur Virtual Saloane/Salon Grande (krpano)",
+      "url": null,
+      "status": "gata"
+    },
+    {
+      "id": "ronda",
+      "titlu": "Salon Ronda",
+      "complex": "insulita",
+      "sursa": null,
+      "url": null,
+      "status": "lipsește"
+    },
+    {
+      "id": "magic",
+      "titlu": "Salon Magic",
+      "complex": "insulita",
+      "sursa": null,
+      "url": null,
+      "status": "lipsește"
+    },
+    {
+      "id": "estuar",
+      "titlu": "Salon Estuar",
+      "complex": "insulita",
+      "sursa": null,
+      "url": null,
+      "status": "lipsește"
+    }
+  ]
+}

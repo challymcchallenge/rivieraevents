@@ -108,6 +108,7 @@
 /estimare-buget                Calculatorul (accesibil și din bara fixă)
 /portofoliu                    Evenimente realizate
   /portofoliu/[eveniment]      Câte o pagină per eveniment (3–5 poze, salon, tip)
+/tur-virtual                   Tururile 360 ale saloanelor și ale apartamentului mirilor (adăugat 2026-10-28)
 /despre                        Grupul ANNA, experiența, echipa
 /contact                       Formular, WhatsApp, telefoane, 2 adrese, 2 hărți
 /politica-de-confidentialitate
@@ -245,3 +246,5 @@ Legendă: ✅ există (confirmat de client sau vizibil pe annaevents.ro) · ❓ 
 9. **Testimonialele și pozele** de pe annaevents.ro: le putem refolosi?
 
 > **Modificare 2026-10-28 (regula 8):** capacitățile de pe Insulița erau 1.200 / 900 / 700. Clientul a ales cifrele din catalogul 2026: Grande 800, Ronda 400, Magic 300, Estuar 100.
+
+> **Modificare 2026-10-28 (regula 8):** capacitățile din catalog sunt pentru nuntă. Pentru conferințe se afișează și capacitatea maximă: Grande 1.200, Ronda 900, Magic 700. Sitemap-ul are pagina nouă `/tur-virtual`. Fiecare salon Riviera are apartamentul mirilor propriu, inclus în preț. Numele felurilor nu se publică (decizie client).

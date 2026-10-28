@@ -1,0 +1,29 @@
+{
+  "_ATENTIE": "TEXTE DE EXEMPLU pentru machetele din Faza 4. NU se publică. Build-ul de producție trebuie să refuze acest fișier (de implementat în Faza 5). Pe site apar doar intrările din testimoniale.json cu acordClient: true.",
+  "testimoniale": [
+    {
+      "demo": true,
+      "nume": "Exemplu: Ioana și Radu",
+      "tip": "nunta",
+      "salon": "rosa",
+      "data": "2026-06",
+      "text": "Text de exemplu, 2–3 fraze despre cum s-au simțit mirii și invitații."
+    },
+    {
+      "demo": true,
+      "nume": "Exemplu: familia Pop",
+      "tip": "botez",
+      "salon": "noblesse",
+      "data": "2026-04",
+      "text": "Text de exemplu despre botez, despre meniu și despre echipă."
+    },
+    {
+      "demo": true,
+      "nume": "Exemplu: firmă din Târgu Jiu",
+      "tip": "corporate",
+      "salon": "premiere",
+      "data": "2025-12",
+      "text": "Text de exemplu despre petrecerea de final de an."
+    }
+  ]
+}

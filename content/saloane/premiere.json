@@ -3,13 +3,25 @@
   "nume": "Salon Premiere",
   "complex": "riviera",
   "ordine": 3,
-  "capacitate": { "min": null, "max": 300 },
+  "capacitate": {
+    "nunta": 300,
+    "conferinta": "[NEED: capacitate maximă conferință]",
+    "min": null
+  },
   "suprafataMp": null,
-  "potrivitPentru": ["nunta", "botez", "corporate"],
-  "puncteForte": ["[NEED: 3–5 puncte forte ale salonului Premiere]"],
-  "dotari": [],
+  "potrivitPentru": [
+    "nunta",
+    "botez",
+    "corporate"
+  ],
+  "puncteForte": [
+    "[NEED: 3–5 puncte forte ale salonului Premiere]"
+  ],
+  "dotari": [
+    "Apartamentul mirilor propriu, inclus în prețul evenimentului"
+  ],
   "descriereScurta": "Salon de la Riviera pentru până la 300 de invitați: nunți, botezuri și evenimente de firmă, pe malul Jiului.",
-  "descriere": "Salonul Premiere găzduiește până la 300 de invitați și face parte din complexul Riviera, pe Aleea Digului, lângă Jiu. Se potrivește unei nunți de mărime medie, unui botez sau unei petreceri de firmă. [NEED: 2–3 fraze despre ce diferențiază Premiere de Noblesse: stil, lumină, ring de dans, acces la exterior]. Restul îl organizați tot cu Grupul ANNA: meniul din catalogul ANNA, tortul de la Cofetăria Anna, barurile tematice și cazarea oaspeților. Turul virtual 360 vă arată salonul înainte de vizită.",
+  "descriere": "Salonul Premiere găzduiește până la 300 de invitați și face parte din complexul Riviera, pe Aleea Digului, lângă Jiu. Se potrivește unei nunți de mărime medie, unui botez sau unei petreceri de firmă. [NEED: 2–3 fraze despre ce diferențiază Premiere de Noblesse: stil, lumină, ring de dans, acces la exterior]. Restul îl organizați tot cu Grupul ANNA: meniul din catalogul ANNA, tortul de la Cofetăria Anna, barurile tematice și cazarea oaspeților. Salonul are propriul apartament al mirilor, inclus în prețul evenimentului, iar turul virtual vă arată salonul înainte de vizită.",
   "seo": {
     "titlu": "Salon Premiere, până la 300 de invitați | Riviera",
     "descriere": "Salonul Premiere de la Riviera Events, Târgu Jiu: nunți, botezuri și evenimente de firmă cu până la 300 de invitați, pe malul Jiului."

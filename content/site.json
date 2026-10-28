@@ -31,7 +31,13 @@
       "nume": "Complexul Riviera Events",
       "adresa": "Aleea Digului nr. 5, Târgu Jiu, Gorj",
       "descriereLocatie": "pe malul Jiului",
-      "coordonate": null
+      "coordonate": null,
+      "exterior": [
+        "Grădină cu copaci și flori",
+        "Alei",
+        "Locuri de relaxare",
+        "Priveliște spre apus"
+      ]
     },
     "insulita": {
       "nume": "Complexul ANNA Events",
@@ -44,26 +50,63 @@
   "programVizitare": "[NEED: zile și ore de vizitare a saloanelor, cu sau fără programare]",
   "timpRaspuns": "[NEED: în cât timp răspundeți la o cerere, de ex. în aceeași zi]",
   "social": {
-    "facebook": "[NEED: link Facebook Riviera sau ANNA Events]",
-    "instagram": "[NEED: link Instagram]",
-    "youtube": "[NEED: link canal YouTube]"
+    "facebook": "https://www.facebook.com/AnnaEvents.Ro/",
+    "instagram": "https://www.instagram.com/anna.events.tg.jiu/",
+    "youtube": "https://www.youtube.com/@AnnaEvents"
   },
-  "grup": [
-    "Hotel ANNA",
-    "Hotel ANNA Junior",
-    "Cofetăria Anna",
-    "Trattoria",
-    "SuperBistro",
-    "Terasa Anna",
-    "Josper",
-    "Anna Delivery",
-    "Piscina Summer Events"
-  ],
   "firma": {
-    "denumire": "[NEED: denumire firmă]",
-    "cui": "[NEED: CUI]",
-    "registruComertului": "[NEED: nr. ONRC]",
-    "sediu": "[NEED: sediu social]"
+    "denumire": "ANNA COMPLEX 1991 SRL",
+    "cui": "37378065",
+    "dataInfiintarii": "2017-04-11",
+    "registruComertului": "[NEED: nr. ONRC, de ex. J18/.../2017]",
+    "sediu": "[NEED: sediu social]",
+    "_nota": "Din captura trimisă de client (2026-10-28). [PRESUPUNERE] ANNA COMPLEX 1991 SRL este firma care operează Riviera Events. De confirmat."
   },
-  "_notaTelefoane": "Toate cele 4 numere se afișează la Contact; doar primul are WhatsApp. [PRESUPUNERE] celelalte trei au rolul „Rezervări” până la alte indicații."
+  "_notaTelefoane": "Toate cele 4 numere se afișează la Contact; doar primul are WhatsApp. [PRESUPUNERE] celelalte trei au rolul „Rezervări” până la alte indicații.",
+  "anInfiintareGrup": 1991,
+  "reteaAnna": {
+    "titlu": "Rețeaua ANNA",
+    "principal": {
+      "nume": "ANNA Events",
+      "url": "https://www.annaevents.ro/"
+    },
+    "linkuri": [
+      {
+        "nume": "Anna Delivery",
+        "url": "https://www.anna-delivery.ro/"
+      },
+      {
+        "nume": "Cofetăria Anna",
+        "url": "https://dolcessa.ro/"
+      },
+      {
+        "nume": "Restaurant Trattoria",
+        "url": "https://davittoria.ro/"
+      },
+      {
+        "nume": "Restaurant SuperBistro",
+        "url": "https://www.superbistro.ro/"
+      },
+      {
+        "nume": "Restaurant Terasa Anna",
+        "url": "https://terasa-anna.ro/"
+      },
+      {
+        "nume": "Restaurant Josper",
+        "url": "https://citybar.ro/"
+      },
+      {
+        "nume": "Piscina Summer Events",
+        "url": "https://www.annasummerevents.ro/"
+      },
+      {
+        "nume": "Hotel ANNA",
+        "url": "https://hotelanna.ro/"
+      },
+      {
+        "nume": "Hotel ANNA Junior",
+        "url": "https://hotelannajunior.ro/"
+      }
+    ]
+  }
 }

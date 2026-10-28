@@ -76,12 +76,12 @@ Recomand cel puțin 3 nunți, 1 botez și 1 eveniment corporate, cu Riviera majo
 ## 7. Testimoniale
 
 - ☐ **P1** 3–6 testimoniale **reale** (nu inventăm: recenziile false sunt practică comercială interzisă, Directiva UE 2019/2161; vezi mesajul-model de mai jos): numele (de ex. „Andreea și Mihai”), tipul evenimentului, **salonul**, luna și anul, 1–3 fraze, plus **acordul** de publicare.
-- ☐ **P1** Confirmare: cele 9 testimoniale de pe annaevents.ro (citite 2026-10-28) sunt de la clienți reali, cu acord? Doar unul are salonul (Ronda). Putem refolosi Pentru care salon a fost fiecare eveniment?
+- ☐ **P1** Confirmare: cele 9 testimoniale de pe annaevents.ro (citite 2026-10-28) sunt de la clienți reali, cu acord? Doar unul are salonul (Ronda). **Testimoniale inventate nu scriem** (decizie Claude, motivată pe chat 2026-10-28); pentru machete există `content/testimoniale-demo.json`, marcat demo. Putem refolosi Pentru care salon a fost fiecare eveniment?
 - ☐ **P3** Rating Google Business (scor, număr de recenzii), doar dacă e public și îl putem cita.
 
 ## 8. Despre și încredere
 
-- ☐ **P1** Confirmare: **peste 20 de ani** de experiență e corect? Din ce an?
+- ✅ **P1** Grupul ANNA există din **1991** (35 de ani în 2026).
 - ☐ **P2** Câte evenimente organizați pe an (aproximativ)? O cifră reală e mai convingătoare decât orice adjectiv.
 - ☐ **P2** Coordonatorul de evenimente: nume, poză, 2 fraze. Oamenii preferă să știe cu cine vorbesc.
 - ☐ **P3** Bucătarul-șef sau echipa de bucătărie: nume, poză.
@@ -93,8 +93,8 @@ Recomand cel puțin 3 nunți, 1 botez și 1 eveniment corporate, cu Riviera majo
 - ◐ **P1** Toate 4 numerele apar la Contact; doar 0746 085 555 are WhatsApp. [PRESUPUNERE] celelalte 3 = „Rezervări”.
 - ✅ **P1** Email: rezervari@rivieraevents.ro (de creat la furnizorul de email al domeniului)
 - ☐ **P2** Program de vizitare a saloanelor (zile, ore, cu programare?)
-- ☐ **P2** Riviera are conturi separate de Facebook/Instagram sau folosim pe cele ANNA Events?
-- ☐ **P1** Datele firmei: denumire, CUI, nr. Registrul Comerțului, sediu (pentru footer și politica de confidențialitate)
+- ✅ **P2** Social: Facebook, Instagram și YouTube ANNA Events (în `site.json`).
+- ◐ **P1** ANNA COMPLEX 1991 SRL, CUI 37378065 ✅ ([PRESUPUNERE] e firma care operează Riviera). Lipsesc nr. Registrul Comerțului și sediul. Datele firmei: denumire, CUI, nr. Registrul Comerțului, sediu (pentru footer și politica de confidențialitate)
 - ☐ **P2** Persoana de contact pentru protecția datelor (GDPR)
 
 ## 10. Identitate
@@ -105,9 +105,9 @@ Recomand cel puțin 3 nunți, 1 botez și 1 eveniment corporate, cu Riviera majo
 
 ## 11. Conturi (pentru Faza 5)
 
-- ☐ Cont Web3Forms, cu adresa care primește cererile
-- ☐ Cont Keystatic Cloud și numele celor maximum 3 editori
-- ☐ Domeniul rivieraevents.ro: cumpărat? La ce registrar?
+- ✅ Cont Web3Forms creat. Cheia **nu se trimite pe chat și nu intră în repo**: o pui direct în Vercel → Settings → Environment Variables, în Faza 5.
+- ◐ Cont Keystatic Cloud creat. Lipsesc numele echipei/proiectului din Keystatic Cloud și cei maximum 3 editori
+- ✅ Domeniul rivieraevents.ro există; se leagă la Vercel la lansare. ☐ La ce registrar e (pentru DNS)?
 
 ## 11. Poze primite (2026-10-28)
 
@@ -142,3 +142,13 @@ Pentru fiecare meniu (Premium Platinum, Gold, Silver, Bronze, Vegetarian), câte
 | Vegetarian | | | | |
 
 Pozele din catalog sunt deja asociate fiecărei secțiuni în `content/meniuri.json`, deci textul apare lângă poza potrivită.
+
+## 13. Tururi virtuale (pagina /tur-virtual, adăugată 2026-10-28)
+
+| Tur | Stare |
+|---|---|
+| Noblesse, Premiere, Grande | ✅ gata (export krpano) |
+| Apartamentul mirilor | ◐ 8 panorame JPG, turul nu e generat încă |
+| Rosa, Ronda, Magic, Estuar | ☐ lipsesc, le faceți voi |
+
+☐ **P1** Unde găzduim tururile (~530 MB)? Vezi variantele din mesajul de pe chat.

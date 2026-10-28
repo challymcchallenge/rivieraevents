@@ -3,10 +3,20 @@
   "nume": "Salon Estuar",
   "complex": "insulita",
   "ordine": 7,
-  "capacitate": { "min": null, "max": 100 },
+  "capacitate": {
+    "nunta": 100,
+    "conferinta": null,
+    "min": null
+  },
   "suprafataMp": null,
-  "potrivitPentru": ["eveniment-mic", "botez", "corporate"],
-  "puncteForte": ["[NEED: 3–5 puncte forte ale salonului Estuar]"],
+  "potrivitPentru": [
+    "eveniment-mic",
+    "botez",
+    "corporate"
+  ],
+  "puncteForte": [
+    "[NEED: 3–5 puncte forte ale salonului Estuar]"
+  ],
   "dotari": [],
   "descriereScurta": "Salonul pentru evenimente restrânse: până la 100 de invitați, pe Insulița din Parcul Central.",
   "descriere": "Salonul Estuar e gândit pentru evenimente de până la 100 de invitați: un botez în familie, o aniversare, o masă după cununia civilă sau o întâlnire de firmă. Face parte din complexul ANNA Events, pe Insulița din Parcul Central. [NEED: 2–3 fraze despre salonul Estuar: atmosferă, amenajare, ce îl face potrivit pentru grupuri mici]. Meniul și serviciile sunt aceleași ca în saloanele mari, din oferta Grupului ANNA.",

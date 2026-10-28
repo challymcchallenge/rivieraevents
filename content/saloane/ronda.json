@@ -3,13 +3,23 @@
   "nume": "Salon Ronda",
   "complex": "insulita",
   "ordine": 5,
-  "capacitate": { "min": null, "max": 400 },
+  "capacitate": {
+    "nunta": 400,
+    "conferinta": 900,
+    "min": null
+  },
   "suprafataMp": null,
-  "potrivitPentru": ["nunta", "botez", "corporate"],
-  "puncteForte": ["[NEED: 3–5 puncte forte ale salonului Ronda]"],
+  "potrivitPentru": [
+    "nunta",
+    "botez",
+    "corporate"
+  ],
+  "puncteForte": [
+    "[NEED: 3–5 puncte forte ale salonului Ronda]"
+  ],
   "dotari": [],
   "descriereScurta": "Salon pentru până la 400 de invitați, în complexul ANNA Events de pe Insulița, Parcul Central.",
-  "descriere": "Salonul Ronda primește până la 400 de invitați și face parte din complexul ANNA Events, pe Insulița din Parcul Central. E potrivit pentru nunți mari, botezuri cu multă lume și evenimente de firmă. [NEED: 2–3 fraze despre salonul Ronda: formă, amenajare, lumină, ce îl deosebește de Grande și Magic]. Meniul, tortul de la Cofetăria Anna, barurile tematice și cazarea oaspeților le alegeți din aceeași ofertă a Grupului ANNA.",
+  "descriere": "Salonul Ronda primește până la 400 de invitați și face parte din complexul ANNA Events, pe Insulița din Parcul Central. E potrivit pentru nunți mari, botezuri cu multă lume și evenimente de firmă. Pentru conferințe, prezentări și seminarii, salonul primește până la 900 de participanți. [NEED: 2–3 fraze despre salonul Ronda: formă, amenajare, lumină, ce îl deosebește de Grande și Magic]. Meniul, tortul de la Cofetăria Anna, barurile tematice și cazarea oaspeților le alegeți din aceeași ofertă a Grupului ANNA.",
   "seo": {
     "titlu": "Salon Ronda, până la 400 de invitați | ANNA Events",
     "descriere": "Salonul Ronda, pe Insulița din Parcul Central, Târgu Jiu: nunți, botezuri și evenimente de firmă cu până la 400 de invitați."

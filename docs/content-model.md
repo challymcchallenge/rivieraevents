@@ -32,8 +32,9 @@ content/
 | `nume` | text | da | `"Salon Rosa"` |
 | `complex` | `"riviera"` \| `"insulita"` | da | determină ordinea și adresa |
 | `ordine` | număr | da | 1–7; Riviera are 1–3 |
+| `capacitate.nunta` | număr | da | `400` (invitați la masă, din catalog) |
+| `capacitate.conferinta` | număr \| null | nu | `1200` (capacitate maximă tip conferință) |
 | `capacitate.min` | număr \| null | nu | invitați la masă |
-| `capacitate.max` | număr | da | `400` |
 | `suprafataMp` | număr \| null | nu | |
 | `potrivitPentru` | listă din `nunta`, `botez`, `corporate`, `eveniment-mic` | da | |
 | `puncteForte` | listă de texte (3–5) | da | `"Terasă spre Jiu"`, completat de client |
@@ -49,7 +50,7 @@ content/
 **Exemplu de rând (salon):**
 ```json
 { "slug": "rosa", "nume": "Salon Rosa", "complex": "riviera", "ordine": 1,
-  "capacitate": { "min": null, "max": 400 }, "potrivitPentru": ["nunta", "botez", "corporate"] }
+  "capacitate": { "nunta": 400, "conferinta": null, "min": null }, "potrivitPentru": ["nunta", "botez", "corporate"] }
 ```
 
 ## 2. Meniuri: `content/meniuri.json`

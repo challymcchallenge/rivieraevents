@@ -135,8 +135,11 @@
   ],
   "tort": {
     "furnizor": "Cofetăria Anna",
-    "descriere": "Tortul și dulciurile vin de la Cofetăria Anna, din Grupul ANNA. Alegeți modelul din catalogul de torturi.",
-    "linkCatalog": "https://www.annaevents.ro/torturi-evenimente/"
+    "descriere": "Tortul mirilor e inclus în prețul evenimentului și îl face Cofetăria Anna, din Grupul ANNA. Alegeți modelul din catalog, iar gustul îl stabiliți cu cofetarii.",
+    "linkCatalog": "https://www.annaevents.ro/torturi-evenimente/",
+    "siteCofetarie": "https://dolcessa.ro/",
+    "imagine": "altele/altele-005.jpg",
+    "inclus": true
   },
   "cazare": [
     {
@@ -151,8 +154,9 @@
     },
     {
       "nume": "Apartamentul mirilor",
-      "descriere": "Bonus, inclus în prețul evenimentului. [NEED: ce include, unde e]",
-      "link": null
+      "descriere": "Fiecare salon de la Riviera are propriul apartament al mirilor, inclus în prețul evenimentului. [NEED: ce include (de ex. baie, oglindă de machiaj, zonă de relaxare) și dacă rămâne la dispoziția mirilor peste noapte]",
+      "link": null,
+      "tur360": "apartamentul-mirilor"
     }
   ],
   "facilitati": [
