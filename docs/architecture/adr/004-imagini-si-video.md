@@ -1,7 +1,15 @@
 # ADR-004: Imagini în repo optimizate de next/image; video pe YouTube cu încărcare la click
 
 ## Status
-Propus (2026-10-28)
+**Acceptat** (GATE 2, 2026-10-28), cu o completare pentru planul Hobby:
+
+- **Limita Hobby:** 5.000 de transformări pe lună. Peste limită, **imaginile noi returnează eroarea 402** și nu se facturează ([docs](https://vercel.com/docs/image-optimization/limits-and-pricing), verificat 2026-10-28).
+- **Estimare:** ~250 de imagini × 4 dimensiuni × 2 formate = ~2.000 de transformări la lansare `[estimare]`. Intră în limită.
+- **Atenuare:**
+  1. Puține dimensiuni declarate în `next.config` (`deviceSizes` / `imageSizes` reduse).
+  2. Un singur format modern (WebP) dacă ne apropiem de limită.
+  3. Dacă limita e totuși depășită, imaginile se pre-generează la build și se servesc neoptimizate de Vercel.
+- **De urmărit lunar** în panoul Vercel, la Usage.
 
 ## Context
 - **Volumul de imagini:** site-ul trăiește din poze. Avem 7 saloane × 8–15 poze, plus 6 evenimente în portofoliu × 3–5 poze, adică ~150–250 de imagini la lansare `[estimare]`.

@@ -1,7 +1,21 @@
 # ADR-002: Conținut în fișiere JSON/MDX, fără CMS în v1; Keystatic pentru panoul media
 
 ## Status
-Propus (2026-10-28)
+**Acceptat cu modificare** (GATE 2, 2026-10-28). **Clientul a cerut panoul media de la lansare**, nu în v1.1. Decizia aplicabilă e cea din secțiunea „Decizie revizuită” de mai jos. Restul documentului e păstrat pentru istoric.
+
+## Decizie revizuită (GATE 2)
+1. **Panoul de la lansare:** Keystatic (Next.js), în modul **Keystatic Cloud Free**:
+   - maximum 3 editori, **fără cont GitHub** ([keystatic.com/docs/cloud](https://keystatic.com/docs/cloud), verificat 2026-10-28);
+   - adresa panoului: `rivieraevents.ro/keystatic`.
+2. **Ce se editează din panou (v1):**
+   - galeriile de poze ale fiecărui salon: urcare, ștergere, ordine, text alternativ;
+   - evenimentele din portofoliu: poze, titlu, salon, dată, scurtă descriere;
+   - clipurile video, ca linkuri YouTube;
+   - turul 360, ca link.
+3. **Ce rămâne în fișiere, editabil doar tehnic:** texte de pagină, meniuri, intervale de buget, pachete. Asta evită greșelile în prețuri. Se pot adăuga în panou ulterior, fără migrare, fiindcă sunt aceleași fișiere.
+4. **Unde stau pozele:** în repo, deoarece Keystatic Cloud Images cere planul Pro, de la $10/lună. Fiecare salvare face un commit, care declanșează un deploy de 1–2 minute.
+5. **Ce cere Keystatic pe hosting:** cod pe server Node.js (rutele `/keystatic` și `/api/keystatic`) ([docs Next.js](https://keystatic.com/docs/installation-next-js), verificat 2026-10-28). De aceea site-ul **nu poate fi export static**. Vercel suportă asta, inclusiv pe Hobby.
+6. **Protecția imaginilor:** Keystatic nu redimensionează pozele urcate `[neverificat]`. Pozele mari din telefon (5–10 MB) trebuie limitate fie printr-un câmp de validare, fie printr-un pas de redimensionare la build. Detaliile se stabilesc în Faza 5.
 
 ## Context
 - Clientul a cerut **„conținut în fișiere (JSON/MDX), fără CMS în v1”**.

@@ -1,7 +1,15 @@
-# ADR-001: Next.js + Tailwind + Magic UI/ReactBits pe Vercel Pro
+# ADR-001: Next.js + Tailwind + Magic UI/ReactBits pe Vercel (Hobby, decis de client)
 
 ## Status
-Propus (2026-10-28). Decizia aparține clientului la GATE 2.
+**Acceptat cu modificare** (GATE 2, 2026-10-28).
+- **Clientul a ales planul Vercel Hobby (gratuit), permanent.** SOFI recomandase Pro.
+- **Risc acceptat explicit de client:**
+  - Hobby e limitat la „non-commercial personal use only”.
+  - Vercel poate suspenda proiectul.
+- **Atenuare:**
+  - Trecerea pe Pro e doar o schimbare de plan în cont, fără modificări de cod.
+  - Emailurile de la Vercel trebuie urmărite.
+  - Restul deciziei (framework, Tailwind, componente, regiunea fra1) rămâne cum e mai jos.
 
 ## Context
 - Avem un site de prezentare pentru o locație de evenimente, cu trafic mic, buget minim și o singură persoană care îl întreține (docs/brief.md).

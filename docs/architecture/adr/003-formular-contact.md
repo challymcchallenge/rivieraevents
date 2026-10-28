@@ -1,7 +1,7 @@
 # ADR-003: Formular de contact: Route Handler în fra1 → email SMTP, fără stocare
 
 ## Status
-Propus (2026-10-28)
+**Înlocuit de [ADR-006](006-formular-web3forms.md)** (decizia clientului la GATE 2, 2026-10-28). Păstrat pentru istoric.
 
 ## Context
 - **Canalul principal e WhatsApp.** Formularul e un canal secundar pentru cei care preferă emailul.

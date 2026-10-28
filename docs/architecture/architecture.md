@@ -1,9 +1,25 @@
 # Arhitectură: site Riviera Events by ANNA
 
-**Versiune:** 1.0 (Faza 2), 2026-10-28
-**Status:** propunere, **decizia finală aparține clientului** (GATE 2)
+**Versiune:** 1.1 (Faza 2), 2026-10-28
+**Status:** **decis la GATE 2**. Deciziile clientului sunt în §0 și au prioritate față de recomandările din §2–3, păstrate pentru istoric.
 **Metodă:** skill SOFI, mod Greenfield. Cerințele vin din [docs/brief.md](../brief.md), aprobat la GATE 1.
 **Convenții:** `[PRESUPUNERE]` = nu a fost spus de client și nu a fost verificat. Prețurile au sursa și data verificării. „Estimare” = calculată din presupuneri, cu calculul arătat.
+
+---
+
+## 0. Decizii GATE 2 (client, 2026-10-28)
+
+| # | Decizie | Diferență față de recomandarea SOFI | ADR |
+|---|---|---|---|
+| 1 | **Opțiunea A (Next.js + Tailwind + Magic UI/ReactBits) pe Vercel Hobby (gratuit), permanent** | SOFI recomanda Vercel Pro ($20/lună). **Risc acceptat de client:** Hobby e limitat de Vercel la uz necomercial ([fair use](https://vercel.com/docs/limits/fair-use-guidelines), verificat 2026-10-28), iar Vercel poate suspenda proiectul. | [001](adr/001-framework-si-hosting.md) |
+| 2 | **Formular prin Web3Forms** | Înlocuiește SMTP propriu din fra1. Serverele Web3Forms sunt în **US-East**. Trimiterile nu se stochează, iar log-urile cu date personale se șterg la ~2 luni. Nu apare niciun DPA pe pagina lor (verificat 2026-10-28). | [006](adr/006-formular-web3forms.md) (înlocuiește 003) |
+| 3 | **Panou media de la lansare (Keystatic)** | Înainte era planificat în v1.1. Keystatic cere cod pe server (Node.js) pe hosting, ceea ce Vercel Hobby suportă. | [002](adr/002-continut-in-fisiere-fara-cms-v1.md) (revizuit) |
+
+**Consecințe tehnice ale planului Hobby** (limite verificate 2026-10-28):
+- **Măsurarea conversiilor:** pe Hobby, Vercel Web Analytics are 50.000 de evenimente pe lună, dar **evenimentele custom sunt doar pe Pro**. Clicurile pe WhatsApp nu s-ar putea măsura. Propunerea e în [ADR-005](adr/005-analytics-si-cookies.md) (revizuit, **încă nedecis**).
+- **Imagini:** Hobby include 5.000 de transformări pe lună. Peste limită, imaginile noi returnează eroarea 402 și nu se facturează. Atenuarea e în [ADR-004](adr/004-imagini-si-video.md).
+- **Regiuni:** o singură regiune de funcții pe Hobby, setată la **fra1** (pentru Keystatic).
+- **Transfer de date:** 100 GB pe lună. La `[PRESUPUNERE]` 5.000 de vizite × ~3 MB, rezultă ~15 GB `[estimare]`.
 
 ---
 
@@ -193,15 +209,18 @@ sequenceDiagram
   Note over P,W: Nu trece prin server. Nu se stochează nimic.
 ```
 
-## 5. Decizii (ADR-uri, toate cu status „Propus”)
+## 5. Decizii (ADR-uri, status după GATE 2)
 
-| ADR | Decizie |
-|---|---|
-| [001](adr/001-framework-si-hosting.md) | Next.js + Tailwind + Magic UI/ReactBits pe Vercel Pro |
-| [002](adr/002-continut-in-fisiere-fara-cms-v1.md) | Conținut în fișiere JSON/MDX, fără CMS în v1; Keystatic ca drum spre panoul media |
-| [003](adr/003-formular-contact.md) | Formular: Route Handler în fra1 → email SMTP, fără stocare |
-| [004](adr/004-imagini-si-video.md) | Imagini în repo + next/image; video pe YouTube cu încărcare la click |
-| [005](adr/005-analytics-si-cookies.md) | Analytics fără cookie-uri, fără banner de cookies |
+| ADR | Decizie | Status |
+|---|---|---|
+| [001](adr/001-framework-si-hosting.md) | Next.js + Tailwind + Magic UI/ReactBits pe **Vercel Hobby** | Acceptat cu modificare: risc ToS acceptat de client |
+| [002](adr/002-continut-in-fisiere-fara-cms-v1.md) | Conținut în fișiere + **Keystatic Cloud de la lansare**, pentru media | Acceptat cu modificare |
+| [003](adr/003-formular-contact.md) | Formular prin Route Handler + SMTP | Înlocuit de 006 |
+| [004](adr/004-imagini-si-video.md) | Imagini în repo + next/image; video pe YouTube cu încărcare la click | Acceptat, cu limitele Hobby |
+| [005](adr/005-analytics-si-cookies.md) | Analytics fără cookie-uri. Instrumentul pentru conversii e de ales: Umami, Plausible sau doar Vercel | **Așteaptă decizia** |
+| [006](adr/006-formular-web3forms.md) | Formular prin Web3Forms, din browser | Acceptat |
+
+> Diagramele din §4 arată varianta inițială (Route Handler + SMTP). Pentru formular, fluxul real e browser → Web3Forms → email. Diagramele se actualizează în Faza 5, la inițializarea proiectului.
 
 ## 6. Cost și operare (Opțiunea A)
 
@@ -251,16 +270,24 @@ sequenceDiagram
 
 **Blocante:** niciunul (scorul maxim e 16 < 20).
 
-**Riscuri reziduale pe care le acceptă clientul:**
+**Riscuri reziduale pe care le acceptă clientul** (actualizat la GATE 2):
 - Vercel e furnizor american (SCC).
-- Până la Keystatic, actualizarea pozelor cere o persoană tehnică.
+- **Planul Vercel Hobby folosit pentru un site comercial** e în afara termenilor Vercel. Riscul e suspendarea proiectului. Atenuare: trecerea pe Pro, fără cod.
+- **Web3Forms** procesează datele formularului în SUA și nu are DPA publicat.
+- Risc nou introdus de Keystatic: un editor urcă poze foarte mari din telefon, site-ul se încarcă greu și se consumă limita de 5.000 de transformări. Atenuarea e în ADR-002, punctul 6.
 
 ## 9. Întrebări și presupuneri rămase
 
-1. **Decizia A sau B**: a ta, la GATE 2.
-2. **Cine plătește contul Vercel Pro** ($20/lună)? Contul e acum pe `alinlabau-9308`, iar facturarea trebuie stabilită.
-3. **Emailul ANNA**: furnizor, server SMTP, regiune. Avem nevoie de un cont SMTP dedicat (de ex. `site@...`) pentru formular. Nu folosim parola personală a cuiva.
-4. **Panoul media:** îl adăugăm imediat după lansare (v1.1, Keystatic Cloud Free, maximum 3 editori) sau mai târziu? Cine sunt editorii?
+**Rezolvate la GATE 2:**
+- Opțiunea A pe Vercel Hobby.
+- Formularul prin Web3Forms.
+- Panoul media de la lansare.
+
+**Deschise:**
+1. **Analytics pentru conversii (ADR-005):** Umami Cloud Free (recomandat), Plausible ($9/lună) sau doar vizite cu Vercel?
+2. **Editorii Keystatic** (maximum 3 pe planul gratuit): cine sunt?
+3. **Contul Web3Forms:** cine îl creează și ce adresă primește cererile?
+4. **Contul Keystatic Cloud:** cine îl creează? Trebuie legat de repo-ul GitHub.
 5. **Numărul de WhatsApp** pentru Riviera: rămâne 0746 085 555? (din brief)
 6. `[PRESUPUNERE]` Traficul e de câteva mii de vizite pe lună. Dacă e mult mai mare, recalculăm costurile de analytics și imagini.
 7. **Compatibilitatea exactă** Magic UI ↔ Next 16 / React 19 e `neverificată` (pagina Magic UI menționează doar Next.js 15). Se verifică în Faza 5 prin serverul MCP Magic UI, înainte de prima componentă.

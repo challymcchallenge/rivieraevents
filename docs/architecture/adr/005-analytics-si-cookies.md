@@ -1,7 +1,19 @@
 # ADR-005: Analytics fără cookie-uri, fără banner de cookies
 
 ## Status
-Propus (2026-10-28)
+**Revizuit după GATE 2, în așteptarea deciziei clientului** (2026-10-28).
+
+**De ce:** pe planul Hobby ales de client, Vercel Web Analytics are 50.000 de evenimente pe lună, dar **evenimentele custom sunt doar pe Pro** ([docs](https://vercel.com/docs/analytics/limits-and-pricing), verificat 2026-10-28). Decizia de mai jos nu mai poate măsura clicurile pe WhatsApp, care sunt indicatorul principal al site-ului (brief §2).
+
+**Propunere revizuită:**
+
+| Variantă | Ce măsoară | Cost | Rezidență date | Status verificare |
+|---|---|---|---|---|
+| **A. Umami Cloud Free** (recomandat) | Vizite + evenimente custom (WhatsApp, telefon, formular, calculator) | $0, 100.000 evenimente pe lună, 1 site, retenție 6 luni | Servere în SUA și UE; alegerea regiunii e neverificată | Prețul verificat 2026-10-28 ([umami.is/pricing](https://umami.is/pricing)). Lipsa cookie-urilor trebuie verificată înainte de implementare |
+| B. Plausible | Vizite + evenimente custom | $9/lună | UE, verificat | Verificat 2026-10-28 |
+| C. Vercel Web Analytics Hobby | Doar vizite, **fără conversii** | $0 | Vercel (SUA, SCC) | Verificat 2026-10-28 |
+
+**Principiul rămâne:** fără cookie-uri, deci fără banner de cookies. Restul documentului e păstrat pentru istoric.
 
 ## Context
 - Obiectivul site-ului e măsurat în **cereri calificate pe lună** (brief §2). Volumul actual nu e cunoscut, așa că măsurarea trebuie să existe de la lansare.
