@@ -162,6 +162,8 @@ Poză 4:5, apoi numele (Cormorant 30px), capacitatea (eyebrow `--color-accent-te
 - Apariția la derulare se face prin opacitate și o deplasare de 8–16px, în 300–400ms, `ease-out`. Hover-ul durează 150–250ms.
 - `prefers-reduced-motion: reduce`: toate animațiile se opresc, iar conținutul apare direct în starea finală.
 - Singurul carusel automat e slideshow-ul din hero, cu buton de pauză (ADR-007). În rest, fără carusele automate. Video-ul din hero respectă bugetul din ADR-007: mobil ≤ 4 MB, desktop ≤ 8 MB.
+- **Fundal animat 3D:** `Silk` (ReactBits), decizie client 2026-10-28. Apare pe Acasă (secțiunea finală), Tur virtual, Contact și 404. Încărcarea e întârziată, se pune pe pauză când nu e pe ecran, are `dpr` maximum 1 pe mobil și, la `prefers-reduced-motion` sau `Save-Data`, rămâne un gradient static. Detalii în [design/animatii.md](design/animatii.md).
+- **Pachet de animații:** Echilibrat ([design/animatii.md](design/animatii.md)).
 
 ---
 

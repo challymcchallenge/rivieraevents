@@ -1,5 +1,7 @@
 # Animații și interactivitate: opțiuni
 
+> **Decizie client (2026-10-28):** pachetul **Echilibrat** + **fundaluri animate 3D**. Varianta aleasă e descrisă în secțiunea „Fundal animat 3D: Silk” de la final. Am semnalat riscul de performanță pe mobil, iar măsurile de protecție sunt obligatorii.
+
 Data: 2026-10-28.
 - **Surse:** catalogul **Magic UI** (MCP `magicuidesign`, 78 de componente) și **ReactBits** (MCP `reactbits`, varianta TypeScript + Tailwind). Numele componentelor de mai jos sunt exact cele returnate de cele două servere MCP.
 - Dependențele marcate „confirmat” vin din registry-ul Magic UI. Cele marcate „de confirmat” se verifică la instalare, în Faza 5.
@@ -77,3 +79,36 @@ Pachetul echilibrat, plus `Tilted Card` (12), `lens` peste tot, saloane care se 
 - Slideshow-ul din hero, cu buton de pauză.
 - Tema luminoasă sau întunecată.
 - Bula WhatsApp.
+
+## Fundal animat 3D: `Silk` (ReactBits), ales de client
+
+**De ce `Silk`:**
+- Simulează o țesătură de mătase în mișcare, care seamănă cu voalurile drapate de pe tavanele saloanelor Rosa, Noblesse și Premiere.
+- E scris direct în WebGL, cu un singur fișier de ~21 KB și **fără three.js** (verificat în sursa de pe GitHub, 2026-10-28). Alternativa `Light Rays`, cu raze de lumină „de candelabru”, are aceeași construcție.
+- Are proprietăți reale pentru protecția performanței: `paused`, `dpr`, `lightMode`, `intro`, `fade`, `mouseInteraction`, `clickRipple`, `color`, `sheenColor`, `speed`.
+
+**Unde apare.** Regula de 3–4 animații pe pagină rămâne:
+
+| Pagina | Unde | Compensare |
+|---|---|---|
+| Acasă | fundalul secțiunii finale „Vă verificăm data” | `number-ticker` dispare de pe Acasă și rămâne pe Despre. Pe Acasă rămân 4: slideshow, `blur-fade`, testimoniale, `Silk` |
+| Tur virtual | fundalul antetului paginii | 2 componente: `Silk`, `blur-fade` |
+| Contact | fundalul antetului paginii | 3 componente: `Silk`, `blur-fade`, `confetti` |
+| 404 | fundal pe toată pagina | |
+
+**Culori:**
+- **Tema luminoasă:** `lightMode`, culoare `#EAE3D7` (nisip), luciu `#FFFEFA`.
+- **Tema întunecată:** culoare `#1C1A18`, luciu discret `#3A2A26`, adică un roșu foarte stins.
+- **Textul peste fundal:** stă pe un strat semi-transparent în culoarea fundalului (`--color-bg` cu opacitate de 70%). Contrastul se verifică pe captură în Faza 6.
+
+**Protecții (obligatorii):**
+1. **Se încarcă abia după ce pagina e gata** (`next/dynamic`, `ssr: false`, la `requestIdleCallback`). Până atunci se vede un gradient CSS static în aceleași culori, deci pagina nu așteaptă WebGL-ul.
+2. **`paused`** când secțiunea nu e pe ecran (IntersectionObserver) și când tab-ul e ascuns.
+3. **`dpr`:** maximum 1 pe mobil și 1.5 pe desktop, ca telefonul să nu randeze la rezoluție retina.
+4. **Pe mobil:** `mouseInteraction` și `clickRipple` sunt oprite, iar `speed` e redus.
+5. **Fără animație (doar gradientul static)** dacă:
+   - vizitatorul are `prefers-reduced-motion`;
+   - are `Save-Data`;
+   - browserul nu are WebGL;
+   - telefonul raportează puțină memorie (`navigator.deviceMemory` sub 4).
+6. **Măsurare în Faza 6:** Lighthouse pe mobil ≥ 90, cu fundalul activ. Dacă scorul scade sub 90, fundalul rămâne doar pe desktop. Asta e o decizie de rezervă, de confirmat atunci.
