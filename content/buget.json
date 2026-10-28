@@ -1,15 +1,61 @@
 {
   "_instructiuni": "Valorile sunt cost total pe invitat, în lei, cu meniul inclus. Nu apar pe site ca preț: calculatorul afișează doar intervalul total pentru numărul de invitați. Cât timp min/max sunt null, calculatorul nu afișează sumă.",
-  "valabilPanaLa": null,
+  "valabilPanaLa": "2026-12-31",
   "moneda": "lei",
   "rotunjire": 100,
   "tipuri": [
-    { "id": "nunta", "nume": "Nuntă", "leiPePersoana": { "min": null, "max": null }, "invitatiMinim": null },
-    { "id": "botez", "nume": "Botez", "leiPePersoana": { "min": null, "max": null }, "invitatiMinim": null },
-    { "id": "corporate", "nume": "Eveniment de firmă", "leiPePersoana": { "min": null, "max": null }, "invitatiMinim": null },
-    { "id": "alt-eveniment", "nume": "Aniversare sau alt eveniment", "leiPePersoana": { "min": null, "max": null }, "invitatiMinim": null }
+    {
+      "id": "nunta",
+      "nume": "Nuntă",
+      "leiPePersoana": {
+        "min": 300,
+        "max": 480
+      },
+      "invitatiMinim": null
+    },
+    {
+      "id": "botez",
+      "nume": "Botez",
+      "leiPePersoana": {
+        "min": 220,
+        "max": 380
+      },
+      "invitatiMinim": null
+    },
+    {
+      "id": "corporate",
+      "nume": "Eveniment de firmă",
+      "leiPePersoana": {
+        "min": 200,
+        "max": 380
+      },
+      "invitatiMinim": null
+    },
+    {
+      "id": "alt-eveniment",
+      "nume": "Aniversare sau alt eveniment",
+      "leiPePersoana": {
+        "min": 200,
+        "max": 380
+      },
+      "invitatiMinim": null
+    }
   ],
-  "ajustariComplex": { "riviera": 1, "insulita": 1 },
+  "ajustariComplex": {
+    "riviera": 1,
+    "insulita": 1
+  },
   "extra": [],
-  "nota": "Suma este o estimare orientativă pentru numărul de invitați ales și nu reprezintă o ofertă fermă. Prețul final depinde de meniu, dată, servicii și disponibilitatea salonului."
+  "nota": "Suma este o estimare orientativă pentru numărul de invitați ales și nu reprezintă o ofertă fermă. Prețul final depinde de meniu, dată, servicii și disponibilitatea salonului.",
+  "_estimare": {
+    "status": "[ESTIMARE] din surse publice, NU prețurile Riviera. Clientul le confirmă sau le corectează înainte de lansare.",
+    "logica": "Riviera e în segmentul premium din Târgu Jiu și include băuturile (vin, bere, whiskey, răcoritoare, cafea) și bufetul dulce. Minimul ~ meniul Bronze, maximul ~ Premium Platinum. Botezul și evenimentele de firmă: aceleași meniuri, de obicei cu mai puține extra.",
+    "surse_citite_2026-10-28": [
+      "necesit.ro/catering-nunta/targu-jiu: catering nuntă Târgu Jiu 310–500 lei/persoană (inclusiv băutură de bun venit, deserturi, tort)",
+      "ievent.ro/cost-meniu-nunta-2026: Gorj medie ~152 lei, premium 135–195 lei (pare fără băuturi); Craiova luxury 230–360 lei",
+      "restaurante-craiova.ro: Noblesse Events Craiova de la 265 lei; Restaurant Stadion Craiova 350 lei cu open bar",
+      "ziarulprofit.ro: meniu nuntă 250–500 lei/persoană în România, 2026",
+      "necesit.ro: catering botez 250–380 lei/persoană"
+    ]
+  }
 }

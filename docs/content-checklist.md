@@ -165,7 +165,7 @@ Rezolvate:
 - ✅ Apartamentul mirilor descris din poze. Servicii premium, cazare, decor, echipă, timp de răspuns ([PRESUPUNERE] „de regulă în aceeași zi”).
 
 Rămase:
-- ☐ **P1** Intervalele de buget pe invitat (nuntă, botez, corporate) în `content/buget.json`. Fără ele calculatorul arată doar butonul de WhatsApp.
+- ◐ **P1** Intervale de buget **estimate din surse publice** (2026-10-28), în `content/buget.json`: nuntă 300–480, botez 220–380, corporate și alte evenimente 200–380 lei/persoană. **Blocant pentru lansare:** clientul le confirmă sau le corectează cu prețurile reale.
 - ✅ Turul Grande: https://annaevents.ro/tur-virtual/Salon-Grande/tour.html
 - ✅ Tururi pentru apartamentul mirilor al fiecărui salon Riviera (Rosa, Noblesse, Premiere), pe annaevents.ro.
 - ✅ Capacitate de conferință: fără cifre, „în funcție de amenajare” (decizie client).
