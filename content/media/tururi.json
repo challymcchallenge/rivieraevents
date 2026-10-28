@@ -19,16 +19,16 @@
       "url": "https://annaevents.ro/tur-virtual/2024/rosa/tour.html"
     },
     {
-      "id": "apartament-rosa",
-      "titlu": "Apartamentul mirilor, salon Rosa",
-      "complex": "riviera",
-      "url": "https://annaevents.ro/apartamente-riviera/rosa/tour.html"
-    },
-    {
       "id": "apartament-noblesse",
       "titlu": "Apartamentul mirilor, salon Noblesse",
       "complex": "riviera",
       "url": "https://annaevents.ro/apartamente-riviera/nobles/tour.html"
+    },
+    {
+      "id": "apartament-rosa",
+      "titlu": "Apartamentul mirilor, salon Rosa",
+      "complex": "riviera",
+      "url": "https://annaevents.ro/apartamente-riviera/rosa/tour.html"
     },
     {
       "id": "apartament-premiere",
