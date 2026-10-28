@@ -1,5 +1,5 @@
 {
-  "intervalSecunde": 6,
+  "intervalSecunde": 4,
   "slideuri": [
     {
       "discriminant": "imagine",
@@ -7,7 +7,7 @@
         "imagine": "/images/hero/slideuri/0/value/imagine.jpg",
         "imagineMobil": "/images/hero/slideuri/0/value/imagineMobil.jpg",
         "punctFocal": "50% 50%",
-        "alt": "Grădina Riviera pregătită pentru ceremonie, văzută de sus"
+        "alt": "Cununie civilă sub arcade de flori albe, în grădina Riviera"
       }
     },
     {
@@ -50,7 +50,7 @@
         "imagine": "/images/hero/slideuri/5/value/imagine.jpg",
         "imagineMobil": "/images/hero/slideuri/5/value/imagineMobil.jpg",
         "punctFocal": "50% 50%",
-        "alt": "Cununie civilă sub arcade de flori albe, în grădina Riviera"
+        "alt": "Grădina Riviera pregătită pentru ceremonie, văzută de sus"
       }
     },
     {
