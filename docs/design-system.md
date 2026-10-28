@@ -104,7 +104,7 @@ Butonul rotund WhatsApp e verde pe fundal deschis (1.97:1). E logo de brand, dec
 - **Controale**, jos în stânga pe mobil și jos în dreapta pe desktop, deasupra gradientului:
   - butonul **Pauză/Redare**, 44×44px, cu `aria-label` și `aria-pressed`;
   - **puncte** de 8px, cu zonă de atingere de 24px, câte unul pe slide; punctul activ e alb plin, celelalte au opacitate 50%.
-- Rotația se oprește la hover, la focus în hero și când tab-ul e ascuns. Cu `prefers-reduced-motion` nu pornește deloc.
+- Rotația se oprește cât timp focusul de tastatură e în hero și când tab-ul e ascuns. Cu `prefers-reduced-motion` nu pornește deloc. **Fără pauză la hover** (corectat 2026-10-29): hero-ul ocupă tot ecranul, deci mouse-ul e aproape mereu deasupra lui, iar pe telefon o atingere oprea slideshow-ul definitiv.
 - **Încărcare:** primul slide are `priority`. Următorul se preîncarcă doar după ce pagina e gata, iar restul doar când le vine rândul.
 - Bula WhatsApp nu acoperă controalele: pe mobil apare abia după ce vizitatorul a derulat dincolo de hero.
 

@@ -47,7 +47,7 @@
 6. **Accesibilitate (WCAG 2.2.2, 2.1.1):**
    - buton vizibil **Pauză/Redare** de 44×44px;
    - indicatori de slide (puncte) accesibili din tastatură, cu `aria-label` („Slide 3 din 10”);
-   - rotația se oprește la hover, la focus și când tab-ul nu e vizibil;
+   - rotația se oprește cât timp focusul de tastatură e în hero și când tab-ul nu e vizibil. **Modificat 2026-10-29:** fără pauză la hover, pentru că pe un hero pe tot ecranul slideshow-ul nu mai pornea, iar pe telefon se bloca după prima atingere;
    - cu `prefers-reduced-motion`, rotația **nu pornește deloc**: rămâne primul slide, iar butonul de pauză arată starea „Redare”.
    - Containerul are `aria-roledescription="carusel"`. Nu se anunță fiecare schimbare de slide, pentru că sunt doar fundaluri.
 7. **Găzduirea video-ului:** în repo, prin Keystatic, în `public/media/hero/`.

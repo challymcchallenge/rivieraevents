@@ -7,7 +7,7 @@ import type { Slide } from '@/lib/content';
 
 /**
  * Hero cu 1–10 slide-uri (ADR-007). Textul și butoanele (children) rămân fixe; se schimbă doar fundalul,
- * prin crossfade. Buton de pauză (WCAG 2.2.2), oprire la hover/focus și când tab-ul e ascuns,
+ * prin crossfade. Buton de pauză (WCAG 2.2.2), oprire cât timp focusul de tastatură e în hero și când tab-ul e ascuns,
  * fără rotație la prefers-reduced-motion. Slide-urile următoare se încarcă doar când le vine rândul.
  */
 export default function HeroSlideshow({ slides, interval = 6, children }: { slides: Slide[]; interval?: number; children: ReactNode }) {
@@ -52,8 +52,11 @@ export default function HeroSlideshow({ slides, interval = 6, children }: { slid
   return (
     <section ref={root} aria-roledescription="carusel" aria-label="Imagini de prezentare"
       className="relative flex min-h-[88svh] items-end overflow-hidden text-hero-text lg:min-h-[92vh]"
-      onMouseEnter={() => setHold(true)} onMouseLeave={() => setHold(false)}
-      onFocus={() => setHold(true)} onBlur={(e) => { if (!root.current?.contains(e.relatedTarget as Node)) setHold(false); }}>
+      // Fără pauză la hover: hero-ul ocupă tot ecranul, deci mouse-ul e aproape mereu deasupra lui, iar pe telefon
+      // atingerea declanșează „mouseenter” fără „mouseleave”, ceea ce oprea slideshow-ul definitiv.
+      // Pauza rămâne la butonul dedicat și cât timp focusul de tastatură (nu un click) e pe un element din hero.
+      onFocus={(e) => { if ((e.target as HTMLElement).matches(':focus-visible')) setHold(true); }}
+      onBlur={(e) => { if (!root.current?.contains(e.relatedTarget as Node)) setHold(false); }}>
       {slides.map((s, i) => (
         <div key={i} aria-hidden={i !== active} className="absolute inset-0 transition-opacity duration-1000 ease-in-out"
           style={{ opacity: i === active ? 1 : 0 }}>
