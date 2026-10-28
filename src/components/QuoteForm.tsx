@@ -103,7 +103,7 @@ export default function QuoteForm({ form, endpoint, accessKey, waBase }: { form:
 
   const waFallback = () => {
     const parts = [`Bună ziua, aș dori o ofertă: ${label('tip', v.tip).toLowerCase()}`, v.data ? `pe ${dataRo(v.data)}` : '', v.invitati ? `${v.invitati} invitați` : '',
-      Array.isArray(v.saloane) && v.saloane.length ? `saloane: ${label('saloane', v.saloane)}` : '', v.nume ? `Mă numesc ${v.nume}.` : ''];
+      Array.isArray(v.saloane) && v.saloane.length ? `saloane: ${label('saloane', v.saloane).replace(/ \([^)]*\)/g, '')}` : '', v.nume ? `Mă numesc ${v.nume}.` : ''];
     return waBase.replace('TEXT', encodeURIComponent(parts.filter(Boolean).join(', ').replace(', Mă', '. Mă')));
   };
 
@@ -176,10 +176,10 @@ export default function QuoteForm({ form, endpoint, accessKey, waBase }: { form:
 
         {last && (
           <div className="mt-6 space-y-3">
-            <label className="flex items-start gap-3 text-sm">
-              <input type="checkbox" className="mt-0.5 size-5 accent-[var(--color-btn)]" checked={!!v[form.final.marketing.id]} onChange={(e) => set(form.final.marketing.id, e.target.checked)} />
-              {form.final.marketing.label}
-            </label>
+            <div className="flex items-start gap-3 text-sm">
+              <input id="f-marketing" type="checkbox" className="mt-0.5 size-5 accent-[var(--color-btn)]" checked={!!v[form.final.marketing.id]} onChange={(e) => set(form.final.marketing.id, e.target.checked)} />
+              <label htmlFor="f-marketing">{form.final.marketing.label}</label>
+            </div>
           </div>
         )}
         {canSubmit && <p className="mt-6 text-xs text-muted">{form.final.info} <a href="/politica-de-confidentialitate" className="underline">Politica de confidențialitate</a>.</p>}
@@ -239,15 +239,16 @@ function FieldView({ f, value, error, onChange }: { f: Field; value: Values[stri
   }
   if (f.tip === 'checkbox') {
     return (
-      <label className="flex items-center gap-3 self-end text-sm sm:min-h-12">
-        <input id={id} type="checkbox" className="size-5 accent-[var(--color-btn)]" checked={!!value} onChange={(e) => onChange(e.target.checked)} />{f.label}
-      </label>
+      <div className="flex items-center gap-3 self-end text-sm sm:min-h-12">
+        <input id={id} type="checkbox" className="size-5 accent-[var(--color-btn)]" checked={!!value} onChange={(e) => onChange(e.target.checked)} />
+        <label htmlFor={id}>{f.label}</label>
+      </div>
     );
   }
   const common = { id, name: f.id, 'aria-invalid': !!error || undefined, 'aria-describedby': desc, className: 'field mt-1', required: f.obligatoriu };
   return (
-    <label className={`block ${wide}`}>
-      <span className="field-label">{lbl}</span>
+    <div className={wide}>
+      <label htmlFor={id} className="field-label">{lbl}</label>
       {f.tip === 'select' ? (
         <select {...common} value={String(value ?? '')} onChange={(e) => onChange(e.target.value)}>
           <option value="">Alegeți…</option>
@@ -260,6 +261,6 @@ function FieldView({ f, value, error, onChange }: { f: Field; value: Values[stri
           value={String(value ?? '')} onChange={(e) => onChange(e.target.value)} />
       )}
       {help}{errEl}
-    </label>
+    </div>
   );
 }

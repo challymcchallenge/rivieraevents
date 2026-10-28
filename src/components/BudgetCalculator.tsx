@@ -63,11 +63,13 @@ export default function BudgetCalculator({ tipuri, saloane, rotunjire, ajustari,
       <Stepper theme="light" width="100%" radius={4} style={STEPPER_VARS} onFinalStepCompleted={finish} onStepChange={() => setDone(false)}
         nextButtonText="Continuați" backButtonText="Înapoi" completeButtonText="Vedeți estimarea"
         completedContent={
-          <div className="py-2" aria-live="polite">
+          <div className="py-2">
             <p className="field-label">Buget estimativ pentru {inv} de invitați, {t.nume.toLowerCase()}</p>
             {min != null && max != null ? (
               <p className="mt-2 font-heading text-[clamp(34px,7vw,52px)] leading-tight">
-                {done && <><NumberTicker value={min} /> – <NumberTicker value={max} /></>} lei
+                {/* Stepper-ul anunță deja conținutul (aria-live); cifrele animate sunt ascunse cititoarelor de ecran, care primesc valoarea finală */}
+                <span aria-hidden>{done && <><NumberTicker value={min} /> – <NumberTicker value={max} /></>} lei</span>
+                <span className="sr-only">{lei(min)} – {lei(max)} lei</span>
               </p>
             ) : (
               <p className="mt-2 text-lg">Pentru acest tip de eveniment vă trimitem direct oferta.</p>

@@ -55,7 +55,7 @@ export default function ContactPage() {
                 <div key={k} className="mt-4">
                   <p className="font-semibold">{site.complexe[k].nume}</p>
                   <p className="text-muted">{site.complexe[k].adresa}</p>
-                  <a href={maps(site.complexe[k].adresa)} target="_blank" rel="noopener noreferrer" className="group mt-2 block">
+                  <a href={maps(site.complexe[k].adresa)} target="_blank" rel="noopener noreferrer" className="group mt-2 block" aria-label={`Deschide în Google Maps: ${site.complexe[k].adresa}`}>
                     <div className="relative aspect-[16/9] overflow-hidden">
                       <Image src={site.complexe[k].galerieExterior?.[0]?.src ?? '/images/hero/complex-riviera-015.jpg'} alt="" fill sizes="(min-width:1024px) 30vw, 100vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
                     </div>

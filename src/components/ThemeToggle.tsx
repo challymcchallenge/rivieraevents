@@ -25,6 +25,7 @@ export default function ThemeToggle({ className = '' }: { className?: string }) 
     <AnimatedThemeToggler
       theme={theme}
       onThemeChange={change}
+      aria-label={theme === 'dark' ? 'Temă luminoasă' : 'Temă întunecată'}
       className={`grid size-11 place-items-center rounded-full transition-colors hover:bg-white/15 ${className}`}
     />
   );

@@ -26,7 +26,7 @@ export default function MeniuriPage() {
   return (
     <>
       <ScrollProgress />
-      <PageHero title={page.meta.h1} subtitle={page.meta.subtitlu} image="/images/meniuri/meniu-starter.jpg" alt="Platou de starter din meniurile ANNA, servit pe farfurie cu margine aurie">
+      <PageHero title={page.meta.h1} subtitle={page.meta.subtitlu} image="/images/meniuri/meniu-masa.jpg" alt="Masă aranjată pentru nuntă, cu farfurii, tacâmuri aurii și meniul invitaților">
         <a href={wa} target="_blank" rel="noopener noreferrer" className="btn bg-[#FFFEFA] text-[#1E1E1E] dark:bg-btn dark:text-btn-text"><WaIcon />{page.meta.cta.text}</a>
       </PageHero>
 

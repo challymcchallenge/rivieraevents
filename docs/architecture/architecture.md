@@ -164,33 +164,37 @@ Prețul B: un furnizor de email extern și verificarea termenilor Cloudflare.
 ```mermaid
 flowchart LR
   V[Vizitator pe mobil<br/>Instagram / Facebook / Google / recomandări] -->|HTTPS| S[Site Riviera Events<br/>rivieraevents.ro]
-  S -->|link wa.me cu mesaj pre-completat| W[WhatsApp ANNA]
-  S -->|email cu cererea de ofertă| E[Căsuța de rezervări ANNA]
+  S -->|link wa.me cu mesaj precompletat| W[WhatsApp ANNA]
+  S -->|POST din browser| WF[Web3Forms<br/>US-East]
+  WF -->|email cu cererea și prioritatea| E[rezervari@rivieraevents.ro]
   S -->|link| A[annaevents.ro]
-  S -.->|încărcare la click| Y[YouTube / Tur 360]
-  ED[Editor conținut] -->|commit în GitHub<br/>v2: Keystatic| G[GitHub repo]
+  S -.->|iframe la click| T[Tururi 360 pe annaevents.ro]
+  ED[Editori, max. 3] -->|panou /keystatic| KC[Keystatic Cloud]
+  KC -->|commit în GitHub| G[GitHub repo]
   G -->|deploy automat| S
 ```
 
-### Containere
+### Containere (implementat în Faza 5)
 
 ```mermaid
 flowchart TB
-  subgraph Vercel["Vercel Pro"]
-    CDN[CDN global<br/>pagini statice + imagini optimizate]
-    IMG[next/image<br/>AVIF / WebP]
-    FN[Route Handler /api/contact<br/>regiune fra1]
+  subgraph Vercel["Vercel Hobby, funcții în fra1"]
+    CDN[CDN global<br/>33 de pagini statice + imagini optimizate]
+    IMG[next/image<br/>AVIF / WebP, 4 lățimi]
+    KS[/keystatic + /api/keystatic<br/>singurele rute dinamice]
     AN[Web Analytics<br/>fără cookie-uri]
   end
   subgraph Repo["GitHub: challymcchallenge/rivieraevents"]
-    SRC[src/ Next.js + Tailwind<br/>Magic UI / ReactBits]
-    CNT[content/*.json, *.mdx<br/>saloane, meniuri, buget, portofoliu]
-    PIC[public/ imagini originale]
+    SRC["src/app/(site) Next.js 16 + Tailwind 4<br/>Magic UI / ReactBits"]
+    CNT[content/*.json, pagini/*.mdx<br/>texte, meniuri, buget, formular]
+    MED[content/media/*, content/portofoliu/*<br/>editate din Keystatic]
+    PIC[public/images, public/media]
   end
   Repo -->|build la push| CDN
   CDN --> IMG
-  FN -->|SMTP, TLS| MAIL[Server email ANNA]
-  ENV[(Variabile de mediu<br/>SMTP_*, CONTACT_TO)] -.-> FN
+  KS -->|GitHub API| Repo
+  B[Browser vizitator] -->|fetch JSON| WF[Web3Forms]
+  ENV[(NEXT_PUBLIC_FORM_ENDPOINT<br/>NEXT_PUBLIC_WEB3FORMS_KEY<br/>NEXT_PUBLIC_KEYSTATIC_PROJECT)] -.-> SRC
 ```
 
 ### Fluxul cel mai important: de la calculator la WhatsApp
@@ -201,7 +205,7 @@ sequenceDiagram
   participant P as Pagina /estimare-buget (React în browser)
   participant D as content/buget.json (inclus la build)
   participant W as WhatsApp
-  U->>P: tip eveniment, invitați, salon, dată
+  U->>P: tip eveniment, invitați (glisor), salon
   P->>D: intervale lei/persoană (deja în pagină)
   P-->>U: „Buget estimativ între X și Y lei”
   U->>P: „Primiți oferta exactă pe WhatsApp”
@@ -221,7 +225,7 @@ sequenceDiagram
 | [006](adr/006-formular-web3forms.md) | Formular prin Web3Forms, din browser | Acceptat |
 | [007](adr/007-slideshow-si-video-in-hero.md) | Slideshow 1–10 slide-uri cu imagini și video în hero, editabil din Keystatic | Acceptat (înlocuiește parțial 004) |
 
-> Diagramele din §4 arată varianta inițială (Route Handler + SMTP). Pentru formular, fluxul real e browser → Web3Forms → email. Diagramele se actualizează în Faza 5, la inițializarea proiectului.
+> Diagramele din §4 au fost actualizate în Faza 5 (2026-10-28) după implementare: formular prin Web3Forms, panou Keystatic, tururi pe annaevents.ro.
 
 ## 6. Cost și operare (Opțiunea A)
 
@@ -293,4 +297,4 @@ sequenceDiagram
 4. **Contul Keystatic Cloud:** cine îl creează? Trebuie legat de repo-ul GitHub.
 5. **Numărul de WhatsApp** pentru Riviera: rămâne 0746 085 555? (din brief)
 6. `[PRESUPUNERE]` Traficul e de câteva mii de vizite pe lună. Dacă e mult mai mare, recalculăm costurile de analytics și imagini.
-7. **Compatibilitatea exactă** Magic UI ↔ Next 16 / React 19 e `neverificată` (pagina Magic UI menționează doar Next.js 15). Se verifică în Faza 5 prin serverul MCP Magic UI, înainte de prima componentă.
+7. ~~Compatibilitatea Magic UI ↔ Next 16 / React 19~~ **Verificat în Faza 5:** componentele folosite (blur-fade, marquee, number-ticker, confetti, scroll-progress, animated-theme-toggler) compilează și rulează cu Next 16.4.3 + React 19.3.1 + motion 14.7.1.
