@@ -16,7 +16,7 @@
 | 3 | **Panou media de la lansare (Keystatic)** | Înainte era planificat în v1.1. Keystatic cere cod pe server (Node.js) pe hosting, ceea ce Vercel Hobby suportă. | [002](adr/002-continut-in-fisiere-fara-cms-v1.md) (revizuit) |
 
 **Consecințe tehnice ale planului Hobby** (limite verificate 2026-10-28):
-- **Măsurarea conversiilor:** pe Hobby, Vercel Web Analytics are 50.000 de evenimente pe lună, dar **evenimentele custom sunt doar pe Pro**. Clicurile pe WhatsApp nu s-ar putea măsura. Propunerea e în [ADR-005](adr/005-analytics-si-cookies.md) (revizuit, **încă nedecis**).
+- **Măsurarea conversiilor:** pe Hobby, Vercel Web Analytics are 50.000 de evenimente pe lună, dar **evenimentele custom sunt doar pe Pro**. Clientul a ales doar Vercel, deci conversiile se numără manual, din marcajul de sursă al mesajelor WhatsApp și din emailurile formularului ([ADR-005](adr/005-analytics-si-cookies.md)).
 - **Imagini:** Hobby include 5.000 de transformări pe lună. Peste limită, imaginile noi returnează eroarea 402 și nu se facturează. Atenuarea e în [ADR-004](adr/004-imagini-si-video.md).
 - **Regiuni:** o singură regiune de funcții pe Hobby, setată la **fra1** (pentru Keystatic).
 - **Transfer de date:** 100 GB pe lună. La `[PRESUPUNERE]` 5.000 de vizite × ~3 MB, rezultă ~15 GB `[estimare]`.
@@ -217,7 +217,7 @@ sequenceDiagram
 | [002](adr/002-continut-in-fisiere-fara-cms-v1.md) | Conținut în fișiere + **Keystatic Cloud de la lansare**, pentru media | Acceptat cu modificare |
 | [003](adr/003-formular-contact.md) | Formular prin Route Handler + SMTP | Înlocuit de 006 |
 | [004](adr/004-imagini-si-video.md) | Imagini în repo + next/image; video pe YouTube cu încărcare la click | Acceptat, cu limitele Hobby |
-| [005](adr/005-analytics-si-cookies.md) | Analytics fără cookie-uri. Instrumentul pentru conversii e de ales: Umami, Plausible sau doar Vercel | **Așteaptă decizia** |
+| [005](adr/005-analytics-si-cookies.md) | Doar Vercel Web Analytics (Hobby): vizite, fără conversii. WhatsApp-ul pre-completat poartă un marcaj de sursă pentru numărare manuală | Acceptat |
 | [006](adr/006-formular-web3forms.md) | Formular prin Web3Forms, din browser | Acceptat |
 
 > Diagramele din §4 arată varianta inițială (Route Handler + SMTP). Pentru formular, fluxul real e browser → Web3Forms → email. Diagramele se actualizează în Faza 5, la inițializarea proiectului.
@@ -283,8 +283,10 @@ sequenceDiagram
 - Formularul prin Web3Forms.
 - Panoul media de la lansare.
 
+- Analytics: doar Vercel Web Analytics (ADR-005).
+
 **Deschise:**
-1. **Analytics pentru conversii (ADR-005):** Umami Cloud Free (recomandat), Plausible ($9/lună) sau doar vizite cu Vercel?
+1. ~~Analytics pentru conversii~~: rezolvat, doar Vercel.
 2. **Editorii Keystatic** (maximum 3 pe planul gratuit): cine sunt?
 3. **Contul Web3Forms:** cine îl creează și ce adresă primește cererile?
 4. **Contul Keystatic Cloud:** cine îl creează? Trebuie legat de repo-ul GitHub.

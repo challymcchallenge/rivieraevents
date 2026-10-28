@@ -46,6 +46,12 @@
 1. Primele 60 de zile după lansare măsurăm nivelul de bază (`[PRESUPUNERE]`: cu analytics fără cookies, decis în Faza 2).
 2. Ținta: **+30% cereri calificate** față de nivelul de bază, după 6 luni. `[PRESUPUNERE]`, cifră de discutat.
 
+> **Notă GATE 2 (regula 8, 2026-10-28):** clientul a ales doar Vercel Web Analytics pe planul Hobby, care **nu măsoară automat clicurile pe WhatsApp și pe telefon**. Indicatorul principal se numără astfel:
+> - WhatsApp: manual, din marcajul de sursă din mesajul pre-completat;
+> - formular: din emailurile Web3Forms.
+>
+> Indicatorii secundari de mai jos nu sunt măsurabili automat cât timp site-ul e pe Hobby. Vezi [ADR-005](architecture/adr/005-analytics-si-cookies.md).
+
 **Indicatori secundari:**
 - rata de folosire a calculatorului de buget (pornit → trimis pe WhatsApp);
 - rata de click pe WhatsApp per pagină de salon.

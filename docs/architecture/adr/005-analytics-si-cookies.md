@@ -1,7 +1,19 @@
 # ADR-005: Analytics fără cookie-uri, fără banner de cookies
 
 ## Status
-**Revizuit după GATE 2, în așteptarea deciziei clientului** (2026-10-28).
+**Acceptat: varianta C, doar Vercel Web Analytics pe Hobby** (decizia clientului, 2026-10-28).
+
+**Ce înseamnă:**
+- Se măsoară vizitele, paginile și sursele de trafic, până la 50.000 de evenimente pe lună. Peste limită, colectarea se oprește până luna următoare.
+- **Nu se pot măsura clicurile pe WhatsApp, pe telefon sau în calculator** (evenimentele custom sunt doar pe Pro).
+- Fără cookie-uri, deci fără banner.
+
+**Atenuare gratuită pentru conversii** (propunere, fără instrument de analytics):
+1. **Fiecare mesaj WhatsApp pre-completat se termină cu un marcaj de sursă**, de exemplu „(trimis de pe rivieraevents.ro, pagina Salon Rosa)”. Echipa ANNA poate număra cererile venite de pe site direct în WhatsApp.
+2. **Cererile din formular** se numără din emailurile Web3Forms (subiect fix, de exemplu „[Site Riviera] Cerere ofertă”).
+3. Trecerea pe Vercel Pro activează evenimentele custom fără schimbări mari: codul de tracking poate fi pregătit și dezactivat printr-o variabilă de mediu `[PRESUPUNERE]`, de confirmat în Faza 5.
+
+Tabelul de mai jos e păstrat pentru istoric.
 
 **De ce:** pe planul Hobby ales de client, Vercel Web Analytics are 50.000 de evenimente pe lună, dar **evenimentele custom sunt doar pe Pro** ([docs](https://vercel.com/docs/analytics/limits-and-pricing), verificat 2026-10-28). Decizia de mai jos nu mai poate măsura clicurile pe WhatsApp, care sunt indicatorul principal al site-ului (brief §2).
 
