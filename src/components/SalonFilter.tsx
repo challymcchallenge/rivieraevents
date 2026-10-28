@@ -36,7 +36,7 @@ export default function SalonFilter({ saloane, intro }: { saloane: Salon[]; intr
         {(['riviera', 'insulita'] as const).map((c) => {
           const list = saloane.filter((s) => s.complex === c).sort((a, b) => Number(fits(b)) - Number(fits(a)));
           return (
-            <section key={c} className="section pb-0 last:pb-16 lg:last:pb-24">
+            <section key={c} className={`section ${c === 'riviera' ? 'pb-0' : ''}`}>
               <div className="wrap">
                 <h2 className="h2">{NUME[c]}</h2>
                 <div className="mt-3">{intro[c]}</div>

@@ -38,7 +38,9 @@ export function getPage(name: string): Page {
     } else cur.body += line + '\n';
   }
   if (cur.title || cur.body.trim()) sections.push(cur);
-  return { meta: { ...meta, subtitlu: meta.subtitlu ? clean(meta.subtitlu) : undefined }, sections };
+  const sub = meta.subtitlu ? clean(meta.subtitlu).trim() : '';
+  // un subtitlu rămas fără valoare după scoaterea [NEED] (ex. „Ultima actualizare:”) nu se afișează
+  return { meta: { ...meta, subtitlu: sub && !sub.endsWith(':') ? sub : undefined }, sections };
 }
 
 export function section(page: Page, title: string): Section | undefined {

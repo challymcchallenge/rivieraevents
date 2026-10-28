@@ -170,7 +170,12 @@
       "id": "bbq",
       "nume": "BBQ la rotiserie",
       "descriere": "Carne la rotisor, pregătită sub ochii invitaților, pentru o gustare caldă spre finalul serii.",
-      "imagine": null
+      "imagine": {
+        "src": "/images/pachete/bbq.jpg",
+        "alt": "BBQ la rotisor, pregătit în aer liber",
+        "w": 2560,
+        "h": 1707
+      }
     }
   ],
   "tort": {
@@ -179,10 +184,10 @@
     "linkCatalog": "https://www.annaevents.ro/torturi-evenimente/",
     "siteCofetarie": "https://dolcessa.ro/",
     "imagine": {
-      "src": "/images/pachete/altele-005.jpg",
-      "alt": "Tort de nuntă de la Cofetăria Anna",
-      "w": 1200,
-      "h": 1500
+      "src": "/images/pachete/tortul-mirilor.jpg",
+      "alt": "Tort de nuntă cu flori albe, lângă literele luminoase LOVE",
+      "w": 1707,
+      "h": 2560
     },
     "inclus": false
   },

@@ -6,6 +6,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppWidget from '@/components/WhatsAppWidget';
 import { themeInitScript } from '@/components/ThemeToggle';
+import JsonLd from '@/components/JsonLd';
 import { getSite } from '@/lib/content';
 import { waLink } from '@/lib/whatsapp';
 
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ro" data-theme="light" suppressHydrationWarning className={`${cormorant.variable} ${montserrat.variable}`}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+        <JsonLd />
       </head>
       <body>
         <a href="#continut" className="sr-only z-50 bg-bg p-3 focus:not-sr-only focus:fixed focus:top-2 focus:left-2">Sari la conținut</a>
