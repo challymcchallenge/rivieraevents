@@ -112,7 +112,7 @@
 /despre                        Grupul ANNA, experiența, echipa
 /contact                       Formular, WhatsApp, telefoane, 2 adrese, 2 hărți
 /politica-de-confidentialitate
-/politica-cookies              Doar dacă există cookies neesențiale (Faza 6)
+/politica-cookies              Explică lipsa cookie-urilor de urmărire și preferințele salvate în browser (decizie client 2026-10-28)
 /termeni
 ```
 
@@ -250,3 +250,5 @@ Legendă: ✅ există (confirmat de client sau vizibil pe annaevents.ro) · ❓ 
 > **Modificare 2026-10-28 (regula 8):** capacitățile din catalog sunt pentru nuntă. Pentru conferințe se afișează și capacitatea maximă: Grande 1.200, Ronda 900, Magic 700. Sitemap-ul are pagina nouă `/tur-virtual`. Fiecare salon Riviera are apartamentul mirilor propriu, inclus în preț. Numele felurilor nu se publică (decizie client).
 
 > **Modificare 2026-10-28 (regula 8):** pentru conferințe nu se afișează cifre; capacitatea se stabilește după amenajare (decizie client). Toate saloanele au sistem automatizat de lumini în orice culoare.
+
+> **Modificare 2026-10-28 (regula 8, GATE 4):** site-ul are două teme (luminoasă implicită, întunecată) cu comutator; butonul WhatsApp devine buton rotund cu logo oficial și bulă (model biztech.ro); footerul are linkuri spre confidențialitate, cookies, termeni, ANPC și SAL. Linkul SOL/ODR nu se pune: platforma UE s-a închis la 20.07.2025.

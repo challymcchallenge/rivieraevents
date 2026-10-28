@@ -1,5 +1,7 @@
 # Faza 4: două direcții de design pentru pagina principală
 
+> **Decizie GATE 4 (2026-10-28):** ambele direcții, ca teme ale aceluiași site. **A (luminoasă) e implicită**, B (întunecată) se alege din comutatorul din header. Fonturile (Cormorant + Montserrat) și formele sunt cele din A, comune ambelor teme. Tokenii: [docs/design-system.md](../design-system.md). Macheta nouă: [mockups/acasa.html](mockups/acasa.html). Capturile A/B separate de mai jos au fost înlocuite de `acasa-luminos-*` și `acasa-intunecat-*`.
+
 Data: 2026-10-28. Instrument: skill-ul **UI-UX-pro-max** (`search.py --design-system` și `--domain typography`).
 Machetele HTML sunt în [mockups/](mockups/); capturile JPG se văd direct pe GitHub. Direcția aleasă la GATE 4 se scrie ca tokeni în `docs/design-system.md`.
 
@@ -23,7 +25,7 @@ Machetele HTML sunt în [mockups/](mockups/); capturile JPG se văd direct pe Gi
 - **Culori:** alb cald `#FFFEFA`, nisip `#F4EFE6` / `#EAE3D7`, text `#1E1E1E`, text secundar `#5B544C`. Roșul de brand `#FF3131` apare doar în linii și elemente grafice. Etichetele roșii folosesc `#B3121F`, care trece testul de contrast.
 - **Butoane:** negre, cu text alb, și colțuri aproape drepte (2 px), ca o tipăritură elegantă.
 - **Fonturi:** Cormorant 600 pentru titluri, Montserrat 400–600 pentru text.
-- **Machete:** [mobil](mockups/a-gradina-mobil.jpg), [desktop](mockups/a-gradina-desktop.jpg).
+- **Machete:** [mobil](mockups/acasa-luminos-mobil.jpg), [desktop](mockups/acasa-luminos-desktop.jpg).
 
 ## Direcția B: Seara la Riviera
 
@@ -32,7 +34,7 @@ Machetele HTML sunt în [mockups/](mockups/); capturile JPG se văd direct pe Gi
 - **Culori:** fundal `#11100F`, suprafețe `#1C1A18` / `#262320`, text `#FFFEFA`, text secundar `#BDB6AC`. Butoanele sunt roșu `#FF3131` cu text închis, iar etichetele roșii folosesc `#FF5A57`.
 - **Forme:** butoane rotunjite complet, poze cu colțuri de 16–24 px.
 - **Fonturi:** Playfair Display 600 pentru titluri, Inter 400–600 pentru text.
-- **Machete:** [mobil](mockups/b-seara-mobil.jpg), [desktop](mockups/b-seara-desktop.jpg).
+- **Machete:** [mobil](mockups/acasa-intunecat-mobil.jpg), [desktop](mockups/acasa-intunecat-desktop.jpg).
 
 ## Comune ambelor direcții
 

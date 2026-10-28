@@ -1,48 +1,18 @@
-"""Generează machetele HTML ale paginii principale pentru cele două direcții de design (Faza 4).
+"""Generează macheta HTML a paginii principale, cu tema luminoasă (A) și cea întunecată (B) și comutator de temă.
 
-Pozele vin din media-web/ (local, ignorat de git), deci machetele se deschid corect doar pe calculatorul
-pe care s-au convertit pozele. Capturile PNG din acest folder sunt varianta de citit pe GitHub.
+Decizie GATE 4 (2026-10-28): ambele teme, A implicită; fonturile și formele sunt comune, tema schimbă doar culorile.
+Pozele vin din media-web/ (local, ignorat de git). Capturile JPG din acest folder sunt varianta de citit pe GitHub.
 Utilizare: python docs/design/mockups/build.py
 """
 from pathlib import Path
 
 HERE = Path(__file__).parent
 IMG = "../../../media-web/"
-
-DIRECTII = {
-    "a-gradina": {
-        "titlu": "Direcția A: Grădina, în lumina zilei",
-        "fonts": "family=Cormorant:wght@500;600;700&family=Montserrat:wght@400;500;600",
-        "logo": "../../../assets/brand/logo-3-transparent.svg",
-        "logo_footer": "../../../assets/brand/logo-1-transparent.svg",
-        "hero": "complex-riviera/complex-riviera-015.jpg",
-        "css": """
-  --bg:#FFFEFA; --surface:#F4EFE6; --surface-2:#EAE3D7; --text:#1E1E1E; --muted:#5B544C;
-  --accent:#FF3131; --accent-text:#B3121F; --line:#DDD4C6; --field-border:#857C72;
-  --btn-bg:#1E1E1E; --btn-text:#FFFEFA; --btn2-border:#1E1E1E; --btn2-text:#1E1E1E;
-  --hero-overlay:linear-gradient(180deg,rgba(20,18,16,.35) 0%,rgba(20,18,16,.55) 35%,rgba(20,18,16,.82) 100%);
-  --hero-text:#FFFEFA;
-  --font-head:'Cormorant',Georgia,serif; --font-body:'Montserrat',system-ui,sans-serif;
-  --head-weight:600; --head-tracking:-0.01em; --radius:2px;""",
-    },
-    "b-seara": {
-        "titlu": "Direcția B: Seara la Riviera",
-        "fonts": "family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600",
-        "logo": "../../../assets/brand/logo-3-transparent.svg",
-        "logo_footer": "../../../assets/brand/logo-3-transparent.svg",
-        "hero": "saloane/rosa/rosa-001.jpg",
-        "css": """
-  --bg:#11100F; --surface:#1C1A18; --surface-2:#262320; --text:#FFFEFA; --muted:#BDB6AC;
-  --accent:#FF3131; --accent-text:#FF5A57; --line:#34302B; --field-border:#7A7268;
-  --btn-bg:#FF3131; --btn-text:#11100F; --btn2-border:#FFFEFA; --btn2-text:#FFFEFA;
-  --hero-overlay:linear-gradient(180deg,rgba(17,16,15,.3) 0%,rgba(17,16,15,.55) 35%,rgba(17,16,15,.88) 100%);
-  --hero-text:#FFFEFA;
-  --font-head:'Playfair Display',Georgia,serif; --font-body:'Inter',system-ui,sans-serif;
-  --head-weight:600; --head-tracking:-0.015em; --radius:999px;""",
-    },
-}
+BRAND = "../../../assets/brand/"
 
 WA = '<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>'
+SUN = '<svg class="i-sun" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>'
+MOON = '<svg class="i-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>'
 
 SALOANE_R = [("Rosa", "până la 400 de invitați", "saloane/rosa/rosa-001.jpg", "Pereți de sticlă spre grădină, candelabru central, scenă pentru formație."),
              ("Noblesse", "până la 300 de invitați", "saloane/noblesse/noblesse-005.jpg", "Ferestre din podea până în tavan, fundal neutru pentru decorul dumneavoastră."),
@@ -55,19 +25,41 @@ DE_CE = [("Pe malul Jiului", "Grădină cu copaci și flori, alei pentru plimbă
          ("Lumini în orice culoare", "Sistem automatizat de lumini, programat pe culorile decorului dumneavoastră.")]
 
 PAGE = """<!doctype html>
-<html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{titlu} | Riviera Events</title>
+<html lang="ro" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Machetă pagina principală | Riviera Events</title>
+<script>/* doar pentru capturi: ?theme=dark */ if (new URLSearchParams(location.search).get('theme') === 'dark') document.documentElement.dataset.theme = 'dark';</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?{fonts}&subset=latin-ext&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600;700&family=Montserrat:wght@400;500;600&subset=latin-ext&display=swap" rel="stylesheet">
 <style>
-:root{{{css}
-  --space-1:8px; --space-2:16px; --space-3:24px; --space-4:40px; --space-5:64px; --space-6:96px;
+:root,[data-theme="light"]{{
+  --bg:#FFFEFA; --surface:#F4EFE6; --surface-2:#EAE3D7; --text:#1E1E1E; --muted:#5B544C;
+  --accent:#FF3131; --accent-text:#B3121F; --line:#DDD4C6; --field-border:#857C72; --field-bg:#FFFEFA;
+  --btn-bg:#1E1E1E; --btn-text:#FFFEFA; --btn2-border:#1E1E1E; --btn2-text:#1E1E1E;
+  --final-bg:#1E1E1E; --final-text:#FFFEFA; --final-btn-bg:#FFFEFA; --final-btn-text:#1E1E1E;
+  --popup-bg:#FFFFFF; --popup-text:#1E1E1E; --shadow:0 10px 30px rgba(30,30,30,.18);
+  color-scheme:light;
+}}
+[data-theme="dark"]{{
+  --bg:#11100F; --surface:#1C1A18; --surface-2:#262320; --text:#FFFEFA; --muted:#BDB6AC;
+  --accent:#FF3131; --accent-text:#FF5A57; --line:#34302B; --field-border:#7A7268; --field-bg:#11100F;
+  --btn-bg:#FF3131; --btn-text:#11100F; --btn2-border:#FFFEFA; --btn2-text:#FFFEFA;
+  --final-bg:#262320; --final-text:#FFFEFA; --final-btn-bg:#FF3131; --final-btn-text:#11100F;
+  --popup-bg:#1C1A18; --popup-text:#FFFEFA; --shadow:0 10px 30px rgba(0,0,0,.5);
+  color-scheme:dark;
+}}
+:root{{
+  --wa-green:#25D366; --wa-text:#0B1F12;
+  --hero-overlay:linear-gradient(180deg,rgba(20,18,16,.35) 0%,rgba(20,18,16,.55) 35%,rgba(20,18,16,.82) 100%); --hero-text:#FFFEFA;
+  --font-head:'Cormorant',Georgia,serif; --font-body:'Montserrat',system-ui,sans-serif;
+  --radius:2px; --space-1:8px; --space-2:16px; --space-3:24px; --space-4:40px; --space-5:64px; --space-6:96px;
 }}
 *{{box-sizing:border-box;margin:0;padding:0}}
 body{{background:var(--bg);color:var(--text);font:400 16px/1.6 var(--font-body);-webkit-font-smoothing:antialiased}}
 img{{display:block;width:100%;height:100%;object-fit:cover}}
 a{{color:inherit;text-decoration:none}}
-h1,h2,h3{{font-family:var(--font-head);font-weight:var(--head-weight);letter-spacing:var(--head-tracking);line-height:1.1}}
+button{{font:inherit;color:inherit;background:none;border:0;cursor:pointer}}
+:focus-visible{{outline:2px solid var(--accent-text);outline-offset:3px}}
+h1,h2,h3{{font-family:var(--font-head);font-weight:600;letter-spacing:-0.01em;line-height:1.1}}
 .wrap{{max-width:1200px;margin:0 auto;padding:0 var(--space-2)}}
 .eyebrow{{font:600 12px/1 var(--font-body);letter-spacing:.18em;text-transform:uppercase;color:var(--accent-text)}}
 .btn{{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:var(--radius);font:600 15px/1 var(--font-body);background:var(--btn-bg);color:var(--btn-text)}}
@@ -76,25 +68,28 @@ header{{position:absolute;inset:0 0 auto;z-index:5;color:var(--hero-text)}}
 header .wrap{{display:flex;align-items:center;justify-content:space-between;height:72px}}
 header .logo{{height:40px;width:auto}}
 header nav{{display:none;gap:28px;font:500 14px/1 var(--font-body)}}
-.menu{{width:44px;height:44px;display:grid;place-items:center}}
-.hero{{position:relative;min-height:88svh;display:flex;align-items:flex-end;color:var(--hero-text)}}
+.tools{{display:flex;align-items:center;gap:4px}}
+.icon-btn{{width:44px;height:44px;display:grid;place-items:center;border-radius:50%}}
+.icon-btn:hover{{background:rgba(255,255,255,.12)}}
+[data-theme="light"] .i-sun,[data-theme="dark"] .i-moon{{display:none}}
+.hero{{position:relative;min-height:88svh;display:flex;align-items:flex-end;color:var(--hero-text);padding:0}}
 .hero picture,.hero::after{{position:absolute;inset:0}}
 .hero::after{{content:"";background:var(--hero-overlay)}}
 .hero .wrap{{position:relative;z-index:2;padding-bottom:var(--space-5)}}
 .hero h1{{font-size:clamp(40px,9vw,84px);max-width:14ch;margin:var(--space-2) 0}}
 .hero p{{font-size:18px;max-width:46ch;opacity:.95}}
 .hero .ctas{{display:flex;flex-wrap:wrap;gap:12px;margin-top:var(--space-3)}}
+.hero .btn{{background:#FFFEFA;color:#1E1E1E}}
+[data-theme="dark"] .hero .btn{{background:var(--btn-bg);color:var(--btn-text)}}
 .hero .btn2{{border-color:var(--hero-text);color:var(--hero-text)}}
-.a .hero .btn{{background:#FFFEFA;color:#1E1E1E}}
 section{{padding:var(--space-5) 0}}
 .head{{display:flex;flex-direction:column;gap:var(--space-1);margin-bottom:var(--space-4)}}
 .head h2{{font-size:clamp(32px,6vw,52px)}}
 .head p{{color:var(--muted);max-width:56ch}}
 .grid3{{display:grid;gap:var(--space-3)}}
-.card .ph{{aspect-ratio:4/5;overflow:hidden;border-radius:var(--radius-card,2px)}}
-.b .card .ph{{border-radius:20px}}
+.card .ph{{aspect-ratio:4/5;overflow:hidden}}
 .card h3{{font-size:30px;margin-top:var(--space-2)}}
-.card .cap{{font:600 13px/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-text);margin-top:6px}}
+.cap{{font:600 13px/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-text);margin-top:6px}}
 .card p{{color:var(--muted);margin-top:8px}}
 .why{{background:var(--surface)}}
 .why ol{{list-style:none;display:grid;gap:var(--space-3);counter-reset:n}}
@@ -104,35 +99,40 @@ section{{padding:var(--space-5) 0}}
 .why p{{color:var(--muted)}}
 .split{{display:grid;gap:var(--space-4);align-items:center}}
 .split .ph{{aspect-ratio:4/3;overflow:hidden}}
-.b .split .ph{{border-radius:24px}}
 .budget{{background:var(--surface-2);padding:var(--space-4) var(--space-3)}}
-.b .budget{{border-radius:24px}}
 .budget .row{{display:grid;gap:12px;margin:var(--space-3) 0}}
 .field{{display:flex;flex-direction:column;gap:6px;font:500 14px/1.2 var(--font-body)}}
 .field span{{color:var(--muted)}}
-.field div{{border:1px solid var(--field-border);background:var(--bg);min-height:48px;display:flex;align-items:center;padding:0 14px;border-radius:var(--radius-field,2px)}}
-.b .field div{{border-radius:12px}}
+.field div{{border:1px solid var(--field-border);background:var(--field-bg);min-height:48px;display:flex;align-items:center;padding:0 14px;border-radius:var(--radius)}}
 .sum{{font-family:var(--font-head);font-size:34px}}
 .ins{{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-2)}}
 .ins .ph{{aspect-ratio:1;overflow:hidden}}
-.b .ins .ph{{border-radius:16px}}
 .ins h3{{font-size:22px;margin-top:10px}}
 .ins small{{color:var(--muted)}}
 .quote{{text-align:center}}
-.quote blockquote{{font-family:var(--font-head);font-size:clamp(24px,4vw,36px);line-height:1.3;max-width:28ch;margin:0 auto}}
+.quote blockquote{{font-family:var(--font-head);font-size:clamp(24px,4vw,36px);line-height:1.3;max-width:30ch;margin:0 auto}}
 .quote cite{{display:block;margin-top:var(--space-2);font:500 14px/1.4 var(--font-body);font-style:normal;color:var(--muted)}}
-.final{{background:var(--btn-bg);color:var(--btn-text);text-align:center}}
-.b .final{{background:var(--surface-2);border-top:1px solid var(--line)}}
-.b .final{{color:var(--text)}}
+.final{{background:var(--final-bg);color:var(--final-text);text-align:center}}
 .final h2{{font-size:clamp(32px,6vw,52px)}}
 .final p{{margin:var(--space-2) auto var(--space-3);max-width:44ch;opacity:.85}}
-.a .final .btn{{background:#FFFEFA;color:#1E1E1E}}
-footer{{border-top:1px solid var(--line);padding:var(--space-5) 0 120px;font-size:14px;color:var(--muted)}}
+.final .btn{{background:var(--final-btn-bg);color:var(--final-btn-text)}}
+footer{{border-top:1px solid var(--line);padding:var(--space-5) 0 var(--space-4);font-size:14px;color:var(--muted)}}
 footer .cols{{display:grid;gap:var(--space-4)}}
 footer h4{{font:600 12px/1 var(--font-body);letter-spacing:.16em;text-transform:uppercase;color:var(--text);margin-bottom:12px}}
 footer li{{list-style:none;margin:6px 0}}
-.sticky{{position:fixed;left:16px;right:16px;bottom:16px;z-index:9;box-shadow:0 8px 24px rgba(0,0,0,.25)}}
-.sticky .btn{{width:100%}}
+footer .logo-dark{{display:none}}
+[data-theme="dark"] footer .logo-light{{display:none}} [data-theme="dark"] footer .logo-dark{{display:block}}
+.legal{{border-top:1px solid var(--line);margin-top:var(--space-4);padding-top:var(--space-3);display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13px}}
+.legal a{{text-decoration:underline;text-underline-offset:3px;min-height:24px;display:inline-flex;align-items:center}}
+.legal .copy{{width:100%}}
+/* WhatsApp: buton rotund + bulă */
+.wa{{position:fixed;right:16px;bottom:16px;z-index:9;display:flex;flex-direction:column;align-items:flex-end;gap:12px}}
+.wa-fab{{width:60px;height:60px;border-radius:50%;filter:drop-shadow(0 6px 14px rgba(0,0,0,.28))}}
+.wa-fab img{{width:60px;height:60px}}
+.wa-pop{{position:relative;width:min(300px,calc(100vw - 32px));background:var(--popup-bg);color:var(--popup-text);border-radius:16px;padding:18px 18px 16px;box-shadow:var(--shadow);font-size:15px;line-height:1.45}}
+.wa-pop .x{{position:absolute;top:4px;right:4px;width:36px;height:36px;display:grid;place-items:center;color:var(--muted);font-size:20px}}
+.wa-pop p{{padding-right:24px}}
+.wa-open{{display:inline-flex;align-items:center;gap:8px;margin-top:12px;min-height:44px;padding:0 18px;border-radius:999px;background:var(--wa-green);color:var(--wa-text);font:600 14px/1 var(--font-body)}}
 @media (min-width:1024px){{
   .wrap{{padding:0 var(--space-4)}}
   header nav{{display:flex}} .menu{{display:none}}
@@ -143,20 +143,22 @@ footer li{{list-style:none;margin:6px 0}}
   .budget .row{{grid-template-columns:repeat(3,1fr)}}
   .ins{{grid-template-columns:repeat(4,1fr)}}
   footer .cols{{grid-template-columns:2fr 1fr 1fr 1fr}}
-  footer{{padding-bottom:var(--space-5)}}
-  .sticky{{left:auto;right:32px;bottom:32px}} .sticky .btn{{width:auto}}
   section{{padding:var(--space-6) 0}}
+  .wa{{right:32px;bottom:32px}}
 }}
 @media (prefers-reduced-motion:reduce){{*{{transition:none!important;animation:none!important}}}}
 </style></head>
-<body class="{cls}">
+<body>
 <header><div class="wrap">
-  <img class="logo" src="{logo}" alt="Riviera Events by ANNA">
+  <img class="logo" src="{brand}logo-3-transparent.svg" alt="Riviera Events by ANNA">
   <nav aria-label="Principal"><a href="#">Saloane</a><a href="#">Pachete</a><a href="#">Meniuri</a><a href="#">Tur virtual</a><a href="#">Portofoliu</a><a href="#">Contact</a></nav>
-  <button class="menu" aria-label="Deschide meniul" style="background:none;border:0;color:inherit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <div class="tools">
+    <button class="icon-btn theme" type="button" aria-label="Temă întunecată" aria-pressed="false" onclick="var d=document.documentElement;var dark=d.dataset.theme!=='dark';d.dataset.theme=dark?'dark':'light';this.setAttribute('aria-pressed',dark)">{moon}{sun}</button>
+    <button class="icon-btn menu" type="button" aria-label="Deschide meniul"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
 </div></header>
 
-<section class="hero" style="padding:0"><picture><img src="{img}{hero}" alt="Grădina și saloanele Riviera, pe malul Jiului"></picture>
+<section class="hero"><picture><img src="{img}complex-riviera/complex-riviera-015.jpg" alt="Grădina Riviera pregătită pentru o ceremonie, văzută de sus"></picture>
   <div class="wrap">
     <span class="eyebrow" style="color:var(--hero-text);opacity:.9">Riviera Events by ANNA · Târgu Jiu</span>
     <h1>Saloane de nuntă pe malul Jiului, în Târgu Jiu</h1>
@@ -177,7 +179,7 @@ footer li{{list-style:none;margin:6px 0}}
 </div></section>
 
 <section><div class="wrap split">
-  <div class="ph" style="border-radius:inherit"><img src="{img}complex-riviera/complex-riviera-011.jpg" alt="Cină în grădina Riviera, sub candelabre de cristal"></div>
+  <div class="ph"><img src="{img}complex-riviera/complex-riviera-011.jpg" alt="Cină în grădina Riviera, sub candelabre de cristal"></div>
   <div class="budget">
     <span class="eyebrow">Cât costă</span>
     <h2 style="font-size:clamp(30px,5vw,44px);margin-top:10px">Aflați bugetul în trei alegeri</h2>
@@ -210,22 +212,34 @@ footer li{{list-style:none;margin:6px 0}}
   <a class="btn" href="#">{wa}Cereți oferta pe WhatsApp</a>
 </div></section>
 
-<footer><div class="wrap cols">
-  <div><img src="{logo_footer}" alt="" style="height:36px;width:auto;margin-bottom:16px"><p>Aleea Digului nr. 5, Târgu Jiu, Gorj<br>0746 085 555 · rezervari@rivieraevents.ro</p><p style="margin-top:12px">ANNA COMPLEX 1991 SRL · CUI 37378065 · J18/330/12.04.2017</p></div>
-  <div><h4>Site</h4><ul><li>Saloane</li><li>Pachete</li><li>Meniuri</li><li>Tur virtual</li><li>Portofoliu</li></ul></div>
-  <div><h4>Rețeaua ANNA</h4><ul><li>ANNA Events</li><li>Hotel ANNA</li><li>Cofetăria Anna</li><li>Piscina Summer Events</li><li>…</li></ul></div>
-  <div><h4>Urmăriți-ne</h4><ul><li>Facebook</li><li>Instagram</li><li>YouTube</li></ul></div>
+<footer><div class="wrap">
+  <div class="cols">
+    <div><img class="logo-light" src="{brand}logo-1-transparent.svg" alt="" style="height:36px;width:auto;margin-bottom:16px"><img class="logo-dark" src="{brand}logo-3-transparent.svg" alt="" style="height:36px;width:auto;margin-bottom:16px">
+      <p>Aleea Digului nr. 5, Târgu Jiu, Gorj<br>0746 085 555 · rezervari@rivieraevents.ro</p></div>
+    <div><h4>Site</h4><ul><li>Saloane</li><li>Pachete</li><li>Meniuri</li><li>Tur virtual</li><li>Portofoliu</li><li>Contact</li></ul></div>
+    <div><h4>Rețeaua ANNA</h4><ul><li>ANNA Events</li><li>Hotel ANNA</li><li>Hotel ANNA Junior</li><li>Cofetăria Anna</li><li>Piscina Summer Events</li><li>Toate cele 10 →</li></ul></div>
+    <div><h4>Urmăriți-ne</h4><ul><li>Facebook</li><li>Instagram</li><li>YouTube</li></ul></div>
+  </div>
+  <nav class="legal" aria-label="Informații legale">
+    <a href="#">Politica de confidențialitate</a><a href="#">Politica de cookies</a><a href="#">Termeni și condiții</a><a href="#">ANPC</a><a href="#">Soluționarea alternativă a litigiilor (SAL)</a>
+    <span class="copy">© 2026 ANNA COMPLEX 1991 SRL · CUI 37378065 · J18/330/12.04.2017 · Calea Severinului nr. 24, biroul 6, Târgu Jiu</span>
+  </nav>
 </div></footer>
 
-<div class="sticky"><a class="btn" href="#">{wa}Scrieți-ne pe WhatsApp</a></div>
+<div class="wa">
+  <aside class="wa-pop" aria-label="Mesaj WhatsApp">
+    <button class="x" type="button" aria-label="Închide mesajul">×</button>
+    <p>Bună ziua! Vă răspundem pe WhatsApp de obicei în câteva minute, între 09:00 și 18:00.</p>
+    <a class="wa-open" href="#"><img src="{brand}whatsapp-192.png" alt="" width="20" height="20" style="width:20px;height:20px">Deschideți WhatsApp</a>
+  </aside>
+  <a class="wa-fab" href="#" aria-label="Scrieți-ne pe WhatsApp"><img src="{brand}whatsapp-192.png" alt="" width="60" height="60"></a>
+</div>
 </body></html>
 """
 
-for slug, d in DIRECTII.items():
-    carduri = "".join(f'<article class="card"><div class="ph"><img src="{IMG}{p}" alt="Salonul {n}"></div><h3>{n}</h3><p class="cap">{c}</p><p>{t}</p></article>' for n, c, p, t in SALOANE_R)
-    dece = "".join(f"<li><h3>{h}</h3><p>{t}</p></li>" for h, t in DE_CE)
-    ins = "".join(f'<article><div class="ph"><img src="{IMG}{p}" alt="Salonul {n}"></div><h3>{n}</h3><small>până la {c} de invitați</small></article>' for n, c, p in SALOANE_I)
-    html = PAGE.format(titlu=d["titlu"], fonts=d["fonts"], css=d["css"], cls=slug[0], logo=d["logo"], logo_footer=d["logo_footer"], img=IMG, hero=d["hero"],
-                       wa=WA, carduri=carduri, dece=dece, insulita=ins)
-    (HERE / f"{slug}.html").write_text(html, encoding="utf-8")
-    print("scris", slug)
+carduri = "".join(f'<article class="card"><div class="ph"><img src="{IMG}{p}" alt="Salonul {n}"></div><h3>{n}</h3><p class="cap">{c}</p><p>{t}</p></article>' for n, c, p, t in SALOANE_R)
+dece = "".join(f"<li><h3>{h}</h3><p>{t}</p></li>" for h, t in DE_CE)
+ins = "".join(f'<article><div class="ph"><img src="{IMG}{p}" alt="Salonul {n}"></div><h3>{n}</h3><small>până la {c} de invitați</small></article>' for n, c, p in SALOANE_I)
+html = PAGE.format(img=IMG, brand=BRAND, wa=WA, sun=SUN, moon=MOON, carduri=carduri, dece=dece, insulita=ins)
+(HERE / "acasa.html").write_text(html, encoding="utf-8")
+print("scris acasa.html")

@@ -5,7 +5,12 @@
     "numar": "40746085555",
     "afisat": "0746 085 555",
     "textImplicit": "Bună ziua, aș dori o ofertă pentru un eveniment la Riviera.",
-    "marcajSursa": "(trimis de pe rivieraevents.ro, {pagina})"
+    "marcajSursa": "(trimis de pe rivieraevents.ro, {pagina})",
+    "bula": {
+      "text": "Bună ziua! Vă răspundem pe WhatsApp de obicei în câteva minute, între 09:00 și 18:00.",
+      "buton": "Deschideți WhatsApp",
+      "_nota": "[PRESUPUNERE] program 09:00–18:00 și „câteva minute”, preluate după modelul biztech.ro. De confirmat programul real al echipei Riviera. Pentru formular/email rămâne „de regulă în aceeași zi”."
+    }
   },
   "telefoane": [
     {
@@ -198,5 +203,29 @@
       }
     ]
   },
-  "_notaTimpRaspuns": "[PRESUPUNERE] „în aceeași zi”, scris la cererea clientului. De confirmat că echipa poate respecta promisiunea."
+  "_notaTimpRaspuns": "[PRESUPUNERE] „în aceeași zi”, scris la cererea clientului. De confirmat că echipa poate respecta promisiunea.",
+  "linkuriLegale": [
+    {
+      "text": "Politica de confidențialitate",
+      "url": "/politica-de-confidentialitate"
+    },
+    {
+      "text": "Politica de cookies",
+      "url": "/politica-cookies"
+    },
+    {
+      "text": "Termeni și condiții",
+      "url": "/termeni"
+    },
+    {
+      "text": "ANPC",
+      "url": "https://anpc.ro/"
+    },
+    {
+      "text": "Soluționarea alternativă a litigiilor (SAL)",
+      "url": "https://anpc.ro/ce-este-sal/",
+      "_nota": "neverificat: anpc.ro a răspuns 503 la 2026-10-28; de verificat linkul și obligația pictogramei SAL înainte de lansare"
+    }
+  ],
+  "_notaSOL": "Linkul SOL/ODR (ec.europa.eu/consumers/odr) NU se pune: platforma UE a fost închisă la 20.07.2025 (Regulamentul UE 2024/3228), iar obligația de a o afișa a dispărut."
 }

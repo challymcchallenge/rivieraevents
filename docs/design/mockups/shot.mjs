@@ -13,9 +13,9 @@ const udd = process.argv[2];
 if (!udd) throw new Error('lipsește user-data-dir');
 
 const JOBS = [];
-for (const s of ['a-gradina', 'b-seara']) {
-  JOBS.push({ s, name: 'mobil', width: 390, height: 844, mobile: true });
-  JOBS.push({ s, name: 'desktop', width: 1440, height: 900, mobile: false });
+for (const theme of ['luminos', 'intunecat']) {
+  JOBS.push({ s: 'acasa', theme, name: 'mobil', width: 390, height: 844, mobile: true });
+  JOBS.push({ s: 'acasa', theme, name: 'desktop', width: 1440, height: 900, mobile: false });
 }
 
 const chrome = spawn(CHROME, ['--headless=new', '--disable-gpu', '--hide-scrollbars', '--remote-debugging-address=127.0.0.1',
@@ -47,7 +47,7 @@ try {
   for (const j of JOBS) {
     await send('Emulation.setDeviceMetricsOverride', { width: j.width, height: j.height, deviceScaleFactor: 1, mobile: j.mobile });
     const loaded = once('Page.loadEventFired');
-    await send('Page.navigate', { url: pathToFileURL(path.join(here, `${j.s}.html`)).href });
+    await send('Page.navigate', { url: pathToFileURL(path.join(here, `${j.s}.html`)).href + (j.theme === 'intunecat' ? '?theme=dark' : '') });
     await loaded;
     await send('Runtime.evaluate', { expression: 'document.fonts.ready.then(() => true)', awaitPromise: true });
     await sleep(800);
@@ -56,9 +56,9 @@ try {
     const h = Math.ceil(cssContentSize.height);
     const { data } = await send('Page.captureScreenshot', { format: 'jpeg', quality: 80, captureBeyondViewport: true,
       clip: { x: 0, y: 0, width: j.width, height: h, scale: 1 } });
-    const out = path.join(here, `${j.s}-${j.name}.jpg`);
+    const out = path.join(here, `${j.s}-${j.theme}-${j.name}.jpg`);
     writeFileSync(out, Buffer.from(data, 'base64'));
-    console.log(`${j.s}-${j.name}: ${j.width}x${h}, depășire orizontală ${ov.result.value}px`);
+    console.log(`${j.s}-${j.theme}-${j.name}: ${j.width}x${h}, depășire orizontală ${ov.result.value}px`);
   }
 } finally {
   ws.close(); chrome.kill();
