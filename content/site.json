@@ -37,6 +37,44 @@
         "Alei",
         "Locuri de relaxare",
         "Priveliște spre apus"
+      ],
+      "galerieExterior": [
+        {
+          "src": "complex-riviera/complex-riviera-015.jpg",
+          "alt": "Grădina Riviera văzută de sus, pregătită pentru o ceremonie"
+        },
+        {
+          "src": "complex-riviera/complex-riviera-017.jpg",
+          "alt": "Gazonul și aleile grădinii Riviera, cu scaune pentru ceremonie"
+        },
+        {
+          "src": "complex-riviera/complex-riviera-016.jpg",
+          "alt": "Arcada ceremoniei în grădina Riviera"
+        },
+        {
+          "src": "complex-riviera/complex-riviera-011.jpg",
+          "alt": "Cină în aer liber sub candelabre de cristal, în grădina Riviera"
+        },
+        {
+          "src": "complex-riviera/complex-riviera-012.jpg",
+          "alt": "Mese rotunde aranjate în grădină, printre copaci"
+        },
+        {
+          "src": "complex-riviera/complex-riviera-013.jpg",
+          "alt": "Masă festivă în grădină, cu candelabre suspendate"
+        },
+        {
+          "src": "complex-riviera/complex-riviera-014.jpg",
+          "alt": "Detaliu de masă în grădina Riviera"
+        },
+        {
+          "src": "complex-riviera/complex-riviera-007.jpg",
+          "alt": "Aleea albă a ceremoniei, cu trandafiri roșii"
+        },
+        {
+          "src": "complex-riviera/complex-riviera-010.jpg",
+          "alt": "Turn de șampanie sub o arcadă de flori albe"
+        }
       ]
     },
     "insulita": {
@@ -44,8 +82,59 @@
       "adresa": "Insulița Jiului, Târgu Jiu, Gorj",
       "descriereLocatie": "pe Insulița din Parcul Central",
       "coordonate": null,
-      "site": "https://www.annaevents.ro"
-    }
+      "site": "https://www.annaevents.ro",
+      "galerieExterior": [
+        {
+          "src": "complex-insulita/complex-insulita-023.jpg",
+          "alt": "Piscina complexului ANNA Events, luminată seara, văzută de sus"
+        },
+        {
+          "src": "complex-insulita/complex-insulita-022.jpg",
+          "alt": "Complexul ANNA Events noaptea, cu piscina în centru"
+        },
+        {
+          "src": "complex-insulita/complex-insulita-024.jpg",
+          "alt": "Piscina cu sigla ANNA Events, seara"
+        },
+        {
+          "src": "complex-insulita/complex-insulita-026.jpg",
+          "alt": "Terasa și piscina, cu lumini de seară"
+        },
+        {
+          "src": "complex-insulita/complex-insulita-027.jpg",
+          "alt": "Aleile din jurul piscinei, seara"
+        },
+        {
+          "src": "complex-insulita/complex-insulita-013.jpg",
+          "alt": "Podul de lemn spre salonul Grande, sub ghirlande de lumini"
+        },
+        {
+          "src": "complex-insulita/complex-insulita-014.jpg",
+          "alt": "Intrarea în salonul Grande, seara"
+        },
+        {
+          "src": "complex-insulita/complex-insulita-028.jpg",
+          "alt": "Aleea albă spre intrarea salonului Grande"
+        },
+        {
+          "src": "complex-insulita/complex-insulita-012.jpg",
+          "alt": "Terasa de lângă piscină, seara"
+        },
+        {
+          "src": "complex-insulita/complex-insulita-021.jpg",
+          "alt": "Arcade de flori albe pe aleea de lângă piscină"
+        },
+        {
+          "src": "complex-insulita/complex-insulita-033.jpg",
+          "alt": "Foișorul cu flori albe de lângă piscină, seara"
+        },
+        {
+          "src": "complex-insulita/complex-insulita-029.jpg",
+          "alt": "Cvartet de coarde pe terasă"
+        }
+      ]
+    },
+    "_notaGalerii": "Excluse din galerii: colajele și afișele cu text sau siglă (complex-riviera 001–005, complex-insulita 001–009, 011) și pozele cu watermark de fotograf."
   },
   "programVizitare": "Vizita în saloane se stabilește la prima discuție, în funcție de evenimentele din calendar.",
   "timpRaspuns": "Vă răspundem cât mai repede, de regulă în aceeași zi.",

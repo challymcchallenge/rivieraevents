@@ -1,0 +1,33 @@
+{
+  "slug": "ceremonie-candelabre-gradina-riviera",
+  "titlu": "Ceremonie în grădină, cu candelabre de cristal",
+  "tip": "nunta",
+  "complex": "riviera",
+  "salon": null,
+  "data": null,
+  "descriere": "Pentru ceremonie, grădina s-a transformat într-un salon în aer liber: alee albă, trandafiri roșii de-a lungul rândurilor și candelabre de cristal suspendate printre copaci.",
+  "poze": [
+    {
+      "src": "portofoliu-riviera/portofoliu-riviera-017.jpg",
+      "alt": "Mirii pe aleea albă, între trandafiri roșii și candelabre de cristal"
+    },
+    {
+      "src": "complex-riviera/complex-riviera-007.jpg",
+      "alt": "Aleea ceremoniei, cu trandafiri roșii și scaune albe, în grădina Riviera"
+    },
+    {
+      "src": "complex-riviera/complex-riviera-008.jpg",
+      "alt": "Arcada ceremoniei și candelabrele suspendate în grădină"
+    },
+    {
+      "src": "complex-riviera/complex-riviera-009.jpg",
+      "alt": "Scaunele invitaților de-a lungul aleii albe"
+    },
+    {
+      "src": "complex-riviera/complex-riviera-006.jpg",
+      "alt": "Masa ceremoniei, sub un candelabru de cristal"
+    }
+  ],
+  "acordClient": true,
+  "_nota": "Evenimentele și pozele alese din folderele de portofoliu trimise de client (2026-10-28), grupate după poze și data EXIF. Fără numele mirilor. [PRESUPUNERE] cuplurile din poze și-au dat acordul de publicare; clientul păstrează dovada."
+}

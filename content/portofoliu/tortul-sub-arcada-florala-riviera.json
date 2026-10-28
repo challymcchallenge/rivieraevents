@@ -1,0 +1,33 @@
+{
+  "slug": "tortul-sub-arcada-florala-riviera",
+  "titlu": "Tortul mirilor, sub arcada de flori albe",
+  "tip": "nunta",
+  "complex": "riviera",
+  "salon": null,
+  "data": null,
+  "descriere": "Tăierea tortului s-a făcut în grădină, sub o arcadă de flori albe, cu un turn de pahare de șampanie alături. Pe măsură ce s-a lăsat seara, arcada luminată a devenit decorul preferat pentru poze.",
+  "poze": [
+    {
+      "src": "portofoliu-riviera/portofoliu-riviera-019.jpg",
+      "alt": "Mirii toastează sub arcada de flori albe din grădină"
+    },
+    {
+      "src": "portofoliu-riviera/portofoliu-riviera-021.jpg",
+      "alt": "Mirii la turnul de șampanie, sub arcadă"
+    },
+    {
+      "src": "complex-riviera/complex-riviera-010.jpg",
+      "alt": "Turnul de pahare de șampanie sub arcada de flori albe"
+    },
+    {
+      "src": "portofoliu-riviera/portofoliu-riviera-018.jpg",
+      "alt": "Mirii taie tortul seara, sub arcada luminată"
+    },
+    {
+      "src": "portofoliu-riviera/portofoliu-riviera-020.jpg",
+      "alt": "Mirii la tăierea tortului"
+    }
+  ],
+  "acordClient": true,
+  "_nota": "Evenimentele și pozele alese din folderele de portofoliu trimise de client (2026-10-28), grupate după poze și data EXIF. Fără numele mirilor. [PRESUPUNERE] cuplurile din poze și-au dat acordul de publicare; clientul păstrează dovada."
+}

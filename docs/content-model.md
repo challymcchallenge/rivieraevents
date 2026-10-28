@@ -119,12 +119,13 @@ Cât timp valorile sunt `null`, calculatorul nu afișează sumă. Afișează doa
 
 | Câmp | Tip | Notă |
 |---|---|---|
-| `slug`, `titlu` | text | `"nunta-andreea-mihai-rosa-2025"`, `"Andreea și Mihai"` |
+| `slug`, `titlu` | text | `"ceremonie-pe-piscina-anna-events"`, `"Ceremonie pe piscină"` (fără numele mirilor, 2026-10-28) |
+| `complex` | `riviera` / `insulita` | filtrul de pe pagina Portofoliu |
 | `tip` | `nunta` / `botez` / `corporate` | |
-| `salon` | slug salon | link spre pagina salonului |
-| `data` | `AAAA-LL` | luna și anul |
+| `salon` | slug salon \| null | link spre pagina salonului, dacă se știe |
+| `data` | `AAAA-LL` \| null | luna și anul, dacă se știu |
 | `descriere` | text, 1–2 fraze | |
-| `poze` | listă `{ src, alt }`, 3–5 | editabile din Keystatic |
+| `poze` | listă `{ src, alt }`, 4–6 | editabile din Keystatic |
 | `acordClient` | `true` / `false` | **evenimentul nu se publică fără `true`** |
 
 ## 6. Testimoniale: `content/testimoniale.json`

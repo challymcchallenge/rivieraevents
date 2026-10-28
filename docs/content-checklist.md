@@ -170,4 +170,5 @@ Rămase:
 - ✅ Tururi pentru apartamentul mirilor al fiecărui salon Riviera (Rosa, Noblesse, Premiere), pe annaevents.ro.
 - ✅ Capacitate de conferință: fără cifre, „în funcție de amenajare” (decizie client).
 - ✅ Logo vectorial: 4 SVG în `assets/brand/` (verificate: fără scripturi sau linkuri externe). Culori: negru #000000 / #1e1e1e, roșu #ff3131, alb cald #fffefa, gri deschis #d9d9d9.
-- ☐ Evenimentele pentru portofoliu (format în `content/portofoliu/exemplu-format.json`).
+- ✅ Portofoliu: 9 evenimente (4 Riviera, 5 ANNA Events) în `content/portofoliu/`, fără numele mirilor. ☐ De confirmat: acordul cuplurilor din poze. ☐ Opțional: salonul și luna pentru evenimentele Riviera.
+- ✅ Galerii de exterior pentru ambele complexe în `site.json` (9 + 12 poze, cu text alternativ).

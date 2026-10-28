@@ -1,0 +1,33 @@
+{
+  "slug": "nunta-trandafiri-rosii-riviera",
+  "titlu": "Nuntă cu trandafiri roșii",
+  "tip": "nunta",
+  "complex": "riviera",
+  "salon": null,
+  "data": null,
+  "descriere": "Buchetul de trandafiri roșii a dat tonul serii. Mirii s-au fotografiat în grădină la apus, iar în lounge-ul din aer liber și-au găsit câteva minute doar pentru ei.",
+  "poze": [
+    {
+      "src": "portofoliu-riviera/portofoliu-riviera-013.jpg",
+      "alt": "Mirii în grădina Riviera, mireasa cu buchet de trandafiri roșii"
+    },
+    {
+      "src": "portofoliu-riviera/portofoliu-riviera-014.jpg",
+      "alt": "Portret al mirilor în grădină"
+    },
+    {
+      "src": "portofoliu-riviera/portofoliu-riviera-015.jpg",
+      "alt": "Mirii pe aleea grădinii"
+    },
+    {
+      "src": "portofoliu-riviera/portofoliu-riviera-016.jpg",
+      "alt": "Mirii în lounge-ul din aer liber"
+    },
+    {
+      "src": "portofoliu-riviera/portofoliu-riviera-012.jpg",
+      "alt": "Mirii pe canapeaua din grădină"
+    }
+  ],
+  "acordClient": true,
+  "_nota": "Evenimentele și pozele alese din folderele de portofoliu trimise de client (2026-10-28), grupate după poze și data EXIF. Fără numele mirilor. [PRESUPUNERE] cuplurile din poze și-au dat acordul de publicare; clientul păstrează dovada."
+}
