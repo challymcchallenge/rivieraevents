@@ -137,6 +137,22 @@ Se afișează doar cele cu `acord: true`.
 
 Telefoane cu rol, WhatsApp (număr + text implicit + marcaj de sursă, vezi ADR-005), email, adrese pentru ambele complexe (cu coordonate pentru hartă și schema.org), program de vizitare, social, datele firmei.
 
+## 7b. Slideshow pagina principală: `content/acasa-slideshow.json` (ADR-007)
+
+În Keystatic e un *singleton* „Pagina principală → Slideshow”: `fields.array` cu `validation.length: { min: 1, max: 10 }`, iar fiecare element e un `fields.conditional` (imagine / video).
+
+| Câmp | Tip | Obligatoriu | Notă |
+|---|---|---|---|
+| `intervalSecunde` | număr 4–10 | da | implicit 6 |
+| `slideuri[].tip` | `imagine` / `video` | da | |
+| `slideuri[].imagine` | imagine, orizontală | da (tip imagine) | min. 1920 px lățime; se afișează prin `next/image` |
+| `slideuri[].imagineMobil` | imagine, verticală | nu | dacă lipsește, se decupează `imagine` după `punctFocal` |
+| `slideuri[].punctFocal` | text `"X% Y%"` | nu | implicit `"50% 50%"` |
+| `slideuri[].video.desktop` | fișier MP4 H.264, 16:9 | da (tip video) | ≤ 8 MB; build-ul avertizează peste prag și eșuează peste 15 MB |
+| `slideuri[].video.mobil` | fișier MP4 H.264, 9:16 sau 4:5 | nu | ≤ 4 MB; dacă lipsește, mobilul vede posterul |
+| `slideuri[].video.poster` | imagine | da (tip video) | primul cadru; e imaginea principală (LCP) dacă slide-ul e primul |
+| `slideuri[].alt` | text | da | descrie ce se vede, pentru cititoare de ecran |
+
 ## 8. Pagini: `content/pagini/<pagina>.mdx`
 
 Antet (frontmatter) obligatoriu pentru fiecare pagină:

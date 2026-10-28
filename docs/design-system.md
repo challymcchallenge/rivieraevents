@@ -95,6 +95,19 @@ Butonul rotund WhatsApp e verde pe fundal deschis (1.97:1). E logo de brand, dec
 
 ## 4. Componente
 
+### Hero: slideshow (ADR-007)
+- Între 1 și 10 slide-uri din `content/acasa-slideshow.json`, schimbate prin crossfade de 1 s la fiecare `intervalSecunde` (implicit 6 s). **Titlul, subtitlul și butoanele nu se schimbă.**
+- Pe mobil se folosește `imagineMobil`, iar dacă lipsește, imaginea de desktop decupată după `punctFocal`.
+- **Slide video:** `<video muted autoplay loop playsinline poster>`, fără controale, fără sunet. Pe telefon se folosește versiunea pentru mobil.
+  - În locul video-ului se afișează doar posterul dacă vizitatorul are `prefers-reduced-motion`, `Save-Data` sau o conexiune 2G.
+  - Video-ul nu se descarcă până nu urmează slide-ul lui.
+- **Controale**, jos în stânga pe mobil și jos în dreapta pe desktop, deasupra gradientului:
+  - butonul **Pauză/Redare**, 44×44px, cu `aria-label` și `aria-pressed`;
+  - **puncte** de 8px, cu zonă de atingere de 24px, câte unul pe slide; punctul activ e alb plin, celelalte au opacitate 50%.
+- Rotația se oprește la hover, la focus în hero și când tab-ul e ascuns. Cu `prefers-reduced-motion` nu pornește deloc.
+- **Încărcare:** primul slide are `priority`. Următorul se preîncarcă doar după ce pagina e gata, iar restul doar când le vine rândul.
+- Bula WhatsApp nu acoperă controalele: pe mobil apare abia după ce vizitatorul a derulat dincolo de hero.
+
 ### Header
 - E transparent peste hero, cu text și logo deschise la culoare (`logo-3-transparent.svg`) în ambele teme.
 - Pe desktop meniul are 6 linkuri: Saloane, Pachete, Meniuri, Tur virtual, Portofoliu, Contact. Pe mobil e un buton-hamburger de 44×44px.
@@ -145,10 +158,10 @@ Poză 4:5, apoi numele (Cormorant 30px), capacitatea (eyebrow `--color-accent-te
 ---
 
 ## 5. Mișcare
-- Maximum **3–4 componente animate pe pagină** (Magic UI și ReactBits, Faza 5).
+- Maximum **3–4 componente animate pe pagină** (Magic UI și ReactBits, Faza 5). Pe pagina principală, slideshow-ul din hero ocupă unul din aceste locuri.
 - Apariția la derulare se face prin opacitate și o deplasare de 8–16px, în 300–400ms, `ease-out`. Hover-ul durează 150–250ms.
 - `prefers-reduced-motion: reduce`: toate animațiile se opresc, iar conținutul apare direct în starea finală.
-- Fără video de fundal în hero (ADR-004). Fără carusel automat.
+- Singurul carusel automat e slideshow-ul din hero, cu buton de pauză (ADR-007). În rest, fără carusele automate. Video-ul din hero respectă bugetul din ADR-007: mobil ≤ 4 MB, desktop ≤ 8 MB.
 
 ---
 

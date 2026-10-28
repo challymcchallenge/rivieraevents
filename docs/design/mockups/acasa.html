@@ -56,6 +56,12 @@ header nav{display:none;gap:28px;font:500 14px/1 var(--font-body)}
 .hero .btn{background:#FFFEFA;color:#1E1E1E}
 [data-theme="dark"] .hero .btn{background:var(--btn-bg);color:var(--btn-text)}
 .hero .btn2{border-color:var(--hero-text);color:var(--hero-text)}
+.sl-ctrl{display:flex;align-items:center;gap:4px;margin-top:var(--space-3)}
+.sl-ctrl .icon-btn{color:var(--hero-text)}
+.dots{display:flex}
+.dots button{width:24px;height:24px;display:grid;place-items:center}
+.dots button::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--hero-text);opacity:.5}
+.dots button[aria-current="true"]::after{opacity:1}
 section{padding:var(--space-5) 0}
 .head{display:flex;flex-direction:column;gap:var(--space-1);margin-bottom:var(--space-4)}
 .head h2{font-size:clamp(32px,6vw,52px)}
@@ -138,6 +144,10 @@ footer .logo-dark{display:none}
     <h1>Saloane de nuntă pe malul Jiului, în Târgu Jiu</h1>
     <p>Trei saloane la Riviera, pentru până la 400 de invitați. Ne spuneți cum vă imaginați ziua, iar noi ne ocupăm de meniu, tort, baruri și cazarea oaspeților.</p>
     <div class="ctas"><a class="btn" href="#"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>Cereți oferta pe WhatsApp</a><a class="btn2" href="#">Estimați bugetul</a></div>
+    <div class="sl-ctrl" role="group" aria-label="Control slideshow">
+      <button class="icon-btn" type="button" aria-label="Pauză slideshow" aria-pressed="false"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg></button>
+      <div class="dots"><button type="button" aria-label="Slide 1 din 10" aria-current="true"></button><button type="button" aria-label="Slide 2 din 10"></button><button type="button" aria-label="Slide 3 din 10"></button><button type="button" aria-label="Slide 4 din 10"></button><button type="button" aria-label="Slide 5 din 10"></button><button type="button" aria-label="Slide 6 din 10"></button><button type="button" aria-label="Slide 7 din 10"></button><button type="button" aria-label="Slide 8 din 10"></button><button type="button" aria-label="Slide 9 din 10"></button><button type="button" aria-label="Slide 10 din 10"></button></div>
+    </div>
   </div>
 </section>
 
@@ -203,7 +213,7 @@ footer .logo-dark{display:none}
 <div class="wa">
   <aside class="wa-pop" aria-label="Mesaj WhatsApp">
     <button class="x" type="button" aria-label="Închide mesajul">×</button>
-    <p>Bună ziua! Vă răspundem pe WhatsApp de obicei în câteva minute, între 09:00 și 18:00.</p>
+    <p>Bună ziua! Vă răspundem pe WhatsApp de obicei în câteva minute.</p>
     <a class="wa-open" href="#"><img src="../../../assets/brand/whatsapp-192.png" alt="" width="20" height="20" style="width:20px;height:20px">Deschideți WhatsApp</a>
   </aside>
   <a class="wa-fab" href="#" aria-label="Scrieți-ne pe WhatsApp"><img src="../../../assets/brand/whatsapp-192.png" alt="" width="60" height="60"></a>

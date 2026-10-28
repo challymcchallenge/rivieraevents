@@ -219,6 +219,7 @@ sequenceDiagram
 | [004](adr/004-imagini-si-video.md) | Imagini în repo + next/image; video pe YouTube cu încărcare la click | Acceptat, cu limitele Hobby |
 | [005](adr/005-analytics-si-cookies.md) | Doar Vercel Web Analytics (Hobby): vizite, fără conversii. WhatsApp-ul pre-completat poartă un marcaj de sursă pentru numărare manuală | Acceptat |
 | [006](adr/006-formular-web3forms.md) | Formular prin Web3Forms, din browser | Acceptat |
+| [007](adr/007-slideshow-si-video-in-hero.md) | Slideshow 1–10 slide-uri cu imagini și video în hero, editabil din Keystatic | Acceptat (înlocuiește parțial 004) |
 
 > Diagramele din §4 arată varianta inițială (Route Handler + SMTP). Pentru formular, fluxul real e browser → Web3Forms → email. Diagramele se actualizează în Faza 5, la inițializarea proiectului.
 

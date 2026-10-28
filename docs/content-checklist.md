@@ -172,3 +172,20 @@ Rămase:
 - ✅ Logo vectorial: 4 SVG în `assets/brand/` (verificate: fără scripturi sau linkuri externe). Culori: negru #000000 / #1e1e1e, roșu #ff3131, alb cald #fffefa, gri deschis #d9d9d9.
 - ✅ Portofoliu: 9 evenimente (4 Riviera, 5 ANNA Events) în `content/portofoliu/`, fără numele mirilor. ☐ De confirmat: acordul cuplurilor din poze. ☐ Opțional: salonul și luna pentru evenimentele Riviera.
 - ✅ Galerii de exterior pentru ambele complexe în `site.json` (9 + 12 poze, cu text alternativ).
+
+## 15. Slideshow și clip video pentru hero (ADR-007, 2026-10-28)
+
+- ✅ 10 slide-uri inițiale în `content/acasa-slideshow.json` (grădină, Rosa, ceremonie, Noblesse, Premiere, cununie, cină în grădină, tort, apartamentul mirilor, miri la apus). Le schimbați din panou.
+- ☐ **Clipul profesionist.** Specificații de trimis videografului:
+
+| | Desktop | Mobil |
+|---|---|---|
+| Format | MP4, H.264, fără pistă audio | MP4, H.264, fără pistă audio |
+| Cadru | 16:9, 1920×1080 | 9:16 (1080×1920) sau 4:5 (1080×1350) |
+| Durată | 15–30 s, să se poată relua în buclă fără „săritură” | idem |
+| Mărime | **≤ 8 MB** (ținta: ~2–3 Mbps) | **≤ 4 MB** |
+| Cadre/s | 24 sau 25 | 24 sau 25 |
+| Poster | JPG din primul cadru, 1920×1080 | JPG, 1080×1920 |
+| Conținut | fără text peste imagine (titlul site-ului stă deasupra); subiectul principal în centru, nu în treimea de jos, unde stă textul | idem |
+
+- ☐ Persoanele care apar în clip trebuie să-și fi dat acordul de publicare.

@@ -1,7 +1,7 @@
 # ADR-004: Imagini în repo optimizate de next/image; video pe YouTube cu încărcare la click
 
 ## Status
-**Acceptat** (GATE 2, 2026-10-28), cu o completare pentru planul Hobby:
+**Acceptat** (GATE 2, 2026-10-28), cu o completare pentru planul Hobby. **Punctul „Fără video de fundal în hero” e înlocuit de [ADR-007](007-slideshow-si-video-in-hero.md)** (slideshow cu video, 2026-10-28).
 
 - **Limita Hobby:** 5.000 de transformări pe lună. Peste limită, **imaginile noi returnează eroarea 402** și nu se facturează ([docs](https://vercel.com/docs/image-optimization/limits-and-pricing), verificat 2026-10-28).
 - **Estimare:** ~250 de imagini × 4 dimensiuni × 2 formate = ~2.000 de transformări la lansare `[estimare]`. Intră în limită.
