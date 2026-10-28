@@ -5,7 +5,7 @@
   "ordine": 1,
   "capacitate": {
     "nunta": 400,
-    "conferinta": "[NEED: capacitate maximă conferință]",
+    "conferinta": null,
     "min": null
   },
   "suprafataMp": null,
@@ -15,18 +15,23 @@
     "corporate"
   ],
   "puncteForte": [
-    "[NEED: 3–5 puncte forte ale salonului Rosa, de ex. ring de dans, lumină naturală, acces la terasă]"
+    "Pereți de sticlă de jur împrejur, cu grădina la vedere",
+    "Tavan drapat în valuri de voal, cu un candelabru central impunător",
+    "Scenă cu lumini de concert, pregătită pentru formație",
+    "Lumina caldă a apusului, care intră seara pe ferestre",
+    "Apartamentul mirilor propriu"
   ],
   "dotari": [
     "Apartamentul mirilor propriu, inclus în prețul evenimentului"
   ],
   "descriereScurta": "Cel mai încăpător salon de la Riviera: până la 400 de invitați, pentru nunți, botezuri și evenimente de firmă.",
-  "descriere": "Salonul Rosa primește până la 400 de invitați și este cel mai mare dintre cele trei saloane ale complexului Riviera, de pe malul Jiului. Îl aleg de obicei familiile care fac o nuntă mare sau un botez cu multă lume, și firmele care adună toată echipa la petrecerea de final de an. [NEED: 2–3 fraze despre ce face salonul Rosa diferit: amenajare, lumină, ring de dans, legătura cu terasa sau cu râul]. Meniul îl alegeți din catalogul ANNA, iar tortul, barurile tematice, decorul și cazarea oaspeților le rezolvați tot în Grupul ANNA. Salonul are propriul apartament al mirilor, inclus în prețul evenimentului. Vă așteptăm să-l vedeți pe viu, înainte să vă hotărâți.",
+  "descriere": "Salonul Rosa primește până la 400 de invitați și este cel mai mare dintre cele trei saloane ale complexului Riviera, de pe malul Jiului. Îl aleg de obicei familiile care fac o nuntă mare sau un botez cu multă lume, și firmele care adună toată echipa la petrecerea de final de an. Rosa e cel mai luminos salon de la Riviera: pereții de sticlă lasă grădina să intre în decor, iar tavanul drapat în valuri de voal și candelabrul central îi dau un aer de poveste. Scena cu lumini de concert e pregătită pentru formație, iar spre seară apusul învăluie mesele într-un auriu cald. Meniul îl alegeți din catalogul ANNA, iar tortul, barurile tematice, decorul și cazarea oaspeților le rezolvați tot în Grupul ANNA. Salonul are propriul apartament al mirilor, inclus în prețul evenimentului. Vă așteptăm să-l vedeți pe viu, înainte să vă hotărâți.",
   "seo": {
     "titlu": "Salon Rosa, până la 400 de invitați | Riviera Târgu Jiu",
     "descriere": "Salonul Rosa de la Riviera Events, pe malul Jiului în Târgu Jiu: nunți, botezuri și evenimente de firmă cu până la 400 de invitați."
   },
   "galerie": [],
-  "tur360": null,
-  "video": []
+  "tur360": "https://annaevents.ro/tur-virtual/2024/rosa/tour.html",
+  "video": [],
+  "_sursaText": "Puncte forte și descriere scrise din pozele salonului (2026-10-28). De verificat de client."
 }

@@ -41,14 +41,14 @@
     },
     "insulita": {
       "nume": "Complexul ANNA Events",
-      "adresa": "[NEED: stradă și număr], Insulița, Parcul Central, Târgu Jiu, Gorj",
+      "adresa": "Insulița Jiului, Târgu Jiu, Gorj",
       "descriereLocatie": "pe Insulița din Parcul Central",
       "coordonate": null,
       "site": "https://www.annaevents.ro"
     }
   },
-  "programVizitare": "[NEED: zile și ore de vizitare a saloanelor, cu sau fără programare]",
-  "timpRaspuns": "[NEED: în cât timp răspundeți la o cerere, de ex. în aceeași zi]",
+  "programVizitare": "Vizita în saloane se stabilește la prima discuție, în funcție de evenimentele din calendar.",
+  "timpRaspuns": "Vă răspundem cât mai repede, de regulă în aceeași zi.",
   "social": {
     "facebook": "https://www.facebook.com/AnnaEvents.Ro/",
     "instagram": "https://www.instagram.com/anna.events.tg.jiu/",
@@ -57,10 +57,10 @@
   "firma": {
     "denumire": "ANNA COMPLEX 1991 SRL",
     "cui": "37378065",
-    "dataInfiintarii": "2017-04-11",
-    "registruComertului": "[NEED: nr. ONRC, de ex. J18/.../2017]",
-    "sediu": "[NEED: sediu social]",
-    "_nota": "Din captura trimisă de client (2026-10-28). [PRESUPUNERE] ANNA COMPLEX 1991 SRL este firma care operează Riviera Events. De confirmat."
+    "registruComertului": "J18/330/12.04.2017",
+    "sediu": "Calea Severinului nr. 24, biroul 6, Târgu Jiu, Gorj",
+    "dataInfiintarii": "2017-04-12",
+    "_sursa": "Certificatul de înregistrare ONRC trimis de client (2026-10-28)."
   },
   "_notaTelefoane": "Toate cele 4 numere se afișează la Contact; doar primul are WhatsApp. [PRESUPUNERE] celelalte trei au rolul „Rezervări” până la alte indicații.",
   "anInfiintareGrup": 1991,
@@ -108,5 +108,6 @@
         "url": "https://hotelannajunior.ro/"
       }
     ]
-  }
+  },
+  "_notaTimpRaspuns": "[PRESUPUNERE] „în aceeași zi”, scris la cererea clientului. De confirmat că echipa poate respecta promisiunea."
 }

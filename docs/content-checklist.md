@@ -152,3 +152,22 @@ Pozele din catalog sunt deja asociate fiecărei secțiuni în `content/meniuri.j
 | Rosa, Ronda, Magic, Estuar | ☐ lipsesc, le faceți voi |
 
 ☐ **P1** Unde găzduim tururile (~530 MB)? Vezi variantele din mesajul de pe chat.
+
+## 14. Stare după runda a 4-a de răspunsuri (2026-10-28)
+
+Rezolvate:
+- ✅ Datele firmei din certificatul ONRC: ANNA COMPLEX 1991 SRL, CUI 37378065, J18/330/12.04.2017, sediu Calea Severinului nr. 24, biroul 6, Târgu Jiu.
+- ✅ Adresa Insulița: Insulița Jiului, Târgu Jiu, Gorj. Programul de vizitare se stabilește la prima discuție.
+- ✅ 10 testimoniale trimise de client ca reale (5 Riviera, 5 ANNA Events). Clientul păstrează dovada acordului. Lipsește salonul exact pentru fiecare (opțional).
+- ✅ **Tortul mirilor NU e inclus**: se comandă de la Cofetăria Anna. Texte corectate pe Acasă, Meniuri, Pachete.
+- ✅ Tururi online pe annaevents.ro: Rosa, Noblesse, Premiere, Ronda, Magic, Estuar.
+- ✅ Puncte forte și descrieri pentru toate cele 7 saloane, scrise din poze. **De citit de client**: decorul floral din poze ține de fiecare eveniment, l-am evitat; am descris tavanele, ferestrele, luminile, priveliștea.
+- ✅ Apartamentul mirilor descris din poze. Servicii premium, cazare, decor, echipă, timp de răspuns ([PRESUPUNERE] „de regulă în aceeași zi”).
+
+Rămase:
+- ☐ **P1** Intervalele de buget pe invitat (nuntă, botez, corporate) în `content/buget.json`. Fără ele calculatorul arată doar butonul de WhatsApp.
+- ☐ Turul Grande (nou) urcat pe annaevents.ro + link.
+- ☐ Turul apartamentului mirilor generat din cele 8 panorame + link.
+- ☐ Capacitate de conferință la saloanele Riviera (acum nu se afișează).
+- ☐ Logo vectorial.
+- ☐ Evenimentele pentru portofoliu (format în `content/portofoliu/exemplu-format.json`).

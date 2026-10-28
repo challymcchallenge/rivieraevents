@@ -1,21 +1,21 @@
 {
-  "_instructiuni": "Tururile se încarcă doar la click (ADR-004). 'url' se completează după ce alegem unde se găzduiesc.",
+  "_instructiuni": "Tururile sunt găzduite pe annaevents.ro (decizie client, 2026-10-28) și se încarcă doar la click (ADR-004). Linkuri găsite în paginile saloanelor de pe annaevents.ro, 2026-10-28.",
   "tururi": [
     {
       "id": "noblesse",
       "titlu": "Salon Noblesse",
       "complex": "riviera",
-      "sursa": "Media/Tur Virtual Saloane/Salon Noblesse (krpano)",
-      "url": null,
-      "status": "gata"
+      "sursa": "annaevents.ro",
+      "url": "https://annaevents.ro/tur-virtual/2024/nobles/tour.html",
+      "status": "online"
     },
     {
       "id": "premiere",
       "titlu": "Salon Premiere",
       "complex": "riviera",
-      "sursa": "Media/Tur Virtual Saloane/Salon Premiere (krpano)",
-      "url": null,
-      "status": "gata"
+      "sursa": "annaevents.ro",
+      "url": "https://annaevents.ro/tur-virtual/2024/premier/tour.html",
+      "status": "online"
     },
     {
       "id": "apartamentul-mirilor",
@@ -23,47 +23,49 @@
       "complex": "riviera",
       "sursa": "Media/Tur Virtual Saloane/Apartamentul Mirilor (8 panorame JPG, fără tur generat)",
       "url": null,
-      "status": "de generat"
+      "status": "de generat",
+      "_nota": "[NEED: turul trebuie generat în krpano din cele 8 panorame și urcat pe annaevents.ro]"
     },
     {
       "id": "rosa",
       "titlu": "Salon Rosa",
       "complex": "riviera",
-      "sursa": null,
-      "url": null,
-      "status": "lipsește"
+      "sursa": "annaevents.ro",
+      "url": "https://annaevents.ro/tur-virtual/2024/rosa/tour.html",
+      "status": "online"
     },
     {
       "id": "grande",
       "titlu": "Salon Grande",
       "complex": "insulita",
-      "sursa": "Media/Tur Virtual Saloane/Salon Grande (krpano)",
+      "sursa": "Media/Tur Virtual Saloane/Salon Grande (krpano, tur nou)",
       "url": null,
-      "status": "gata"
+      "status": "de urcat",
+      "_nota": "[NEED: urcați folderul pe annaevents.ro, de ex. /tur-virtual/2026/grande/, și trimiteți linkul]"
     },
     {
       "id": "ronda",
       "titlu": "Salon Ronda",
       "complex": "insulita",
-      "sursa": null,
-      "url": null,
-      "status": "lipsește"
+      "sursa": "annaevents.ro",
+      "url": "https://annaevents.ro/tur-virtual/2024/ronda/tour.html",
+      "status": "online"
     },
     {
       "id": "magic",
       "titlu": "Salon Magic",
       "complex": "insulita",
-      "sursa": null,
-      "url": null,
-      "status": "lipsește"
+      "sursa": "annaevents.ro",
+      "url": "https://www.annaevents.ro/tur-virtual/anna_events/sala-noua/tour.html",
+      "status": "online"
     },
     {
       "id": "estuar",
       "titlu": "Salon Estuar",
       "complex": "insulita",
-      "sursa": null,
-      "url": null,
-      "status": "lipsește"
+      "sursa": "annaevents.ro",
+      "url": "https://www.annaevents.ro/tur-virtual/anna_events/sala-estuar/salon_estuar.html",
+      "status": "online"
     }
   ]
 }

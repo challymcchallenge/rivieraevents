@@ -1,1 +1,115 @@
-[]
+{
+  "_sursa": "Trimise de client ca testimoniale reale, 2026-10-28. Clientul răspunde de autenticitate și de acordul de publicare; păstrați dovada acordului (mesaj, email).",
+  "testimoniale": [
+    {
+      "id": "t01",
+      "nume": "Andreea și Mihai Dumitrescu",
+      "complex": "riviera",
+      "salon": null,
+      "tip": "nunta",
+      "tipAfisat": null,
+      "data": "2025-06-14",
+      "text": "Dacă ar trebui să descriem nunta noastră la Riviera Events într-un singur cuvânt, acela ar fi perfecțiune. Grădina a fost cadrul de vis pentru cununia religioasă în aer liber — invitații noștri au fost fermecați de peisaj și de apusul spectaculos. Salonul arată impecabil, iar servirea a funcționat ca un ceas elvețian: discretă, atentă și extrem de promptă. Mulțumim întregii echipe pentru că ne-a oferit o zi complet lipsită de griji!",
+      "acordClient": true
+    },
+    {
+      "id": "t02",
+      "nume": "Roxana și Cristian Vlădescu",
+      "complex": "riviera",
+      "salon": null,
+      "tip": "nunta",
+      "tipAfisat": null,
+      "data": "2025-09-20",
+      "text": "Alegerea Riviera Events a fost cea mai bună decizie din tot procesul de organizare. Sala este luminoasă, aerisită și impunătoare, iar mâncarea a fost la nivel de restaurant fine dining — toată lumea a lăudat calitatea meniului și prezentarea. Grădina amenajată cu atâta grijă a oferit fotografului nostru cele mai frumoase cadre. Vă mulțumim pentru căldură, răbdare și profesionalismul impecabil!",
+      "acordClient": true
+    },
+    {
+      "id": "t03",
+      "nume": "Diana și Vlad Moraru",
+      "complex": "riviera",
+      "salon": null,
+      "tip": "botez",
+      "tipAfisat": "Botez și petrecere de zi",
+      "data": "2026-05-17",
+      "text": "Am organizat botezul fetiței noastre la Riviera și a depășit orice așteptare. Spațiul verde din grădină a fost o oază de relaxare pentru cei mari și un loc minunat de joacă pentru copii. Serviciul a fost ireproșabil de la primul cocktail de bun venit până la tort. O echipă de profesioniști care înțelege cu adevărat ce înseamnă ospitalitatea la cele mai înalte standarde.",
+      "acordClient": true
+    },
+    {
+      "id": "t04",
+      "nume": "Elena și Bogdan Stanciu",
+      "complex": "riviera",
+      "salon": null,
+      "tip": "nunta",
+      "tipAfisat": null,
+      "data": "2026-07-11",
+      "text": "Ne doream o nuntă elegantă, dar relaxată, iar atmosfera de la Riviera Events a îmbinat ambele cerințe extraordinar. Salonul este decorat cu un bun-gust desăvârșit, iar coordonarea din timpul serii ne-a permis să fim 100% prezenți alături de invitați, fără niciun stres logistic. Grădina la lumina serii a fost magică. Mulțumim pentru tot sprijinul!",
+      "acordClient": true
+    },
+    {
+      "id": "t05",
+      "nume": "Alexandra și Paul Ionescu",
+      "complex": "riviera",
+      "salon": null,
+      "tip": "nunta",
+      "tipAfisat": "Cununie civilă și petrecere",
+      "data": "2026-09-05",
+      "text": "O experiență de nota 10! De la prima discuție și degustarea meniului până la finalul evenimentului, totul a fost tratat cu o atenție incredibilă la detalii. Grădina este superb întreținută, iar contrastul dintre natură și eleganța salonului interior creează un cadru unic. Ospătarii au fost extrem de amabili și prompți. Recomandăm Riviera Events din toată inima!",
+      "acordClient": true
+    },
+    {
+      "id": "t06",
+      "nume": "Ioana și Gabriel Popescu",
+      "complex": "insulita",
+      "salon": null,
+      "tip": "nunta",
+      "tipAfisat": null,
+      "data": "2025-05-24",
+      "text": "ANNA Events a transformat nunta noastră într-o poveste reală. Eleganța salonului, candelabrele, acustica și felul în care au pus în scenă fiecare moment au creat o atmosferă copleșitoare. Mâncarea a fost excepțională, servită caldă și la timp pentru toți invitații. Mulțumim echipei pentru devotament și pentru că ați avut grijă de fiecare mic detaliu!",
+      "acordClient": true
+    },
+    {
+      "id": "t07",
+      "nume": "Simona și Cătălin Neagu",
+      "complex": "insulita",
+      "salon": null,
+      "tip": "nunta",
+      "tipAfisat": null,
+      "data": "2025-08-23",
+      "text": "Când am văzut prima dată grădina și salonul de la ANNA Events, am știut instant că acolo ne vom căsători. Grădina este pur și simplu un spectacol al naturii, perfectă pentru primirea invitaților și ședința foto. Nivelul de organizare a fost impecabil — coordonatorii au știut să gestioneze orice mic moment neprevăzut fără ca noi să simțim vreo secundă presiunea. Jos pălăria!",
+      "acordClient": true
+    },
+    {
+      "id": "t08",
+      "nume": "Maria și Dan Teodorescu",
+      "complex": "insulita",
+      "salon": null,
+      "tip": "botez",
+      "tipAfisat": "Botez și aniversare",
+      "data": "2025-10-04",
+      "text": "Am sărbătorit botezul băiețelului nostru la ANNA Events și a fost o zi de neuitat. Eleganța salonului i-a impresionat pe toți cei prezenți, iar curățenia și atenția la detalii au fost desăvârșite. Personalul de servire merită toate laudele: atenți, zâmbitori și rapizi, fără a fi invazivi. A fost exact evenimentul cald și rafinat pe care ni l-am dorit.",
+      "acordClient": true
+    },
+    {
+      "id": "t09",
+      "nume": "Corina și Radu Enache",
+      "complex": "insulita",
+      "salon": null,
+      "tip": "nunta",
+      "tipAfisat": null,
+      "data": "2026-06-06",
+      "text": "Profesionalism dus la rang de artă! La ANNA Events nu cumperi doar închirierea unei săli, ci liniștea că evenimentul tău va ieși impecabil. Meniul a fost lăudat de toți invitații (inclusiv opțiunile vegetariene), iar grădina generoasă a fost refugiul perfect pentru discuții și poze în aer liber. Mulțumim din suflet întregii echipe pentru o zi memorabilă!",
+      "acordClient": true
+    },
+    {
+      "id": "t10",
+      "nume": "Anca și Sorin Marinescu",
+      "complex": "insulita",
+      "salon": null,
+      "tip": "nunta",
+      "tipAfisat": null,
+      "data": "2026-08-22",
+      "text": "O nuntă de vis! Decorul salonului este sofisticat și nu necesită artificii suplimentare pentru a arăta spectaculos, iar grădina verde creează o atmosferă nobilă și primitoare. Servirea a fost la superlativ — toți invitații ne-au spus cât de bine s-au simțit și cât de atenți au fost ospătarii. Dacă vă doriți un eveniment fără cusur, ANNA Events este alegerea sigură.",
+      "acordClient": true
+    }
+  ]
+}

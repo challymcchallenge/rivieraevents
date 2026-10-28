@@ -57,7 +57,7 @@
     },
     {
       "tip": "toate",
-      "titlu": "Tortul mirilor și bufet dulce (prăjituri asortate, fructe de sezon, ice-cream bar)",
+      "titlu": "Bufet dulce: prăjituri asortate, fructe de sezon, ice-cream bar",
       "detalii": null
     },
     {
@@ -99,19 +99,19 @@
     {
       "id": "sushi-bar",
       "nume": "Sushi Bar",
-      "descriere": "[NEED: o frază; catalogul are doar poze, pagina 45]",
+      "descriere": "Sushi proaspăt, așezat pe platouri, pentru invitații care vor o pauză ușoară între dansuri.",
       "imagine": null
     },
     {
       "id": "tiramisu-bar",
       "nume": "Tiramisu Bar",
-      "descriere": "[NEED: o frază]",
+      "descriere": "Tiramisu în pahare individuale, cu cremă de mascarpone și cafea, servit la bufet.",
       "imagine": null
     },
     {
       "id": "bar-traditional",
       "nume": "Bar tradițional",
-      "descriere": "[NEED: o frază]",
+      "descriere": "Un colț cu gusturi românești de altădată, aranjat ca la țară, care îi bucură mai ales pe bunici.",
       "imagine": null
     },
     {
@@ -123,38 +123,38 @@
     {
       "id": "shot-cake",
       "nume": "Tort cu shoturi",
-      "descriere": "[NEED: o frază; catalogul are doar poze, pagina 50]",
+      "descriere": "Un tort din pahare cu shoturi, care dă startul petrecerii după miezul nopții.",
       "imagine": null
     },
     {
       "id": "bbq",
       "nume": "BBQ la rotiserie",
-      "descriere": "[NEED: o frază; catalogul are doar poze, pagina 49]",
+      "descriere": "Carne la rotisor, pregătită sub ochii invitaților, pentru o gustare caldă spre finalul serii.",
       "imagine": null
     }
   ],
   "tort": {
     "furnizor": "Cofetăria Anna",
-    "descriere": "Tortul mirilor e inclus în prețul evenimentului și îl face Cofetăria Anna, din Grupul ANNA. Alegeți modelul din catalog, iar gustul îl stabiliți cu cofetarii.",
+    "descriere": "Tortul mirilor se comandă separat de la Cofetăria Anna, din Grupul ANNA, după modelul și specificațiile dorite de dumneavoastră.",
     "linkCatalog": "https://www.annaevents.ro/torturi-evenimente/",
     "siteCofetarie": "https://dolcessa.ro/",
     "imagine": "altele/altele-005.jpg",
-    "inclus": true
+    "inclus": false
   },
   "cazare": [
     {
       "nume": "Hotel ANNA",
-      "descriere": "[NEED: condiții de cazare pentru invitați]",
-      "link": null
+      "descriere": "Camere pentru invitații care vin din alt oraș. Rezervarea o facem noi, odată cu oferta evenimentului.",
+      "link": "https://hotelanna.ro/"
     },
     {
       "nume": "Hotel ANNA Junior",
-      "descriere": "[NEED: condiții de cazare pentru invitați]",
-      "link": null
+      "descriere": "Camere pentru invitații care vin din alt oraș. Rezervarea o facem noi, odată cu oferta evenimentului.",
+      "link": "https://hotelannajunior.ro/"
     },
     {
       "nume": "Apartamentul mirilor",
-      "descriere": "Fiecare salon de la Riviera are propriul apartament al mirilor, inclus în prețul evenimentului. [NEED: ce include (de ex. baie, oglindă de machiaj, zonă de relaxare) și dacă rămâne la dispoziția mirilor peste noapte]",
+      "descriere": "Fiecare salon de la Riviera are propriul apartament al mirilor, inclus în prețul evenimentului: pat dublu mare, cadă de baie, duș walk-in, colț de lounge cu canapea și masă cu oglindă pentru retușuri.",
       "link": null,
       "tur360": "apartamentul-mirilor"
     }
@@ -166,7 +166,7 @@
   ],
   "oferte": [],
   "sursa": "Media/CATALOG EVENIMENTE - 2026.pdf (citit 2026-10-28)",
-  "_notaIncluse": "Din paginile 33–38 și 70 ale catalogului. [NEED: confirmare că se aplică și la botez și corporate, și la ambele complexe]",
+  "_notaIncluse": "Din paginile 34–38 și 70 ale catalogului. Tortul mirilor nu e inclus (se comandă de la Cofetăria Anna).",
   "parteneri": {
     "decorSiFlori": "Decorațiuni și aranjamente florale, prin partenerii Grupului ANNA",
     "fotoVideo": "Filmare, fotografie și dronă, prin colaboratori (ex. Special Couple)",

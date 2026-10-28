@@ -15,16 +15,20 @@
     "corporate"
   ],
   "puncteForte": [
-    "[NEED: 3–5 puncte forte ale salonului Estuar]"
+    "Priveliște spre piscina cu fântâni arteziene",
+    "Tavan cu elemente octogonale și lumini ambientale",
+    "Pereți cu model decorativ",
+    "Mese lungi, pentru atmosfera de familie"
   ],
   "dotari": [],
   "descriereScurta": "Salonul pentru evenimente restrânse: până la 100 de invitați, pe Insulița din Parcul Central.",
-  "descriere": "Salonul Estuar e gândit pentru evenimente de până la 100 de invitați: un botez în familie, o aniversare, o masă după cununia civilă sau o întâlnire de firmă. Face parte din complexul ANNA Events, pe Insulița din Parcul Central. [NEED: 2–3 fraze despre salonul Estuar: atmosferă, amenajare, ce îl face potrivit pentru grupuri mici]. Meniul și serviciile sunt aceleași ca în saloanele mari, din oferta Grupului ANNA.",
+  "descriere": "Salonul Estuar e gândit pentru evenimente de până la 100 de invitați: un botez în familie, o aniversare, o masă după cununia civilă sau o întâlnire de firmă. Face parte din complexul ANNA Events, pe Insulița din Parcul Central. Estuar e salonul pentru cei dragi, nu pentru mulțimi: prin ferestrele mari se vede piscina cu fântâni arteziene, iar tavanul cu elemente octogonale și lumini ambientale dă serii un aer festiv. Mesele lungi îi strâng pe toți laolaltă, ca la o masă în familie, potrivită pentru un botez, o aniversare sau masa de după cununia civilă. Meniul și serviciile sunt aceleași ca în saloanele mari, din oferta Grupului ANNA.",
   "seo": {
     "titlu": "Salon Estuar, evenimente până la 100 de invitați",
     "descriere": "Salonul Estuar, pe Insulița din Târgu Jiu: botezuri, aniversări și întâlniri de firmă de până la 100 de invitați, cu meniu din catalogul ANNA."
   },
   "galerie": [],
-  "tur360": null,
-  "video": []
+  "tur360": "https://www.annaevents.ro/tur-virtual/anna_events/sala-estuar/salon_estuar.html",
+  "video": [],
+  "_sursaText": "Puncte forte și descriere scrise din pozele salonului (2026-10-28). De verificat de client."
 }

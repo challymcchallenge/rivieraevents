@@ -9,7 +9,6 @@
     "Meniu pentru copii"
   ],
   "inclusInToateMeniurile": {
-    "tortulMirilor": "Tortul mirilor (pagina 33 din catalog)",
     "bufetDulce": [
       "Prăjituri asortate",
       "Fructe de sezon",
@@ -30,10 +29,10 @@
       "Bere Tuborg 0,33 l",
       "Bere Tuborg 0,33 l fără alcool"
     ],
-    "_nota": "Din „Pachete incluse”, paginile 33, 37–38. [PRESUPUNERE] tortul, băuturile și bufetul dulce sunt incluse la toate meniurile. De confirmat.",
+    "_nota": "Din „Pachete incluse”, paginile 37–38. Tortul mirilor NU e inclus (client, 2026-10-28). [PRESUPUNERE] băuturile și bufetul dulce sunt incluse la toate meniurile.",
     "textBauturi": "Băuturile sunt incluse: apă plată și minerală, răcoritoare, espresso, cappuccino și caffe latte, vinuri de la Cramele Ursa Corcova, Sâmburești și Nobilis, bere Tuborg, cu și fără alcool, și whiskey.",
     "textBufetDulce": "După tort urmează bufetul dulce: prăjituri asortate, fructe de sezon și un ice-cream bar din care fiecare își face cupa preferată.",
-    "textTortulMirilor": "Tortul mirilor e inclus și îl face Cofetăria Anna. Alegeți împreună modelul și gustul."
+    "textTortulMirilor": "Tortul mirilor nu e inclus în meniu. Îl comandați de la Cofetăria Anna, din Grupul ANNA, după modelul și gustul pe care le alegeți."
   },
   "meniuri": [
     {

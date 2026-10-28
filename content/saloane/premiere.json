@@ -5,7 +5,7 @@
   "ordine": 3,
   "capacitate": {
     "nunta": 300,
-    "conferinta": "[NEED: capacitate maximă conferință]",
+    "conferinta": null,
     "min": null
   },
   "suprafataMp": null,
@@ -15,18 +15,23 @@
     "corporate"
   ],
   "puncteForte": [
-    "[NEED: 3–5 puncte forte ale salonului Premiere]"
+    "Draperii în nuanțe calde de caramel",
+    "Tavan drapat, cu jocuri de lumină",
+    "Intrare prin uși vitrate, în stil clasic",
+    "Ferestre spre verdeața din jur",
+    "Apartamentul mirilor propriu"
   ],
   "dotari": [
     "Apartamentul mirilor propriu, inclus în prețul evenimentului"
   ],
   "descriereScurta": "Salon de la Riviera pentru până la 300 de invitați: nunți, botezuri și evenimente de firmă, pe malul Jiului.",
-  "descriere": "Salonul Premiere găzduiește până la 300 de invitați și face parte din complexul Riviera, pe Aleea Digului, lângă Jiu. Se potrivește unei nunți de mărime medie, unui botez sau unei petreceri de firmă. [NEED: 2–3 fraze despre ce diferențiază Premiere de Noblesse: stil, lumină, ring de dans, acces la exterior]. Restul îl organizați tot cu Grupul ANNA: meniul din catalogul ANNA, tortul de la Cofetăria Anna, barurile tematice și cazarea oaspeților. Salonul are propriul apartament al mirilor, inclus în prețul evenimentului, iar turul virtual vă arată salonul înainte de vizită.",
+  "descriere": "Salonul Premiere găzduiește până la 300 de invitați și face parte din complexul Riviera, pe Aleea Digului, lângă Jiu. Se potrivește unei nunți de mărime medie, unui botez sau unei petreceri de firmă. Premiere are cea mai caldă atmosferă de la Riviera: draperiile în nuanțe de caramel și luminile care se joacă pe tavanul drapat fac salonul primitor încă de la intrarea prin ușile vitrate. Dacă Noblesse e un fundal neutru pentru decorul dumneavoastră, Premiere vine cu propria căldură, potrivită pentru nunțile cu flori în tonuri pastel și pentru seri lungi în familie. Restul îl organizați tot cu Grupul ANNA: meniul din catalogul ANNA, tortul de la Cofetăria Anna, barurile tematice și cazarea oaspeților. Salonul are propriul apartament al mirilor, inclus în prețul evenimentului, iar turul virtual vă arată salonul înainte de vizită.",
   "seo": {
     "titlu": "Salon Premiere, până la 300 de invitați | Riviera",
     "descriere": "Salonul Premiere de la Riviera Events, Târgu Jiu: nunți, botezuri și evenimente de firmă cu până la 300 de invitați, pe malul Jiului."
   },
   "galerie": [],
-  "tur360": null,
-  "video": []
+  "tur360": "https://annaevents.ro/tur-virtual/2024/premier/tour.html",
+  "video": [],
+  "_sursaText": "Puncte forte și descriere scrise din pozele salonului (2026-10-28). De verificat de client."
 }
