@@ -1,0 +1,20 @@
+{
+  "slug": "rosa",
+  "nume": "Salon Rosa",
+  "complex": "riviera",
+  "ordine": 1,
+  "capacitate": { "min": null, "max": 400 },
+  "suprafataMp": null,
+  "potrivitPentru": ["nunta", "botez", "corporate"],
+  "puncteForte": ["[NEED: 3–5 puncte forte ale salonului Rosa, de ex. ring de dans, lumină naturală, acces la terasă]"],
+  "dotari": [],
+  "descriereScurta": "Cel mai încăpător salon de la Riviera: până la 400 de invitați, pentru nunți, botezuri și evenimente de firmă.",
+  "descriere": "Salonul Rosa primește până la 400 de invitați și este cel mai mare dintre cele trei saloane ale complexului Riviera, de pe malul Jiului. Îl aleg de obicei familiile care fac o nuntă mare sau un botez cu multă lume, și firmele care adună toată echipa la petrecerea de final de an. [NEED: 2–3 fraze despre ce face salonul Rosa diferit: amenajare, lumină, ring de dans, legătura cu terasa sau cu râul]. Meniul îl alegeți din catalogul ANNA, iar tortul, barurile tematice, decorul și cazarea oaspeților le rezolvați tot în Grupul ANNA. Turul virtual 360 vă arată salonul înainte să veniți la vizită.",
+  "seo": {
+    "titlu": "Salon Rosa, până la 400 de invitați | Riviera Târgu Jiu",
+    "descriere": "Salonul Rosa de la Riviera Events, pe malul Jiului în Târgu Jiu: nunți, botezuri și evenimente de firmă cu până la 400 de invitați."
+  },
+  "galerie": [],
+  "tur360": null,
+  "video": []
+}

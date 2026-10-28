@@ -1,0 +1,72 @@
+{
+  "_instructiuni": "Fără prețuri. Completați preparatele din catalogul 2026. Câmpul 'detalii' e opțional (garnitură, gramaj). Etichete posibile: vegetarian, fara-gluten, picant.",
+  "valabilPanaLa": null,
+  "optiuniSpeciale": ["Meniu vegetarian", "Preparate fără gluten", "[NEED: alte opțiuni, de ex. vegan, meniu copii]"],
+  "meniuri": [
+    {
+      "id": "premium-platinum",
+      "nume": "Premium Platinum",
+      "ordine": 1,
+      "descriereScurta": "[NEED: o frază despre meniul Premium Platinum]",
+      "sectiuni": [
+        { "titlu": "Aperitiv", "preparate": [] },
+        { "titlu": "Ciorbă", "preparate": [] },
+        { "titlu": "Fel intermediar", "preparate": [] },
+        { "titlu": "Fel principal", "preparate": [] },
+        { "titlu": "Desert", "preparate": [] }
+      ]
+    },
+    {
+      "id": "gold",
+      "nume": "Gold",
+      "ordine": 2,
+      "descriereScurta": "[NEED: o frază despre meniul Gold]",
+      "sectiuni": [
+        { "titlu": "Aperitiv", "preparate": [] },
+        { "titlu": "Ciorbă", "preparate": [] },
+        { "titlu": "Fel intermediar", "preparate": [] },
+        { "titlu": "Fel principal", "preparate": [] },
+        { "titlu": "Desert", "preparate": [] }
+      ]
+    },
+    {
+      "id": "silver",
+      "nume": "Silver",
+      "ordine": 3,
+      "descriereScurta": "[NEED: o frază despre meniul Silver]",
+      "sectiuni": [
+        { "titlu": "Aperitiv", "preparate": [] },
+        { "titlu": "Ciorbă", "preparate": [] },
+        { "titlu": "Fel intermediar", "preparate": [] },
+        { "titlu": "Fel principal", "preparate": [] },
+        { "titlu": "Desert", "preparate": [] }
+      ]
+    },
+    {
+      "id": "bronze",
+      "nume": "Bronze",
+      "ordine": 4,
+      "descriereScurta": "[NEED: o frază despre meniul Bronze]",
+      "sectiuni": [
+        { "titlu": "Aperitiv", "preparate": [] },
+        { "titlu": "Ciorbă", "preparate": [] },
+        { "titlu": "Fel intermediar", "preparate": [] },
+        { "titlu": "Fel principal", "preparate": [] },
+        { "titlu": "Desert", "preparate": [] }
+      ]
+    },
+    {
+      "id": "vegetarian",
+      "nume": "Vegetarian",
+      "ordine": 5,
+      "descriereScurta": "[NEED: o frază despre meniul Vegetarian]",
+      "sectiuni": [
+        { "titlu": "Aperitiv", "preparate": [] },
+        { "titlu": "Ciorbă", "preparate": [] },
+        { "titlu": "Fel intermediar", "preparate": [] },
+        { "titlu": "Fel principal", "preparate": [] },
+        { "titlu": "Desert", "preparate": [] }
+      ]
+    }
+  ]
+}

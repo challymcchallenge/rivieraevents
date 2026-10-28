@@ -1,0 +1,20 @@
+{
+  "slug": "magic",
+  "nume": "Salon Magic",
+  "complex": "insulita",
+  "ordine": 6,
+  "capacitate": { "min": null, "max": 700 },
+  "suprafataMp": null,
+  "potrivitPentru": ["nunta", "botez", "corporate"],
+  "puncteForte": ["[NEED: 3–5 puncte forte ale salonului Magic]"],
+  "dotari": [],
+  "descriereScurta": "Salon pentru până la 700 de invitați, pe Insulița din Parcul Central, în complexul ANNA Events.",
+  "descriere": "Salonul Magic găzduiește până la 700 de invitați, în complexul ANNA Events de pe Insulița din Parcul Central. Se potrivește nunților și botezurilor mari și evenimentelor de firmă. [NEED: 2–3 fraze despre salonul Magic: stil, lumină, ring de dans, ce îl deosebește]. Meniul din catalogul ANNA, tortul, barurile tematice și cazarea oaspeților sunt incluse în aceeași ofertă a Grupului ANNA.",
+  "seo": {
+    "titlu": "Salon Magic, până la 700 de invitați | ANNA Events",
+    "descriere": "Salonul Magic, pe Insulița din Parcul Central, Târgu Jiu: nunți, botezuri și evenimente de firmă cu până la 700 de invitați."
+  },
+  "galerie": [],
+  "tur360": null,
+  "video": []
+}

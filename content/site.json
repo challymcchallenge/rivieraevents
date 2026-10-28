@@ -1,0 +1,58 @@
+{
+  "nume": "Riviera Events by ANNA",
+  "domeniu": "https://www.rivieraevents.ro",
+  "whatsapp": {
+    "numar": "40746085555",
+    "afisat": "0746 085 555",
+    "textImplicit": "Bună ziua, aș dori o ofertă pentru un eveniment la Riviera.",
+    "marcajSursa": "(trimis de pe rivieraevents.ro, {pagina})",
+    "_nota": "[NEED: confirmare că 0746 085 555 este numărul WhatsApp pentru Riviera]"
+  },
+  "telefoane": [
+    { "numar": "0746 085 555", "rol": "[NEED: rol, de ex. Rezervări / WhatsApp]" },
+    { "numar": "0744 648 202", "rol": "[NEED: rol]" },
+    { "numar": "0744 692 166", "rol": "[NEED: rol]" },
+    { "numar": "0755 054 096", "rol": "[NEED: rol]" }
+  ],
+  "email": "rezervari@annaevents.ro",
+  "_notaEmail": "[NEED: confirmare adresă email pentru cereri sau adresă nouă pe rivieraevents.ro]",
+  "complexe": {
+    "riviera": {
+      "nume": "Complexul Riviera Events",
+      "adresa": "Aleea Digului nr. 5, Târgu Jiu, Gorj",
+      "descriereLocatie": "pe malul Jiului",
+      "coordonate": null
+    },
+    "insulita": {
+      "nume": "Complexul ANNA Events",
+      "adresa": "[NEED: stradă și număr], Insulița, Parcul Central, Târgu Jiu, Gorj",
+      "descriereLocatie": "pe Insulița din Parcul Central",
+      "coordonate": null,
+      "site": "https://www.annaevents.ro"
+    }
+  },
+  "programVizitare": "[NEED: zile și ore de vizitare a saloanelor, cu sau fără programare]",
+  "timpRaspuns": "[NEED: în cât timp răspundeți la o cerere, de ex. în aceeași zi]",
+  "social": {
+    "facebook": "[NEED: link Facebook Riviera sau ANNA Events]",
+    "instagram": "[NEED: link Instagram]",
+    "youtube": "[NEED: link canal YouTube]"
+  },
+  "grup": [
+    "Hotel ANNA",
+    "Hotel ANNA Junior",
+    "Cofetăria Anna",
+    "Trattoria",
+    "SuperBistro",
+    "Terasa Anna",
+    "Josper",
+    "Anna Delivery",
+    "Piscina Summer Events"
+  ],
+  "firma": {
+    "denumire": "[NEED: denumire firmă]",
+    "cui": "[NEED: CUI]",
+    "registruComertului": "[NEED: nr. ONRC]",
+    "sediu": "[NEED: sediu social]"
+  }
+}

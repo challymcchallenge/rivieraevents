@@ -1,0 +1,20 @@
+{
+  "slug": "grande",
+  "nume": "Salon Grande",
+  "complex": "insulita",
+  "ordine": 4,
+  "capacitate": { "min": null, "max": 1200 },
+  "suprafataMp": null,
+  "potrivitPentru": ["nunta", "botez", "corporate"],
+  "puncteForte": ["[NEED: 3–5 puncte forte ale salonului Grande]"],
+  "dotari": [],
+  "descriereScurta": "Cel mai mare salon din Grupul ANNA: până la 1.200 de invitați, pe Insulița din Parcul Central.",
+  "descriere": "Salonul Grande primește până la 1.200 de invitați și este cel mai mare salon din Grupul ANNA. Se află în complexul ANNA Events, pe Insulița din Parcul Central din Târgu Jiu. Îl alegeți atunci când lista de invitați depășește capacitatea saloanelor de la Riviera: nunți foarte mari, conferințe sau evenimente de firmă cu sute de participanți. [NEED: 2–3 fraze despre salonul Grande: scenă, sonorizare, intrare, posibilități de amenajare]. Meniul, tortul, barurile tematice și cazarea sunt aceleași ca la Riviera, din oferta Grupului ANNA.",
+  "seo": {
+    "titlu": "Salon Grande, până la 1.200 de invitați | ANNA Events",
+    "descriere": "Salonul Grande, pe Insulița din Târgu Jiu: cel mai mare salon din Grupul ANNA, pentru nunți și evenimente de firmă cu până la 1.200 de invitați."
+  },
+  "galerie": [],
+  "tur360": null,
+  "video": []
+}

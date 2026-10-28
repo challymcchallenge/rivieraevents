@@ -1,0 +1,27 @@
+{
+  "includeStandard": [
+    { "tip": "nunta", "titlu": "[NEED: ce include oferta standard de nuntă, câte un rând pe element]", "detalii": null }
+  ],
+  "serviciiPremium": [
+    { "id": "candy-bar", "nume": "Candy Bar", "descriere": "[NEED: o frază]", "imagine": null },
+    { "id": "cocktail-bar", "nume": "Cocktail Bar", "descriere": "[NEED: o frază]", "imagine": null },
+    { "id": "cheese-bar", "nume": "Cheese Bar", "descriere": "[NEED: o frază]", "imagine": null },
+    { "id": "lemonade-bar", "nume": "Lemonade Bar", "descriere": "[NEED: o frază]", "imagine": null },
+    { "id": "sushi-bar", "nume": "Sushi Bar", "descriere": "[NEED: o frază]", "imagine": null },
+    { "id": "gentlemens-corner", "nume": "Gentlemen's Corner", "descriere": "[NEED: o frază]", "imagine": null },
+    { "id": "shot-cake", "nume": "Shot cake", "descriere": "[NEED: o frază]", "imagine": null },
+    { "id": "bbq", "nume": "BBQ la rotiserie", "descriere": "[NEED: o frază]", "imagine": null }
+  ],
+  "tort": {
+    "furnizor": "Cofetăria Anna",
+    "descriere": "Tortul și dulciurile vin de la Cofetăria Anna, din Grupul ANNA. Alegeți modelul din catalogul de torturi.",
+    "linkCatalog": "https://www.annaevents.ro/torturi-evenimente/"
+  },
+  "cazare": [
+    { "nume": "Hotel ANNA", "descriere": "[NEED: condiții de cazare pentru invitați]", "link": null },
+    { "nume": "Hotel ANNA Junior", "descriere": "[NEED: condiții de cazare pentru invitați]", "link": null },
+    { "nume": "Apartamentul mirilor", "descriere": "[NEED: ce include, unde e]", "link": null }
+  ],
+  "facilitati": ["Decor personalizat", "Aranjamente florale", "Parcare privată"],
+  "oferte": []
+}

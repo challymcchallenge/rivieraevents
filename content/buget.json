@@ -1,0 +1,15 @@
+{
+  "_instructiuni": "Valorile sunt cost total pe invitat, în lei, cu meniul inclus. Nu apar pe site ca preț: calculatorul afișează doar intervalul total pentru numărul de invitați. Cât timp min/max sunt null, calculatorul nu afișează sumă.",
+  "valabilPanaLa": null,
+  "moneda": "lei",
+  "rotunjire": 100,
+  "tipuri": [
+    { "id": "nunta", "nume": "Nuntă", "leiPePersoana": { "min": null, "max": null }, "invitatiMinim": null },
+    { "id": "botez", "nume": "Botez", "leiPePersoana": { "min": null, "max": null }, "invitatiMinim": null },
+    { "id": "corporate", "nume": "Eveniment de firmă", "leiPePersoana": { "min": null, "max": null }, "invitatiMinim": null },
+    { "id": "alt-eveniment", "nume": "Aniversare sau alt eveniment", "leiPePersoana": { "min": null, "max": null }, "invitatiMinim": null }
+  ],
+  "ajustariComplex": { "riviera": 1, "insulita": 1 },
+  "extra": [],
+  "nota": "Suma este o estimare orientativă pentru numărul de invitați ales și nu reprezintă o ofertă fermă. Prețul final depinde de meniu, dată, servicii și disponibilitatea salonului."
+}
