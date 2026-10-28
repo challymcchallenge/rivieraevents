@@ -141,6 +141,21 @@ Butonul rotund WhatsApp e verde pe fundal deschis (1.97:1). E logo de brand, dec
 - Etichetă vizibilă deasupra câmpului (Montserrat 500 14px, `--color-muted`). Câmpul are înălțime minimă 48px, contur `--color-field-border` și fundal `--color-field-bg`.
 - Erorile apar sub câmp, în `--color-accent-text`, cu text explicit, nu doar prin culoare.
 
+### Formular cerere de ofertă (`content/formular.json`)
+- **Pași:** componenta `Stepper` (ReactBits, pachetul Echilibrat), cu indicator „Pasul 2 din 5” și bară de progres.
+  - Butoanele sunt „Înapoi” și „Continuați”. De la pasul 2 apare și butonul principal **„Trimiteți cererea”**, iar pașii 3–5 sunt marcați „opțional”.
+- **Câmpuri obligatorii** marcate cu „(obligatoriu)” în etichetă, nu doar cu asterisc.
+  - Validarea apare la ieșirea din câmp, cu eroare sub câmp legată prin `aria-describedby`.
+  - La „Continuați”, focusul merge pe primul câmp greșit.
+- **Selecție multiplă:** butoane-chip de minimum 44px înălțime, cu bifă vizibilă, implementate ca `checkbox` (nu `div`-uri clicabile). Opțiunile `radio` arată la fel, dar permit o singură alegere.
+- **Data:** `input type="date"`, ca telefonul să-și deschidă propriul calendar. Datele din trecut dau eroare. Datele aflate la peste 3 ani dau doar un avertisment.
+- **Datele personale nu se salvează în browser.** Pașii completați rămân doar în memoria paginii.
+- **Trimitere:**
+  - butonul arată o stare de încărcare;
+  - la succes apare un mesaj de mulțumire și `confetti` o singură dată (fără la `prefers-reduced-motion`);
+  - la eroare apare butonul „Trimiteți pe WhatsApp”, cu câmpurile cheie deja completate (ADR-006).
+- **Precompletare:** din calculatorul de buget, prin parametrii URL `?tip=&invitati=&salon=`.
+
 ### Carduri de salon
 Poză 4:5, apoi numele (Cormorant 30px), capacitatea (eyebrow `--color-accent-text`) și o frază (`--color-muted`). Tot cardul e un link.
 

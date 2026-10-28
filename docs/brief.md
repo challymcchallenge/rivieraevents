@@ -252,3 +252,5 @@ Legendă: ✅ există (confirmat de client sau vizibil pe annaevents.ro) · ❓ 
 > **Modificare 2026-10-28 (regula 8):** pentru conferințe nu se afișează cifre; capacitatea se stabilește după amenajare (decizie client). Toate saloanele au sistem automatizat de lumini în orice culoare.
 
 > **Modificare 2026-10-28 (regula 8, GATE 4):** site-ul are două teme (luminoasă implicită, întunecată) cu comutator; butonul WhatsApp devine buton rotund cu logo oficial și bulă (model biztech.ro); footerul are linkuri spre confidențialitate, cookies, termeni, ANPC și SAL. Linkul SOL/ODR nu se pune: platforma UE s-a închis la 20.07.2025.
+
+> **Modificare 2026-10-28 (regula 8):** formularul de contact devine formular de calificare în 5 pași (obligatoriu: tip, dată, nume, telefon, email; opțional: saloane, meniu, buget, extra, stadiu, sursă). WhatsApp rămâne canalul principal. Formularul e alternativa pentru cine vrea să trimită toate detaliile odată.

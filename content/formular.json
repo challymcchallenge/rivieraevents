@@ -1,0 +1,608 @@
+{
+  "_instructiuni": "Formularul de cerere de ofertă (/contact). Pașii 1–2 sunt obligatorii; după pasul 2 vizitatorul poate trimite imediat. Pașii 3–5 sunt opționali și ne ajută să pregătim oferta. Textele și opțiunile se pot edita aici; ID-urile (value) nu se schimbă, pentru că apar în email.",
+  "trimiteDupaPasul": 2,
+  "pasi": [
+    {
+      "id": "eveniment",
+      "titlu": "Evenimentul",
+      "descriere": "Ce sărbătoriți și când.",
+      "campuri": [
+        {
+          "id": "tip",
+          "label": "Tip eveniment",
+          "tip": "select",
+          "obligatoriu": true,
+          "optiuni": [
+            {
+              "value": "nunta",
+              "label": "Nuntă"
+            },
+            {
+              "value": "nunta-botez",
+              "label": "Nuntă și botez"
+            },
+            {
+              "value": "cununie-civila",
+              "label": "Cununie civilă și petrecere"
+            },
+            {
+              "value": "botez",
+              "label": "Botez"
+            },
+            {
+              "value": "corporate",
+              "label": "Eveniment de firmă"
+            },
+            {
+              "value": "aniversare",
+              "label": "Aniversare sau majorat"
+            },
+            {
+              "value": "altul",
+              "label": "Alt eveniment"
+            }
+          ]
+        },
+        {
+          "id": "data",
+          "label": "Data evenimentului",
+          "tip": "date",
+          "obligatoriu": true,
+          "validare": "în viitor; avertisment (nu eroare) dacă e peste 3 ani",
+          "ajutor": "Dacă nu e sigură, alegeți data cea mai probabilă."
+        },
+        {
+          "id": "dataFlexibila",
+          "label": "Data e flexibilă",
+          "tip": "checkbox",
+          "obligatoriu": false
+        },
+        {
+          "id": "dateAlternative",
+          "label": "Alte date posibile",
+          "tip": "text",
+          "obligatoriu": false,
+          "aratDaca": "dataFlexibila"
+        },
+        {
+          "id": "invitati",
+          "label": "Număr estimat de invitați",
+          "tip": "number",
+          "min": 10,
+          "max": 1200,
+          "obligatoriu": false,
+          "ajutor": "Un număr aproximativ e suficient."
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "titlu": "Datele de contact",
+      "descriere": "Ca să vă putem trimite oferta.",
+      "campuri": [
+        {
+          "id": "nume",
+          "label": "Nume și prenume",
+          "tip": "text",
+          "obligatoriu": true,
+          "autocomplete": "name"
+        },
+        {
+          "id": "telefon",
+          "label": "Telefon",
+          "tip": "tel",
+          "obligatoriu": true,
+          "autocomplete": "tel",
+          "validare": "număr românesc (07xx xxx xxx) sau internațional (+…)"
+        },
+        {
+          "id": "email",
+          "label": "Email",
+          "tip": "email",
+          "obligatoriu": true,
+          "autocomplete": "email"
+        },
+        {
+          "id": "contactPreferat",
+          "label": "Cum preferați să vă contactăm",
+          "tip": "radio",
+          "obligatoriu": false,
+          "implicit": "whatsapp",
+          "optiuni": [
+            {
+              "value": "whatsapp",
+              "label": "WhatsApp"
+            },
+            {
+              "value": "telefon",
+              "label": "Telefon"
+            },
+            {
+              "value": "email",
+              "label": "Email"
+            }
+          ]
+        },
+        {
+          "id": "intervalOrar",
+          "label": "Când vă putem suna",
+          "tip": "select",
+          "obligatoriu": false,
+          "optiuni": [
+            {
+              "value": "oricand",
+              "label": "Oricând"
+            },
+            {
+              "value": "dimineata",
+              "label": "Dimineața (9–12)"
+            },
+            {
+              "value": "pranz",
+              "label": "La prânz (12–15)"
+            },
+            {
+              "value": "dupa-amiaza",
+              "label": "După-amiaza (15–18)"
+            },
+            {
+              "value": "seara",
+              "label": "Seara (18–20)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "locatie",
+      "titlu": "Salonul și meniul",
+      "descriere": "Opțional. Ne ajută să vă recomandăm varianta potrivită.",
+      "campuri": [
+        {
+          "id": "saloane",
+          "label": "Saloanele care vă interesează",
+          "tip": "multiselect",
+          "obligatoriu": false,
+          "optiuni": [
+            {
+              "value": "rosa",
+              "label": "Rosa (până la 400, Riviera)"
+            },
+            {
+              "value": "noblesse",
+              "label": "Noblesse (până la 300, Riviera)"
+            },
+            {
+              "value": "premiere",
+              "label": "Premiere (până la 300, Riviera)"
+            },
+            {
+              "value": "grande",
+              "label": "Grande (până la 800, Insulița)"
+            },
+            {
+              "value": "ronda",
+              "label": "Ronda (până la 400, Insulița)"
+            },
+            {
+              "value": "magic",
+              "label": "Magic (până la 300, Insulița)"
+            },
+            {
+              "value": "estuar",
+              "label": "Estuar (până la 100, Insulița)"
+            },
+            {
+              "value": "recomandati",
+              "label": "Nu știu încă, recomandați-mi"
+            }
+          ]
+        },
+        {
+          "id": "meniu",
+          "label": "Meniul preferat",
+          "tip": "select",
+          "obligatoriu": false,
+          "optiuni": [
+            {
+              "value": "premium-platinum",
+              "label": "Premium Platinum"
+            },
+            {
+              "value": "gold",
+              "label": "Gold"
+            },
+            {
+              "value": "silver",
+              "label": "Silver"
+            },
+            {
+              "value": "bronze",
+              "label": "Bronze"
+            },
+            {
+              "value": "vegetarian",
+              "label": "Vegetarian"
+            },
+            {
+              "value": "nu-stiu",
+              "label": "Nu știu încă"
+            }
+          ]
+        },
+        {
+          "id": "cerinteAlimentare",
+          "label": "Cerințe speciale la masă",
+          "tip": "multiselect",
+          "obligatoriu": false,
+          "optiuni": [
+            {
+              "value": "vegetarian",
+              "label": "Porții vegetariene"
+            },
+            {
+              "value": "fara-gluten",
+              "label": "Fără gluten"
+            },
+            {
+              "value": "copii",
+              "label": "Meniu pentru copii"
+            }
+          ],
+          "ajutor": "Numărul exact de porții îl stabilim împreună. Nu e nevoie să ne trimiteți detalii medicale."
+        },
+        {
+          "id": "copii",
+          "label": "Câți copii, aproximativ",
+          "tip": "number",
+          "min": 0,
+          "max": 300,
+          "obligatoriu": false
+        },
+        {
+          "id": "ceremonieGradina",
+          "label": "Doriți ceremonia în aer liber, în grădină",
+          "tip": "radio",
+          "obligatoriu": false,
+          "optiuni": [
+            {
+              "value": "da",
+              "label": "Da"
+            },
+            {
+              "value": "nu",
+              "label": "Nu"
+            },
+            {
+              "value": "poate",
+              "label": "Poate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "buget",
+      "titlu": "Bugetul și serviciile extra",
+      "descriere": "Opțional. Nu e un angajament, doar un reper pentru oferta noastră.",
+      "campuri": [
+        {
+          "id": "buget",
+          "label": "Buget total estimat",
+          "tip": "select",
+          "obligatoriu": false,
+          "optiuni": [
+            {
+              "value": "sub-30k",
+              "label": "Sub 30.000 lei"
+            },
+            {
+              "value": "30-50k",
+              "label": "30.000 – 50.000 lei"
+            },
+            {
+              "value": "50-80k",
+              "label": "50.000 – 80.000 lei"
+            },
+            {
+              "value": "80-120k",
+              "label": "80.000 – 120.000 lei"
+            },
+            {
+              "value": "peste-120k",
+              "label": "Peste 120.000 lei"
+            },
+            {
+              "value": "discutam",
+              "label": "Prefer să discutăm"
+            }
+          ]
+        },
+        {
+          "id": "pacheteOptionale",
+          "label": "Baruri și servicii premium care vă interesează",
+          "tip": "multiselect",
+          "obligatoriu": false,
+          "optiuni": [
+            {
+              "value": "candy-bar",
+              "label": "Candy Bar"
+            },
+            {
+              "value": "cocktail-bar",
+              "label": "Cocktail Bar"
+            },
+            {
+              "value": "cheese-bar",
+              "label": "Cheese Bar"
+            },
+            {
+              "value": "lemonade-bar",
+              "label": "Lemonade Bar"
+            },
+            {
+              "value": "sushi-bar",
+              "label": "Sushi Bar"
+            },
+            {
+              "value": "tiramisu-bar",
+              "label": "Tiramisu Bar"
+            },
+            {
+              "value": "bar-traditional",
+              "label": "Bar tradițional"
+            },
+            {
+              "value": "gentlemens-corner",
+              "label": "Gentlemen's Corner"
+            },
+            {
+              "value": "shot-cake",
+              "label": "Tort cu shoturi"
+            },
+            {
+              "value": "bbq",
+              "label": "BBQ la rotiserie"
+            }
+          ]
+        },
+        {
+          "id": "tort",
+          "label": "Tortul mirilor de la Cofetăria Anna",
+          "tip": "radio",
+          "obligatoriu": false,
+          "optiuni": [
+            {
+              "value": "da",
+              "label": "Da, vreau ofertă"
+            },
+            {
+              "value": "nu",
+              "label": "Nu"
+            },
+            {
+              "value": "poate",
+              "label": "Poate"
+            }
+          ]
+        },
+        {
+          "id": "cazare",
+          "label": "Camere pentru invitați (Hotel ANNA)",
+          "tip": "number",
+          "min": 0,
+          "max": 100,
+          "obligatoriu": false,
+          "ajutor": "Număr aproximativ de camere; 0 dacă nu e nevoie."
+        },
+        {
+          "id": "furnizoriAvem",
+          "label": "Ce aveți deja rezolvat",
+          "tip": "multiselect",
+          "obligatoriu": false,
+          "optiuni": [
+            {
+              "value": "formatie-dj",
+              "label": "Formație sau DJ"
+            },
+            {
+              "value": "foto-video",
+              "label": "Fotograf sau video"
+            },
+            {
+              "value": "decor",
+              "label": "Decor și flori"
+            },
+            {
+              "value": "nimic",
+              "label": "Nimic încă"
+            }
+          ]
+        },
+        {
+          "id": "vreauParteneri",
+          "label": "Doriți recomandări de la partenerii noștri",
+          "tip": "multiselect",
+          "obligatoriu": false,
+          "optiuni": [
+            {
+              "value": "decor-flori",
+              "label": "Decor și flori"
+            },
+            {
+              "value": "foto-video-drona",
+              "label": "Foto, video, dronă"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "despre",
+      "titlu": "Încă puțin despre dumneavoastră",
+      "descriere": "Opțional.",
+      "campuri": [
+        {
+          "id": "stadiu",
+          "label": "Unde sunteți cu planificarea",
+          "tip": "radio",
+          "obligatoriu": false,
+          "optiuni": [
+            {
+              "value": "informare",
+              "label": "Doar ne informăm"
+            },
+            {
+              "value": "comparam",
+              "label": "Comparăm câteva locații"
+            },
+            {
+              "value": "rezervam",
+              "label": "Vrem să rezervăm data"
+            }
+          ]
+        },
+        {
+          "id": "vizita",
+          "label": "Doriți să vizitați saloanele",
+          "tip": "radio",
+          "obligatoriu": false,
+          "optiuni": [
+            {
+              "value": "da",
+              "label": "Da"
+            },
+            {
+              "value": "nu",
+              "label": "Nu acum"
+            }
+          ]
+        },
+        {
+          "id": "sursa",
+          "label": "Cum ați aflat de noi",
+          "tip": "select",
+          "obligatoriu": false,
+          "optiuni": [
+            {
+              "value": "recomandare",
+              "label": "Recomandare de la prieteni sau familie"
+            },
+            {
+              "value": "invitat",
+              "label": "Am fost invitat la un eveniment aici"
+            },
+            {
+              "value": "instagram",
+              "label": "Instagram"
+            },
+            {
+              "value": "facebook",
+              "label": "Facebook"
+            },
+            {
+              "value": "google",
+              "label": "Google"
+            },
+            {
+              "value": "annaevents",
+              "label": "annaevents.ro"
+            },
+            {
+              "value": "altul",
+              "label": "Altfel"
+            }
+          ]
+        },
+        {
+          "id": "mesaj",
+          "label": "Altceva ce ar trebui să știm",
+          "tip": "textarea",
+          "maxLength": 1500,
+          "obligatoriu": false
+        }
+      ]
+    }
+  ],
+  "final": {
+    "marketing": {
+      "id": "acordNoutati",
+      "label": "Vreau să primesc oferte și noutăți Riviera pe email (opțional)",
+      "tip": "checkbox",
+      "implicit": false
+    },
+    "info": "Trimițând formularul, sunteți de acord să vă contactăm în legătură cu această cerere. Detalii în Politica de confidențialitate.",
+    "buton": "Trimiteți cererea",
+    "succes": {
+      "titlu": "Mulțumim, am primit cererea",
+      "text": "Vă răspundem de regulă în aceeași zi. Dacă vă grăbiți, scrieți-ne și pe WhatsApp."
+    },
+    "eroare": {
+      "titlu": "Cererea nu a putut fi trimisă",
+      "text": "Nu ați pierdut nimic. Trimiteți aceleași date pe WhatsApp, cu un singur buton."
+    }
+  },
+  "ascunse": [
+    "paginaSursa",
+    "dinCalculator",
+    "estimareCalculator",
+    "utm_source",
+    "utm_campaign",
+    "botcheck"
+  ],
+  "subiectEmail": "[Site Riviera] Cerere ofertă · {tipLabel} · {data} · {invitati} inv. · {scor}",
+  "scor": {
+    "_descriere": "Scor intern de calificare, calculat în browser și trimis doar în email. Nu se arată vizitatorului.",
+    "reguli": [
+      {
+        "daca": "stadiu = rezervam",
+        "puncte": 2
+      },
+      {
+        "daca": "stadiu = comparam",
+        "puncte": 1
+      },
+      {
+        "daca": "data între 3 și 18 luni de azi",
+        "puncte": 2
+      },
+      {
+        "daca": "data sub 3 luni",
+        "puncte": 1,
+        "eticheta": "URGENT"
+      },
+      {
+        "daca": "buget completat și diferit de «discutam»",
+        "puncte": 1
+      },
+      {
+        "daca": "cel puțin un salon ales",
+        "puncte": 1
+      },
+      {
+        "daca": "invitati completat",
+        "puncte": 1
+      },
+      {
+        "daca": "vizita = da",
+        "puncte": 1
+      }
+    ],
+    "etichete": [
+      {
+        "min": 6,
+        "text": "Cald"
+      },
+      {
+        "min": 3,
+        "text": "Mediu"
+      },
+      {
+        "min": 0,
+        "text": "Rece"
+      }
+    ]
+  },
+  "whatsappFallback": "Doar câmpurile cheie: tip, data, invitați, saloane, nume. Restul ar face mesajul prea lung.",
+  "precompletare": "Din calculatorul de buget (/estimare-buget) se deschide /contact?tip=nunta&invitati=180&salon=noblesse; câmpurile se completează automat."
+}

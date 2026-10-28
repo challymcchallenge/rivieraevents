@@ -1,5 +1,11 @@
 # ADR-006: Formular de contact prin Web3Forms
 
+## Notă 2026-10-28 (regula 8)
+- Formularul a devenit un formular în 5 pași, cu 25 de câmpuri (`content/formular.json`).
+- Fallback-ul pe WhatsApp trimite **doar câmpurile cheie**: tip, dată, invitați, saloane și nume.
+- Planul gratuit Web3Forms: **250 de trimiteri pe lună** (pagina oficială de prețuri, prin căutare, 2026-10-28; accesul direct a dat 403).
+- **Contradicție de verificat:** surse terțe spun că planul gratuit păstrează istoricul trimiterilor **30 de zile**. Textul de mai jos spune că trimiterile nu se stochează. Se verifică în contul Web3Forms, înainte de lansare.
+
 ## Status
 **Acceptat** (decizia clientului la GATE 2, 2026-10-28). Înlocuiește [ADR-003](003-formular-contact.md).
 

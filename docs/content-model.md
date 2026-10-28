@@ -153,6 +153,21 @@ Telefoane cu rol, WhatsApp (număr + text implicit + marcaj de sursă, vezi ADR-
 | `slideuri[].video.poster` | imagine | da (tip video) | primul cadru; e imaginea principală (LCP) dacă slide-ul e primul |
 | `slideuri[].alt` | text | da | descrie ce se vede, pentru cititoare de ecran |
 
+## 7c. Formular cerere de ofertă: `content/formular.json`
+
+5 pași, 25 de câmpuri. **Obligatorii (5):** tip eveniment, data, nume, telefon, email. Butonul „Trimiteți cererea” apare **după pasul 2**, iar pașii 3–5 (salon și meniu, buget și extra, despre dumneavoastră) sunt opționali.
+
+| Element | Notă |
+|---|---|
+| `pasi[].campuri[]` | `id`, `label`, `tip` (`select`, `multiselect`, `radio`, `checkbox`, `date`, `number`, `text`, `tel`, `email`, `textarea`), `obligatoriu`, `optiuni[] {value, label}`, `ajutor` |
+| `optiuni[].value` | **nu se schimbă**: apare în email și în scor |
+| `subiectEmail` | șablonul subiectului; începe mereu cu `[Site Riviera] Cerere ofertă` (numărare manuală, ADR-005) |
+| `scor` | reguli de calificare (Cald / Mediu / Rece), calculate în browser și trimise doar în email |
+| `ascunse` | pagina sursă, venit din calculator + estimarea, `utm_*` din URL, `botcheck` (honeypot) |
+| `final.marketing` | bifă separată, **nebifată implicit**, pentru oferte pe email |
+
+Saloanele și pachetele opționale sunt generate din `saloane/*.json` și `pachete.json`, ca să rămână sincronizate.
+
 ## 8. Pagini: `content/pagini/<pagina>.mdx`
 
 Antet (frontmatter) obligatoriu pentru fiecare pagină:
