@@ -12,7 +12,7 @@ const when = (t: Testimonial) => { const [y, m] = t.data.split('-'); return `${t
 
 function Card({ t, short = false }: { t: Testimonial; short?: boolean }) {
   return (
-    <figure className="flex h-full flex-col justify-between bg-surface-2 p-6 text-left">
+    <figure className="flex h-full flex-col justify-between rounded-img bg-surface-2 p-6 text-left">
       <blockquote className={`font-heading text-xl leading-snug ${short ? 'line-clamp-[9]' : ''}`}>„{t.text}”</blockquote>
       <figcaption className="mt-4 text-sm text-muted"><strong className="font-semibold text-text">{t.nume}</strong><br />{when(t)}</figcaption>
     </figure>
@@ -25,7 +25,7 @@ export default function Testimonials({ items }: { items: Testimonial[] }) {
   return (
     <>
       <div className="mx-auto h-[440px] w-full max-w-[340px] lg:hidden">
-        <Stack cards={items.map((t) => <Card key={t.id} t={t} short />)} layout="cascade" visible={3} spread={0.4} radius={4} />
+        <Stack cards={items.map((t) => <Card key={t.id} t={t} short />)} layout="cascade" visible={3} spread={0.4} radius={12} />
       </div>
       <p className="mt-6 text-center text-sm text-muted lg:hidden">Glisați cardul pentru următorul testimonial.</p>
       <div className="hidden lg:block">

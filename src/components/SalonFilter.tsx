@@ -21,7 +21,7 @@ export default function SalonFilter({ saloane, intro }: { saloane: Salon[]; intr
   return (
     <>
       <div className="wrap -mt-10 relative z-10">
-        <div className="bg-surface-2 p-6 lg:flex lg:items-end lg:gap-6 lg:p-8">
+        <div className="rounded-img bg-surface-2 p-6 lg:flex lg:items-end lg:gap-6 lg:p-8">
           <label htmlFor={id} className="block flex-1">
             <span className="field-label">Câți invitați aveți?</span>
             <input id={id} type="number" inputMode="numeric" min={10} max={1200} step={10} placeholder="de ex. 180" value={inv}

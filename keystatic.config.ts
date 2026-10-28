@@ -1,6 +1,6 @@
 import { collection, config, fields, singleton } from '@keystatic/core';
 
-// Panoul de administrare (ADR-002, ADR-007): doar pozele, slideshow-ul, tururile și portofoliul.
+// Panoul de administrare (ADR-002, ADR-007): doar pozele (slideshow, saloane, pachete, pagini), tururile și portofoliul.
 // Textele, meniurile și bugetul rămân în content/*.json și content/pagini/*.mdx.
 // Schemele au exact forma fișierelor din content/media/ și content/portofoliu/: Keystatic refuză cheile nedeclarate.
 //
@@ -14,12 +14,18 @@ const SALOANE = [
 const COMPLEX = [{ label: 'Riviera', value: 'riviera' }, { label: 'ANNA Events, Insulița', value: 'insulita' }];
 const ALT = 'Descrieți ce se vede în poză (pentru cititoarele de ecran și Google).';
 
+// O poză de pagină: fișierul (în public/images/pagini) și textul alternativ.
+const poza = (label: string, description?: string) => fields.object({
+  src: fields.image({ label: 'Poză', directory: 'public/images/pagini', publicPath: '/images/pagini/', validation: { isRequired: true } }),
+  alt: fields.text({ label: 'Text alternativ', description: ALT }),
+}, { label, description });
+
 export default config({
   storage: project ? { kind: 'cloud' } : { kind: 'local' },
   ...(project ? { cloud: { project } } : {}),
   ui: {
     brand: { name: 'Riviera Events' },
-    navigation: { 'Pagina principală': ['slideshow'], Saloane: ['saloane', 'tururi'], Portofoliu: ['portofoliu'] },
+    navigation: { 'Pagina principală': ['slideshow'], Saloane: ['saloane', 'tururi'], Pachete: ['pachete'], Pagini: ['pagini'], Portofoliu: ['portofoliu'] },
   },
   singletons: {
     slideshow: singleton({
@@ -71,8 +77,52 @@ export default config({
         ),
       },
     }),
+    pagini: singleton({
+      label: 'Poze pagini',
+      path: 'content/media/pagini',
+      format: { data: 'json' },
+      schema: {
+        saloane: poza('Saloane: poza de sus'),
+        pachete: poza('Pachete: poza de sus'),
+        meniuri: poza('Meniuri: poza de sus'),
+        estimareBuget: poza('Estimare buget: poza de sus'),
+        portofoliu: poza('Portofoliu: poza de sus'),
+        despre: poza('Despre noi: poza de sus'),
+        contact: poza('Contact: poza de sus'),
+        turVirtual: poza('Tur virtual: poza de sus'),
+        acasaBuget: poza('Pagina principală: poza de lângă „Cât costă”'),
+        tort: poza('Tortul mirilor', 'Apare pe paginile Pachete și Meniuri.'),
+        apartament: fields.array(
+          fields.object({
+            src: fields.image({ label: 'Poză', directory: 'public/images/pagini', publicPath: '/images/pagini/', validation: { isRequired: true } }),
+            alt: fields.text({ label: 'Text alternativ', description: ALT }),
+          }),
+          { label: 'Apartamentul mirilor (pagina Pachete)', description: 'Prima poză e cea mare. Recomandat 5 poze.', itemLabel: (p) => p.fields.alt.value || 'Poză', validation: { length: { min: 1, max: 9 } } },
+        ),
+      },
+    }),
   },
   collections: {
+    pachete: collection({
+      label: 'Poze pachete',
+      path: 'content/media/pachete/*',
+      slugField: 'pachet',
+      format: { data: 'json' },
+      schema: {
+        pachet: fields.slug({ name: { label: 'Pachet', description: 'Numele pachetului. Nu îl schimbați: leagă pozele de textul pachetului.' } }),
+        imaginePrincipala: fields.object({
+          src: fields.image({ label: 'Imaginea principală', directory: 'public/images/pachete', publicPath: '/images/pachete/', validation: { isRequired: true } }),
+          alt: fields.text({ label: 'Text alternativ', description: ALT }),
+        }, { label: 'Imaginea principală (card și antet)' }),
+        galerie: fields.array(
+          fields.object({
+            src: fields.image({ label: 'Poză', directory: 'public/images/pachete', publicPath: '/images/pachete/', validation: { isRequired: true } }),
+            alt: fields.text({ label: 'Text alternativ', description: ALT }),
+          }),
+          { label: 'Galerie (maximum 15 poze)', itemLabel: (p) => p.fields.alt.value || 'Poză', validation: { length: { max: 15 } } },
+        ),
+      },
+    }),
     saloane: collection({
       label: 'Poze saloane',
       path: 'content/media/saloane/*',

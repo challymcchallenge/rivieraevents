@@ -1,0 +1,33 @@
+{
+  "pachet": "Cocktail Bar",
+  "imaginePrincipala": {
+    "src": "/images/pachete/cocktail-bar/cocktail-bar-01.jpg",
+    "alt": "Turn de pahare de șampanie sub o arcadă de flori albe, în grădina Riviera"
+  },
+  "galerie": [
+    {
+      "src": "/images/pachete/cocktail-bar/cocktail-bar-01.jpg",
+      "alt": "Turn de pahare de șampanie sub o arcadă de flori albe, în grădina Riviera"
+    },
+    {
+      "src": "/images/pachete/cocktail-bar/cocktail-bar-02.jpg",
+      "alt": "Cocktailuri colorate cu fructe, pe fundal întunecat"
+    },
+    {
+      "src": "/images/pachete/cocktail-bar/cocktail-bar-03.jpg",
+      "alt": "Cocktailuri și long drinks aliniate pe bar"
+    },
+    {
+      "src": "/images/pachete/cocktail-bar/cocktail-bar-04.jpg",
+      "alt": "Shoturi de tequila cu lime și sare"
+    },
+    {
+      "src": "/images/pachete/cocktail-bar/cocktail-bar-05.jpg",
+      "alt": "Pahare de șampanie pe o masă neagră, la intrarea în salon"
+    },
+    {
+      "src": "/images/pachete/cocktail-bar/cocktail-bar-06.jpg",
+      "alt": "Miri și invitați ciocnind un pahar lângă tortul de nuntă"
+    }
+  ]
+}

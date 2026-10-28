@@ -1,10 +1,10 @@
 import Link from 'next/link';
-import SilkBackground from '@/components/SilkBackground';
+import SoftBackground from '@/components/SoftBackground';
 
 export default function NotFound() {
   return (
     <section className="relative grid min-h-[80svh] place-items-center overflow-hidden">
-      <SilkBackground />
+      <SoftBackground />
       <div aria-hidden className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-black/45 to-transparent" />
       <div className="wrap relative"><div className="mx-auto max-w-[620px] bg-bg/75 px-6 py-10 text-center backdrop-blur-sm">
         <p className="eyebrow">Eroare 404</p>

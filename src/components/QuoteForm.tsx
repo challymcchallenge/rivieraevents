@@ -143,7 +143,7 @@ export default function QuoteForm({ form, endpoint, accessKey, waBase }: { form:
 
   if (status === 'ok') {
     return (
-      <div ref={top} role="status" className="bg-surface-2 p-8 lg:p-10">
+      <div ref={top} role="status" className="rounded-img bg-surface-2 p-8 lg:p-10">
         <Confetti ref={confetti} manualstart className="pointer-events-none fixed inset-0 z-50 size-full" />
         <span className="grid size-12 place-items-center rounded-full bg-btn text-btn-text"><Check aria-hidden /></span>
         <h2 className="mt-4 text-[clamp(28px,4vw,40px)]">{form.final.succes.titlu}</h2>
@@ -153,7 +153,7 @@ export default function QuoteForm({ form, endpoint, accessKey, waBase }: { form:
   }
 
   return (
-    <div ref={top} className="scroll-mt-24 bg-surface-2 p-6 lg:p-10">
+    <div ref={top} className="scroll-mt-24 rounded-img bg-surface-2 p-6 lg:p-10">
       <Confetti ref={confetti} manualstart className="pointer-events-none fixed inset-0 z-50 size-full" />
       <div className="flex items-baseline justify-between gap-4">
         <p className="field-label" aria-live="polite">Pasul {step + 1} din {form.pasi.length}{step + 1 > form.trimiteDupaPasul ? ' · opțional' : ''}</p>

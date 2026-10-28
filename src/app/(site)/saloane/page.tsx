@@ -4,7 +4,7 @@ import Prose from '@/components/Prose';
 import SalonFilter from '@/components/SalonFilter';
 import WaIcon from '@/components/WaIcon';
 import { BlurFade } from '@/components/ui/blur-fade';
-import { getPage, getSaloane, section } from '@/lib/content';
+import { getPage, getPozePagini, getSaloane, section } from '@/lib/content';
 import { waLink } from '@/lib/whatsapp';
 
 const page = getPage('saloane');
@@ -18,7 +18,7 @@ export default function SaloanePage() {
   const wa = waLink('saloane', 'Bună ziua, aș dori să aflu ce salon mi se potrivește pentru evenimentul meu.');
   return (
     <>
-      <PageHero title={page.meta.h1} subtitle={page.meta.subtitlu} image="/images/saloane/rosa/rosa-001.jpg" alt="Salonul Rosa, cu candelabrul floral și pereții de sticlă">
+      <PageHero title={page.meta.h1} subtitle={page.meta.subtitlu} image={getPozePagini().saloane.src} alt={getPozePagini().saloane.alt}>
         <a href={wa} target="_blank" rel="noopener noreferrer" className="btn bg-[#FFFEFA] text-[#1E1E1E] dark:bg-btn dark:text-btn-text"><WaIcon />{page.meta.cta.text}</a>
       </PageHero>
       <SalonFilter saloane={getSaloane()} intro={{

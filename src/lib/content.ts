@@ -117,7 +117,24 @@ export function getSlideshow(): Slideshow {
       : { tip: 'imagine', imagine: s.value.imagine, imagineMobil: s.value.imagineMobil || null, punctFocal: s.value.punctFocal, alt: s.value.alt }),
   };
 }
-export const getPachete = () => readJson<any>('pachete.json');
+export type Pachet = { id: string; nume: string; descriere: string; imagine: (Img & { w?: number; h?: number }) | null; galerie: (Img & { w?: number; h?: number })[] };
+type PachetMedia = { pachet: string; imaginePrincipala: Img; galerie: Img[] };
+
+/** Textele pachetelor vin din pachete.json; pozele, din content/media/pachete/<id>.json (Keystatic, „Poze pachete”). */
+export function getPachete() {
+  const p = readJson<any>('pachete.json');
+  const premium: Pachet[] = p.serviciiPremium.map((x: Omit<Pachet, 'imagine' | 'galerie'>) => {
+    const f = path.join(ROOT, 'media', 'pachete', `${x.id}.json`);
+    const m = fs.existsSync(f) ? readJson<PachetMedia>(`media/pachete/${x.id}.json`) : null;
+    return { ...x, descriere: clean(x.descriere), imagine: m ? withSize(m.imaginePrincipala) : null, galerie: (m?.galerie ?? []).map(withSize) };
+  });
+  return { ...p, serviciiPremium: premium };
+}
+export const getPachet = (id: string) => getPachete().serviciiPremium.find((x: Pachet) => x.id === id) as Pachet | undefined;
+
+/** Pozele paginilor (Keystatic, „Poze pagini”): antetele, poza tortului, apartamentul mirilor. */
+export type PozePagini = Record<'saloane' | 'pachete' | 'meniuri' | 'estimareBuget' | 'portofoliu' | 'despre' | 'contact' | 'turVirtual' | 'acasaBuget' | 'tort', Img> & { apartament: Img[] };
+export const getPozePagini = () => readJson<PozePagini>('media/pagini.json');
 export const getMeniuri = () => readJson<any>('meniuri.json');
 export const getBuget = () => readJson<any>('buget.json');
 export const getFormular = () => readJson<any>('formular.json');
@@ -139,7 +156,7 @@ export function getSaloane(): Salon[] {
         ...s,
         descriere: clean(s.descriere),
         puncteForte: s.puncteForte.map(clean).filter(Boolean),
-        imaginePrincipala: m ? withSize(m.imaginePrincipala) : { src: '/images/hero/complex-riviera-015.jpg', alt: s.nume },
+        imaginePrincipala: m ? withSize(m.imaginePrincipala) : { src: '/images/complex/riviera/complex-riviera-015.jpg', alt: s.nume },
         galerie: (m?.galerie ?? []).map(withSize),
         tur360: m?.tur360 || null,
         turApartament: m?.turApartament || undefined,

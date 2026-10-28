@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import PageHero from '@/components/PageHero';
 import Prose from '@/components/Prose';
-import SilkBackground from '@/components/SilkBackground';
 import TourButton from '@/components/TourButton';
 import WaIcon from '@/components/WaIcon';
 import { BlurFade } from '@/components/ui/blur-fade';
-import { getPachete, getPage, getSaloane, getTururi, section } from '@/lib/content';
+import { getPage, getPozePagini, getSaloane, getTururi, section } from '@/lib/content';
 import { waLink } from '@/lib/whatsapp';
 
 const page = getPage('tur-virtual');
@@ -16,7 +16,8 @@ export const metadata: Metadata = {
 
 export default function TurVirtualPage() {
   const saloane = getSaloane();
-  const apt = getPachete().cazare.find((c: { nume: string }) => c.nume === 'Apartamentul mirilor')?.galerie?.[0];
+  const poze = getPozePagini();
+  const apt = poze.apartament[0];
   const imageFor = (id: string) => id.startsWith('apartament-') ? apt : saloane.find((s) => s.slug === id)?.imaginePrincipala;
   const tururi = getTururi();
   const wa = waLink('tur virtual', 'Bună ziua, am văzut turul virtual și aș dori să programez o vizită la saloane.');
@@ -24,14 +25,7 @@ export default function TurVirtualPage() {
 
   return (
     <>
-      <section className="relative overflow-hidden pt-28 pb-14 lg:pt-36 lg:pb-20">
-        <SilkBackground />
-        <div aria-hidden className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-black/45 to-transparent" />
-        <div className="wrap relative">
-          <h1 className="max-w-[18ch] text-[clamp(38px,7vw,72px)]">{page.meta.h1}</h1>
-          <p className="mt-4 max-w-[52ch] text-lg">{page.meta.subtitlu}</p>
-        </div>
-      </section>
+      <PageHero compact title={page.meta.h1} subtitle={page.meta.subtitlu} image={poze.turVirtual.src} alt={poze.turVirtual.alt} />
       {(['riviera', 'insulita'] as const).map((c) => {
         const titlu = c === 'riviera' ? 'Riviera, pe malul Jiului' : 'ANNA Events, pe Insulița';
         return (
@@ -43,7 +37,7 @@ export default function TurVirtualPage() {
                   const img = imageFor(t.id);
                   return (
                     <li key={t.id}>
-                      <div className="relative aspect-[4/3] overflow-hidden bg-surface-2">
+                      <div className="relative aspect-[4/3] overflow-hidden rounded-img bg-surface-2">
                         {img && <Image src={img.src} alt="" fill sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" className="object-cover" />}
                         <span className="absolute top-3 left-3 bg-black/70 px-2 py-1 text-xs font-semibold tracking-wider text-white uppercase">360°</span>
                       </div>

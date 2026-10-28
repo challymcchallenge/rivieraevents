@@ -3,6 +3,8 @@
 Panoul de administrare (Keystatic) vă lasă să schimbați fără programator:
 - pozele din slideshow-ul de pe prima pagină;
 - pozele fiecărui salon;
+- pozele fiecărui pachet (Candy Bar, Cocktail Bar etc.);
+- pozele de sus ale paginilor, poza tortului și pozele apartamentului mirilor;
 - portofoliul;
 - linkurile tururilor virtuale.
 
@@ -68,7 +70,39 @@ Meniu: **Saloane → Poze saloane**, apoi alegeți salonul (Rosa, Noblesse etc.)
 
 ---
 
-## 4. Portofoliul
+## 4. Pozele unui pachet
+
+Meniu: **Pachete → Poze pachete**, apoi alegeți pachetul (Candy Bar, Cocktail Bar, Sushi Bar etc.).
+
+- **Imaginea principală:** apare pe cardul pachetului (pe Acasă și pe pagina Pachete) și sus, pe pagina pachetului.
+- **Galerie:** maximum 15 poze. Se văd pe pagina pachetului, în grila de tip mozaic.
+  - **Add**, apoi **Choose file**, apoi scrieți textul alternativ.
+  - **Ordine:** trageți pozele. Recomandat: prima poză din galerie = imaginea principală.
+  - **Ștergere:** deschideți poza, apoi **Remove**.
+- **Nu schimbați câmpurile „Pachet” și „Slug”.** Ele leagă pozele de textul pachetului.
+- Numele și descrierea pachetului nu se schimbă de aici, ci din `content/pachete.json` (echipa tehnică).
+- La final: **Save**.
+
+---
+
+## 5. Pozele paginilor
+
+Meniu: **Pagini → Poze pagini**.
+
+| Câmp | Unde apare |
+|---|---|
+| Saloane, Pachete, Meniuri, Estimare buget, Portofoliu, Despre noi, Contact, Tur virtual: **poza de sus** | antetul paginii respective, sub titlu |
+| Pagina principală: poza de lângă „Cât costă” | secțiunea cu bugetul de pe prima pagină |
+| Tortul mirilor | paginile Pachete și Meniuri |
+| Apartamentul mirilor | pagina Pachete, la final (prima poză e cea mare) și cardul apartamentului de pe Tur virtual |
+
+- Pentru pozele de sus: **orizontale**, minimum 1920 px lățime. Titlul se scrie peste poză, deci alegeți poze fără text și cu subiectul în centru.
+- Pozele de sus ale saloanelor, pachetelor și evenimentelor din portofoliu se schimbă din secțiunile lor (imaginea principală).
+- La final: **Save**.
+
+---
+
+## 6. Portofoliul
 
 Meniu: **Portofoliu**.
 
@@ -84,7 +118,7 @@ Meniu: **Portofoliu**.
 
 ---
 
-## 5. Tururile virtuale
+## 7. Tururile virtuale
 
 Meniu: **Saloane → Tururi virtuale 360**.
 
@@ -93,7 +127,7 @@ Meniu: **Saloane → Tururi virtuale 360**.
 
 ---
 
-## 6. Reguli pentru poze
+## 8. Reguli pentru poze
 
 | | Recomandare |
 |---|---|
@@ -108,7 +142,7 @@ Pentru pozele direct din telefon (5–10 MB): micșorați-le înainte de încăr
 
 ---
 
-## 7. Dacă ceva nu merge
+## 9. Dacă ceva nu merge
 
 | Problemă | Ce faceți |
 |---|---|

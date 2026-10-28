@@ -1,0 +1,69 @@
+{
+  "pachet": "Candy Bar",
+  "imaginePrincipala": {
+    "src": "/images/pachete/candy-bar/candy-bar-01.jpg",
+    "alt": "Candy Bar cu prăjituri mici și un tort de profiterol, pe mese albe"
+  },
+  "galerie": [
+    {
+      "src": "/images/pachete/candy-bar/candy-bar-01.jpg",
+      "alt": "Candy Bar cu prăjituri mici și un tort de profiterol, pe mese albe"
+    },
+    {
+      "src": "/images/pachete/candy-bar/candy-bar-02.jpg",
+      "alt": "Candy Bar, la un eveniment ANNA (2)"
+    },
+    {
+      "src": "/images/pachete/candy-bar/candy-bar-03.jpg",
+      "alt": "Candy Bar, la un eveniment ANNA (3)"
+    },
+    {
+      "src": "/images/pachete/candy-bar/candy-bar-04.jpg",
+      "alt": "Candy Bar, la un eveniment ANNA (4)"
+    },
+    {
+      "src": "/images/pachete/candy-bar/candy-bar-05.jpg",
+      "alt": "Candy Bar, la un eveniment ANNA (5)"
+    },
+    {
+      "src": "/images/pachete/candy-bar/candy-bar-06.jpg",
+      "alt": "Candy Bar, la un eveniment ANNA (6)"
+    },
+    {
+      "src": "/images/pachete/candy-bar/candy-bar-07.jpg",
+      "alt": "Candy Bar, la un eveniment ANNA (7)"
+    },
+    {
+      "src": "/images/pachete/candy-bar/candy-bar-08.jpg",
+      "alt": "Candy Bar, la un eveniment ANNA (8)"
+    },
+    {
+      "src": "/images/pachete/candy-bar/candy-bar-09.jpg",
+      "alt": "Candy Bar, la un eveniment ANNA (9)"
+    },
+    {
+      "src": "/images/pachete/candy-bar/candy-bar-10.jpg",
+      "alt": "Candy Bar, la un eveniment ANNA (10)"
+    },
+    {
+      "src": "/images/pachete/candy-bar/candy-bar-11.jpg",
+      "alt": "Candy Bar, la un eveniment ANNA (11)"
+    },
+    {
+      "src": "/images/pachete/candy-bar/candy-bar-12.jpg",
+      "alt": "Candy Bar, la un eveniment ANNA (12)"
+    },
+    {
+      "src": "/images/pachete/candy-bar/candy-bar-13.jpg",
+      "alt": "Candy Bar, la un eveniment ANNA (13)"
+    },
+    {
+      "src": "/images/pachete/candy-bar/candy-bar-14.jpg",
+      "alt": "Candy Bar, la un eveniment ANNA (14)"
+    },
+    {
+      "src": "/images/pachete/candy-bar/candy-bar-15.jpg",
+      "alt": "Candy Bar, la un eveniment ANNA (15)"
+    }
+  ]
+}

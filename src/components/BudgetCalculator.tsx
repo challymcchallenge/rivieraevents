@@ -60,7 +60,7 @@ export default function BudgetCalculator({ tipuri, saloane, rotunjire, ajustari,
   return (
     <div className="relative">
       <Confetti ref={confetti} manualstart className="pointer-events-none fixed inset-0 z-50 size-full" />
-      <Stepper theme="light" width="100%" radius={4} style={STEPPER_VARS} onFinalStepCompleted={finish} onStepChange={() => setDone(false)}
+      <Stepper theme="light" width="100%" radius={12} style={STEPPER_VARS} onFinalStepCompleted={finish} onStepChange={() => setDone(false)}
         nextButtonText="Continuați" backButtonText="Înapoi" completeButtonText="Vedeți estimarea"
         completedContent={
           <div className="py-2">

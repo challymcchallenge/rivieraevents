@@ -14,7 +14,7 @@ export default function JsonLd() {
     url: k === 'riviera' ? BASE : 'https://www.annaevents.ro/',
     telephone: tel,
     email: site.email,
-    image: `${BASE}${site.complexe[k].galerieExterior?.[0]?.src ?? '/images/hero/complex-riviera-015.jpg'}`,
+    image: `${BASE}${site.complexe[k].galerieExterior?.[0]?.src ?? '/images/complex/riviera/complex-riviera-015.jpg'}`,
     address: { '@type': 'PostalAddress', streetAddress: site.complexe[k].adresa.split(',')[0], addressLocality: 'Târgu Jiu', addressRegion: 'Gorj', addressCountry: 'RO' },
     maximumAttendeeCapacity: Math.max(...saloane.filter((s) => s.complex === k).map((s) => s.capacitate.nunta)),
     containsPlace: saloane.filter((s) => s.complex === k).map((s) => ({

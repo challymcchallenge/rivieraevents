@@ -2,13 +2,14 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import HeroSlideshow from '@/components/HeroSlideshow';
+import PachetCard from '@/components/PachetCard';
 import SalonCard from '@/components/SalonCard';
 import Prose from '@/components/Prose';
 import Testimonials from '@/components/Testimonials';
-import SilkBackground from '@/components/SilkBackground';
+import SoftBackground from '@/components/SoftBackground';
 import WaIcon from '@/components/WaIcon';
 import { BlurFade } from '@/components/ui/blur-fade';
-import { getPage, getSaloane, getSlideshow, getTestimoniale, section } from '@/lib/content';
+import { getPachete, getPage, getPozePagini, getSaloane, getSlideshow, getTestimoniale, section, type Pachet } from '@/lib/content';
 import { waLink } from '@/lib/whatsapp';
 
 const page = getPage('acasa');
@@ -33,6 +34,8 @@ export default function Home() {
   const wa = waLink('pagina principală');
   const s = (t: string) => section(page, t);
   const dece = points(s('De ce Riviera')?.body ?? '');
+  const poze = getPozePagini();
+  const pachete = (getPachete().serviciiPremium as Pachet[]).filter((p) => p.imagine).slice(0, 8);
 
   return (
     <>
@@ -76,10 +79,10 @@ export default function Home() {
 
       <section className="section">
         <div className="wrap grid items-center gap-10 lg:grid-cols-2">
-          <div className="relative aspect-[4/3] overflow-hidden">
-            <Image src="/images/complex/riviera/complex-riviera-011.jpg" alt="Cină în grădina Riviera, sub candelabre de cristal" fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover" />
+          <div className="relative aspect-[4/3] overflow-hidden rounded-img">
+            <Image src={poze.acasaBuget.src} alt={poze.acasaBuget.alt} fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover" />
           </div>
-          <BlurFade className="bg-surface-2 p-8 lg:p-10">
+          <BlurFade className="rounded-img bg-surface-2 p-8 lg:p-10">
             <p className="eyebrow">Cât costă</p>
             <h2 className="mt-2 text-[clamp(30px,5vw,44px)]">Cât costă un eveniment la Riviera</h2>
             <Prose text={s('Cât costă un eveniment la Riviera')?.body ?? ''} className="mt-3" />
@@ -101,7 +104,21 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section overflow-hidden bg-surface">
+      <section className="section bg-surface">
+        <div className="wrap">
+          <BlurFade className="mb-10">
+            <p className="eyebrow">Pachete opționale</p>
+            <h2 className="h2 mt-2">Baruri și bunătăți pentru invitați</h2>
+            <Prose text={s('Pachete opționale')?.body ?? ''} className="mt-3" />
+          </BlurFade>
+          <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
+            {pachete.map((p) => <PachetCard key={p.id} p={p} descriere={false} sizes="(min-width:1024px) 25vw, 50vw" />)}
+          </div>
+          <Link href="/pachete" className="btn2 mt-10">Toate pachetele</Link>
+        </div>
+      </section>
+
+      <section className="section overflow-hidden">
         <div className="wrap text-center">
           <p className="eyebrow">Ce spun cei care au ales Riviera</p>
           <h2 className="h2 mx-auto mt-2 mb-10 max-w-[20ch]">Nunți, botezuri și petreceri de pe malul Jiului</h2>
@@ -110,9 +127,9 @@ export default function Home() {
       </section>
 
       <section className="relative overflow-hidden">
-        <SilkBackground />
+        <SoftBackground />
         <div className="wrap relative py-24 text-center lg:py-32">
-          <div className="mx-auto max-w-[620px] bg-bg/70 px-6 py-10 backdrop-blur-sm lg:px-12">
+          <div className="mx-auto max-w-[620px] rounded-img bg-bg/70 px-6 py-10 backdrop-blur-sm lg:px-12">
             <h2 className="h2">Vă verificăm data</h2>
             <Prose text={s('Vă verificăm data')?.body ?? ''} className="mx-auto mt-4 [&_p]:mx-auto" />
             <a href={wa} target="_blank" rel="noopener noreferrer" className="btn mt-2"><WaIcon />{page.meta.cta.text}</a>

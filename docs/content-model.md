@@ -146,10 +146,14 @@ Keystatic refuză orice cheie nedeclarată în schemă. De aceea pozele, tururil
 | `content/media/slideshow.json` | slide-urile hero; fiecare e `{ "discriminant": "imagine" \| "video", "value": {…} }` | singleton `slideshow` |
 | `content/media/tururi.json` | `{ tururi: [{ id, titlu, complex, url }] }`; `url` gol = turul nu apare | singleton `tururi` |
 | `content/media/saloane/<slug>.json` | `{ salon, imaginePrincipala {src, alt}, galerie [{src, alt}], tur360, turApartament }` | colecția `saloane` |
+| `content/media/pachete/<id>.json` | `{ pachet, imaginePrincipala {src, alt}, galerie [{src, alt}] }`; numele fișierului = `id` din `pachete.json` → `serviciiPremium` (din 2026-10-29) | colecția `pachete` |
+| `content/media/pagini.json` | pozele de sus ale paginilor (`saloane`, `pachete`, `meniuri`, `estimareBuget`, `portofoliu`, `despre`, `contact`, `turVirtual`), `acasaBuget`, `tort`, `apartament [{src, alt}]`; fiecare `{src, alt}` (din 2026-10-29) | singleton `pagini` |
 | `content/portofoliu/<slug>.json` | `{ titlu, tip, complex, salon, data, descriere, poze [{src, alt}], acordClient }`; slug-ul = numele fișierului | colecția `portofoliu` |
 
-- Pozele se salvează în `public/images/<hero|saloane/<slug>|portofoliu/<slug>>/`, iar video-urile în `public/media/hero/`.
+- Pozele se salvează în `public/images/<hero|saloane/<slug>|pachete/<id>|pagini|portofoliu/<slug>>/`, iar video-urile în `public/media/hero/`.
+- **Modificare 2026-10-29:** `pachete.json` nu mai are `imagine` la `serviciiPremium`, `imagine` la `tort` și `galerie` la apartamentul mirilor. Pozele lor vin din fișierele de mai sus. Pozele inițiale au fost alese și redimensionate cu `scripts/pachete-media.py` (maximum 15 pe pachet, latura lungă 2048 px).
 - Câmpurile de imagine goale se omit din fișier: Keystatic nu acceptă `null`.
+- **La salvare, Keystatic redenumește pozele după câmp** (ex. `public/images/hero/slideuri/3/value/imagine.jpg`, observat 2026-10-29). De aceea codul nu are voie să scrie de mână căi din folderele gestionate de Keystatic (`hero`, `saloane`, `pachete`, `pagini`, `portofoliu`). Pozele de rezervă (Open Graph, JSON-LD) stau în `public/images/complex/`.
 - Dimensiunile pozelor (w/h) nu se mai salvează. `src/lib/content.ts` le citește din fișier la build.
 
 ## 7b. Slideshow pagina principală: `content/media/slideshow.json` (ADR-007)

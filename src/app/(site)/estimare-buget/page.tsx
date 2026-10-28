@@ -3,7 +3,7 @@ import PageHero from '@/components/PageHero';
 import Prose from '@/components/Prose';
 import BudgetCalculator from '@/components/BudgetCalculator';
 import { BlurFade } from '@/components/ui/blur-fade';
-import { getBuget, getPage, getSaloane, section } from '@/lib/content';
+import { getBuget, getPage, getPozePagini, getSaloane, section } from '@/lib/content';
 import { waLink } from '@/lib/whatsapp';
 
 const page = getPage('estimare-buget');
@@ -18,7 +18,7 @@ export default function EstimarePage() {
   const s = (t: string) => section(page, t)?.body ?? '';
   return (
     <>
-      <PageHero compact title={page.meta.h1} subtitle={page.meta.subtitlu} image="/images/complex/riviera/complex-riviera-011.jpg" alt="Cină în grădina Riviera, sub candelabre de cristal" />
+      <PageHero compact title={page.meta.h1} subtitle={page.meta.subtitlu} image={getPozePagini().estimareBuget.src} alt={getPozePagini().estimareBuget.alt} />
       <section className="section">
         <div className="wrap grid gap-12 lg:grid-cols-[1.3fr_1fr]">
           <BudgetCalculator tipuri={b.tipuri} saloane={saloane} rotunjire={b.rotunjire} ajustari={b.ajustariComplex} nota={b.nota}

@@ -82,6 +82,8 @@ Pachetul echilibrat, plus `Tilted Card` (12), `lens` peste tot, saloane care se 
 
 ## Fundal animat 3D: `Silk` (ReactBits), ales de client
 
+> **Scos pe 2026-10-29, la cererea clientului („să scoatem animațiile 3D să meargă mai repede situl”).** Fișierele `Silk.tsx` și `SilkBackground.tsx` au fost șterse. Pe Acasă și 404 a rămas un gradient CSS static (`SoftBackground`), fără JavaScript. Tur virtual și Contact au antet cu poză (`PageHero`). Secțiunea de mai jos rămâne ca istoric al deciziei.
+
 **De ce `Silk`:**
 - Simulează o țesătură de mătase în mișcare, care seamănă cu voalurile drapate de pe tavanele saloanelor Rosa, Noblesse și Premiere.
 - E scris direct în WebGL, cu un singur fișier de ~21 KB și **fără three.js** (verificat în sursa de pe GitHub, 2026-10-28). Alternativa `Light Rays`, cu raze de lumină „de candelabru”, are aceeași construcție.

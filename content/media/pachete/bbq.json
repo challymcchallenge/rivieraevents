@@ -1,0 +1,33 @@
+{
+  "pachet": "BBQ la rotiserie",
+  "imaginePrincipala": {
+    "src": "/images/pachete/bbq/bbq-01.jpg",
+    "alt": "Porc la rotisor, rumenit pe jar"
+  },
+  "galerie": [
+    {
+      "src": "/images/pachete/bbq/bbq-01.jpg",
+      "alt": "Porc la rotisor, rumenit pe jar"
+    },
+    {
+      "src": "/images/pachete/bbq/bbq-02.jpg",
+      "alt": "BBQ la rotiserie, la un eveniment ANNA (2)"
+    },
+    {
+      "src": "/images/pachete/bbq/bbq-03.jpg",
+      "alt": "BBQ la rotiserie, la un eveniment ANNA (3)"
+    },
+    {
+      "src": "/images/pachete/bbq/bbq-04.jpg",
+      "alt": "BBQ la rotiserie, la un eveniment ANNA (4)"
+    },
+    {
+      "src": "/images/pachete/bbq/bbq-05.jpg",
+      "alt": "BBQ la rotiserie, la un eveniment ANNA (5)"
+    },
+    {
+      "src": "/images/pachete/bbq/bbq-06.jpg",
+      "alt": "BBQ la rotiserie, la un eveniment ANNA (6)"
+    }
+  ]
+}

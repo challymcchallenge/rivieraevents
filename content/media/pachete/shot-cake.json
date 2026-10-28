@@ -1,0 +1,21 @@
+{
+  "pachet": "Tort cu shoturi",
+  "imaginePrincipala": {
+    "src": "/images/pachete/shot-cake/shot-cake-01.jpg",
+    "alt": "Tort cu shoturi, înconjurat de invitați la petrecere"
+  },
+  "galerie": [
+    {
+      "src": "/images/pachete/shot-cake/shot-cake-01.jpg",
+      "alt": "Tort cu shoturi, înconjurat de invitați la petrecere"
+    },
+    {
+      "src": "/images/pachete/shot-cake/shot-cake-02.jpg",
+      "alt": "Tort cu shoturi, la un eveniment ANNA (2)"
+    },
+    {
+      "src": "/images/pachete/shot-cake/shot-cake-03.jpg",
+      "alt": "Tort cu shoturi, la un eveniment ANNA (3)"
+    }
+  ]
+}

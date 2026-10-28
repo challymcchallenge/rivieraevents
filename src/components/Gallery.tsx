@@ -22,7 +22,7 @@ export default function Gallery({ images }: { images: (Img & { w?: number; h?: n
       items={images.map((im, i) => ({ id: i, img: opt(im.src, 640), full: opt(im.src, 1920), alt: im.alt, width: im.w, height: im.h }))}
       columns={cols}
       gap={cols === 2 ? 8 : 12}
-      radius={2}
+      radius={12}
       captions="none"
       hoverEffect="zoom"
       draggable={false}

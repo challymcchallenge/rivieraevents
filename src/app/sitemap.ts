@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next';
-import { getPortofoliu, getSaloane } from '@/lib/content';
+import { getPachete, getPortofoliu, getSaloane, type Pachet } from '@/lib/content';
 
 const BASE = 'https://www.rivieraevents.ro';
 
@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...fixed.map(([p, priority]) => ({ url: `${BASE}${p}`, lastModified: now, priority })),
     ...getSaloane().map((s) => ({ url: `${BASE}/saloane/${s.slug}`, lastModified: now, priority: s.complex === 'riviera' ? 0.9 : 0.7 })),
+    ...(getPachete().serviciiPremium as Pachet[]).map((p) => ({ url: `${BASE}/pachete/${p.id}`, lastModified: now, priority: 0.6 })),
     ...getPortofoliu().map((e) => ({ url: `${BASE}/portofoliu/${e.slug}`, lastModified: now, priority: 0.5 })),
   ];
 }

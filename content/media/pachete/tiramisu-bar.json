@@ -1,0 +1,13 @@
+{
+  "pachet": "Tiramisu Bar",
+  "imaginePrincipala": {
+    "src": "/images/pachete/tiramisu-bar/tiramisu-bar-01.jpg",
+    "alt": "Ospătar care servește tiramisu la Tiramisu Bar"
+  },
+  "galerie": [
+    {
+      "src": "/images/pachete/tiramisu-bar/tiramisu-bar-01.jpg",
+      "alt": "Ospătar care servește tiramisu la Tiramisu Bar"
+    }
+  ]
+}

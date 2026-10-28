@@ -3,7 +3,7 @@ import PageHero from '@/components/PageHero';
 import PortfolioGrid from '@/components/PortfolioGrid';
 import Prose from '@/components/Prose';
 import WaIcon from '@/components/WaIcon';
-import { getPage, getPortofoliu, section } from '@/lib/content';
+import { getPage, getPortofoliu, getPozePagini, section } from '@/lib/content';
 import { waLink } from '@/lib/whatsapp';
 
 const page = getPage('portofoliu');
@@ -17,7 +17,7 @@ export default function PortofoliuPage() {
   const final = page.sections.find((x) => x.title?.includes('salon din poze'));
   return (
     <>
-      <PageHero compact title={page.meta.h1} subtitle={page.meta.subtitlu} image="/images/hero/portofoliu-riviera-004.jpg" alt="Cununie civilă sub arcade de flori albe, în grădina Riviera" />
+      <PageHero compact title={page.meta.h1} subtitle={page.meta.subtitlu} image={getPozePagini().portofoliu.src} alt={getPozePagini().portofoliu.alt} />
       <section className="section">
         <div className="wrap"><PortfolioGrid events={getPortofoliu()} /></div>
       </section>

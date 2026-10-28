@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import { Martini } from 'lucide-react';
+import PachetCard from '@/components/PachetCard';
 import PageHero from '@/components/PageHero';
 import Prose from '@/components/Prose';
 import TourButton from '@/components/TourButton';
 import WaIcon from '@/components/WaIcon';
 import { BlurFade } from '@/components/ui/blur-fade';
-import { clean, getPachete, getPage, getSaloane, section } from '@/lib/content';
+import { getPachete, getPage, getPozePagini, getSaloane, section, type Pachet } from '@/lib/content';
 import { waLink } from '@/lib/whatsapp';
 
 const page = getPage('pachete');
@@ -15,19 +15,17 @@ export const metadata: Metadata = {
   openGraph: { title: page.meta.seoTitlu, description: page.meta.seoDescriere, url: '/pachete' },
 };
 
-type Premium = { id: string; nume: string; descriere: string; imagine: { src: string; alt: string } | null };
-
 export default function PachetePage() {
   const p = getPachete();
   const s = (t: string) => section(page, t)?.body ?? '';
   const wa = waLink('pachete');
-  const apartament = p.cazare.find((c: { nume: string }) => c.nume === 'Apartamentul mirilor');
+  const poze = getPozePagini();
   const riviera = getSaloane().filter((x) => x.complex === 'riviera' && x.turApartament);
-  const premium = (p.serviciiPremium as Premium[]).map((x) => ({ ...x, descriere: clean(x.descriere) }));
+  const premium = p.serviciiPremium as Pachet[];
 
   return (
     <>
-      <PageHero title={page.meta.h1} subtitle={page.meta.subtitlu} image="/images/complex/riviera/complex-riviera-010.jpg" alt="Turn de șampanie sub o arcadă de flori albe, în grădina Riviera">
+      <PageHero title={page.meta.h1} subtitle={page.meta.subtitlu} image={poze.pachete.src} alt={poze.pachete.alt}>
         <a href={wa} target="_blank" rel="noopener noreferrer" className="btn bg-[#FFFEFA] text-[#1E1E1E] dark:bg-btn dark:text-btn-text"><WaIcon />{page.meta.cta.text}</a>
       </PageHero>
 
@@ -56,24 +54,15 @@ export default function PachetePage() {
             <Prose text={s('Baruri și servicii premium')} className="mt-3" />
           </BlurFade>
           <div className="grid grid-cols-2 gap-4 lg:grid-cols-5 lg:gap-6">
-            {premium.map((x) => (
-              <article key={x.id}>
-                <div className="relative aspect-square overflow-hidden bg-surface-2">
-                  {x.imagine ? <Image src={x.imagine.src} alt={x.imagine.alt} fill sizes="(min-width:1024px) 20vw, 50vw" className="object-cover" />
-                    : <div className="grid size-full place-items-center bg-[radial-gradient(circle_at_30%_20%,var(--color-surface),var(--color-surface-2))] text-accent-text"><Martini aria-hidden size={48} strokeWidth={1.25} /></div>}
-                </div>
-                <h3 className="mt-3 text-xl">{x.nume}</h3>
-                {x.descriere && <p className="mt-1 text-sm text-muted">{x.descriere}</p>}
-              </article>
-            ))}
+            {premium.map((x) => <PachetCard key={x.id} p={x} />)}
           </div>
         </div>
       </section>
 
       <section className="section">
         <div className="wrap grid items-center gap-10 lg:grid-cols-2">
-          <div className="relative aspect-[4/5] overflow-hidden lg:aspect-[4/3]">
-            <Image src={p.tort.imagine.src} alt={p.tort.imagine.alt} fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover" />
+          <div className="relative aspect-[4/5] overflow-hidden rounded-img lg:aspect-[4/3]">
+            <Image src={poze.tort.src} alt={poze.tort.alt} fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover" />
           </div>
           <BlurFade>
             <h2 className="h2">Tortul mirilor, de la Cofetăria Anna</h2>
@@ -107,8 +96,8 @@ export default function PachetePage() {
             </div>
           </BlurFade>
           <div className="mt-10 grid grid-cols-2 gap-3 lg:grid-cols-5">
-            {apartament?.galerie?.map((im: { src: string; alt: string }, i: number) => (
-              <div key={im.src} className={`relative overflow-hidden ${i === 0 ? 'col-span-2 aspect-[4/3] lg:aspect-auto lg:row-span-2' : 'aspect-[4/3]'}`}>
+            {poze.apartament.map((im, i) => (
+              <div key={im.src} className={`relative overflow-hidden rounded-img ${i === 0 ? 'col-span-2 aspect-[4/3] lg:aspect-auto lg:row-span-2' : 'aspect-[4/3]'}`}>
                 <Image src={im.src} alt={im.alt} fill sizes="(min-width:1024px) 25vw, 50vw" className="object-cover" />
               </div>
             ))}

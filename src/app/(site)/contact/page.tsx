@@ -3,9 +3,8 @@ import Image from 'next/image';
 import PageHero from '@/components/PageHero';
 import Prose from '@/components/Prose';
 import QuoteForm, { type Formular } from '@/components/QuoteForm';
-import SilkBackground from '@/components/SilkBackground';
 import WaIcon from '@/components/WaIcon';
-import { getFormular, getPage, getSite, section } from '@/lib/content';
+import { getFormular, getPage, getPozePagini, getSite, section } from '@/lib/content';
 import { telLink, waLink } from '@/lib/whatsapp';
 
 const page = getPage('contact');
@@ -21,17 +20,12 @@ export default function ContactPage() {
   const site = getSite();
   const s = (t: string) => section(page, t)?.body ?? '';
   const wa = waLink('contact');
+  const hero = getPozePagini().contact;
   return (
     <>
-      <section className="relative overflow-hidden pt-28 pb-14 lg:pt-36 lg:pb-20">
-        <SilkBackground />
-        <div aria-hidden className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-black/45 to-transparent" />
-        <div className="wrap relative">
-          <h1 className="max-w-[18ch] text-[clamp(38px,7vw,72px)]">{page.meta.h1}</h1>
-          <p className="mt-4 max-w-[52ch] text-lg">{page.meta.subtitlu}</p>
-          <a href={wa} target="_blank" rel="noopener noreferrer" className="btn mt-6"><WaIcon />{page.meta.cta.text}</a>
-        </div>
-      </section>
+      <PageHero compact title={page.meta.h1} subtitle={page.meta.subtitlu} image={hero.src} alt={hero.alt}>
+        <a href={wa} target="_blank" rel="noopener noreferrer" className="btn bg-[#FFFEFA] text-[#1E1E1E] dark:bg-btn dark:text-btn-text"><WaIcon />{page.meta.cta.text}</a>
+      </PageHero>
 
       <section className="section pt-10">
         <div className="wrap grid gap-12 lg:grid-cols-[1.5fr_1fr]">
@@ -56,8 +50,8 @@ export default function ContactPage() {
                   <p className="font-semibold">{site.complexe[k].nume}</p>
                   <p className="text-muted">{site.complexe[k].adresa}</p>
                   <a href={maps(site.complexe[k].adresa)} target="_blank" rel="noopener noreferrer" className="group mt-2 block" aria-label={`Deschide în Google Maps: ${site.complexe[k].adresa}`}>
-                    <div className="relative aspect-[16/9] overflow-hidden">
-                      <Image src={site.complexe[k].galerieExterior?.[0]?.src ?? '/images/hero/complex-riviera-015.jpg'} alt="" fill sizes="(min-width:1024px) 30vw, 100vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                    <div className="relative aspect-[16/9] overflow-hidden rounded-img">
+                      <Image src={site.complexe[k].galerieExterior?.[0]?.src ?? '/images/complex/riviera/complex-riviera-015.jpg'} alt="" fill sizes="(min-width:1024px) 30vw, 100vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
                     </div>
                     <span className="mt-2 inline-block text-sm underline underline-offset-4">Deschide în Google Maps</span>
                   </a>

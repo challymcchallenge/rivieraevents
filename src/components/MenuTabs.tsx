@@ -44,7 +44,7 @@ export default function MenuTabs({ meniuri }: { meniuri: Meniu[] }) {
             {m.sectiuni.map((s, i) => (
               <li key={s.id}>
                 {s.imagine && (
-                  <div className="relative aspect-[4/5] overflow-hidden bg-surface-2">
+                  <div className="relative aspect-[4/5] overflow-hidden rounded-img bg-surface-2">
                     <Image src={s.imagine} alt={`Meniul ${m.nume}: ${s.titlu.toLowerCase()}`} fill sizes="(min-width:1024px) 25vw, 50vw" className="object-cover" />
                   </div>
                 )}

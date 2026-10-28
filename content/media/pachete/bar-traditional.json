@@ -1,0 +1,45 @@
+{
+  "pachet": "Bar tradițional",
+  "imaginePrincipala": {
+    "src": "/images/pachete/bar-traditional/bar-traditional-01.jpg",
+    "alt": "Bar tradițional cu bunătăți românești, în vase încălzite"
+  },
+  "galerie": [
+    {
+      "src": "/images/pachete/bar-traditional/bar-traditional-01.jpg",
+      "alt": "Bar tradițional cu bunătăți românești, în vase încălzite"
+    },
+    {
+      "src": "/images/pachete/bar-traditional/bar-traditional-02.jpg",
+      "alt": "Bar tradițional, la un eveniment ANNA (2)"
+    },
+    {
+      "src": "/images/pachete/bar-traditional/bar-traditional-03.jpg",
+      "alt": "Bar tradițional, la un eveniment ANNA (3)"
+    },
+    {
+      "src": "/images/pachete/bar-traditional/bar-traditional-04.jpg",
+      "alt": "Bar tradițional, la un eveniment ANNA (4)"
+    },
+    {
+      "src": "/images/pachete/bar-traditional/bar-traditional-05.jpg",
+      "alt": "Bar tradițional, la un eveniment ANNA (5)"
+    },
+    {
+      "src": "/images/pachete/bar-traditional/bar-traditional-06.jpg",
+      "alt": "Bar tradițional, la un eveniment ANNA (6)"
+    },
+    {
+      "src": "/images/pachete/bar-traditional/bar-traditional-07.jpg",
+      "alt": "Bar tradițional, la un eveniment ANNA (7)"
+    },
+    {
+      "src": "/images/pachete/bar-traditional/bar-traditional-08.jpg",
+      "alt": "Bar tradițional, la un eveniment ANNA (8)"
+    },
+    {
+      "src": "/images/pachete/bar-traditional/bar-traditional-09.jpg",
+      "alt": "Bar tradițional, la un eveniment ANNA (9)"
+    }
+  ]
+}

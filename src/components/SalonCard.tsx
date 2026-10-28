@@ -5,7 +5,7 @@ import type { Salon } from '@/lib/content';
 export default function SalonCard({ salon, compact = false, sizes }: { salon: Salon; compact?: boolean; sizes?: string }) {
   return (
     <Link href={`/saloane/${salon.slug}`} className="group block">
-      <div className={`relative overflow-hidden ${compact ? 'aspect-square' : 'aspect-[4/5]'}`}>
+      <div className={`relative overflow-hidden rounded-img ${compact ? 'aspect-square' : 'aspect-[4/5]'}`}>
         <Image src={salon.imaginePrincipala.src} alt={salon.imaginePrincipala.alt} fill
           sizes={sizes ?? (compact ? '(min-width:1024px) 25vw, 50vw' : '(min-width:1024px) 33vw, 100vw')}
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" />

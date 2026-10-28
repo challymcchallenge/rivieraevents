@@ -28,8 +28,8 @@
 | `--color-line` | `#DDD4C6` | `#34302B` | separatoare decorative (nu contururi de câmpuri) |
 | `--color-field-border` | `#857C72` | `#7A7268` | conturul câmpurilor de formular (≥ 3:1) |
 | `--color-field-bg` | `#FFFEFA` | `#11100F` | fundalul câmpurilor |
-| `--color-btn` | `#1E1E1E` | `#FF3131` | buton principal |
-| `--color-btn-text` | `#FFFEFA` | `#11100F` | text pe butonul principal |
+| `--color-btn` | `#1E1E1E` | `#E02424` | buton principal (în tema întunecată: roșu puțin mai închis decât brandul, ca textul alb să treacă AA) |
+| `--color-btn-text` | `#FFFEFA` | `#FFFFFF` | text pe butonul principal |
 | `--color-btn2-border` / `-text` | `#1E1E1E` | `#FFFEFA` | buton secundar (contur) |
 | `--color-final-bg` | `#1E1E1E` | `#262320` | secțiunea „Vă verificăm data” |
 | `--color-popup-bg` | `#FFFFFF` | `#1C1A18` | bula WhatsApp |
@@ -46,6 +46,7 @@
 ### Reguli
 - `#FF3131` **nu** se folosește ca text mic pe fundal deschis: are doar 3.63:1. Pentru etichete roșii se folosește `--color-accent-text`.
 - Pe fundal `#FF3131` textul e mereu `#11100F` (5.19:1). **Niciodată alb** (3.63:1).
+- **Modificare 2026-10-29 (cererea clientului: text alb pe butonul roșu):** butonul roșu din tema întunecată folosește `#E02424`, nu `#FF3131`. Alb pe `#E02424` = 4.72:1 (trece AA). `#FF3131` rămâne roșul brandului pentru linii, puncte și iconițe.
 - În hero, în ambele teme, butonul principal e alb cu text negru în tema luminoasă și roșu cu text închis în tema întunecată.
 
 ### Contrast verificat (WCAG 2.2 AA, 2026-10-28)
@@ -56,7 +57,7 @@
 | muted / bg | 7.39:1 ✅ | 9.46:1 ✅ |
 | muted / surface-2 | 5.85:1 ✅ | 7.78:1 ✅ |
 | accent-text / bg | 6.88:1 ✅ | 6.20:1 ✅ |
-| btn-text / btn | 16.52:1 ✅ | 5.19:1 ✅ |
+| btn-text / btn | 16.52:1 ✅ | 4.72:1 ✅ (alb pe `#E02424`, din 2026-10-29) |
 | field-border / bg (UI, prag 3:1) | 4.06:1 ✅ | 4.01:1 ✅ |
 | wa-text / wa | 8.69:1 ✅ | 8.69:1 ✅ |
 | hero-text peste overlay, caz extrem (poză albă) | titlu ≥ 4.1:1, text mic ≥ 4.5:1 (calculat; de verificat în Lighthouse, Faza 6) | idem |
@@ -87,7 +88,7 @@ Butonul rotund WhatsApp e verde pe fundal deschis (1.97:1). E logo de brand, dec
 | Lățime conținut | max 1200px; margini laterale 16px pe mobil, 40px de la 1024px |
 | Breakpoint principal | **1024px** (mobil-first; machetele verificate la 390 și 1440, fără derulare orizontală) |
 | Breakpoint-uri de testat (Faza 6) | 360, 390, 768, 1280, 1920 |
-| `--radius` | **2px** pentru butoane, câmpuri, poze (stil tipăritură). Excepții: bula WhatsApp 16px, butoanele WhatsApp complet rotunde |
+| `--radius` | **Modificat 2026-10-29 (cererea clientului):** butoane și câmpuri `--radius-btn` 10px; poze și panouri `--radius-img` 12px. Inițial 2px (stil tipăritură). Excepții neschimbate: bula WhatsApp 16px, butoanele WhatsApp complet rotunde |
 | Proporții poze | carduri saloane 4:5, saloane Insulița 1:1, poze alăturate textului 4:3, hero pe tot ecranul (`88svh` mobil, `92vh` desktop) |
 | Secțiuni | padding vertical 64px pe mobil, 96px pe desktop |
 
@@ -177,7 +178,7 @@ Poză 4:5, apoi numele (Cormorant 30px), capacitatea (eyebrow `--color-accent-te
 - Apariția la derulare se face prin opacitate și o deplasare de 8–16px, în 300–400ms, `ease-out`. Hover-ul durează 150–250ms.
 - `prefers-reduced-motion: reduce`: toate animațiile se opresc, iar conținutul apare direct în starea finală.
 - Singurul carusel automat e slideshow-ul din hero, cu buton de pauză (ADR-007). În rest, fără carusele automate. Video-ul din hero respectă bugetul din ADR-007: mobil ≤ 4 MB, desktop ≤ 8 MB.
-- **Fundal animat 3D:** `Silk` (ReactBits), decizie client 2026-10-28. Apare pe Acasă (secțiunea finală), Tur virtual, Contact și 404. Încărcarea e întârziată, se pune pe pauză când nu e pe ecran, are `dpr` maximum 1 pe mobil și, la `prefers-reduced-motion` sau `Save-Data`, rămâne un gradient static. Detalii în [design/animatii.md](design/animatii.md).
+- **Fundal animat 3D: scos pe 2026-10-29, la cererea clientului, pentru viteză.** `Silk` (WebGL) a fost înlocuit cu un gradient CSS static (`SoftBackground`) pe Acasă și 404; Tur virtual și Contact au acum antet cu poză (`PageHero`), editabilă din Keystatic. Detalii în [design/animatii.md](design/animatii.md).
 - **Pachet de animații:** Echilibrat ([design/animatii.md](design/animatii.md)).
 
 ---
@@ -210,7 +211,7 @@ Poză 4:5, apoi numele (Cormorant 30px), capacitatea (eyebrow `--color-accent-te
   --font-heading: var(--font-cormorant), Georgia, serif;     /* next/font: variable: '--font-cormorant' */
   --font-body: var(--font-montserrat), system-ui, sans-serif;
 
-  --radius-sm: 2px;  --radius-bubble: 16px;
+  --radius-btn: 10px;  --radius-img: 12px;  --radius-bubble: 16px;   /* din 2026-10-29; inițial 2px */
   --breakpoint-lg: 64rem; /* 1024px */
 }
 
@@ -219,7 +220,7 @@ Poză 4:5, apoi numele (Cormorant 30px), capacitatea (eyebrow `--color-accent-te
   --color-text: #FFFEFA;        --color-muted: #BDB6AC;
   --color-accent-text: #FF5A57;
   --color-line: #34302B;        --color-field-border: #7A7268; --color-field-bg: #11100F;
-  --color-btn: #FF3131;         --color-btn-text: #11100F;
+  --color-btn: #E02424;         --color-btn-text: #FFFFFF;   /* din 2026-10-29; inițial #FF3131 / #11100F */
   --color-final-bg: #262320;    --color-popup-bg: #1C1A18;
   color-scheme: dark;
 }

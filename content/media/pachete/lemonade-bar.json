@@ -1,0 +1,65 @@
+{
+  "pachet": "Lemonade Bar",
+  "imaginePrincipala": {
+    "src": "/images/pachete/lemonade-bar/lemonade-bar-01.jpg",
+    "alt": "Lemonade Bar cu limonade în vase de sticlă și fructe proaspete"
+  },
+  "galerie": [
+    {
+      "src": "/images/pachete/lemonade-bar/lemonade-bar-01.jpg",
+      "alt": "Lemonade Bar cu limonade în vase de sticlă și fructe proaspete"
+    },
+    {
+      "src": "/images/pachete/lemonade-bar/lemonade-bar-02.jpg",
+      "alt": "Lemonade Bar, la un eveniment ANNA (2)"
+    },
+    {
+      "src": "/images/pachete/lemonade-bar/lemonade-bar-03.jpg",
+      "alt": "Lemonade Bar, la un eveniment ANNA (3)"
+    },
+    {
+      "src": "/images/pachete/lemonade-bar/lemonade-bar-04.jpg",
+      "alt": "Lemonade Bar, la un eveniment ANNA (4)"
+    },
+    {
+      "src": "/images/pachete/lemonade-bar/lemonade-bar-05.jpg",
+      "alt": "Lemonade Bar, la un eveniment ANNA (5)"
+    },
+    {
+      "src": "/images/pachete/lemonade-bar/lemonade-bar-06.jpg",
+      "alt": "Lemonade Bar, la un eveniment ANNA (6)"
+    },
+    {
+      "src": "/images/pachete/lemonade-bar/lemonade-bar-07.jpg",
+      "alt": "Lemonade Bar, la un eveniment ANNA (7)"
+    },
+    {
+      "src": "/images/pachete/lemonade-bar/lemonade-bar-08.jpg",
+      "alt": "Lemonade Bar, la un eveniment ANNA (8)"
+    },
+    {
+      "src": "/images/pachete/lemonade-bar/lemonade-bar-09.jpg",
+      "alt": "Lemonade Bar, la un eveniment ANNA (9)"
+    },
+    {
+      "src": "/images/pachete/lemonade-bar/lemonade-bar-10.jpg",
+      "alt": "Lemonade Bar, la un eveniment ANNA (10)"
+    },
+    {
+      "src": "/images/pachete/lemonade-bar/lemonade-bar-11.jpg",
+      "alt": "Lemonade Bar, la un eveniment ANNA (11)"
+    },
+    {
+      "src": "/images/pachete/lemonade-bar/lemonade-bar-12.jpg",
+      "alt": "Lemonade Bar, la un eveniment ANNA (12)"
+    },
+    {
+      "src": "/images/pachete/lemonade-bar/lemonade-bar-13.jpg",
+      "alt": "Lemonade Bar, la un eveniment ANNA (13)"
+    },
+    {
+      "src": "/images/pachete/lemonade-bar/lemonade-bar-14.jpg",
+      "alt": "Lemonade Bar, la un eveniment ANNA (14)"
+    }
+  ]
+}

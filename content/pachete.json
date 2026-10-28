@@ -75,107 +75,57 @@
     {
       "id": "candy-bar",
       "nume": "Candy Bar",
-      "descriere": "Mini-eclere, mini-tarte, mini-pavlova, cake pops, cupcakes, macarons, tiramisu, mini-amandine, lolli pops, cannoli, bezele și mousse.",
-      "imagine": {
-        "src": "/images/pachete/candybar-001.jpg",
-        "alt": "Candy Bar",
-        "w": 2048,
-        "h": 1365
-      }
+      "descriere": "Mini-eclere, mini-tarte, mini-pavlova, cake pops, cupcakes, macarons, tiramisu, mini-amandine, lolli pops, cannoli, bezele și mousse."
     },
     {
       "id": "cocktail-bar",
       "nume": "Cocktail Bar",
-      "descriere": "Open bar cu long drinks, cocktailuri (mojito, cosmopolitan, Aperol spritz, margarita), mocktailuri fără alcool, aperitive și shoturi.",
-      "imagine": null
+      "descriere": "Open bar cu long drinks, cocktailuri (mojito, cosmopolitan, Aperol spritz, margarita), mocktailuri fără alcool, aperitive și shoturi."
     },
     {
       "id": "cheese-bar",
       "nume": "Cheese Bar",
-      "descriere": "Mozzarella, gorgonzola, cheddar maturat, brie și camembert, pecorino și parmigiano, brânzeturi tradiționale, cu fructe, nuci, miere și gemuri fine.",
-      "imagine": {
-        "src": "/images/pachete/cheesebar-004.jpg",
-        "alt": "Cheese Bar",
-        "w": 2048,
-        "h": 1365
-      }
+      "descriere": "Mozzarella, gorgonzola, cheddar maturat, brie și camembert, pecorino și parmigiano, brânzeturi tradiționale, cu fructe, nuci, miere și gemuri fine."
     },
     {
       "id": "lemonade-bar",
       "nume": "Lemonade Bar",
-      "descriere": "Limonade din lămâi, portocale, ananas, căpșuni, kiwi și mere verzi, cu mentă, lavandă sau ghimbir.",
-      "imagine": {
-        "src": "/images/pachete/lemonadebar-003.jpg",
-        "alt": "Lemonade Bar",
-        "w": 2048,
-        "h": 1366
-      }
+      "descriere": "Limonade din lămâi, portocale, ananas, căpșuni, kiwi și mere verzi, cu mentă, lavandă sau ghimbir."
     },
     {
       "id": "sushi-bar",
       "nume": "Sushi Bar",
-      "descriere": "Sushi proaspăt, așezat pe platouri, pentru invitații care vor o pauză ușoară între dansuri.",
-      "imagine": {
-        "src": "/images/pachete/sushi-bar-001.jpg",
-        "alt": "Sushi Bar",
-        "w": 1920,
-        "h": 2560
-      }
+      "descriere": "Sushi proaspăt, așezat pe platouri, pentru invitații care vor o pauză ușoară între dansuri."
     },
     {
       "id": "tiramisu-bar",
       "nume": "Tiramisu Bar",
-      "descriere": "Tiramisu în pahare individuale, cu cremă de mascarpone și cafea, servit la bufet.",
-      "imagine": {
-        "src": "/images/pachete/tiramisu-bar-001.jpg",
-        "alt": "Tiramisu Bar",
-        "w": 1440,
-        "h": 1920
-      }
+      "descriere": "Tiramisu în pahare individuale, cu cremă de mascarpone și cafea, servit la bufet."
     },
     {
       "id": "bar-traditional",
       "nume": "Bar tradițional",
-      "descriere": "Un colț cu gusturi românești de altădată, aranjat ca la țară, care îi bucură mai ales pe bunici.",
-      "imagine": {
-        "src": "/images/pachete/traditional-bar-005.jpg",
-        "alt": "Bar tradițional",
-        "w": 2048,
-        "h": 1365
-      }
+      "descriere": "Un colț cu gusturi românești de altădată, aranjat ca la țară, care îi bucură mai ales pe bunici."
     },
     {
       "id": "gentlemens-corner",
       "nume": "Gentlemen's Corner",
-      "descriere": "Colț amenajat în stil cigar bar, cu rom sau coniac, țigări de foi și trabucuri.",
-      "imagine": {
-        "src": "/images/pachete/gentlemansbar-008.jpg",
-        "alt": "Gentlemen's Corner",
-        "w": 1402,
-        "h": 1122
-      }
+      "descriere": "Colț amenajat în stil cigar bar, cu rom sau coniac, țigări de foi și trabucuri."
     },
     {
       "id": "shot-cake",
       "nume": "Tort cu shoturi",
-      "descriere": "Un tort din pahare cu shoturi, care dă startul petrecerii după miezul nopții.",
-      "imagine": {
-        "src": "/images/pachete/tort-shoturi-001.jpg",
-        "alt": "Tort cu shoturi",
-        "w": 1600,
-        "h": 1066
-      }
+      "descriere": "Un tort din pahare cu shoturi, care dă startul petrecerii după miezul nopții."
     },
     {
       "id": "bbq",
       "nume": "BBQ la rotiserie",
-      "descriere": "Carne la rotisor, pregătită sub ochii invitaților, pentru o gustare caldă spre finalul serii.",
-      "imagine": {
-        "src": "/images/pachete/bbq.jpg",
-        "alt": "BBQ la rotisor, pregătit în aer liber",
-        "w": 2560,
-        "h": 1707
-      }
+      "descriere": "Carne la rotisor, pregătită sub ochii invitaților, pentru o gustare caldă spre finalul serii."
+    },
+    {
+      "id": "meniu-copii",
+      "nume": "Meniu pentru copii",
+      "descriere": "Porții pe gustul celor mici, servite la masa copiilor. Spuneți-ne de la început câți copii vin, ca să le includem în ofertă."
     }
   ],
   "tort": {
@@ -183,12 +133,6 @@
     "descriere": "Tortul mirilor se comandă separat de la Cofetăria Anna, din Grupul ANNA, după modelul și specificațiile dorite de dumneavoastră.",
     "linkCatalog": "https://www.annaevents.ro/torturi-evenimente/",
     "siteCofetarie": "https://dolcessa.ro/",
-    "imagine": {
-      "src": "/images/pachete/tortul-mirilor.jpg",
-      "alt": "Tort de nuntă cu flori albe, lângă literele luminoase LOVE",
-      "w": 1707,
-      "h": 2560
-    },
     "inclus": false
   },
   "cazare": [
@@ -210,39 +154,7 @@
         "rosa": "https://annaevents.ro/apartamente-riviera/rosa/tour.html",
         "noblesse": "https://annaevents.ro/apartamente-riviera/nobles/tour.html",
         "premiere": "https://annaevents.ro/apartamente-riviera/premier/tour.html"
-      },
-      "galerie": [
-        {
-          "src": "/images/apartament/apartamentul-mirilor-007.jpg",
-          "alt": "Apartamentul mirilor de la Riviera",
-          "w": 2560,
-          "h": 1708
-        },
-        {
-          "src": "/images/apartament/apartamentul-mirilor-005.jpg",
-          "alt": "Apartamentul mirilor de la Riviera",
-          "w": 2560,
-          "h": 1708
-        },
-        {
-          "src": "/images/apartament/apartamentul-mirilor-009.jpg",
-          "alt": "Apartamentul mirilor de la Riviera",
-          "w": 2560,
-          "h": 1708
-        },
-        {
-          "src": "/images/apartament/apartamentul-mirilor-011.jpg",
-          "alt": "Apartamentul mirilor de la Riviera",
-          "w": 2560,
-          "h": 1708
-        },
-        {
-          "src": "/images/apartament/apartamentul-mirilor-019.jpg",
-          "alt": "Apartamentul mirilor de la Riviera",
-          "w": 2560,
-          "h": 1708
-        }
-      ]
+      }
     }
   ],
   "facilitati": [

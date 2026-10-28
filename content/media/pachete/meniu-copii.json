@@ -1,0 +1,45 @@
+{
+  "pachet": "Meniu pentru copii",
+  "imaginePrincipala": {
+    "src": "/images/pachete/meniu-copii/meniu-copii-01.jpg",
+    "alt": "Meniu pentru copii, cu burgeri, pizza și cartofi prăjiți"
+  },
+  "galerie": [
+    {
+      "src": "/images/pachete/meniu-copii/meniu-copii-01.jpg",
+      "alt": "Meniu pentru copii, cu burgeri, pizza și cartofi prăjiți"
+    },
+    {
+      "src": "/images/pachete/meniu-copii/meniu-copii-02.jpg",
+      "alt": "Meniu pentru copii, la un eveniment ANNA (2)"
+    },
+    {
+      "src": "/images/pachete/meniu-copii/meniu-copii-03.jpg",
+      "alt": "Meniu pentru copii, la un eveniment ANNA (3)"
+    },
+    {
+      "src": "/images/pachete/meniu-copii/meniu-copii-04.jpg",
+      "alt": "Meniu pentru copii, la un eveniment ANNA (4)"
+    },
+    {
+      "src": "/images/pachete/meniu-copii/meniu-copii-05.jpg",
+      "alt": "Meniu pentru copii, la un eveniment ANNA (5)"
+    },
+    {
+      "src": "/images/pachete/meniu-copii/meniu-copii-06.jpg",
+      "alt": "Meniu pentru copii, la un eveniment ANNA (6)"
+    },
+    {
+      "src": "/images/pachete/meniu-copii/meniu-copii-07.jpg",
+      "alt": "Meniu pentru copii, la un eveniment ANNA (7)"
+    },
+    {
+      "src": "/images/pachete/meniu-copii/meniu-copii-08.jpg",
+      "alt": "Meniu pentru copii, la un eveniment ANNA (8)"
+    },
+    {
+      "src": "/images/pachete/meniu-copii/meniu-copii-09.jpg",
+      "alt": "Meniu pentru copii, la un eveniment ANNA (9)"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "pachet": "Sushi Bar",
+  "imaginePrincipala": {
+    "src": "/images/pachete/sushi-bar/sushi-bar-01.jpg",
+    "alt": "Rulouri de sushi cu somon, așezate pe platou"
+  },
+  "galerie": [
+    {
+      "src": "/images/pachete/sushi-bar/sushi-bar-01.jpg",
+      "alt": "Rulouri de sushi cu somon, așezate pe platou"
+    },
+    {
+      "src": "/images/pachete/sushi-bar/sushi-bar-02.jpg",
+      "alt": "Sushi Bar, la un eveniment ANNA (2)"
+    },
+    {
+      "src": "/images/pachete/sushi-bar/sushi-bar-03.jpg",
+      "alt": "Sushi Bar, la un eveniment ANNA (3)"
+    },
+    {
+      "src": "/images/pachete/sushi-bar/sushi-bar-04.jpg",
+      "alt": "Sushi Bar, la un eveniment ANNA (4)"
+    },
+    {
+      "src": "/images/pachete/sushi-bar/sushi-bar-05.jpg",
+      "alt": "Sushi Bar, la un eveniment ANNA (5)"
+    },
+    {
+      "src": "/images/pachete/sushi-bar/sushi-bar-06.jpg",
+      "alt": "Sushi Bar, la un eveniment ANNA (6)"
+    },
+    {
+      "src": "/images/pachete/sushi-bar/sushi-bar-07.jpg",
+      "alt": "Sushi Bar, la un eveniment ANNA (7)"
+    },
+    {
+      "src": "/images/pachete/sushi-bar/sushi-bar-08.jpg",
+      "alt": "Sushi Bar, la un eveniment ANNA (8)"
+    },
+    {
+      "src": "/images/pachete/sushi-bar/sushi-bar-09.jpg",
+      "alt": "Sushi Bar, la un eveniment ANNA (9)"
+    },
+    {
+      "src": "/images/pachete/sushi-bar/sushi-bar-10.jpg",
+      "alt": "Sushi Bar, la un eveniment ANNA (10)"
+    },
+    {
+      "src": "/images/pachete/sushi-bar/sushi-bar-11.jpg",
+      "alt": "Sushi Bar, la un eveniment ANNA (11)"
+    },
+    {
+      "src": "/images/pachete/sushi-bar/sushi-bar-12.jpg",
+      "alt": "Sushi Bar, la un eveniment ANNA (12)"
+    },
+    {
+      "src": "/images/pachete/sushi-bar/sushi-bar-13.jpg",
+      "alt": "Sushi Bar, la un eveniment ANNA (13)"
+    }
+  ]
+}

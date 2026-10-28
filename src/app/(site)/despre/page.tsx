@@ -4,7 +4,7 @@ import Prose from '@/components/Prose';
 import WaIcon from '@/components/WaIcon';
 import { BlurFade } from '@/components/ui/blur-fade';
 import { NumberTicker } from '@/components/ui/number-ticker';
-import { getPachete, getPage, getSaloane, getSite, section } from '@/lib/content';
+import { getPachete, getPage, getPozePagini, getSaloane, getSite, section } from '@/lib/content';
 import { waLink } from '@/lib/whatsapp';
 
 const page = getPage('despre');
@@ -22,11 +22,11 @@ export default function DesprePage() {
     { v: ani, l: 'de ani în Târgu Jiu' },
     { v: saloane.length, l: 'saloane în două complexe' },
     { v: Math.max(...saloane.map((x) => x.capacitate.nunta)), l: 'invitați în cel mai mare salon' },
-    { v: getPachete().serviciiPremium.length, l: 'baruri și servicii premium' },
+    { v: getPachete().serviciiPremium.length, l: 'pachete opționale' },
   ];
   return (
     <>
-      <PageHero title={page.meta.h1} subtitle={page.meta.subtitlu} image="/images/hero/complex-riviera-015.jpg" alt="Grădina Riviera, pe malul Jiului, văzută de sus">
+      <PageHero title={page.meta.h1} subtitle={page.meta.subtitlu} image={getPozePagini().despre.src} alt={getPozePagini().despre.alt}>
         <a href={waLink('despre')} target="_blank" rel="noopener noreferrer" className="btn bg-[#FFFEFA] text-[#1E1E1E] dark:bg-btn dark:text-btn-text"><WaIcon />{page.meta.cta.text}</a>
       </PageHero>
       <section className="border-b border-line">

@@ -7,7 +7,7 @@ import MenuTabs, { type Meniu } from '@/components/MenuTabs';
 import WaIcon from '@/components/WaIcon';
 import { BlurFade } from '@/components/ui/blur-fade';
 import { ScrollProgress } from '@/components/ui/scroll-progress';
-import { getMeniuri, getPachete, getPage, section } from '@/lib/content';
+import { getMeniuri, getPachete, getPage, getPozePagini, section } from '@/lib/content';
 import { waLink } from '@/lib/whatsapp';
 
 const page = getPage('meniuri');
@@ -19,6 +19,7 @@ export const metadata: Metadata = {
 export default function MeniuriPage() {
   const data = getMeniuri();
   const tort = getPachete().tort;
+  const poze = getPozePagini();
   const s = (t: string) => section(page, t)?.body ?? '';
   const wa = waLink('meniuri', 'Bună ziua, aș dori o ofertă cu unul dintre meniurile ANNA.');
   const meniuri = (data.meniuri as Meniu[]).slice().sort((a, b) => (a as Meniu & { ordine: number }).ordine - (b as Meniu & { ordine: number }).ordine);
@@ -26,7 +27,7 @@ export default function MeniuriPage() {
   return (
     <>
       <ScrollProgress />
-      <PageHero title={page.meta.h1} subtitle={page.meta.subtitlu} image="/images/meniuri/meniu-masa.jpg" alt="Masă aranjată pentru nuntă, cu farfurii, tacâmuri aurii și meniul invitaților">
+      <PageHero title={page.meta.h1} subtitle={page.meta.subtitlu} image={poze.meniuri.src} alt={poze.meniuri.alt}>
         <a href={wa} target="_blank" rel="noopener noreferrer" className="btn bg-[#FFFEFA] text-[#1E1E1E] dark:bg-btn dark:text-btn-text"><WaIcon />{page.meta.cta.text}</a>
       </PageHero>
 
@@ -59,8 +60,8 @@ export default function MeniuriPage() {
 
       <section className="section">
         <div className="wrap grid items-center gap-10 lg:grid-cols-2">
-          <div className="relative aspect-[4/5] overflow-hidden lg:aspect-[4/3]">
-            <Image src={tort.imagine.src} alt={tort.imagine.alt} fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover" />
+          <div className="relative aspect-[4/5] overflow-hidden rounded-img lg:aspect-[4/3]">
+            <Image src={poze.tort.src} alt={poze.tort.alt} fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover" />
           </div>
           <BlurFade>
             <h2 className="h2">Tortul mirilor, de la Cofetăria Anna</h2>

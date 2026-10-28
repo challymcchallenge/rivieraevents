@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.rivieraevents.ro'),
   title: { default: 'Riviera Events Târgu Jiu | Saloane de nuntă pe malul Jiului', template: '%s' },
   description: 'Saloane pentru nunți, botezuri și evenimente de firmă pe malul Jiului, în Târgu Jiu.',
-  openGraph: { type: 'website', locale: 'ro_RO', siteName: 'Riviera Events by ANNA', images: ['/images/hero/complex-riviera-015.jpg'] },
+  openGraph: { type: 'website', locale: 'ro_RO', siteName: 'Riviera Events by ANNA', images: ['/images/complex/riviera/complex-riviera-015.jpg'] },
   formatDetection: { telephone: false },
 };
 

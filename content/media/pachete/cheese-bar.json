@@ -1,0 +1,69 @@
+{
+  "pachet": "Cheese Bar",
+  "imaginePrincipala": {
+    "src": "/images/pachete/cheese-bar/cheese-bar-01.jpg",
+    "alt": "Cheese Bar cu platouri de lemn cu brânzeturi, struguri și grisine"
+  },
+  "galerie": [
+    {
+      "src": "/images/pachete/cheese-bar/cheese-bar-01.jpg",
+      "alt": "Cheese Bar cu platouri de lemn cu brânzeturi, struguri și grisine"
+    },
+    {
+      "src": "/images/pachete/cheese-bar/cheese-bar-02.jpg",
+      "alt": "Cheese Bar, la un eveniment ANNA (2)"
+    },
+    {
+      "src": "/images/pachete/cheese-bar/cheese-bar-03.jpg",
+      "alt": "Cheese Bar, la un eveniment ANNA (3)"
+    },
+    {
+      "src": "/images/pachete/cheese-bar/cheese-bar-04.jpg",
+      "alt": "Cheese Bar, la un eveniment ANNA (4)"
+    },
+    {
+      "src": "/images/pachete/cheese-bar/cheese-bar-05.jpg",
+      "alt": "Cheese Bar, la un eveniment ANNA (5)"
+    },
+    {
+      "src": "/images/pachete/cheese-bar/cheese-bar-06.jpg",
+      "alt": "Cheese Bar, la un eveniment ANNA (6)"
+    },
+    {
+      "src": "/images/pachete/cheese-bar/cheese-bar-07.jpg",
+      "alt": "Cheese Bar, la un eveniment ANNA (7)"
+    },
+    {
+      "src": "/images/pachete/cheese-bar/cheese-bar-08.jpg",
+      "alt": "Cheese Bar, la un eveniment ANNA (8)"
+    },
+    {
+      "src": "/images/pachete/cheese-bar/cheese-bar-09.jpg",
+      "alt": "Cheese Bar, la un eveniment ANNA (9)"
+    },
+    {
+      "src": "/images/pachete/cheese-bar/cheese-bar-10.jpg",
+      "alt": "Cheese Bar, la un eveniment ANNA (10)"
+    },
+    {
+      "src": "/images/pachete/cheese-bar/cheese-bar-11.jpg",
+      "alt": "Cheese Bar, la un eveniment ANNA (11)"
+    },
+    {
+      "src": "/images/pachete/cheese-bar/cheese-bar-12.jpg",
+      "alt": "Cheese Bar, la un eveniment ANNA (12)"
+    },
+    {
+      "src": "/images/pachete/cheese-bar/cheese-bar-13.jpg",
+      "alt": "Cheese Bar, la un eveniment ANNA (13)"
+    },
+    {
+      "src": "/images/pachete/cheese-bar/cheese-bar-14.jpg",
+      "alt": "Cheese Bar, la un eveniment ANNA (14)"
+    },
+    {
+      "src": "/images/pachete/cheese-bar/cheese-bar-15.jpg",
+      "alt": "Cheese Bar, la un eveniment ANNA (15)"
+    }
+  ]
+}
