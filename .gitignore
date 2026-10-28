@@ -7,3 +7,7 @@ dist/
 .env*.local
 *.log
 .DS_Store
+
+# Media originale (2.9 GB) si pozele convertite, inainte de selectie
+Media/
+media-web/

@@ -1,16 +1,72 @@
 {
   "includeStandard": [
-    { "tip": "nunta", "titlu": "[NEED: ce include oferta standard de nuntă, câte un rând pe element]", "detalii": null }
+    {
+      "tip": "nunta",
+      "titlu": "[NEED: ce include oferta standard de nuntă, câte un rând pe element]",
+      "detalii": null
+    }
   ],
   "serviciiPremium": [
-    { "id": "candy-bar", "nume": "Candy Bar", "descriere": "[NEED: o frază]", "imagine": null },
-    { "id": "cocktail-bar", "nume": "Cocktail Bar", "descriere": "[NEED: o frază]", "imagine": null },
-    { "id": "cheese-bar", "nume": "Cheese Bar", "descriere": "[NEED: o frază]", "imagine": null },
-    { "id": "lemonade-bar", "nume": "Lemonade Bar", "descriere": "[NEED: o frază]", "imagine": null },
-    { "id": "sushi-bar", "nume": "Sushi Bar", "descriere": "[NEED: o frază]", "imagine": null },
-    { "id": "gentlemens-corner", "nume": "Gentlemen's Corner", "descriere": "[NEED: o frază]", "imagine": null },
-    { "id": "shot-cake", "nume": "Shot cake", "descriere": "[NEED: o frază]", "imagine": null },
-    { "id": "bbq", "nume": "BBQ la rotiserie", "descriere": "[NEED: o frază]", "imagine": null }
+    {
+      "id": "candy-bar",
+      "nume": "Candy Bar",
+      "descriere": "[NEED: o frază]",
+      "imagine": null
+    },
+    {
+      "id": "cocktail-bar",
+      "nume": "Cocktail Bar",
+      "descriere": "[NEED: o frază]",
+      "imagine": null
+    },
+    {
+      "id": "cheese-bar",
+      "nume": "Cheese Bar",
+      "descriere": "[NEED: o frază]",
+      "imagine": null
+    },
+    {
+      "id": "lemonade-bar",
+      "nume": "Lemonade Bar",
+      "descriere": "[NEED: o frază]",
+      "imagine": null
+    },
+    {
+      "id": "sushi-bar",
+      "nume": "Sushi Bar",
+      "descriere": "[NEED: o frază]",
+      "imagine": null
+    },
+    {
+      "id": "tiramisu-bar",
+      "nume": "Tiramisu Bar",
+      "descriere": "[NEED: o frază]",
+      "imagine": null
+    },
+    {
+      "id": "bar-traditional",
+      "nume": "Bar tradițional",
+      "descriere": "[NEED: o frază]",
+      "imagine": null
+    },
+    {
+      "id": "gentlemens-corner",
+      "nume": "Gentlemen's Corner",
+      "descriere": "[NEED: o frază]",
+      "imagine": null
+    },
+    {
+      "id": "shot-cake",
+      "nume": "Tort cu shoturi",
+      "descriere": "[NEED: o frază]",
+      "imagine": null
+    },
+    {
+      "id": "bbq",
+      "nume": "BBQ la rotiserie",
+      "descriere": "[NEED: o frază]",
+      "imagine": null
+    }
   ],
   "tort": {
     "furnizor": "Cofetăria Anna",
@@ -18,10 +74,26 @@
     "linkCatalog": "https://www.annaevents.ro/torturi-evenimente/"
   },
   "cazare": [
-    { "nume": "Hotel ANNA", "descriere": "[NEED: condiții de cazare pentru invitați]", "link": null },
-    { "nume": "Hotel ANNA Junior", "descriere": "[NEED: condiții de cazare pentru invitați]", "link": null },
-    { "nume": "Apartamentul mirilor", "descriere": "[NEED: ce include, unde e]", "link": null }
+    {
+      "nume": "Hotel ANNA",
+      "descriere": "[NEED: condiții de cazare pentru invitați]",
+      "link": null
+    },
+    {
+      "nume": "Hotel ANNA Junior",
+      "descriere": "[NEED: condiții de cazare pentru invitați]",
+      "link": null
+    },
+    {
+      "nume": "Apartamentul mirilor",
+      "descriere": "[NEED: ce include, unde e]",
+      "link": null
+    }
   ],
-  "facilitati": ["Decor personalizat", "Aranjamente florale", "Parcare privată"],
+  "facilitati": [
+    "Decor personalizat",
+    "Aranjamente florale",
+    "Parcare privată"
+  ],
   "oferte": []
 }

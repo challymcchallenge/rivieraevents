@@ -5,17 +5,27 @@
     "numar": "40746085555",
     "afisat": "0746 085 555",
     "textImplicit": "Bună ziua, aș dori o ofertă pentru un eveniment la Riviera.",
-    "marcajSursa": "(trimis de pe rivieraevents.ro, {pagina})",
-    "_nota": "[NEED: confirmare că 0746 085 555 este numărul WhatsApp pentru Riviera]"
+    "marcajSursa": "(trimis de pe rivieraevents.ro, {pagina})"
   },
   "telefoane": [
-    { "numar": "0746 085 555", "rol": "[NEED: rol, de ex. Rezervări / WhatsApp]" },
-    { "numar": "0744 648 202", "rol": "[NEED: rol]" },
-    { "numar": "0744 692 166", "rol": "[NEED: rol]" },
-    { "numar": "0755 054 096", "rol": "[NEED: rol]" }
+    {
+      "numar": "0746 085 555",
+      "rol": "Rezervări și WhatsApp"
+    },
+    {
+      "numar": "0744 648 202",
+      "rol": "Rezervări"
+    },
+    {
+      "numar": "0744 692 166",
+      "rol": "Rezervări"
+    },
+    {
+      "numar": "0755 054 096",
+      "rol": "Rezervări"
+    }
   ],
-  "email": "rezervari@annaevents.ro",
-  "_notaEmail": "[NEED: confirmare adresă email pentru cereri sau adresă nouă pe rivieraevents.ro]",
+  "email": "rezervari@rivieraevents.ro",
   "complexe": {
     "riviera": {
       "nume": "Complexul Riviera Events",
@@ -54,5 +64,6 @@
     "cui": "[NEED: CUI]",
     "registruComertului": "[NEED: nr. ONRC]",
     "sediu": "[NEED: sediu social]"
-  }
+  },
+  "_notaTelefoane": "Toate cele 4 numere se afișează la Contact; doar primul are WhatsApp. [PRESUPUNERE] celelalte trei au rolul „Rezervări” până la alte indicații."
 }
