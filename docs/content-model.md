@@ -137,7 +137,22 @@ Se afișează doar cele cu `acord: true`.
 
 Telefoane cu rol, WhatsApp (număr + text implicit + marcaj de sursă, vezi ADR-005), email, adrese pentru ambele complexe (cu coordonate pentru hartă și schema.org), program de vizitare, social, datele firmei.
 
-## 7b. Slideshow pagina principală: `content/acasa-slideshow.json` (ADR-007)
+## 7a. Fișierele editate din Keystatic (Faza 5, 2026-10-28)
+
+Keystatic refuză orice cheie nedeclarată în schemă. De aceea pozele, tururile și portofoliul stau în fișiere separate, fără note interne, iar textele cu note rămân în `content/*.json` și `content/pagini/*.mdx`.
+
+| Fișier | Ce conține | Schema |
+|---|---|---|
+| `content/media/slideshow.json` | slide-urile hero; fiecare e `{ "discriminant": "imagine" \| "video", "value": {…} }` | singleton `slideshow` |
+| `content/media/tururi.json` | `{ tururi: [{ id, titlu, complex, url }] }`; `url` gol = turul nu apare | singleton `tururi` |
+| `content/media/saloane/<slug>.json` | `{ salon, imaginePrincipala {src, alt}, galerie [{src, alt}], tur360, turApartament }` | colecția `saloane` |
+| `content/portofoliu/<slug>.json` | `{ titlu, tip, complex, salon, data, descriere, poze [{src, alt}], acordClient }`; slug-ul = numele fișierului | colecția `portofoliu` |
+
+- Pozele se salvează în `public/images/<hero|saloane/<slug>|portofoliu/<slug>>/`, iar video-urile în `public/media/hero/`.
+- Câmpurile de imagine goale se omit din fișier: Keystatic nu acceptă `null`.
+- Dimensiunile pozelor (w/h) nu se mai salvează. `src/lib/content.ts` le citește din fișier la build.
+
+## 7b. Slideshow pagina principală: `content/media/slideshow.json` (ADR-007)
 
 În Keystatic e un *singleton* „Pagina principală → Slideshow”: `fields.array` cu `validation.length: { min: 1, max: 10 }`, iar fiecare element e un `fields.conditional` (imagine / video).
 

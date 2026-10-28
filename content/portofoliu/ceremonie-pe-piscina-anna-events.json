@@ -1,37 +1,27 @@
 {
-  "slug": "ceremonie-pe-piscina-anna-events",
   "titlu": "Ceremonie pe piscină",
   "tip": "nunta",
   "complex": "insulita",
-  "salon": null,
+  "salon": "necunoscut",
   "data": "2024-05",
   "descriere": "Ceremonia a avut loc pe o platformă așezată chiar pe piscină, cu invitații de jur împrejur. La apus, mirii s-au fotografiat sub arcadele de flori albe.",
   "poze": [
     {
       "src": "/images/portofoliu/ceremonie-pe-piscina-anna-events/portofoliu-insulita-042.jpg",
-      "alt": "Ceremonia pe platforma de pe piscină, cu invitații în jur",
-      "w": 2560,
-      "h": 1707
+      "alt": "Ceremonia pe platforma de pe piscină, cu invitații în jur"
     },
     {
       "src": "/images/portofoliu/ceremonie-pe-piscina-anna-events/portofoliu-insulita-041.jpg",
-      "alt": "Piscina pregătită pentru ceremonie, cu flori pe apă",
-      "w": 2560,
-      "h": 1707
+      "alt": "Piscina pregătită pentru ceremonie, cu flori pe apă"
     },
     {
       "src": "/images/portofoliu/ceremonie-pe-piscina-anna-events/portofoliu-insulita-044.jpg",
-      "alt": "Platforma ceremoniei și podul de lemn, văzute de sus",
-      "w": 2560,
-      "h": 1707
+      "alt": "Platforma ceremoniei și podul de lemn, văzute de sus"
     },
     {
       "src": "/images/portofoliu/ceremonie-pe-piscina-anna-events/portofoliu-insulita-043.jpg",
-      "alt": "Mirii sub arcadele de flori albe, la apus",
-      "w": 2560,
-      "h": 1707
+      "alt": "Mirii sub arcadele de flori albe, la apus"
     }
   ],
-  "acordClient": true,
-  "_nota": "Evenimentele și pozele alese din folderele de portofoliu trimise de client (2026-10-28), grupate după poze și data EXIF. Fără numele mirilor. [PRESUPUNERE] cuplurile din poze și-au dat acordul de publicare; clientul păstrează dovada."
+  "acordClient": true
 }

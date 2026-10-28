@@ -1,49 +1,35 @@
 {
-  "slug": "nunta-artificii-piscina-anna-events",
   "titlu": "Nuntă cu artificii deasupra piscinei",
   "tip": "nunta",
   "complex": "insulita",
-  "salon": null,
+  "salon": "necunoscut",
   "data": "2025-08",
   "descriere": "O seară de august cu de toate: intrare pe aleea luminată, însoțită de dansatoare cu aripi, mascote pe ringul de dans, BBQ la rotisor, primul dans în fum greu și artificii deasupra piscinei la tăierea tortului.",
   "poze": [
     {
       "src": "/images/portofoliu/nunta-artificii-piscina-anna-events/portofoliu-insulita-025.jpg",
-      "alt": "Tăierea tortului cu artificii, lângă piscina ANNA Events",
-      "w": 2560,
-      "h": 1707
+      "alt": "Tăierea tortului cu artificii, lângă piscina ANNA Events"
     },
     {
       "src": "/images/portofoliu/nunta-artificii-piscina-anna-events/portofoliu-insulita-016.jpg",
-      "alt": "Intrarea pe aleea luminată, cu dansatoare cu aripi",
-      "w": 2560,
-      "h": 1707
+      "alt": "Intrarea pe aleea luminată, cu dansatoare cu aripi"
     },
     {
       "src": "/images/portofoliu/nunta-artificii-piscina-anna-events/portofoliu-insulita-021.jpg",
-      "alt": "Primul dans, în fum greu",
-      "w": 2560,
-      "h": 1707
+      "alt": "Primul dans, în fum greu"
     },
     {
       "src": "/images/portofoliu/nunta-artificii-piscina-anna-events/portofoliu-insulita-019.jpg",
-      "alt": "BBQ la rotisor, în aer liber",
-      "w": 2560,
-      "h": 1707
+      "alt": "BBQ la rotisor, în aer liber"
     },
     {
       "src": "/images/portofoliu/nunta-artificii-piscina-anna-events/portofoliu-insulita-017.jpg",
-      "alt": "Mascote pe ringul de dans",
-      "w": 1707,
-      "h": 2560
+      "alt": "Mascote pe ringul de dans"
     },
     {
       "src": "/images/portofoliu/nunta-artificii-piscina-anna-events/portofoliu-insulita-011.jpg",
-      "alt": "Artificii deasupra complexului ANNA Events, văzute de sus",
-      "w": 2560,
-      "h": 1920
+      "alt": "Artificii deasupra complexului ANNA Events, văzute de sus"
     }
   ],
-  "acordClient": true,
-  "_nota": "Evenimentele și pozele alese din folderele de portofoliu trimise de client (2026-10-28), grupate după poze și data EXIF. Fără numele mirilor. [PRESUPUNERE] cuplurile din poze și-au dat acordul de publicare; clientul păstrează dovada."
+  "acordClient": true
 }

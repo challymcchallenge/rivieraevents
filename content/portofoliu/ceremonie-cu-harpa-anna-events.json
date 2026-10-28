@@ -1,37 +1,27 @@
 {
-  "slug": "ceremonie-cu-harpa-anna-events",
   "titlu": "Ceremonie cu harpă",
   "tip": "nunta",
   "complex": "insulita",
-  "salon": null,
-  "data": null,
+  "salon": "necunoscut",
+  "data": "",
   "descriere": "Muzică de harpă live, litere LOVE uriașe și cer senin deasupra terasei: o ceremonie albă, în care mirii au avut tot timpul pentru ei.",
   "poze": [
     {
       "src": "/images/portofoliu/ceremonie-cu-harpa-anna-events/portofoliu-insulita-035.jpg",
-      "alt": "Harpista lângă literele LOVE, la ceremonie",
-      "w": 2560,
-      "h": 1706
+      "alt": "Harpista lângă literele LOVE, la ceremonie"
     },
     {
       "src": "/images/portofoliu/ceremonie-cu-harpa-anna-events/portofoliu-insulita-036.jpg",
-      "alt": "Mirii pe terasă, în lumina după-amiezii",
-      "w": 2560,
-      "h": 1706
+      "alt": "Mirii pe terasă, în lumina după-amiezii"
     },
     {
       "src": "/images/portofoliu/ceremonie-cu-harpa-anna-events/portofoliu-insulita-034.jpg",
-      "alt": "Mirii pe terasa complexului ANNA Events",
-      "w": 2560,
-      "h": 1707
+      "alt": "Mirii pe terasa complexului ANNA Events"
     },
     {
       "src": "/images/portofoliu/ceremonie-cu-harpa-anna-events/portofoliu-insulita-037.jpg",
-      "alt": "Decorul ceremoniei, cu harpă și litere LOVE",
-      "w": 2560,
-      "h": 1706
+      "alt": "Decorul ceremoniei, cu harpă și litere LOVE"
     }
   ],
-  "acordClient": true,
-  "_nota": "Evenimentele și pozele alese din folderele de portofoliu trimise de client (2026-10-28), grupate după poze și data EXIF. Fără numele mirilor. [PRESUPUNERE] cuplurile din poze și-au dat acordul de publicare; clientul păstrează dovada."
+  "acordClient": true
 }

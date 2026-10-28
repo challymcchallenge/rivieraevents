@@ -9,6 +9,8 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 2678400,
   },
   poweredByHeader: false,
+  // fără AGENTS.md generat automat de `next dev` în rădăcina proiectului
+  agentRules: false,
 };
 
 export default nextConfig;

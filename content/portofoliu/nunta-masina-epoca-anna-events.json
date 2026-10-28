@@ -1,43 +1,31 @@
 {
-  "slug": "nunta-masina-epoca-anna-events",
   "titlu": "Nuntă cu mașină de epocă și lumini de concert",
   "tip": "nunta",
   "complex": "insulita",
-  "salon": null,
+  "salon": "necunoscut",
   "data": "2025-09",
   "descriere": "Mirii au sosit cu o mașină de epocă, iar seara a continuat în salon, sub lumini de concert, cu un moment de dans în costume colorate.",
   "poze": [
     {
       "src": "/images/portofoliu/nunta-masina-epoca-anna-events/portofoliu-insulita-014.jpg",
-      "alt": "Mirii lângă mașina de epocă",
-      "w": 1707,
-      "h": 2560
+      "alt": "Mirii lângă mașina de epocă"
     },
     {
       "src": "/images/portofoliu/nunta-masina-epoca-anna-events/portofoliu-insulita-013.jpg",
-      "alt": "Mirii și familia lângă mașina de epocă",
-      "w": 2560,
-      "h": 1707
+      "alt": "Mirii și familia lângă mașina de epocă"
     },
     {
       "src": "/images/portofoliu/nunta-masina-epoca-anna-events/portofoliu-insulita-024.jpg",
-      "alt": "Mireasa, între luminițe",
-      "w": 1707,
-      "h": 2560
+      "alt": "Mireasa, între luminițe"
     },
     {
       "src": "/images/portofoliu/nunta-masina-epoca-anna-events/portofoliu-insulita-032.jpg",
-      "alt": "Ringul de dans sub lumini de concert",
-      "w": 2560,
-      "h": 1707
+      "alt": "Ringul de dans sub lumini de concert"
     },
     {
       "src": "/images/portofoliu/nunta-masina-epoca-anna-events/portofoliu-insulita-033.jpg",
-      "alt": "Moment de dans în costume colorate",
-      "w": 2560,
-      "h": 1707
+      "alt": "Moment de dans în costume colorate"
     }
   ],
-  "acordClient": true,
-  "_nota": "Evenimentele și pozele alese din folderele de portofoliu trimise de client (2026-10-28), grupate după poze și data EXIF. Fără numele mirilor. [PRESUPUNERE] cuplurile din poze și-au dat acordul de publicare; clientul păstrează dovada."
+  "acordClient": true
 }

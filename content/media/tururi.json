@@ -1,0 +1,64 @@
+{
+  "tururi": [
+    {
+      "id": "noblesse",
+      "titlu": "Salon Noblesse",
+      "complex": "riviera",
+      "url": "https://annaevents.ro/tur-virtual/2024/nobles/tour.html"
+    },
+    {
+      "id": "premiere",
+      "titlu": "Salon Premiere",
+      "complex": "riviera",
+      "url": "https://annaevents.ro/tur-virtual/2024/premier/tour.html"
+    },
+    {
+      "id": "rosa",
+      "titlu": "Salon Rosa",
+      "complex": "riviera",
+      "url": "https://annaevents.ro/tur-virtual/2024/rosa/tour.html"
+    },
+    {
+      "id": "apartament-rosa",
+      "titlu": "Apartamentul mirilor, salon Rosa",
+      "complex": "riviera",
+      "url": "https://annaevents.ro/apartamente-riviera/rosa/tour.html"
+    },
+    {
+      "id": "apartament-noblesse",
+      "titlu": "Apartamentul mirilor, salon Noblesse",
+      "complex": "riviera",
+      "url": "https://annaevents.ro/apartamente-riviera/nobles/tour.html"
+    },
+    {
+      "id": "apartament-premiere",
+      "titlu": "Apartamentul mirilor, salon Premiere",
+      "complex": "riviera",
+      "url": "https://annaevents.ro/apartamente-riviera/premier/tour.html"
+    },
+    {
+      "id": "grande",
+      "titlu": "Salon Grande",
+      "complex": "insulita",
+      "url": "https://annaevents.ro/tur-virtual/Salon-Grande/tour.html"
+    },
+    {
+      "id": "ronda",
+      "titlu": "Salon Ronda",
+      "complex": "insulita",
+      "url": "https://annaevents.ro/tur-virtual/2024/ronda/tour.html"
+    },
+    {
+      "id": "magic",
+      "titlu": "Salon Magic",
+      "complex": "insulita",
+      "url": "https://www.annaevents.ro/tur-virtual/anna_events/sala-noua/tour.html"
+    },
+    {
+      "id": "estuar",
+      "titlu": "Salon Estuar",
+      "complex": "insulita",
+      "url": "https://www.annaevents.ro/tur-virtual/anna_events/sala-estuar/salon_estuar.html"
+    }
+  ]
+}

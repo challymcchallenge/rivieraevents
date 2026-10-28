@@ -1,0 +1,59 @@
+{
+  "salon": "Noblesse",
+  "imaginePrincipala": {
+    "src": "/images/saloane/noblesse/noblesse-005.jpg",
+    "alt": "Salon Noblesse, vedere de ansamblu"
+  },
+  "galerie": [
+    {
+      "src": "/images/saloane/noblesse/noblesse-001.jpg",
+      "alt": "Salon Noblesse, amenajat pentru un eveniment (1)"
+    },
+    {
+      "src": "/images/saloane/noblesse/noblesse-003.jpg",
+      "alt": "Salon Noblesse, amenajat pentru un eveniment (2)"
+    },
+    {
+      "src": "/images/saloane/noblesse/noblesse-005.jpg",
+      "alt": "Salon Noblesse, amenajat pentru un eveniment (3)"
+    },
+    {
+      "src": "/images/saloane/noblesse/noblesse-007.jpg",
+      "alt": "Salon Noblesse, amenajat pentru un eveniment (4)"
+    },
+    {
+      "src": "/images/saloane/noblesse/noblesse-009.jpg",
+      "alt": "Salon Noblesse, amenajat pentru un eveniment (5)"
+    },
+    {
+      "src": "/images/saloane/noblesse/noblesse-011.jpg",
+      "alt": "Salon Noblesse, amenajat pentru un eveniment (6)"
+    },
+    {
+      "src": "/images/saloane/noblesse/noblesse-013.jpg",
+      "alt": "Salon Noblesse, amenajat pentru un eveniment (7)"
+    },
+    {
+      "src": "/images/saloane/noblesse/noblesse-015.jpg",
+      "alt": "Salon Noblesse, amenajat pentru un eveniment (8)"
+    },
+    {
+      "src": "/images/saloane/noblesse/noblesse-017.jpg",
+      "alt": "Salon Noblesse, amenajat pentru un eveniment (9)"
+    },
+    {
+      "src": "/images/saloane/noblesse/noblesse-019.jpg",
+      "alt": "Salon Noblesse, amenajat pentru un eveniment (10)"
+    },
+    {
+      "src": "/images/saloane/noblesse/noblesse-021.jpg",
+      "alt": "Salon Noblesse, amenajat pentru un eveniment (11)"
+    },
+    {
+      "src": "/images/saloane/noblesse/noblesse-023.jpg",
+      "alt": "Salon Noblesse, amenajat pentru un eveniment (12)"
+    }
+  ],
+  "tur360": "https://annaevents.ro/tur-virtual/2024/nobles/tour.html",
+  "turApartament": "https://annaevents.ro/apartamente-riviera/nobles/tour.html"
+}

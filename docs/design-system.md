@@ -142,7 +142,7 @@ Butonul rotund WhatsApp e verde pe fundal deschis (1.97:1). E logo de brand, dec
 - Erorile apar sub câmp, în `--color-accent-text`, cu text explicit, nu doar prin culoare.
 
 ### Formular cerere de ofertă (`content/formular.json`)
-- **Pași:** componenta `Stepper` (ReactBits, pachetul Echilibrat), cu indicator „Pasul 2 din 5” și bară de progres.
+- **Pași:** formular propriu în pași, cu indicator „Pasul 2 din 5” și bară de progres. **Abatere de la plan (Faza 5, regula 8):** `Stepper` din ReactBits avansează singur și nu permite validare înainte de pas și nici trimiterea din pasul 2. `Stepper` rămâne folosit în calculatorul de buget.
   - Butoanele sunt „Înapoi” și „Continuați”. De la pasul 2 apare și butonul principal **„Trimiteți cererea”**, iar pașii 3–5 sunt marcați „opțional”.
 - **Câmpuri obligatorii** marcate cu „(obligatoriu)” în etichetă, nu doar cu asterisc.
   - Validarea apare la ieșirea din câmp, cu eroare sub câmp legată prin `aria-describedby`.

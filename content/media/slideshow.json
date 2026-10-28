@@ -1,0 +1,90 @@
+{
+  "intervalSecunde": 6,
+  "slideuri": [
+    {
+      "discriminant": "imagine",
+      "value": {
+        "imagine": "/images/hero/complex-riviera-015.jpg",
+        "imagineMobil": "/images/hero/complex-riviera-016.jpg",
+        "punctFocal": "50% 50%",
+        "alt": "Grădina Riviera pregătită pentru ceremonie, văzută de sus"
+      }
+    },
+    {
+      "discriminant": "imagine",
+      "value": {
+        "imagine": "/images/hero/rosa-001.jpg",
+        "imagineMobil": "/images/hero/rosa-002.jpg",
+        "punctFocal": "50% 50%",
+        "alt": "Salonul Rosa, cu candelabrul floral și pereții de sticlă spre grădină"
+      }
+    },
+    {
+      "discriminant": "imagine",
+      "value": {
+        "imagine": "/images/hero/complex-riviera-008.jpg",
+        "punctFocal": "45% 60%",
+        "alt": "Aleea ceremoniei din grădină, cu trandafiri roșii și candelabre de cristal"
+      }
+    },
+    {
+      "discriminant": "imagine",
+      "value": {
+        "imagine": "/images/hero/noblesse-005.jpg",
+        "punctFocal": "50% 55%",
+        "alt": "Salonul Noblesse, cu ferestre din podea până în tavan"
+      }
+    },
+    {
+      "discriminant": "imagine",
+      "value": {
+        "imagine": "/images/hero/premiere-004.jpg",
+        "imagineMobil": "/images/hero/premiere-002.jpg",
+        "punctFocal": "50% 50%",
+        "alt": "Salonul Premiere, cu tavan drapat și draperii calde"
+      }
+    },
+    {
+      "discriminant": "imagine",
+      "value": {
+        "imagine": "/images/hero/portofoliu-riviera-004.jpg",
+        "imagineMobil": "/images/hero/portofoliu-riviera-007.jpg",
+        "punctFocal": "50% 50%",
+        "alt": "Cununie civilă sub arcade de flori albe, în grădina Riviera"
+      }
+    },
+    {
+      "discriminant": "imagine",
+      "value": {
+        "imagine": "/images/hero/complex-riviera-011.jpg",
+        "punctFocal": "50% 50%",
+        "alt": "Cină în grădină, sub candelabre de cristal"
+      }
+    },
+    {
+      "discriminant": "imagine",
+      "value": {
+        "imagine": "/images/hero/portofoliu-riviera-021.jpg",
+        "punctFocal": "50% 45%",
+        "alt": "Mirii la turnul de șampanie, sub arcada de flori albe"
+      }
+    },
+    {
+      "discriminant": "imagine",
+      "value": {
+        "imagine": "/images/hero/apartamentul-mirilor-007.jpg",
+        "punctFocal": "60% 50%",
+        "alt": "Apartamentul mirilor, cu cadă și pat dublu"
+      }
+    },
+    {
+      "discriminant": "imagine",
+      "value": {
+        "imagine": "/images/hero/portofoliu-riviera-011.jpg",
+        "imagineMobil": "/images/hero/portofoliu-riviera-013.jpg",
+        "punctFocal": "50% 50%",
+        "alt": "Mirii în grădina Riviera, la apus"
+      }
+    }
+  ]
+}

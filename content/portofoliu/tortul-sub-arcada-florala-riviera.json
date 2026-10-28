@@ -1,43 +1,31 @@
 {
-  "slug": "tortul-sub-arcada-florala-riviera",
   "titlu": "Tortul mirilor, sub arcada de flori albe",
   "tip": "nunta",
   "complex": "riviera",
-  "salon": null,
-  "data": null,
+  "salon": "necunoscut",
+  "data": "",
   "descriere": "Tăierea tortului s-a făcut în grădină, sub o arcadă de flori albe, cu un turn de pahare de șampanie alături. Pe măsură ce s-a lăsat seara, arcada luminată a devenit decorul preferat pentru poze.",
   "poze": [
     {
       "src": "/images/portofoliu/tortul-sub-arcada-florala-riviera/portofoliu-riviera-019.jpg",
-      "alt": "Mirii toastează sub arcada de flori albe din grădină",
-      "w": 1440,
-      "h": 1440
+      "alt": "Mirii toastează sub arcada de flori albe din grădină"
     },
     {
       "src": "/images/portofoliu/tortul-sub-arcada-florala-riviera/portofoliu-riviera-021.jpg",
-      "alt": "Mirii la turnul de șampanie, sub arcadă",
-      "w": 1440,
-      "h": 1440
+      "alt": "Mirii la turnul de șampanie, sub arcadă"
     },
     {
       "src": "/images/portofoliu/tortul-sub-arcada-florala-riviera/complex-riviera-010.jpg",
-      "alt": "Turnul de pahare de șampanie sub arcada de flori albe",
-      "w": 1440,
-      "h": 1440
+      "alt": "Turnul de pahare de șampanie sub arcada de flori albe"
     },
     {
       "src": "/images/portofoliu/tortul-sub-arcada-florala-riviera/portofoliu-riviera-018.jpg",
-      "alt": "Mirii taie tortul seara, sub arcada luminată",
-      "w": 1440,
-      "h": 1440
+      "alt": "Mirii taie tortul seara, sub arcada luminată"
     },
     {
       "src": "/images/portofoliu/tortul-sub-arcada-florala-riviera/portofoliu-riviera-020.jpg",
-      "alt": "Mirii la tăierea tortului",
-      "w": 1440,
-      "h": 1440
+      "alt": "Mirii la tăierea tortului"
     }
   ],
-  "acordClient": true,
-  "_nota": "Evenimentele și pozele alese din folderele de portofoliu trimise de client (2026-10-28), grupate după poze și data EXIF. Fără numele mirilor. [PRESUPUNERE] cuplurile din poze și-au dat acordul de publicare; clientul păstrează dovada."
+  "acordClient": true
 }

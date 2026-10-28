@@ -59,3 +59,9 @@
 - https://tina.io/pricing
 - https://decapcms.org/docs/intro/
 - https://www.sanity.io/pricing
+
+## Implementare (Faza 5, 2026-10-28)
+- `keystatic.config.ts`: singleton-uri `slideshow` și `tururi`, colecții `saloane` (poze) și `portofoliu`. Stocare `local` în dezvoltare, `cloud` când există `NEXT_PUBLIC_KEYSTATIC_PROJECT`.
+- Rute: `/keystatic` (panou, layout rădăcină separat) și `/api/keystatic` (dinamice). Restul site-ului e static.
+- Fișierele editate au exact forma schemelor (vezi `docs/content-model.md` §7a).
+- Verificat local cu `next dev`: panoul deschide toate cele 4 secțiuni cu datele existente. **Neverificat:** Keystatic Cloud, care cere numele proiectului.

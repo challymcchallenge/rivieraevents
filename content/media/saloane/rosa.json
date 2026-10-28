@@ -1,0 +1,59 @@
+{
+  "salon": "Rosa",
+  "imaginePrincipala": {
+    "src": "/images/saloane/rosa/rosa-001.jpg",
+    "alt": "Salon Rosa, vedere de ansamblu"
+  },
+  "galerie": [
+    {
+      "src": "/images/saloane/rosa/rosa-001.jpg",
+      "alt": "Salon Rosa, amenajat pentru un eveniment (1)"
+    },
+    {
+      "src": "/images/saloane/rosa/rosa-003.jpg",
+      "alt": "Salon Rosa, amenajat pentru un eveniment (2)"
+    },
+    {
+      "src": "/images/saloane/rosa/rosa-005.jpg",
+      "alt": "Salon Rosa, amenajat pentru un eveniment (3)"
+    },
+    {
+      "src": "/images/saloane/rosa/rosa-007.jpg",
+      "alt": "Salon Rosa, amenajat pentru un eveniment (4)"
+    },
+    {
+      "src": "/images/saloane/rosa/rosa-009.jpg",
+      "alt": "Salon Rosa, amenajat pentru un eveniment (5)"
+    },
+    {
+      "src": "/images/saloane/rosa/rosa-011.jpg",
+      "alt": "Salon Rosa, amenajat pentru un eveniment (6)"
+    },
+    {
+      "src": "/images/saloane/rosa/rosa-013.jpg",
+      "alt": "Salon Rosa, amenajat pentru un eveniment (7)"
+    },
+    {
+      "src": "/images/saloane/rosa/rosa-015.jpg",
+      "alt": "Salon Rosa, amenajat pentru un eveniment (8)"
+    },
+    {
+      "src": "/images/saloane/rosa/rosa-017.jpg",
+      "alt": "Salon Rosa, amenajat pentru un eveniment (9)"
+    },
+    {
+      "src": "/images/saloane/rosa/rosa-019.jpg",
+      "alt": "Salon Rosa, amenajat pentru un eveniment (10)"
+    },
+    {
+      "src": "/images/saloane/rosa/rosa-021.jpg",
+      "alt": "Salon Rosa, amenajat pentru un eveniment (11)"
+    },
+    {
+      "src": "/images/saloane/rosa/rosa-023.jpg",
+      "alt": "Salon Rosa, amenajat pentru un eveniment (12)"
+    }
+  ],
+  "tur360": "https://annaevents.ro/tur-virtual/2024/rosa/tour.html",
+  "turApartament": "https://annaevents.ro/apartamente-riviera/rosa/tour.html"
+}

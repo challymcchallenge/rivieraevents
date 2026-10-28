@@ -1,43 +1,31 @@
 {
-  "slug": "ceremonie-flori-rosii-piscina-anna-events",
   "titlu": "Ceremonie cu flori roșii, lângă piscină",
   "tip": "nunta",
   "complex": "insulita",
-  "salon": null,
-  "data": null,
+  "salon": "necunoscut",
+  "data": "",
   "descriere": "Arcade albe, flori roșii și portocalii și frunze de palmier uscate: un decor boem pentru o ceremonie lângă apă.",
   "poze": [
     {
       "src": "/images/portofoliu/ceremonie-flori-rosii-piscina-anna-events/portofoliu-insulita-040.jpg",
-      "alt": "Mirii lângă arcadele albe cu flori roșii, la piscină",
-      "w": 2048,
-      "h": 1366
+      "alt": "Mirii lângă arcadele albe cu flori roșii, la piscină"
     },
     {
       "src": "/images/portofoliu/ceremonie-flori-rosii-piscina-anna-events/portofoliu-insulita-039.jpg",
-      "alt": "Mirii în fața decorului cu flori roșii",
-      "w": 1366,
-      "h": 2048
+      "alt": "Mirii în fața decorului cu flori roșii"
     },
     {
       "src": "/images/portofoliu/ceremonie-flori-rosii-piscina-anna-events/complex-insulita-016.jpg",
-      "alt": "Aleea ceremoniei, cu panou de bun venit",
-      "w": 2048,
-      "h": 1365
+      "alt": "Aleea ceremoniei, cu panou de bun venit"
     },
     {
       "src": "/images/portofoliu/ceremonie-flori-rosii-piscina-anna-events/complex-insulita-017.jpg",
-      "alt": "Aranjament cu flori roșii și frunze de palmier, lângă piscină",
-      "w": 1365,
-      "h": 2047
+      "alt": "Aranjament cu flori roșii și frunze de palmier, lângă piscină"
     },
     {
       "src": "/images/portofoliu/ceremonie-flori-rosii-piscina-anna-events/complex-insulita-015.jpg",
-      "alt": "Arcadă albă cu flori roșii, lângă piscină",
-      "w": 2048,
-      "h": 1365
+      "alt": "Arcadă albă cu flori roșii, lângă piscină"
     }
   ],
-  "acordClient": true,
-  "_nota": "Evenimentele și pozele alese din folderele de portofoliu trimise de client (2026-10-28), grupate după poze și data EXIF. Fără numele mirilor. [PRESUPUNERE] cuplurile din poze și-au dat acordul de publicare; clientul păstrează dovada."
+  "acordClient": true
 }

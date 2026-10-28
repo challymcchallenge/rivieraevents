@@ -1,0 +1,59 @@
+{
+  "salon": "Grande",
+  "imaginePrincipala": {
+    "src": "/images/saloane/grande/grande-001.jpg",
+    "alt": "Salon Grande, vedere de ansamblu"
+  },
+  "galerie": [
+    {
+      "src": "/images/saloane/grande/grande-001.jpg",
+      "alt": "Salon Grande, amenajat pentru un eveniment (1)"
+    },
+    {
+      "src": "/images/saloane/grande/grande-003.jpg",
+      "alt": "Salon Grande, amenajat pentru un eveniment (2)"
+    },
+    {
+      "src": "/images/saloane/grande/grande-005.jpg",
+      "alt": "Salon Grande, amenajat pentru un eveniment (3)"
+    },
+    {
+      "src": "/images/saloane/grande/grande-007.jpg",
+      "alt": "Salon Grande, amenajat pentru un eveniment (4)"
+    },
+    {
+      "src": "/images/saloane/grande/grande-009.jpg",
+      "alt": "Salon Grande, amenajat pentru un eveniment (5)"
+    },
+    {
+      "src": "/images/saloane/grande/grande-011.jpg",
+      "alt": "Salon Grande, amenajat pentru un eveniment (6)"
+    },
+    {
+      "src": "/images/saloane/grande/grande-013.jpg",
+      "alt": "Salon Grande, amenajat pentru un eveniment (7)"
+    },
+    {
+      "src": "/images/saloane/grande/grande-015.jpg",
+      "alt": "Salon Grande, amenajat pentru un eveniment (8)"
+    },
+    {
+      "src": "/images/saloane/grande/grande-017.jpg",
+      "alt": "Salon Grande, amenajat pentru un eveniment (9)"
+    },
+    {
+      "src": "/images/saloane/grande/grande-019.jpg",
+      "alt": "Salon Grande, amenajat pentru un eveniment (10)"
+    },
+    {
+      "src": "/images/saloane/grande/grande-021.jpg",
+      "alt": "Salon Grande, amenajat pentru un eveniment (11)"
+    },
+    {
+      "src": "/images/saloane/grande/grande-023.jpg",
+      "alt": "Salon Grande, amenajat pentru un eveniment (12)"
+    }
+  ],
+  "tur360": "https://annaevents.ro/tur-virtual/Salon-Grande/tour.html",
+  "turApartament": ""
+}

@@ -1,0 +1,59 @@
+{
+  "salon": "Ronda",
+  "imaginePrincipala": {
+    "src": "/images/saloane/ronda/ronda-003.jpg",
+    "alt": "Salon Ronda, vedere de ansamblu"
+  },
+  "galerie": [
+    {
+      "src": "/images/saloane/ronda/ronda-001.jpg",
+      "alt": "Salon Ronda, amenajat pentru un eveniment (1)"
+    },
+    {
+      "src": "/images/saloane/ronda/ronda-002.jpg",
+      "alt": "Salon Ronda, amenajat pentru un eveniment (2)"
+    },
+    {
+      "src": "/images/saloane/ronda/ronda-003.jpg",
+      "alt": "Salon Ronda, amenajat pentru un eveniment (3)"
+    },
+    {
+      "src": "/images/saloane/ronda/ronda-004.jpg",
+      "alt": "Salon Ronda, amenajat pentru un eveniment (4)"
+    },
+    {
+      "src": "/images/saloane/ronda/ronda-005.jpg",
+      "alt": "Salon Ronda, amenajat pentru un eveniment (5)"
+    },
+    {
+      "src": "/images/saloane/ronda/ronda-006.jpg",
+      "alt": "Salon Ronda, amenajat pentru un eveniment (6)"
+    },
+    {
+      "src": "/images/saloane/ronda/ronda-007.jpg",
+      "alt": "Salon Ronda, amenajat pentru un eveniment (7)"
+    },
+    {
+      "src": "/images/saloane/ronda/ronda-008.jpg",
+      "alt": "Salon Ronda, amenajat pentru un eveniment (8)"
+    },
+    {
+      "src": "/images/saloane/ronda/ronda-009.jpg",
+      "alt": "Salon Ronda, amenajat pentru un eveniment (9)"
+    },
+    {
+      "src": "/images/saloane/ronda/ronda-010.jpg",
+      "alt": "Salon Ronda, amenajat pentru un eveniment (10)"
+    },
+    {
+      "src": "/images/saloane/ronda/ronda-011.jpg",
+      "alt": "Salon Ronda, amenajat pentru un eveniment (11)"
+    },
+    {
+      "src": "/images/saloane/ronda/ronda-012.jpg",
+      "alt": "Salon Ronda, amenajat pentru un eveniment (12)"
+    }
+  ],
+  "tur360": "https://annaevents.ro/tur-virtual/2024/ronda/tour.html",
+  "turApartament": ""
+}
