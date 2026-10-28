@@ -1,19 +1,74 @@
 {
-  "_instructiuni": "Fără prețuri. Completați preparatele din catalogul 2026. Câmpul 'detalii' e opțional (garnitură, gramaj). Etichete posibile: vegetarian, fara-gluten, picant.",
-  "valabilPanaLa": null,
-  "optiuniSpeciale": ["Meniu vegetarian", "Preparate fără gluten", "[NEED: alte opțiuni, de ex. vegan, meniu copii]"],
+  "_instructiuni": "Fără prețuri. Structura (Starter, Starter cald, Tradițional, Fel principal) e cea din catalogul 2026. Catalogul are doar poze, fără numele felurilor: le completează bucătăria. Câmpul 'detalii' e opțional. Etichete: vegetarian, fara-gluten, picant.",
+  "sursa": "Media/CATALOG EVENIMENTE - 2026.pdf (citit 2026-10-28)",
+  "valabilPanaLa": "2026-12-31",
+  "_notaValabilitate": "[PRESUPUNERE] catalogul se numește „2026”, deci e valabil până la final de an. De confirmat.",
+  "optiuniSpeciale": [
+    "Meniu vegetarian",
+    "Preparate fără gluten",
+    "Meniu pentru copii"
+  ],
+  "inclusInToateMeniurile": {
+    "tortulMirilor": "Tortul mirilor (pagina 33 din catalog)",
+    "bufetDulce": [
+      "Prăjituri asortate",
+      "Fructe de sezon",
+      "Ice-cream bar"
+    ],
+    "bauturiNonalcoolice": [
+      "Aqua Carpatica plată 0,75 l",
+      "Aqua Carpatica minerală 0,75 l",
+      "Pepsi Cola doză (sau Max, la cerere)",
+      "Mirinda doză, 7UP doză",
+      "Espresso / espresso decaf",
+      "Caffe latte, cappuccino"
+    ],
+    "bauturiAlcoolice": [
+      "Whiskey",
+      "Cremă de whisky",
+      "Vin alb, rosé sau roșu (la cerere): Cramele Ursa Corcova, Cramele Sâmburești, Cramele Nobilis",
+      "Bere Tuborg 0,33 l",
+      "Bere Tuborg 0,33 l fără alcool"
+    ],
+    "_nota": "Din „Pachete incluse”, paginile 33, 37–38. [NEED: confirmare că sunt incluse la toate meniurile, inclusiv Bronze]"
+  },
   "meniuri": [
     {
       "id": "premium-platinum",
       "nume": "Premium Platinum",
       "ordine": 1,
       "descriereScurta": "[NEED: o frază despre meniul Premium Platinum]",
+      "copertaCatalog": "meniuri/pagina-27.jpg",
+      "fotografiiCatalog": "meniuri/pagina-28.jpg",
       "sectiuni": [
-        { "titlu": "Aperitiv", "preparate": [] },
-        { "titlu": "Ciorbă", "preparate": [] },
-        { "titlu": "Fel intermediar", "preparate": [] },
-        { "titlu": "Fel principal", "preparate": [] },
-        { "titlu": "Desert", "preparate": [] }
+        {
+          "id": "starter",
+          "titlu": "Starter",
+          "imagine": "meniuri/pagina-29.jpg",
+          "preparate": [],
+          "_nota": "[NEED: felurile din secțiunea Starter; catalogul are doar poze (pagina 29)]"
+        },
+        {
+          "id": "starter-cald",
+          "titlu": "Starter cald",
+          "imagine": "meniuri/pagina-30.jpg",
+          "preparate": [],
+          "_nota": "[NEED: felurile din secțiunea Starter cald; catalogul are doar poze (pagina 30)]"
+        },
+        {
+          "id": "traditional",
+          "titlu": "Tradițional",
+          "imagine": "meniuri/pagina-31.jpg",
+          "preparate": [],
+          "_nota": "[NEED: felurile din secțiunea Tradițional; catalogul are doar poze (pagina 31)]"
+        },
+        {
+          "id": "main",
+          "titlu": "Fel principal",
+          "imagine": "meniuri/pagina-32.jpg",
+          "preparate": [],
+          "_nota": "[NEED: felurile din secțiunea Fel principal; catalogul are doar poze (pagina 32)]"
+        }
       ]
     },
     {
@@ -21,12 +76,37 @@
       "nume": "Gold",
       "ordine": 2,
       "descriereScurta": "[NEED: o frază despre meniul Gold]",
+      "copertaCatalog": "meniuri/pagina-03.jpg",
+      "fotografiiCatalog": "meniuri/pagina-04.jpg",
       "sectiuni": [
-        { "titlu": "Aperitiv", "preparate": [] },
-        { "titlu": "Ciorbă", "preparate": [] },
-        { "titlu": "Fel intermediar", "preparate": [] },
-        { "titlu": "Fel principal", "preparate": [] },
-        { "titlu": "Desert", "preparate": [] }
+        {
+          "id": "starter",
+          "titlu": "Starter",
+          "imagine": "meniuri/pagina-05.jpg",
+          "preparate": [],
+          "_nota": "[NEED: felurile din secțiunea Starter; catalogul are doar poze (pagina 5)]"
+        },
+        {
+          "id": "starter-cald",
+          "titlu": "Starter cald",
+          "imagine": "meniuri/pagina-06.jpg",
+          "preparate": [],
+          "_nota": "[NEED: felurile din secțiunea Starter cald; catalogul are doar poze (pagina 6)]"
+        },
+        {
+          "id": "traditional",
+          "titlu": "Tradițional",
+          "imagine": "meniuri/pagina-07.jpg",
+          "preparate": [],
+          "_nota": "[NEED: felurile din secțiunea Tradițional; catalogul are doar poze (pagina 7)]"
+        },
+        {
+          "id": "main",
+          "titlu": "Fel principal",
+          "imagine": "meniuri/pagina-08.jpg",
+          "preparate": [],
+          "_nota": "[NEED: felurile din secțiunea Fel principal; catalogul are doar poze (pagina 8)]"
+        }
       ]
     },
     {
@@ -34,12 +114,37 @@
       "nume": "Silver",
       "ordine": 3,
       "descriereScurta": "[NEED: o frază despre meniul Silver]",
+      "copertaCatalog": "meniuri/pagina-09.jpg",
+      "fotografiiCatalog": "meniuri/pagina-10.jpg",
       "sectiuni": [
-        { "titlu": "Aperitiv", "preparate": [] },
-        { "titlu": "Ciorbă", "preparate": [] },
-        { "titlu": "Fel intermediar", "preparate": [] },
-        { "titlu": "Fel principal", "preparate": [] },
-        { "titlu": "Desert", "preparate": [] }
+        {
+          "id": "starter",
+          "titlu": "Starter",
+          "imagine": "meniuri/pagina-11.jpg",
+          "preparate": [],
+          "_nota": "[NEED: felurile din secțiunea Starter; catalogul are doar poze (pagina 11)]"
+        },
+        {
+          "id": "starter-cald",
+          "titlu": "Starter cald",
+          "imagine": "meniuri/pagina-12.jpg",
+          "preparate": [],
+          "_nota": "[NEED: felurile din secțiunea Starter cald; catalogul are doar poze (pagina 12)]"
+        },
+        {
+          "id": "traditional",
+          "titlu": "Tradițional",
+          "imagine": "meniuri/pagina-13.jpg",
+          "preparate": [],
+          "_nota": "[NEED: felurile din secțiunea Tradițional; catalogul are doar poze (pagina 13)]"
+        },
+        {
+          "id": "main",
+          "titlu": "Fel principal",
+          "imagine": "meniuri/pagina-14.jpg",
+          "preparate": [],
+          "_nota": "[NEED: felurile din secțiunea Fel principal; catalogul are doar poze (pagina 14)]"
+        }
       ]
     },
     {
@@ -47,12 +152,37 @@
       "nume": "Bronze",
       "ordine": 4,
       "descriereScurta": "[NEED: o frază despre meniul Bronze]",
+      "copertaCatalog": "meniuri/pagina-15.jpg",
+      "fotografiiCatalog": "meniuri/pagina-16.jpg",
       "sectiuni": [
-        { "titlu": "Aperitiv", "preparate": [] },
-        { "titlu": "Ciorbă", "preparate": [] },
-        { "titlu": "Fel intermediar", "preparate": [] },
-        { "titlu": "Fel principal", "preparate": [] },
-        { "titlu": "Desert", "preparate": [] }
+        {
+          "id": "starter",
+          "titlu": "Starter",
+          "imagine": "meniuri/pagina-17.jpg",
+          "preparate": [],
+          "_nota": "[NEED: felurile din secțiunea Starter; catalogul are doar poze (pagina 17)]"
+        },
+        {
+          "id": "starter-cald",
+          "titlu": "Starter cald",
+          "imagine": "meniuri/pagina-18.jpg",
+          "preparate": [],
+          "_nota": "[NEED: felurile din secțiunea Starter cald; catalogul are doar poze (pagina 18)]"
+        },
+        {
+          "id": "traditional",
+          "titlu": "Tradițional",
+          "imagine": "meniuri/pagina-19.jpg",
+          "preparate": [],
+          "_nota": "[NEED: felurile din secțiunea Tradițional; catalogul are doar poze (pagina 19)]"
+        },
+        {
+          "id": "main",
+          "titlu": "Fel principal",
+          "imagine": "meniuri/pagina-20.jpg",
+          "preparate": [],
+          "_nota": "[NEED: felurile din secțiunea Fel principal; catalogul are doar poze (pagina 20)]"
+        }
       ]
     },
     {
@@ -60,12 +190,37 @@
       "nume": "Vegetarian",
       "ordine": 5,
       "descriereScurta": "[NEED: o frază despre meniul Vegetarian]",
+      "copertaCatalog": "meniuri/pagina-21.jpg",
+      "fotografiiCatalog": "meniuri/pagina-22.jpg",
       "sectiuni": [
-        { "titlu": "Aperitiv", "preparate": [] },
-        { "titlu": "Ciorbă", "preparate": [] },
-        { "titlu": "Fel intermediar", "preparate": [] },
-        { "titlu": "Fel principal", "preparate": [] },
-        { "titlu": "Desert", "preparate": [] }
+        {
+          "id": "starter",
+          "titlu": "Starter",
+          "imagine": "meniuri/pagina-23.jpg",
+          "preparate": [],
+          "_nota": "[NEED: felurile din secțiunea Starter; catalogul are doar poze (pagina 23)]"
+        },
+        {
+          "id": "starter-cald",
+          "titlu": "Starter cald",
+          "imagine": "meniuri/pagina-24.jpg",
+          "preparate": [],
+          "_nota": "[NEED: felurile din secțiunea Starter cald; catalogul are doar poze (pagina 24)]"
+        },
+        {
+          "id": "traditional",
+          "titlu": "Tradițional",
+          "imagine": "meniuri/pagina-25.jpg",
+          "preparate": [],
+          "_nota": "[NEED: felurile din secțiunea Tradițional; catalogul are doar poze (pagina 25)]"
+        },
+        {
+          "id": "main",
+          "titlu": "Fel principal",
+          "imagine": "meniuri/pagina-26.jpg",
+          "preparate": [],
+          "_nota": "[NEED: felurile din secțiunea Fel principal; catalogul are doar poze (pagina 26)]"
+        }
       ]
     }
   ]

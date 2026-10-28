@@ -64,7 +64,7 @@ content/
 | `meniuri[].nume` | text | `"Gold"` |
 | `meniuri[].ordine` | număr | ordinea tab-urilor |
 | `meniuri[].descriereScurta` | text | 1 frază despre meniu |
-| `meniuri[].sectiuni[].titlu` | text | `"Aperitiv"`, `"Ciorbă"`, `"Fel intermediar"`, `"Fel principal"`, `"Desert"` |
+| `meniuri[].sectiuni[].titlu` | text | `"Starter"`, `"Starter cald"`, `"Tradițional"`, `"Fel principal"` (structura din catalogul 2026; înlocuiește varianta inițială cu 5 secțiuni, 2026-10-28) |
 | `meniuri[].sectiuni[].preparate[].nume` | text | numele preparatului |
 | `meniuri[].sectiuni[].preparate[].detalii` | text \| null | ingrediente, garnitură, gramaj |
 | `meniuri[].sectiuni[].preparate[].etichete` | listă | `"vegetarian"`, `"fara-gluten"`, `"picant"` |

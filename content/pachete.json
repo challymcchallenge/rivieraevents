@@ -1,8 +1,73 @@
 {
   "includeStandard": [
     {
-      "tip": "nunta",
-      "titlu": "[NEED: ce include oferta standard de nuntă, câte un rând pe element]",
+      "tip": "toate",
+      "titlu": "Ceremonie în aer liber",
+      "detalii": null
+    },
+    {
+      "tip": "toate",
+      "titlu": "Zonă lounge cu mese cocktail și fotolii",
+      "detalii": null
+    },
+    {
+      "tip": "toate",
+      "titlu": "Spumant sau șampanie la primire",
+      "detalii": null
+    },
+    {
+      "tip": "toate",
+      "titlu": "Iluminat în saloane și iluminat arhitectural la exterior",
+      "detalii": null
+    },
+    {
+      "tip": "toate",
+      "titlu": "Aranjarea standard a salonului: mese, scaune, fețe de masă, căsuță pentru bar",
+      "detalii": null
+    },
+    {
+      "tip": "toate",
+      "titlu": "Farfurii-suport sidef, șervete, rame cu numere de masă",
+      "detalii": null
+    },
+    {
+      "tip": "toate",
+      "titlu": "Șef de sală și asistență dedicată pe toată durata evenimentului",
+      "detalii": null
+    },
+    {
+      "tip": "toate",
+      "titlu": "Personal de pază și control al accesului",
+      "detalii": null
+    },
+    {
+      "tip": "toate",
+      "titlu": "Personal de curățenie pe tot parcursul evenimentului",
+      "detalii": null
+    },
+    {
+      "tip": "toate",
+      "titlu": "Climatizare și internet WiFi",
+      "detalii": null
+    },
+    {
+      "tip": "toate",
+      "titlu": "Parcare pentru invitați",
+      "detalii": null
+    },
+    {
+      "tip": "toate",
+      "titlu": "Tortul mirilor și bufet dulce (prăjituri asortate, fructe de sezon, ice-cream bar)",
+      "detalii": null
+    },
+    {
+      "tip": "toate",
+      "titlu": "Băuturi răcoritoare, cafea, vin, bere și whiskey",
+      "detalii": null
+    },
+    {
+      "tip": "toate",
+      "titlu": "Apartamentul mirilor (bonus, inclus în prețul evenimentului)",
       "detalii": null
     }
   ],
@@ -10,31 +75,31 @@
     {
       "id": "candy-bar",
       "nume": "Candy Bar",
-      "descriere": "[NEED: o frază]",
+      "descriere": "Mini-eclere, mini-tarte, mini-pavlova, cake pops, cupcakes, macarons, tiramisu, mini-amandine, lolli pops, cannoli, bezele și mousse.",
       "imagine": null
     },
     {
       "id": "cocktail-bar",
       "nume": "Cocktail Bar",
-      "descriere": "[NEED: o frază]",
+      "descriere": "Open bar cu long drinks, cocktailuri (mojito, cosmopolitan, Aperol spritz, margarita), mocktailuri fără alcool, aperitive și shoturi.",
       "imagine": null
     },
     {
       "id": "cheese-bar",
       "nume": "Cheese Bar",
-      "descriere": "[NEED: o frază]",
+      "descriere": "Mozzarella, gorgonzola, cheddar maturat, brie și camembert, pecorino și parmigiano, brânzeturi tradiționale, cu fructe, nuci, miere și gemuri fine.",
       "imagine": null
     },
     {
       "id": "lemonade-bar",
       "nume": "Lemonade Bar",
-      "descriere": "[NEED: o frază]",
+      "descriere": "Limonade din lămâi, portocale, ananas, căpșuni, kiwi și mere verzi, cu mentă, lavandă sau ghimbir.",
       "imagine": null
     },
     {
       "id": "sushi-bar",
       "nume": "Sushi Bar",
-      "descriere": "[NEED: o frază]",
+      "descriere": "[NEED: o frază; catalogul are doar poze, pagina 45]",
       "imagine": null
     },
     {
@@ -52,19 +117,19 @@
     {
       "id": "gentlemens-corner",
       "nume": "Gentlemen's Corner",
-      "descriere": "[NEED: o frază]",
+      "descriere": "Colț amenajat în stil cigar bar, cu rom sau coniac, țigări de foi și trabucuri.",
       "imagine": null
     },
     {
       "id": "shot-cake",
       "nume": "Tort cu shoturi",
-      "descriere": "[NEED: o frază]",
+      "descriere": "[NEED: o frază; catalogul are doar poze, pagina 50]",
       "imagine": null
     },
     {
       "id": "bbq",
       "nume": "BBQ la rotiserie",
-      "descriere": "[NEED: o frază]",
+      "descriere": "[NEED: o frază; catalogul are doar poze, pagina 49]",
       "imagine": null
     }
   ],
@@ -86,14 +151,21 @@
     },
     {
       "nume": "Apartamentul mirilor",
-      "descriere": "[NEED: ce include, unde e]",
+      "descriere": "Bonus, inclus în prețul evenimentului. [NEED: ce include, unde e]",
       "link": null
     }
   ],
   "facilitati": [
-    "Decor personalizat",
-    "Aranjamente florale",
-    "Parcare privată"
+    "Decor personalizat (prin parteneri)",
+    "Aranjamente florale (prin parteneri)",
+    "Parcare pentru invitați"
   ],
-  "oferte": []
+  "oferte": [],
+  "sursa": "Media/CATALOG EVENIMENTE - 2026.pdf (citit 2026-10-28)",
+  "_notaIncluse": "Din paginile 33–38 și 70 ale catalogului. [NEED: confirmare că se aplică și la botez și corporate, și la ambele complexe]",
+  "parteneri": {
+    "decorSiFlori": "Decorațiuni și aranjamente florale, prin partenerii Grupului ANNA",
+    "fotoVideo": "Filmare, fotografie și dronă, prin colaboratori (ex. Special Couple)",
+    "_nota": "Paginile 74–75: servicii oferite prin parteneri, nu de echipa proprie."
+  }
 }
