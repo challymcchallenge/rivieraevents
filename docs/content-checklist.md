@@ -111,9 +111,9 @@ Recomand cel puțin 3 nunți, 1 botez și 1 eveniment corporate, cu Riviera majo
 
 ## 11. Poze primite (2026-10-28)
 
-- ✅ Folderul `Media/` (2,9 GB, ignorat de git). Convertite 423 de poze în `media-web/` (157 MB, max. 2560 px, fără date GPS/EXIF). Lista completă: `media-web/manifest.csv`.
-- ☐ **197 de poze HEIC** (iPhone) încă neconvertite, între care **toate cele 14 de la Estuar**, 55 Sushi Bar, 82 Candy Bar, 9 Meniu copii.
-- ☐ **8 poze stricate** în `Apartamentul Mirilor` (DSC01012, 01022, 01027, 01029, 01031, 01033, 01074, 01081): fișierele sunt trunchiate, trebuie copiate din nou de pe sursă.
+- ✅ Folderul `Media/` (2,9 GB, ignorat de git). **Toate cele 628 de poze** (inclusiv cele 197 HEIC) convertite în `media-web/`: 255 MB, max. 2560 px, sRGB, fără date GPS/EXIF. Lista completă: `media-web/manifest.csv`.
+- ✅ Cele 8 poze din `Apartamentul Mirilor` care erau trunchiate se convertesc acum corect.
+- ☐ **Selecție:** din 628 alegem ~10–15 pe salon pentru site (pragul de 1 GB din ADR-004 nu e o problemă, dar galeriile lungi încarcă greu).
 - ☐ Fără poze: Cocktail Bar, BBQ.
 - ☐ **Tururile 360** (krpano, ~530 MB: Grande, Noblesse, Premiere, Apartamentul mirilor) nu intră în repo. De decis unde se găzduiesc (vezi ADR-004). Rosa, Ronda, Magic, Estuar nu au tur.
 - ☐ Video `PACHETE/CandyBar/IMG_9215.mov`: se urcă pe YouTube (ADR-004).
