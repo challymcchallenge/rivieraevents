@@ -28,6 +28,10 @@ def r(*nums):
 
 # Tradiționalul (0135, 0160–0162) e același la toate meniurile.
 TRAD = r(135, 160, 161, 162)
+# Poze din foldere care nu aparțin meniului: nu se publică.
+# Silver 0148 (pește cu crustă verde, sos portocaliu și sos alb) nu seamănă cu niciun starter cald din catalog;
+# clientul a confirmat că nu e de la Silver (2026-10-29). Meniul corect: neconfirmat.
+EXCLUSE = {'silver': {'rstudio-0148.jpg'}}
 # Prima poză din fiecare fel e cea de pe cardul felului.
 MENIURI = {
     'gold': ('MENIU GOLD', {
@@ -38,8 +42,7 @@ MENIURI = {
     }),
     'silver': ('MENIU SILVER', {
         'starter': r(153, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 150, 151, 152, 154, 155, 156),
-        # 0148 (pește cu sos galben) nu apare în catalog la Silver: de confirmat cu clientul.
-        'starter-cald': r(199, 204, 205, 206, 148),
+        'starter-cald': r(199, 204, 205, 206),
         'traditional': TRAD,
         'main': r(44, 39, 40, 41),
     }),
@@ -79,6 +82,7 @@ def main() -> None:
         toate = {f.name.lower() for f in (SRC / folder).iterdir() if f.suffix.lower() == '.jpg'}
         alese = [f.lower() for lst in feluri.values() for f in lst]
         assert len(alese) == len(set(alese)), f'{mid}: poză dublată'
+        toate -= EXCLUSE.get(mid, set())
         assert set(alese) == toate, f'{mid}: lipsesc {toate - set(alese)}, în plus {set(alese) - toate}'
         galerie, carduri = [], {}
         for fel, files in feluri.items():
