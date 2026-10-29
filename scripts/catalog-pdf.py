@@ -2,9 +2,9 @@
 Catalogul de evenimente, micșorat pentru descărcare de pe site.
 
 Rulare (cere PyMuPDF: `python -m pip install --user pymupdf`):
-    python -E -P scripts/catalog-pdf.py "Media/CATALOG EVENIMENTE - 2026.pdf"
+    python -E -P scripts/catalog-pdf.py "Media/CATALOG EVENIMENTE - 2026.pdf" [catalog-evenimente-riviera-2026.pdf]
 
-Ieșire: public/catalog/catalog-evenimente-riviera-2026.pdf.
+Ieșire: public/catalog/<al doilea argument>. Apoi, în Keystatic („Catalog de evenimente”), alegeți fișierul nou și numele catalogului.
 - Fiecare poză JPEG e redusă la rezoluția la care apare în pagină (DPI țintă, implicit 54 ≈ 1350 px lățimea paginii),
   cu maximum 1600 px pe latura lungă, JPEG calitate 62.
 - Pozele PNG mai mari de 300 KB (și cele cu transparență) devin JPEG la aceeași regulă de mărime; masca de transparență
@@ -35,7 +35,8 @@ def needed_px(doc: pymupdf.Document) -> dict:
     return need
 
 
-def main(src: str) -> None:
+def main(src: str, name: str | None = None) -> None:
+    out = OUT.parent / name if name else OUT
     doc = pymupdf.open(src)
     need = needed_px(doc)
     done, saved = set(), 0
@@ -85,12 +86,12 @@ def main(src: str) -> None:
             saved += before - len(buf.getvalue())
     doc.set_metadata({'title': 'Catalog evenimente 2026 · Riviera Events by ANNA', 'author': 'ANNA COMPLEX 1991 SRL',
                       'subject': 'Meniuri, pachete și servicii pentru evenimente', 'creator': '', 'producer': '', 'keywords': ''})
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    doc.save(OUT, garbage=4, deflate=True, clean=True)
-    print(f'{OUT.stat().st_size / 1048576:.1f} MB; poze recomprimate: {len(done)}; economie {saved / 1048576:.0f} MB')
+    out.parent.mkdir(parents=True, exist_ok=True)
+    doc.save(out, garbage=4, deflate=True, clean=True)
+    print(f'{out.stat().st_size / 1048576:.1f} MB; poze recomprimate: {len(done)}; economie {saved / 1048576:.0f} MB')
 
     # Verificare: fiecare pagină comparată cu originalul (diferența medie, 0–255).
-    a, b, m = pymupdf.open(src), pymupdf.open(OUT), pymupdf.Matrix(0.12, 0.12)
+    a, b, m = pymupdf.open(src), pymupdf.open(out), pymupdf.Matrix(0.12, 0.12)
     worst = []
     for i in range(a.page_count):
         pa, pb = a[i].get_pixmap(matrix=m), b[i].get_pixmap(matrix=m)
@@ -103,4 +104,4 @@ def main(src: str) -> None:
 
 
 if __name__ == '__main__':
-    main(sys.argv[1])
+    main(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else None)

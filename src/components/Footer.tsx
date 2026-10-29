@@ -21,7 +21,13 @@ export default function Footer() {
               <li key={t.numar}><a href={telLink(t.numar)} className="hover:text-text">{t.numar}</a></li>
             ))}
             <li><a href={`mailto:${site.email}`} className="hover:text-text">{site.email}</a></li>
-            {catalog && <li className="pt-2"><a href={catalog.href} download className="underline underline-offset-4 hover:text-text">Catalogul de evenimente 2026 (PDF, {catalog.mb} MB)</a></li>}
+            {catalog && (
+              <li className="pt-2">
+                {catalog.extern
+                  ? <a href={catalog.href} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-text">{catalog.eticheta}<span className="sr-only"> (se deschide într-un tab nou)</span></a>
+                  : <a href={catalog.href} download={catalog.numeFisier} className="underline underline-offset-4 hover:text-text">{catalog.eticheta} (PDF, {catalog.mb} MB)</a>}
+              </li>
+            )}
           </ul>
         </div>
         <FooterCol title="Site">

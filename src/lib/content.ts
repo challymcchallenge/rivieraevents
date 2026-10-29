@@ -53,7 +53,8 @@ export type Salon = {
   capacitate: { nunta: number; conferinta: string | null; min: number | null };
   potrivitPentru: string[]; puncteForte: string[]; dotari: string[];
   descriereScurta: string; descriere: string; seo: { titlu: string; descriere: string };
-  imaginePrincipala: Img; galerie: Img[]; tur360: string | null; turApartament?: string;
+  /** imaginePrincipala = antetul paginii salonului; coperta = cardul de pe Acasă și Saloane (implicit, imaginea principală). */
+  imaginePrincipala: Img; coperta: Img & { w?: number; h?: number }; galerie: Img[]; tur360: string | null; turApartament?: string;
 };
 export type Site = {
   nume: string; domeniu: string;
@@ -165,11 +166,21 @@ export function getListaMeniuri(): Meniu[] {
     .sort((a, b) => a.ordine - b.ordine);
 }
 
-/** Catalogul de evenimente pentru descărcare (public/catalog/). Butonul apare doar dacă fișierul există. */
-export const CATALOG = '/catalog/catalog-evenimente-riviera-2026.pdf';
-export function getCatalog(): { href: string; mb: number } | null {
-  const f = path.join(process.cwd(), 'public', CATALOG);
-  return fs.existsSync(f) ? { href: CATALOG, mb: Math.max(1, Math.round(fs.statSync(f).size / 1048576)) } : null;
+/**
+ * Catalogul de evenimente (Keystatic, „Catalog de evenimente”): linkul extern are prioritate, apoi PDF-ul din public/catalog/.
+ * Fără niciunul, butoanele nu apar, ca site-ul să nu aibă un link stricat.
+ */
+export type Catalog = { eticheta: string; href: string; extern: boolean; mb: number | null; numeFisier: string };
+export function getCatalog(): Catalog | null {
+  const f = path.join(ROOT, 'media', 'catalog.json');
+  if (!fs.existsSync(f)) return null;
+  const c = readJson<{ eticheta: string; link?: string | null; fisier?: string }>('media/catalog.json');
+  // Numele fișierului descărcat, fără diacritice: „Catalogul de evenimente 2026” → Catalogul-de-evenimente-2026.pdf
+  const numeFisier = `${c.eticheta.normalize('NFD').replace(/\p{M}/gu, '').replace(/[^A-Za-z0-9]+/g, '-').replace(/^-|-$/g, '')}.pdf`;
+  if (c.link) return { eticheta: c.eticheta, href: c.link, extern: true, mb: null, numeFisier };
+  const local = c.fisier ? path.join(process.cwd(), 'public', c.fisier) : null;
+  if (!local || !fs.existsSync(local)) return null;
+  return { eticheta: c.eticheta, href: c.fisier!, extern: false, mb: Math.max(1, Math.round(fs.statSync(local).size / 1048576)), numeFisier };
 }
 export const getBuget = () => readJson<any>('buget.json');
 export const getFormular = () => readJson<any>('formular.json');
@@ -180,18 +191,20 @@ export function getTestimoniale(complex?: string): Testimonial[] {
   return complex ? all.filter((t) => t.complex === complex) : all;
 }
 
-type SalonMedia = { salon: string; imaginePrincipala: Img; galerie: Img[]; tur360: string; turApartament: string };
+type SalonMedia = { salon: string; imaginePrincipala: Img; coperta?: Partial<Img>; galerie: Img[]; tur360: string; turApartament: string };
 export function getSaloane(): Salon[] {
   return fs.readdirSync(path.join(ROOT, 'saloane'))
     .filter((f) => f.endsWith('.json'))
     .map((f) => {
-      const s = readJson<Omit<Salon, 'imaginePrincipala' | 'galerie' | 'tur360' | 'turApartament'>>(`saloane/${f}`);
+      const s = readJson<Omit<Salon, 'imaginePrincipala' | 'coperta' | 'galerie' | 'tur360' | 'turApartament'>>(`saloane/${f}`);
       const m = fs.existsSync(path.join(ROOT, 'media', 'saloane', f)) ? readJson<SalonMedia>(`media/saloane/${f}`) : null;
+      const principala = m ? withSize(m.imaginePrincipala) : { src: '/images/complex/riviera/complex-riviera-015.jpg', alt: s.nume };
       return {
         ...s,
         descriere: clean(s.descriere),
         puncteForte: s.puncteForte.map(clean).filter(Boolean),
-        imaginePrincipala: m ? withSize(m.imaginePrincipala) : { src: '/images/complex/riviera/complex-riviera-015.jpg', alt: s.nume },
+        imaginePrincipala: principala,
+        coperta: m?.coperta?.src ? withSize({ src: m.coperta.src, alt: m.coperta.alt || principala.alt }) : principala,
         galerie: (m?.galerie ?? []).map(withSize),
         tur360: m?.tur360 || null,
         turApartament: m?.turApartament || undefined,

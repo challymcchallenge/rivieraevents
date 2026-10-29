@@ -60,7 +60,8 @@ Meniu: **Pagina principală → Slideshow pagina principală**.
 
 Meniu: **Saloane → Poze saloane**, apoi alegeți salonul (Rosa, Noblesse etc.).
 
-- **Imaginea principală:** apare pe cardul salonului și în partea de sus a paginii lui. **Choose file** o înlocuiește.
+- **Imaginea principală:** apare sus, pe pagina salonului (titlul se scrie peste ea). Orizontală, minimum 1920 px. **Choose file** o înlocuiește.
+- **Poza de copertă:** apare pe cardul salonului, pe **Acasă** și pe pagina **Saloane**. Se decupează vertical (saloanele Riviera) sau pătrat (Insulița), deci alegeți o poză cu subiectul în centru. **Remove** = cardul folosește imaginea principală.
 - **Galerie:** recomandat 10–15 poze.
   - **Add**, apoi **Choose file**, apoi scrieți textul alternativ.
   - **Ordine:** trageți pozele. Primele se văd primele în galerie.
@@ -145,11 +146,17 @@ Meniu: **Saloane → Tururi virtuale 360**.
 
 ---
 
-## 7b. Catalogul de evenimente (PDF)
+## 7b. Catalogul de evenimente
 
-- Butonul **Descărcați catalogul** apare pe Acasă (la pachete), pe paginile Pachete și Meniuri și în subsolul site-ului.
-- Fișierul de pe site e o variantă micșorată a exportului din Canva: **18 MB** în loc de 150 MB, cu textul intact.
-- **Catalog nou:** exportați PDF-ul din Canva și trimiteți-l echipei tehnice. Ei rulează `scripts/catalog-pdf.py`, care îl micșorează și verifică fiecare pagină, apoi îl publică. Nu încărcați PDF-ul de 150 MB direct pe site: e prea mare pentru telefon și pentru GitHub.
+Meniu: **Pagini → Catalog de evenimente (PDF)**.
+
+- Butonul catalogului apare pe Acasă (la pachete), pe paginile Pachete și Meniuri și în subsolul site-ului.
+- **Numele catalogului:** apare în subsol și în numele fișierului descărcat, ex. „Catalogul de evenimente 2027”.
+- **Catalogul de la anul, varianta simplă: un link.** În Canva: **Share → View-only link → Copy**, apoi lipiți linkul la **Link spre catalog**. Butoanele devin „Vedeți catalogul” și deschid linkul într-un tab nou. Linkul are prioritate față de fișier.
+- **Varianta cu fișier PDF:** **Choose file** la **Fișierul PDF** și ștergeți linkul.
+  - Fișierul trebuie să aibă **maximum 25 MB**. Exportul direct din Canva are ~150 MB: GitHub îl refuză (peste 100 MB), iar publicarea se oprește peste 95 MB.
+  - Echipa tehnică îl micșorează cu `scripts/catalog-pdf.py` (150 MB → ~18 MB, textul rămâne intact, fiecare pagină e verificată).
+- La final: **Save**.
 
 ---
 

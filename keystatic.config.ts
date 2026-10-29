@@ -31,7 +31,7 @@ export default config({
   ...(project ? { cloud: { project } } : {}),
   ui: {
     brand: { name: 'Riviera Events' },
-    navigation: { 'Pagina principală': ['slideshow'], Saloane: ['saloane', 'tururi'], Pachete: ['pachete'], Meniuri: ['meniuri'], Pagini: ['pagini'], Portofoliu: ['portofoliu'] },
+    navigation: { 'Pagina principală': ['slideshow'], Saloane: ['saloane', 'tururi'], Pachete: ['pachete'], Meniuri: ['meniuri'], Pagini: ['pagini', 'catalog'], Portofoliu: ['portofoliu'] },
   },
   singletons: {
     slideshow: singleton({
@@ -107,6 +107,16 @@ export default config({
         ),
       },
     }),
+    catalog: singleton({
+      label: 'Catalog de evenimente (PDF)',
+      path: 'content/media/catalog',
+      format: { data: 'json' },
+      schema: {
+        eticheta: fields.text({ label: 'Numele catalogului', description: 'Apare în subsolul site-ului și în numele fișierului descărcat. Ex. „Catalogul de evenimente 2027”.', validation: { length: { min: 3 } } }),
+        link: fields.url({ label: 'Link spre catalog (opțional)', description: 'Ex. linkul de vizualizare din Canva sau Google Drive. Dacă e completat, are prioritate: butoanele deschid linkul, nu fișierul de mai jos.' }),
+        fisier: fields.file({ label: 'Fișierul PDF', description: 'Maximum 25 MB, ca să se descarce ușor de pe telefon (exportul direct din Canva are ~150 MB: cereți echipei tehnice varianta micșorată).', directory: 'public/catalog', publicPath: '/catalog/' }),
+      },
+    }),
   },
   collections: {
     meniuri: collection({
@@ -166,7 +176,11 @@ export default config({
         imaginePrincipala: fields.object({
           src: fields.image({ label: 'Imaginea principală', directory: 'public/images/saloane', publicPath: '/images/saloane/', validation: { isRequired: true } }),
           alt: fields.text({ label: 'Text alternativ', description: ALT }),
-        }, { label: 'Imaginea principală (card și antet)' }),
+        }, { label: 'Imaginea principală (sus, pe pagina salonului)', description: 'Orizontală, minimum 1920 px. Titlul salonului se scrie peste ea.' }),
+        coperta: fields.object({
+          src: fields.image({ label: 'Poza de copertă', directory: 'public/images/saloane', publicPath: '/images/saloane/' }),
+          alt: fields.text({ label: 'Text alternativ', description: ALT }),
+        }, { label: 'Poza de copertă (cardul salonului pe Acasă și pe Saloane)', description: 'Se vede decupată vertical (Riviera) sau pătrat (Insulița): alegeți o poză cu subiectul în centru. Goală = se folosește imaginea principală.' }),
         galerie: fields.array(
           fields.object({
             src: fields.image({ label: 'Poză', directory: 'public/images/saloane', publicPath: '/images/saloane/', validation: { isRequired: true } }),

@@ -1,7 +1,8 @@
 // Verificări înainte de build (rulează din `npm run build`).
 // - avertizează pentru golurile [NEED: ...] rămase în content/ (nu apar pe site, dar trebuie completate);
 // - avertizează când un `valabilPanaLa` a expirat;
-// - ADR-007: avertizează pentru video peste buget (mobil 4 MB, desktop 8 MB) și oprește build-ul peste 15 MB.
+// - ADR-007: avertizează pentru video peste buget (mobil 4 MB, desktop 8 MB) și oprește build-ul peste 15 MB;
+// - catalogul PDF (public/catalog/): avertisment peste 30 MB (greu de descărcat pe telefon), eroare peste 95 MB (limita GitHub e 100 MB).
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -36,6 +37,12 @@ for (const f of walk(path.join(root, 'public', 'media'), ['.mp4', '.webm'])) {
   const limita = /mobil/i.test(f) ? 4 : 8;
   if (mb > 15) fail(`${path.relative(root, f)}: ${mb.toFixed(1)} MB, peste limita de 15 MB (ADR-007)`);
   else if (mb > limita) warn(`${path.relative(root, f)}: ${mb.toFixed(1)} MB, peste bugetul de ${limita} MB (ADR-007)`);
+}
+
+for (const f of walk(path.join(root, 'public', 'catalog'), ['.pdf'])) {
+  const mb = fs.statSync(f).size / 1024 / 1024;
+  if (mb > 95) fail(`${path.relative(root, f)}: ${mb.toFixed(1)} MB, peste limita de 95 MB (GitHub refuză fișiere de peste 100 MB)`);
+  else if (mb > 30) warn(`${path.relative(root, f)}: ${mb.toFixed(1)} MB, greu de descărcat pe telefon; micșorați-l cu scripts/catalog-pdf.py`);
 }
 
 console.log(`  ${warnings} avertismente, ${errors} erori`);

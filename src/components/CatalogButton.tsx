@@ -1,16 +1,24 @@
-import { Download } from 'lucide-react';
+import { BookOpen, Download } from 'lucide-react';
 import { getCatalog } from '@/lib/content';
 
 /**
- * Link de descărcare pentru catalogul de evenimente (PDF din public/catalog/), cu mărimea fișierului.
- * Nu apare deloc dacă fișierul lipsește, ca site-ul să nu aibă un link stricat.
+ * Butonul catalogului de evenimente (Keystatic, „Catalog de evenimente”).
+ * Cu link extern: deschide catalogul într-un tab nou. Cu fișier: descarcă PDF-ul și arată mărimea.
+ * Nu apare deloc dacă nu există nici link, nici fișier.
  */
-export default function CatalogButton({ className = 'btn2', label = 'Descărcați catalogul' }: { className?: string; label?: string }) {
+export default function CatalogButton({ className = 'btn2', label }: { className?: string; label?: string }) {
   const c = getCatalog();
   if (!c) return null;
+  if (c.extern) {
+    return (
+      <a href={c.href} target="_blank" rel="noopener noreferrer" className={className}>
+        <BookOpen aria-hidden size={18} />{label ?? 'Vedeți catalogul'}<span className="sr-only"> (se deschide într-un tab nou)</span>
+      </a>
+    );
+  }
   return (
-    <a href={c.href} download className={className}>
-      <Download aria-hidden size={18} />{label}{' '}<span className="font-normal opacity-80">(PDF, {c.mb} MB)</span>
+    <a href={c.href} download={c.numeFisier} className={className}>
+      <Download aria-hidden size={18} />{label ?? 'Descărcați catalogul'}{' '}<span className="font-normal opacity-80">(PDF, {c.mb} MB)</span>
     </a>
   );
 }
