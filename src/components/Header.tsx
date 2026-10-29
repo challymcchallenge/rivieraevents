@@ -26,7 +26,7 @@ export default function Header({ waHref, logo }: { waHref: string; logo: { desch
   return (
     <header className="absolute inset-x-0 top-0 z-30 text-hero-text">
       <div className="wrap flex h-[72px] items-center justify-between">
-        <Link href="/" aria-label="Riviera Events by ANNA, pagina principală" translate="no" className="notranslate shrink-0">
+        <Link href="/" aria-label="Riviera by ANNA Events, pagina principală" translate="no" className="notranslate shrink-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={logo.deschis.src} alt="" width={logo.deschis.w} height={logo.deschis.h} className="h-10 w-auto" />
         </Link>

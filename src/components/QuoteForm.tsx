@@ -116,7 +116,7 @@ export default function QuoteForm({ form, endpoint, accessKey, waBase }: { form:
     const payload: Record<string, string | boolean> = {
       access_key: accessKey ?? '',
       subject: `[Site Riviera] Cerere ofertă · ${label('tip', v.tip)} · ${dataRo(v.data)} · ${v.invitati || '?'} inv. · ${sc}`,
-      from_name: 'Site Riviera Events',
+      from_name: 'Site Riviera by ANNA Events',
       Prioritate: sc,
     };
     form.pasi.forEach((p) => p.campuri.forEach((f) => {

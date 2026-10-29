@@ -59,6 +59,10 @@ export default function ContactPage() {
               ))}
             </div>
             <div>
+              <h2 className="text-[clamp(26px,4vw,34px)]">Parcare gratuită</h2>
+              <p className="mt-3">{site.parcare.text}</p>
+            </div>
+            <div>
               <h2 className="text-[clamp(26px,4vw,34px)]">Vizitarea saloanelor</h2>
               <Prose text={s('Vizitarea saloanelor')} className="mt-3" />
             </div>

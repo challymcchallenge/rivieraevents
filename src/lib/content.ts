@@ -61,6 +61,7 @@ export type Site = {
   whatsapp: { numar: string; afisat: string; textImplicit: string; marcajSursa: string; bula: { text: string; buton: string } };
   telefoane: { numar: string; rol: string }[]; email: string;
   complexe: Record<'riviera' | 'insulita', { nume: string; adresa: string; descriereLocatie: string; galerieExterior?: Img[] }>;
+  parcare: { scurt: string; text: string };
   social: Record<'facebook' | 'instagram' | 'youtube', string>;
   reteaAnna: { titlu: string; principal: { nume: string; url: string }; linkuri: { nume: string; url: string }[] };
   linkuriLegale: { text: string; url: string }[];

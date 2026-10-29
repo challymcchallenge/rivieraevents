@@ -14,9 +14,9 @@ export default function Footer() {
       <div className="wrap grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-[2fr_1fr_1fr_1fr]">
         <div className="col-span-2 lg:col-span-1">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={inchis.src} alt="Riviera Events by ANNA" width={Math.round(inchis.w * 0.9)} height={36} className="mb-4 h-9 w-auto dark:hidden" />
+          <img src={inchis.src} alt="Riviera by ANNA Events" width={Math.round(inchis.w * 0.9)} height={36} className="mb-4 h-9 w-auto dark:hidden" />
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={deschis.src} alt="Riviera Events by ANNA" width={Math.round(deschis.w * 0.9)} height={36} className="mb-4 hidden h-9 w-auto dark:block" />
+          <img src={deschis.src} alt="Riviera by ANNA Events" width={Math.round(deschis.w * 0.9)} height={36} className="mb-4 hidden h-9 w-auto dark:block" />
           <p>{site.complexe.riviera.adresa}</p>
           <ul translate="no" className="mt-3 space-y-1">
             {site.telefoane.map((t) => (

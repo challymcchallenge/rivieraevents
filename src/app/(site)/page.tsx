@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <>
       <HeroSlideshow slides={slideshow.slideuri} interval={slideshow.intervalSecunde}>
-        <p className="eyebrow text-hero-text/90">Riviera Events by ANNA · Târgu Jiu</p>
+        <p className="eyebrow text-hero-text/90">Riviera by ANNA Events · Târgu Jiu</p>
         <h1 className="mt-4 max-w-[14ch] text-[clamp(40px,9vw,84px)]">{page.meta.h1}</h1>
         <p className="mt-4 max-w-[46ch] text-lg opacity-95">{page.meta.subtitlu}</p>
         <div className="mt-6 flex flex-wrap gap-3">

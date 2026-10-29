@@ -38,6 +38,7 @@ export default async function SalonPage({ params }: { params: Promise<{ slug: st
     ...(salon.capacitate.conferinta ? [{ k: 'Conferințe', v: salon.capacitate.conferinta }] : []),
     { k: 'Complex', v: complex.nume },
     { k: 'Adresa', v: complex.adresa },
+    { k: 'Parcare', v: site.parcare.scurt },
   ];
 
   return (

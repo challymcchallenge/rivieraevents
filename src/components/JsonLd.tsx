@@ -16,6 +16,7 @@ export default function JsonLd() {
     email: site.email,
     image: `${BASE}${site.complexe[k].galerieExterior?.[0]?.src ?? '/images/complex/riviera/complex-riviera-015.jpg'}`,
     address: { '@type': 'PostalAddress', streetAddress: site.complexe[k].adresa.split(',')[0], addressLocality: 'Târgu Jiu', addressRegion: 'Gorj', addressCountry: 'RO' },
+    amenityFeature: [{ '@type': 'LocationFeatureSpecification', name: 'Parcare gratuită', value: true }],
     maximumAttendeeCapacity: Math.max(...saloane.filter((s) => s.complex === k).map((s) => s.capacitate.nunta)),
     containsPlace: saloane.filter((s) => s.complex === k).map((s) => ({
       '@type': 'EventVenue', name: s.nume, url: `${BASE}/saloane/${s.slug}`, maximumAttendeeCapacity: s.capacitate.nunta,

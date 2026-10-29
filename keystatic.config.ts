@@ -30,7 +30,7 @@ export default config({
   storage: project ? { kind: 'cloud' } : { kind: 'local' },
   ...(project ? { cloud: { project } } : {}),
   ui: {
-    brand: { name: 'Riviera Events' },
+    brand: { name: 'Riviera by ANNA Events' },
     navigation: { 'Pagina principală': ['slideshow'], Saloane: ['saloane', 'tururi'], Pachete: ['pachete'], Meniuri: ['meniuri'], Pagini: ['pagini', 'catalog', 'identitate'], Portofoliu: ['portofoliu'] },
   },
   singletons: {

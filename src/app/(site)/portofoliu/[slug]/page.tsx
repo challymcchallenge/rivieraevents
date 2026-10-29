@@ -16,7 +16,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const e = getEveniment((await params).slug);
   if (!e) return {};
-  const title = `${e.titlu} | Portofoliu ${e.complex === 'riviera' ? 'Riviera Events' : 'ANNA Events'}`;
+  const title = `${e.titlu} | Portofoliu ${e.complex === 'riviera' ? 'Riviera' : 'ANNA Events'}`;
   return { title, description: e.descriere.slice(0, 155), alternates: { canonical: `/portofoliu/${e.slug}` }, openGraph: { title, images: [e.poze[0].src] } };
 }
 
@@ -29,7 +29,7 @@ export default async function EvenimentPage({ params }: { params: Promise<{ slug
   const wa = waLink(`portofoliu ${e.slug}`, `Bună ziua, am văzut pe site evenimentul „${e.titlu}” și aș dori o ofertă.`);
   return (
     <>
-      <PageHero compact title={e.titlu} subtitle={`${e.complex === 'riviera' ? 'Riviera Events, pe malul Jiului' : 'ANNA Events, pe Insulița'}${dataEv(e.data) ? ` · ${dataEv(e.data)}` : ''}`}
+      <PageHero compact title={e.titlu} subtitle={`${e.complex === 'riviera' ? 'Riviera, pe malul Jiului' : 'ANNA Events, pe Insulița'}${dataEv(e.data) ? ` · ${dataEv(e.data)}` : ''}`}
         image={e.poze[0].src} alt={e.poze[0].alt} />
       <section className="section">
         <div className="wrap">

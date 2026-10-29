@@ -1,5 +1,5 @@
 {
-  "nume": "Riviera Events by ANNA",
+  "nume": "Riviera by ANNA Events",
   "domeniu": "https://www.rivieraevents.ro",
   "whatsapp": {
     "numar": "40746085555",
@@ -33,7 +33,7 @@
   "email": "rezervari@rivieraevents.ro",
   "complexe": {
     "riviera": {
-      "nume": "Complexul Riviera Events",
+      "nume": "Complexul Riviera",
       "adresa": "Aleea Digului nr. 5, Târgu Jiu, Gorj",
       "descriereLocatie": "pe malul Jiului",
       "coordonate": null,
@@ -269,5 +269,10 @@
       "_nota": "neverificat: anpc.ro a răspuns 503 la 2026-10-28; de verificat linkul și obligația pictogramei SAL înainte de lansare"
     }
   ],
-  "_notaSOL": "Linkul SOL/ODR (ec.europa.eu/consumers/odr) NU se pune: platforma UE a fost închisă la 20.07.2025 (Regulamentul UE 2024/3228), iar obligația de a o afișa a dispărut."
+  "_notaSOL": "Linkul SOL/ODR (ec.europa.eu/consumers/odr) NU se pune: platforma UE a fost închisă la 20.07.2025 (Regulamentul UE 2024/3228), iar obligația de a o afișa a dispărut.",
+  "parcare": {
+    "scurt": "gratuită: în parcarea complexului, pe marginea străzii sau la complexul comercial de vizavi",
+    "text": "Parcarea e gratuită pentru toți invitații. Puteți lăsa mașina în parcarea privată a complexului, pe marginea străzii sau în parcarea complexului comercial de vizavi.",
+    "_nota": "Client, 2026-10-29: parcare gratuită în parcările private ale complexelor, pe laterala străzii și în parcarea complexului comercial de vizavi."
+  }
 }

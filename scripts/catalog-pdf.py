@@ -84,7 +84,7 @@ def main(src: str, name: str | None = None) -> None:
             doc.xref_set_key(x, 'Width', str(base.width))
             doc.xref_set_key(x, 'Height', str(base.height))
             saved += before - len(buf.getvalue())
-    doc.set_metadata({'title': 'Catalog evenimente 2026 · Riviera Events by ANNA', 'author': 'ANNA COMPLEX 1991 SRL',
+    doc.set_metadata({'title': 'Catalog evenimente 2026 · Riviera by ANNA Events', 'author': 'ANNA COMPLEX 1991 SRL',
                       'subject': 'Meniuri, pachete și servicii pentru evenimente', 'creator': '', 'producer': '', 'keywords': ''})
     out.parent.mkdir(parents=True, exist_ok=True)
     doc.save(out, garbage=4, deflate=True, clean=True)

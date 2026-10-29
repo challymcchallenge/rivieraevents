@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     icon: [{ url: '/favicon.ico', sizes: '48x48' }, { url: identitate.favicon, sizes: '512x512', type: identitate.favicon.endsWith('.svg') ? 'image/svg+xml' : 'image/png' }],
     apple: '/apple-touch-icon.png',
   },
-  title: { default: 'Riviera Events Târgu Jiu | Saloane de nuntă pe malul Jiului', template: '%s' },
+  title: { default: 'Riviera by ANNA Events Târgu Jiu | Saloane de nuntă pe malul Jiului', template: '%s' },
   description: 'Saloane pentru nunți, botezuri și evenimente de firmă pe malul Jiului, în Târgu Jiu.',
-  openGraph: { type: 'website', locale: 'ro_RO', siteName: 'Riviera Events by ANNA', images: ['/images/complex/riviera/complex-riviera-015.jpg'] },
+  openGraph: { type: 'website', locale: 'ro_RO', siteName: 'Riviera by ANNA Events', images: ['/images/complex/riviera/complex-riviera-015.jpg'] },
   formatDetection: { telephone: false },
 };
 

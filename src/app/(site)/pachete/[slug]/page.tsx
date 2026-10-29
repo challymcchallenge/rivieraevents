@@ -16,7 +16,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const p = getPachet((await params).slug);
   if (!p) return {};
-  const title = `${p.nume} la nuntă | Riviera Events Târgu Jiu`;
+  const title = `${p.nume} la nuntă | Riviera Târgu Jiu`;
   return {
     title, description: p.descriere, alternates: { canonical: `/pachete/${p.id}` },
     openGraph: { title, description: p.descriere, url: `/pachete/${p.id}`, ...(p.imagine ? { images: [p.imagine.src] } : {}) },
