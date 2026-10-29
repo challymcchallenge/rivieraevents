@@ -65,3 +65,9 @@
 - Rute: `/keystatic` (panou, layout rădăcină separat) și `/api/keystatic` (dinamice). Restul site-ului e static.
 - Fișierele editate au exact forma schemelor (vezi `docs/content-model.md` §7a).
 - Verificat local cu `next dev`: panoul deschide toate cele 4 secțiuni cu datele existente. **Neverificat:** Keystatic Cloud, care cere numele proiectului.
+
+## Modificare 2026-10-29 (cererea clientului)
+- Au intrat în Keystatic: colecția `pachete` (poze), singleton-ul `pagini` (pozele de sus ale paginilor) și **colecția `meniuri` cu texte cu tot** (nume, ordine, descriere, descrierile felurilor, poze).
+- Asta schimbă decizia inițială („textele rămân în fișiere”) **doar pentru meniuri**. Restul textelor (pagini, saloane, pachete, buget, formular) rămân în `content/*.json` și `content/pagini/*.mdx`.
+- Regula „fără prețuri și fără numele preparatelor” nu mai e impusă de cod la meniuri: e scrisă în descrierile câmpurilor din panou și în `docs/ghid-administrare.md`.
+- Keystatic Cloud e folosit în producție de client (commit-uri `keystatic-cloud[bot]` pe `main`).

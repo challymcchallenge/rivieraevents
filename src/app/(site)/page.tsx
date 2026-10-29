@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import CatalogButton from '@/components/CatalogButton';
 import HeroSlideshow from '@/components/HeroSlideshow';
 import PachetCard from '@/components/PachetCard';
 import SalonCard from '@/components/SalonCard';
@@ -114,7 +115,10 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
             {pachete.map((p) => <PachetCard key={p.id} p={p} descriere={false} sizes="(min-width:1024px) 25vw, 50vw" />)}
           </div>
-          <Link href="/pachete" className="btn2 mt-10">Toate pachetele</Link>
+          <div className="mt-10 flex flex-wrap gap-3">
+            <Link href="/pachete" className="btn2">Toate pachetele</Link>
+            <CatalogButton label="Catalogul cu meniuri și pachete" />
+          </div>
         </div>
       </section>
 

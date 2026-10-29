@@ -1,0 +1,179 @@
+{
+  "nume": "Bronze",
+  "ordine": 4,
+  "descriereScurta": "Toate cele patru momente ale mesei, gătite cu aceeași grijă, pentru un buget mai atent.",
+  "feluri": [
+    {
+      "fel": "starter",
+      "descriere": "Primul platou de pe masă: gustări reci, aranjate să deschidă pofta și conversațiile.",
+      "imagine": "/images/meniuri/bronze/bronze-starter-01.jpg"
+    },
+    {
+      "fel": "starter-cald",
+      "descriere": "Un preparat cald, servit la farfurie, cât invitații își trag sufletul după primele dansuri.",
+      "imagine": "/images/meniuri/bronze/bronze-starter-cald-01.jpg"
+    },
+    {
+      "fel": "traditional",
+      "descriere": "Felul pe care îl așteaptă toată lumea la o nuntă în Gorj, gătit ca acasă.",
+      "imagine": "/images/meniuri/bronze/bronze-traditional-01.jpg"
+    },
+    {
+      "fel": "main",
+      "descriere": "Felul principal, servit la farfurie, cu garnitură și sos, la mijlocul petrecerii.",
+      "imagine": "/images/meniuri/bronze/bronze-fel-principal-01.jpg"
+    }
+  ],
+  "galerie": [
+    {
+      "src": "/images/meniuri/bronze/bronze-starter-01.jpg",
+      "fel": "starter",
+      "alt": "Meniul Bronze: starter (1)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-starter-02.jpg",
+      "fel": "starter",
+      "alt": "Meniul Bronze: starter (2)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-starter-03.jpg",
+      "fel": "starter",
+      "alt": "Meniul Bronze: starter (3)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-starter-04.jpg",
+      "fel": "starter",
+      "alt": "Meniul Bronze: starter (4)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-starter-05.jpg",
+      "fel": "starter",
+      "alt": "Meniul Bronze: starter (5)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-starter-06.jpg",
+      "fel": "starter",
+      "alt": "Meniul Bronze: starter (6)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-starter-07.jpg",
+      "fel": "starter",
+      "alt": "Meniul Bronze: starter (7)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-starter-08.jpg",
+      "fel": "starter",
+      "alt": "Meniul Bronze: starter (8)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-starter-09.jpg",
+      "fel": "starter",
+      "alt": "Meniul Bronze: starter (9)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-starter-10.jpg",
+      "fel": "starter",
+      "alt": "Meniul Bronze: starter (10)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-starter-11.jpg",
+      "fel": "starter",
+      "alt": "Meniul Bronze: starter (11)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-starter-cald-01.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Bronze: starter cald (1)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-starter-cald-02.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Bronze: starter cald (2)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-starter-cald-03.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Bronze: starter cald (3)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-starter-cald-04.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Bronze: starter cald (4)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-starter-cald-05.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Bronze: starter cald (5)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-traditional-01.jpg",
+      "fel": "traditional",
+      "alt": "Meniul Bronze: tradițional (1)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-traditional-02.jpg",
+      "fel": "traditional",
+      "alt": "Meniul Bronze: tradițional (2)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-traditional-03.jpg",
+      "fel": "traditional",
+      "alt": "Meniul Bronze: tradițional (3)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-traditional-04.jpg",
+      "fel": "traditional",
+      "alt": "Meniul Bronze: tradițional (4)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-fel-principal-01.jpg",
+      "fel": "main",
+      "alt": "Meniul Bronze: fel principal (1)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-fel-principal-02.jpg",
+      "fel": "main",
+      "alt": "Meniul Bronze: fel principal (2)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-fel-principal-03.jpg",
+      "fel": "main",
+      "alt": "Meniul Bronze: fel principal (3)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-fel-principal-04.jpg",
+      "fel": "main",
+      "alt": "Meniul Bronze: fel principal (4)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-fel-principal-05.jpg",
+      "fel": "main",
+      "alt": "Meniul Bronze: fel principal (5)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-fel-principal-06.jpg",
+      "fel": "main",
+      "alt": "Meniul Bronze: fel principal (6)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-fel-principal-07.jpg",
+      "fel": "main",
+      "alt": "Meniul Bronze: fel principal (7)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-fel-principal-08.jpg",
+      "fel": "main",
+      "alt": "Meniul Bronze: fel principal (8)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-fel-principal-09.jpg",
+      "fel": "main",
+      "alt": "Meniul Bronze: fel principal (9)"
+    },
+    {
+      "src": "/images/meniuri/bronze/bronze-fel-principal-10.jpg",
+      "fel": "main",
+      "alt": "Meniul Bronze: fel principal (10)"
+    }
+  ]
+}

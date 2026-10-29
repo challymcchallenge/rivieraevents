@@ -8,7 +8,8 @@ import type { Img } from '@/lib/content';
 // Lățimile trebuie să fie din deviceSizes (next.config.ts), iar calitatea 75 (singura permisă implicit în Next 16).
 const opt = (src: string, w: number) => `/_next/image?url=${encodeURIComponent(src)}&w=${w}&q=75`;
 
-export default function Gallery({ images }: { images: (Img & { w?: number; h?: number })[] }) {
+// `titlu` (opțional) apare ca legendă la hover și în lightbox, ex. felul de mâncare din poză.
+export default function Gallery({ images }: { images: (Img & { w?: number; h?: number; titlu?: string })[] }) {
   // 2 coloane pe telefon, 3 pe tabletă, 4 pe desktop
   const [cols, setCols] = useState(2);
   useEffect(() => {
@@ -19,11 +20,11 @@ export default function Gallery({ images }: { images: (Img & { w?: number; h?: n
   }, []);
   return (
     <Masonry
-      items={images.map((im, i) => ({ id: i, img: opt(im.src, 640), full: opt(im.src, 1920), alt: im.alt, width: im.w, height: im.h }))}
+      items={images.map((im, i) => ({ id: i, img: opt(im.src, 640), full: opt(im.src, 1920), alt: im.alt, title: im.titlu, width: im.w, height: im.h }))}
       columns={cols}
       gap={cols === 2 ? 8 : 12}
       radius={12}
-      captions="none"
+      captions={images.some((im) => im.titlu) ? 'hover' : 'none'}
       hoverEffect="zoom"
       draggable={false}
       lightbox

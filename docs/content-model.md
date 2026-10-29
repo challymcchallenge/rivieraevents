@@ -53,7 +53,13 @@ content/
   "capacitate": { "nunta": 400, "conferinta": null, "min": null }, "potrivitPentru": ["nunta", "botez", "corporate"] }
 ```
 
-## 2. Meniuri: `content/meniuri.json`
+## 2. Meniuri: `content/meniuri/<id>.json` (Keystatic) + `content/meniuri.json`
+
+> **Modificare 2026-10-29:** fiecare meniu stă în `content/meniuri/<id>.json`, editabil din Keystatic („Meniuri”):
+> `{ nume, ordine, descriereScurta, feluri: [{ fel, descriere, imagine }], galerie: [{ src, fel, alt }] }`, unde `fel` ∈ `starter | starter-cald | traditional | main`.
+> Pozele sunt în `public/images/meniuri/<id>/` (inițial `<id>-<fel>-NN.jpg`, din `scripts/meniuri-media.py`; Keystatic le redenumește la prima salvare).
+> Pe site, galeria se grupează după `fel`. `content/meniuri.json` păstrează doar ce e comun tuturor meniurilor (băuturi, bufet dulce, opțiuni speciale, `valabilPanaLa`).
+> Pozele paginilor din catalog (`pagina-XX.jpg`) nu se mai folosesc și au fost scoase.
 
 **Fără prețuri** (decizia de la GATE 1). Un meniu are secțiuni (feluri de mâncare în ordinea servirii), iar fiecare secțiune are preparate.
 

@@ -1,11 +1,12 @@
 import Link from 'next/link';
-import { getSite } from '@/lib/content';
+import { getCatalog, getSite } from '@/lib/content';
 import { NAV } from '@/lib/nav';
 import { telLink } from '@/lib/whatsapp';
 
 export default function Footer() {
   const site = getSite();
   const { firma } = site;
+  const catalog = getCatalog();
   return (
     <footer className="border-t border-line pt-16 pb-28 text-sm text-muted lg:pb-10">
       <div className="wrap grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-[2fr_1fr_1fr_1fr]">
@@ -20,6 +21,7 @@ export default function Footer() {
               <li key={t.numar}><a href={telLink(t.numar)} className="hover:text-text">{t.numar}</a></li>
             ))}
             <li><a href={`mailto:${site.email}`} className="hover:text-text">{site.email}</a></li>
+            {catalog && <li className="pt-2"><a href={catalog.href} download className="underline underline-offset-4 hover:text-text">Catalogul de evenimente 2026 (PDF, {catalog.mb} MB)</a></li>}
           </ul>
         </div>
         <FooterCol title="Site">

@@ -3,11 +3,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Prose from '@/components/Prose';
-import MenuTabs, { type Meniu } from '@/components/MenuTabs';
+import CatalogButton from '@/components/CatalogButton';
+import MenuTabs from '@/components/MenuTabs';
 import WaIcon from '@/components/WaIcon';
 import { BlurFade } from '@/components/ui/blur-fade';
 import { ScrollProgress } from '@/components/ui/scroll-progress';
-import { getMeniuri, getPachete, getPage, getPozePagini, section } from '@/lib/content';
+import { getListaMeniuri, getPachete, getPage, getPozePagini, section } from '@/lib/content';
 import { waLink } from '@/lib/whatsapp';
 
 const page = getPage('meniuri');
@@ -17,18 +18,18 @@ export const metadata: Metadata = {
 };
 
 export default function MeniuriPage() {
-  const data = getMeniuri();
   const tort = getPachete().tort;
   const poze = getPozePagini();
   const s = (t: string) => section(page, t)?.body ?? '';
   const wa = waLink('meniuri', 'Bună ziua, aș dori o ofertă cu unul dintre meniurile ANNA.');
-  const meniuri = (data.meniuri as Meniu[]).slice().sort((a, b) => (a as Meniu & { ordine: number }).ordine - (b as Meniu & { ordine: number }).ordine);
+  const meniuri = getListaMeniuri();
 
   return (
     <>
       <ScrollProgress />
       <PageHero title={page.meta.h1} subtitle={page.meta.subtitlu} image={poze.meniuri.src} alt={poze.meniuri.alt}>
         <a href={wa} target="_blank" rel="noopener noreferrer" className="btn bg-[#FFFEFA] text-[#1E1E1E] dark:bg-btn dark:text-btn-text"><WaIcon />{page.meta.cta.text}</a>
+        <CatalogButton className="btn2 border-hero-text text-hero-text" />
       </PageHero>
 
       <section className="section">

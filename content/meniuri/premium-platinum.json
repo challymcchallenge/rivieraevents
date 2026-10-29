@@ -1,0 +1,169 @@
+{
+  "nume": "Premium Platinum",
+  "ordine": 1,
+  "descriereScurta": "Cel mai generos meniu ANNA. Fiecare fel ajunge la masă ca într-un restaurant bun, cu platouri bogate și o prezentare care arată bine și în poze.",
+  "feluri": [
+    {
+      "fel": "starter",
+      "descriere": "Primul platou de pe masă: gustări reci, aranjate să deschidă pofta și conversațiile.",
+      "imagine": "/images/meniuri/premium-platinum/premium-platinum-starter-01.jpg"
+    },
+    {
+      "fel": "starter-cald",
+      "descriere": "Un preparat cald, servit la farfurie, cât invitații își trag sufletul după primele dansuri.",
+      "imagine": "/images/meniuri/premium-platinum/premium-platinum-starter-cald-01.jpg"
+    },
+    {
+      "fel": "traditional",
+      "descriere": "Felul pe care îl așteaptă toată lumea la o nuntă în Gorj, gătit ca acasă.",
+      "imagine": "/images/meniuri/premium-platinum/premium-platinum-traditional-01.jpg"
+    },
+    {
+      "fel": "main",
+      "descriere": "Felul principal, servit la farfurie, cu garnitură și sos, la mijlocul petrecerii.",
+      "imagine": "/images/meniuri/premium-platinum/premium-platinum-fel-principal-01.jpg"
+    }
+  ],
+  "galerie": [
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-starter-01.jpg",
+      "fel": "starter",
+      "alt": "Meniul Premium Platinum: starter (1)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-starter-02.jpg",
+      "fel": "starter",
+      "alt": "Meniul Premium Platinum: starter (2)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-starter-03.jpg",
+      "fel": "starter",
+      "alt": "Meniul Premium Platinum: starter (3)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-starter-04.jpg",
+      "fel": "starter",
+      "alt": "Meniul Premium Platinum: starter (4)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-starter-05.jpg",
+      "fel": "starter",
+      "alt": "Meniul Premium Platinum: starter (5)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-starter-06.jpg",
+      "fel": "starter",
+      "alt": "Meniul Premium Platinum: starter (6)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-starter-07.jpg",
+      "fel": "starter",
+      "alt": "Meniul Premium Platinum: starter (7)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-starter-08.jpg",
+      "fel": "starter",
+      "alt": "Meniul Premium Platinum: starter (8)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-starter-09.jpg",
+      "fel": "starter",
+      "alt": "Meniul Premium Platinum: starter (9)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-starter-10.jpg",
+      "fel": "starter",
+      "alt": "Meniul Premium Platinum: starter (10)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-starter-11.jpg",
+      "fel": "starter",
+      "alt": "Meniul Premium Platinum: starter (11)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-starter-12.jpg",
+      "fel": "starter",
+      "alt": "Meniul Premium Platinum: starter (12)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-starter-cald-01.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Premium Platinum: starter cald (1)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-starter-cald-02.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Premium Platinum: starter cald (2)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-starter-cald-03.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Premium Platinum: starter cald (3)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-starter-cald-04.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Premium Platinum: starter cald (4)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-starter-cald-05.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Premium Platinum: starter cald (5)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-starter-cald-06.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Premium Platinum: starter cald (6)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-starter-cald-07.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Premium Platinum: starter cald (7)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-traditional-01.jpg",
+      "fel": "traditional",
+      "alt": "Meniul Premium Platinum: tradițional (1)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-traditional-02.jpg",
+      "fel": "traditional",
+      "alt": "Meniul Premium Platinum: tradițional (2)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-traditional-03.jpg",
+      "fel": "traditional",
+      "alt": "Meniul Premium Platinum: tradițional (3)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-traditional-04.jpg",
+      "fel": "traditional",
+      "alt": "Meniul Premium Platinum: tradițional (4)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-fel-principal-01.jpg",
+      "fel": "main",
+      "alt": "Meniul Premium Platinum: fel principal (1)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-fel-principal-02.jpg",
+      "fel": "main",
+      "alt": "Meniul Premium Platinum: fel principal (2)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-fel-principal-03.jpg",
+      "fel": "main",
+      "alt": "Meniul Premium Platinum: fel principal (3)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-fel-principal-04.jpg",
+      "fel": "main",
+      "alt": "Meniul Premium Platinum: fel principal (4)"
+    },
+    {
+      "src": "/images/meniuri/premium-platinum/premium-platinum-fel-principal-05.jpg",
+      "fel": "main",
+      "alt": "Meniul Premium Platinum: fel principal (5)"
+    }
+  ]
+}

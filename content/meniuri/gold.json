@@ -1,0 +1,179 @@
+{
+  "nume": "Gold",
+  "ordine": 2,
+  "descriereScurta": "Un meniu rafinat, cu preparate alese pentru o seară lungă, în care invitații revin cu plăcere la masă între dansuri.",
+  "feluri": [
+    {
+      "fel": "starter",
+      "descriere": "Primul platou de pe masă: gustări reci, aranjate să deschidă pofta și conversațiile.",
+      "imagine": "/images/meniuri/gold/gold-starter-01.jpg"
+    },
+    {
+      "fel": "starter-cald",
+      "descriere": "Un preparat cald, servit la farfurie, cât invitații își trag sufletul după primele dansuri.",
+      "imagine": "/images/meniuri/gold/gold-starter-cald-01.jpg"
+    },
+    {
+      "fel": "traditional",
+      "descriere": "Felul pe care îl așteaptă toată lumea la o nuntă în Gorj, gătit ca acasă.",
+      "imagine": "/images/meniuri/gold/gold-traditional-01.jpg"
+    },
+    {
+      "fel": "main",
+      "descriere": "Felul principal, servit la farfurie, cu garnitură și sos, la mijlocul petrecerii.",
+      "imagine": "/images/meniuri/gold/gold-fel-principal-01.jpg"
+    }
+  ],
+  "galerie": [
+    {
+      "src": "/images/meniuri/gold/gold-starter-01.jpg",
+      "fel": "starter",
+      "alt": "Meniul Gold: starter (1)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-starter-02.jpg",
+      "fel": "starter",
+      "alt": "Meniul Gold: starter (2)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-starter-03.jpg",
+      "fel": "starter",
+      "alt": "Meniul Gold: starter (3)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-starter-04.jpg",
+      "fel": "starter",
+      "alt": "Meniul Gold: starter (4)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-starter-05.jpg",
+      "fel": "starter",
+      "alt": "Meniul Gold: starter (5)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-starter-06.jpg",
+      "fel": "starter",
+      "alt": "Meniul Gold: starter (6)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-starter-07.jpg",
+      "fel": "starter",
+      "alt": "Meniul Gold: starter (7)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-starter-08.jpg",
+      "fel": "starter",
+      "alt": "Meniul Gold: starter (8)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-starter-09.jpg",
+      "fel": "starter",
+      "alt": "Meniul Gold: starter (9)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-starter-10.jpg",
+      "fel": "starter",
+      "alt": "Meniul Gold: starter (10)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-starter-11.jpg",
+      "fel": "starter",
+      "alt": "Meniul Gold: starter (11)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-starter-cald-01.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Gold: starter cald (1)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-starter-cald-02.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Gold: starter cald (2)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-starter-cald-03.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Gold: starter cald (3)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-starter-cald-04.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Gold: starter cald (4)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-starter-cald-05.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Gold: starter cald (5)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-starter-cald-06.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Gold: starter cald (6)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-starter-cald-07.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Gold: starter cald (7)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-starter-cald-08.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Gold: starter cald (8)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-traditional-01.jpg",
+      "fel": "traditional",
+      "alt": "Meniul Gold: tradițional (1)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-traditional-02.jpg",
+      "fel": "traditional",
+      "alt": "Meniul Gold: tradițional (2)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-traditional-03.jpg",
+      "fel": "traditional",
+      "alt": "Meniul Gold: tradițional (3)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-traditional-04.jpg",
+      "fel": "traditional",
+      "alt": "Meniul Gold: tradițional (4)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-fel-principal-01.jpg",
+      "fel": "main",
+      "alt": "Meniul Gold: fel principal (1)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-fel-principal-02.jpg",
+      "fel": "main",
+      "alt": "Meniul Gold: fel principal (2)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-fel-principal-03.jpg",
+      "fel": "main",
+      "alt": "Meniul Gold: fel principal (3)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-fel-principal-04.jpg",
+      "fel": "main",
+      "alt": "Meniul Gold: fel principal (4)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-fel-principal-05.jpg",
+      "fel": "main",
+      "alt": "Meniul Gold: fel principal (5)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-fel-principal-06.jpg",
+      "fel": "main",
+      "alt": "Meniul Gold: fel principal (6)"
+    },
+    {
+      "src": "/images/meniuri/gold/gold-fel-principal-07.jpg",
+      "fel": "main",
+      "alt": "Meniul Gold: fel principal (7)"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import CatalogButton from '@/components/CatalogButton';
 import PachetCard from '@/components/PachetCard';
 import PageHero from '@/components/PageHero';
 import Prose from '@/components/Prose';
@@ -27,6 +28,7 @@ export default function PachetePage() {
     <>
       <PageHero title={page.meta.h1} subtitle={page.meta.subtitlu} image={poze.pachete.src} alt={poze.pachete.alt}>
         <a href={wa} target="_blank" rel="noopener noreferrer" className="btn bg-[#FFFEFA] text-[#1E1E1E] dark:bg-btn dark:text-btn-text"><WaIcon />{page.meta.cta.text}</a>
+        <CatalogButton className="btn2 border-hero-text text-hero-text" />
       </PageHero>
 
       <section className="section">

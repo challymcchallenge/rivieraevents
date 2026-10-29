@@ -136,6 +136,41 @@ export const getPachet = (id: string) => getPachete().serviciiPremium.find((x: P
 export type PozePagini = Record<'saloane' | 'pachete' | 'meniuri' | 'estimareBuget' | 'portofoliu' | 'despre' | 'contact' | 'turVirtual' | 'acasaBuget' | 'tort', Img> & { apartament: Img[] };
 export const getPozePagini = () => readJson<PozePagini>('media/pagini.json');
 export const getMeniuri = () => readJson<any>('meniuri.json');
+
+export const FELURI = { starter: 'Starter', 'starter-cald': 'Starter cald', traditional: 'Tradițional', main: 'Fel principal' } as const;
+export type Fel = keyof typeof FELURI;
+export type Meniu = {
+  id: string; nume: string; ordine: number; descriereScurta: string;
+  feluri: { fel: Fel; titlu: string; descriere: string; imagine: string | null }[];
+  galerie: (Img & { fel: Fel; titlu: string; w?: number; h?: number })[];
+};
+type MeniuFile = { nume: string; ordine: number; descriereScurta: string; feluri: { fel: Fel; descriere: string; imagine?: string }[]; galerie: { src: string; fel: Fel; alt: string }[] };
+
+/** Meniurile din content/meniuri/<id>.json (Keystatic, „Meniuri”), în ordinea câmpului „ordine”. Galeria e grupată pe feluri. */
+export function getListaMeniuri(): Meniu[] {
+  const ordFel = Object.keys(FELURI) as Fel[];
+  return fs.readdirSync(path.join(ROOT, 'meniuri'))
+    .filter((f) => f.endsWith('.json'))
+    .map((f) => {
+      const m = readJson<MeniuFile>(`meniuri/${f}`);
+      return {
+        id: f.replace(/\.json$/, ''), nume: m.nume, ordine: m.ordine, descriereScurta: clean(m.descriereScurta),
+        feluri: m.feluri.map((x) => ({ fel: x.fel, titlu: FELURI[x.fel], descriere: clean(x.descriere), imagine: x.imagine || null })),
+        galerie: m.galerie
+          .map((g, i) => ({ ...withSize(g), fel: g.fel, titlu: FELURI[g.fel], i }))
+          .sort((a, b) => ordFel.indexOf(a.fel) - ordFel.indexOf(b.fel) || a.i - b.i)
+          .map(({ i: _i, ...g }) => g),
+      };
+    })
+    .sort((a, b) => a.ordine - b.ordine);
+}
+
+/** Catalogul de evenimente pentru descărcare (public/catalog/). Butonul apare doar dacă fișierul există. */
+export const CATALOG = '/catalog/catalog-evenimente-riviera-2026.pdf';
+export function getCatalog(): { href: string; mb: number } | null {
+  const f = path.join(process.cwd(), 'public', CATALOG);
+  return fs.existsSync(f) ? { href: CATALOG, mb: Math.max(1, Math.round(fs.statSync(f).size / 1048576)) } : null;
+}
 export const getBuget = () => readJson<any>('buget.json');
 export const getFormular = () => readJson<any>('formular.json');
 export const getTururi = () => readJson<{ tururi: Tur[] }>('media/tururi.json').tururi.filter((t) => t.url);

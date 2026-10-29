@@ -1,0 +1,224 @@
+{
+  "nume": "Vegetarian",
+  "ordine": 5,
+  "descriereScurta": "Patru feluri fără carne, gândite să-i bucure și pe invitații care nu sunt vegetarieni.",
+  "feluri": [
+    {
+      "fel": "starter",
+      "descriere": "Primul platou de pe masă: gustări reci, aranjate să deschidă pofta și conversațiile.",
+      "imagine": "/images/meniuri/vegetarian/vegetarian-starter-01.jpg"
+    },
+    {
+      "fel": "starter-cald",
+      "descriere": "Un preparat cald, servit la farfurie, cât invitații își trag sufletul după primele dansuri.",
+      "imagine": "/images/meniuri/vegetarian/vegetarian-starter-cald-01.jpg"
+    },
+    {
+      "fel": "traditional",
+      "descriere": "Felul pe care îl așteaptă toată lumea la o nuntă în Gorj, gătit ca acasă.",
+      "imagine": "/images/meniuri/vegetarian/vegetarian-traditional-01.jpg"
+    },
+    {
+      "fel": "main",
+      "descriere": "Felul principal, servit la farfurie, cu garnitură și sos, la mijlocul petrecerii.",
+      "imagine": "/images/meniuri/vegetarian/vegetarian-fel-principal-01.jpg"
+    }
+  ],
+  "galerie": [
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-01.jpg",
+      "fel": "starter",
+      "alt": "Meniul Vegetarian: starter (1)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-02.jpg",
+      "fel": "starter",
+      "alt": "Meniul Vegetarian: starter (2)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-03.jpg",
+      "fel": "starter",
+      "alt": "Meniul Vegetarian: starter (3)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-04.jpg",
+      "fel": "starter",
+      "alt": "Meniul Vegetarian: starter (4)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-05.jpg",
+      "fel": "starter",
+      "alt": "Meniul Vegetarian: starter (5)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-06.jpg",
+      "fel": "starter",
+      "alt": "Meniul Vegetarian: starter (6)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-07.jpg",
+      "fel": "starter",
+      "alt": "Meniul Vegetarian: starter (7)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-08.jpg",
+      "fel": "starter",
+      "alt": "Meniul Vegetarian: starter (8)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-09.jpg",
+      "fel": "starter",
+      "alt": "Meniul Vegetarian: starter (9)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-10.jpg",
+      "fel": "starter",
+      "alt": "Meniul Vegetarian: starter (10)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-11.jpg",
+      "fel": "starter",
+      "alt": "Meniul Vegetarian: starter (11)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-12.jpg",
+      "fel": "starter",
+      "alt": "Meniul Vegetarian: starter (12)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-13.jpg",
+      "fel": "starter",
+      "alt": "Meniul Vegetarian: starter (13)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-14.jpg",
+      "fel": "starter",
+      "alt": "Meniul Vegetarian: starter (14)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-15.jpg",
+      "fel": "starter",
+      "alt": "Meniul Vegetarian: starter (15)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-16.jpg",
+      "fel": "starter",
+      "alt": "Meniul Vegetarian: starter (16)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-cald-01.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Vegetarian: starter cald (1)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-cald-02.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Vegetarian: starter cald (2)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-cald-03.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Vegetarian: starter cald (3)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-cald-04.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Vegetarian: starter cald (4)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-cald-05.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Vegetarian: starter cald (5)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-cald-06.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Vegetarian: starter cald (6)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-cald-07.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Vegetarian: starter cald (7)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-cald-08.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Vegetarian: starter cald (8)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-cald-09.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Vegetarian: starter cald (9)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-cald-10.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Vegetarian: starter cald (10)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-starter-cald-11.jpg",
+      "fel": "starter-cald",
+      "alt": "Meniul Vegetarian: starter cald (11)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-traditional-01.jpg",
+      "fel": "traditional",
+      "alt": "Meniul Vegetarian: tradițional (1)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-traditional-02.jpg",
+      "fel": "traditional",
+      "alt": "Meniul Vegetarian: tradițional (2)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-traditional-03.jpg",
+      "fel": "traditional",
+      "alt": "Meniul Vegetarian: tradițional (3)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-traditional-04.jpg",
+      "fel": "traditional",
+      "alt": "Meniul Vegetarian: tradițional (4)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-fel-principal-01.jpg",
+      "fel": "main",
+      "alt": "Meniul Vegetarian: fel principal (1)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-fel-principal-02.jpg",
+      "fel": "main",
+      "alt": "Meniul Vegetarian: fel principal (2)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-fel-principal-03.jpg",
+      "fel": "main",
+      "alt": "Meniul Vegetarian: fel principal (3)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-fel-principal-04.jpg",
+      "fel": "main",
+      "alt": "Meniul Vegetarian: fel principal (4)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-fel-principal-05.jpg",
+      "fel": "main",
+      "alt": "Meniul Vegetarian: fel principal (5)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-fel-principal-06.jpg",
+      "fel": "main",
+      "alt": "Meniul Vegetarian: fel principal (6)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-fel-principal-07.jpg",
+      "fel": "main",
+      "alt": "Meniul Vegetarian: fel principal (7)"
+    },
+    {
+      "src": "/images/meniuri/vegetarian/vegetarian-fel-principal-08.jpg",
+      "fel": "main",
+      "alt": "Meniul Vegetarian: fel principal (8)"
+    }
+  ]
+}

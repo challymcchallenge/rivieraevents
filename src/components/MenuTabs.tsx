@@ -3,11 +3,13 @@
 import Image from 'next/image';
 import { useRef, useState, type KeyboardEvent } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
+import Gallery from '@/components/Gallery';
+import type { Meniu } from '@/lib/content';
 
-type Sectiune = { id: string; titlu: string; imagine: string | null; descriere: string };
-export type Meniu = { id: string; nume: string; descriereScurta: string; sectiuni: Sectiune[] };
-
-/** Tab-uri cu cele 5 meniuri: linie animată sub tab-ul activ și conținut care apare lin (docs/design/animatii.md, opțiunea 15). */
+/**
+ * Tab-uri cu cele 5 meniuri: linie animată sub tab-ul activ și conținut care apare lin (docs/design/animatii.md, opțiunea 15).
+ * Fiecare tab: felurile meniului, apoi galeria mozaic cu toate pozele lui, grupate pe feluri (Keystatic, „Meniuri”).
+ */
 export default function MenuTabs({ meniuri }: { meniuri: Meniu[] }) {
   const [active, setActive] = useState(0);
   const reduce = useReducedMotion();
@@ -41,8 +43,8 @@ export default function MenuTabs({ meniuri }: { meniuri: Meniu[] }) {
           className="pt-8">
           <p className="lead text-lg">{m.descriereScurta}</p>
           <ol className="mt-8 grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
-            {m.sectiuni.map((s, i) => (
-              <li key={s.id}>
+            {m.feluri.map((s, i) => (
+              <li key={s.fel}>
                 {s.imagine && (
                   <div className="relative aspect-[4/5] overflow-hidden rounded-img bg-surface-2">
                     <Image src={s.imagine} alt={`Meniul ${m.nume}: ${s.titlu.toLowerCase()}`} fill sizes="(min-width:1024px) 25vw, 50vw" className="object-cover" />
@@ -54,6 +56,13 @@ export default function MenuTabs({ meniuri }: { meniuri: Meniu[] }) {
               </li>
             ))}
           </ol>
+          {m.galerie.length > 0 && (
+            <div className="mt-14">
+              <h3 className="text-[clamp(26px,4vw,34px)]">Pozele meniului {m.nume}</h3>
+              <p className="mt-1 mb-6 text-sm text-muted">{m.galerie.length} poze, în ordinea în care se servesc felurile. Apăsați pe o poză ca să o vedeți mare.</p>
+              <Gallery images={m.galerie} />
+            </div>
+          )}
         </motion.div>
       </AnimatePresence>
     </div>

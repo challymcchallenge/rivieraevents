@@ -4,11 +4,12 @@ Panoul de administrare (Keystatic) vă lasă să schimbați fără programator:
 - pozele din slideshow-ul de pe prima pagină;
 - pozele fiecărui salon;
 - pozele fiecărui pachet (Candy Bar, Cocktail Bar etc.);
+- **meniurile**: numele, descrierile, felurile și toate pozele lor;
 - pozele de sus ale paginilor, poza tortului și pozele apartamentului mirilor;
 - portofoliul;
 - linkurile tururilor virtuale.
 
-Textele, meniurile și prețurile **nu** se schimbă de aici: ele stau în fișierele din `content/` și le modifică echipa tehnică.
+Celelalte texte (paginile, saloanele, pachetele, bugetul) **nu** se schimbă de aici: ele stau în fișierele din `content/` și le modifică echipa tehnică.
 
 > Butoanele din panou sunt în engleză: **Add** (adaugă), **Save** (salvează), **Choose file** (alege fișierul), **Remove** (șterge).
 
@@ -85,6 +86,23 @@ Meniu: **Pachete → Poze pachete**, apoi alegeți pachetul (Candy Bar, Cocktail
 
 ---
 
+## 4b. Meniurile
+
+Meniu: **Meniuri**, apoi alegeți meniul (Premium Platinum, Gold, Silver, Bronze, Vegetarian).
+
+- **Numele meniului** și **Ordinea pe pagină** (1 = primul tab). **Nu schimbați „Slug”-ul** unui meniu publicat.
+- **Descriere scurtă:** o frază, sub numele meniului. **Fără prețuri.**
+- **Felurile meniului:** Starter, Starter cald, Tradițional, Fel principal. Fiecare are o descriere și poza de pe card.
+  - Regula clientului: **fără numele preparatelor** (concurența copiază). Descrieți momentul, nu rețeta.
+- **Galerie:** toate pozele meniului (maximum 60).
+  - **Add**, apoi **Choose file**, apoi alegeți **Felul din poză** și scrieți textul alternativ.
+  - Pe site, pozele se așază automat în ordinea felurilor (Starter → Fel principal), deci felul ales contează.
+- **Meniu nou:** **Add** în lista de meniuri, completați tot și dați-i o ordine. Apare ca tab nou pe pagina Meniuri.
+- La salvare, Keystatic redenumește fișierele pozelor (ex. `galerie/3/src.jpg`). E normal: felul rămâne salvat în câmpul „Felul din poză”.
+- La final: **Save**.
+
+---
+
 ## 5. Pozele paginilor
 
 Meniu: **Pagini → Poze pagini**.
@@ -124,6 +142,14 @@ Meniu: **Saloane → Tururi virtuale 360**.
 
 - Fiecare tur are un titlu, un complex și un link (de pe annaevents.ro). Un link gol înseamnă că turul nu apare pe pagina „Tur virtual”.
 - La final: **Save**.
+
+---
+
+## 7b. Catalogul de evenimente (PDF)
+
+- Butonul **Descărcați catalogul** apare pe Acasă (la pachete), pe paginile Pachete și Meniuri și în subsolul site-ului.
+- Fișierul de pe site e o variantă micșorată a exportului din Canva: **18 MB** în loc de 150 MB, cu textul intact.
+- **Catalog nou:** exportați PDF-ul din Canva și trimiteți-l echipei tehnice. Ei rulează `scripts/catalog-pdf.py`, care îl micșorează și verifică fiecare pagină, apoi îl publică. Nu încărcați PDF-ul de 150 MB direct pe site: e prea mare pentru telefon și pentru GitHub.
 
 ---
 
