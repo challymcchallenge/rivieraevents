@@ -1,63 +1,63 @@
 {
   "saloane": {
-    "src": "/images/pagini/saloane-rosa.jpg",
+    "src": "/images/pagini/saloane/src.jpg",
     "alt": "Salonul Rosa, cu candelabrul floral și pereții de sticlă"
   },
   "pachete": {
-    "src": "/images/pagini/pachete-candy-bar.jpg",
+    "src": "/images/pagini/pachete/src.jpg",
     "alt": "Candy Bar cu prăjituri, sub un perete de flori și candelabre"
   },
   "meniuri": {
-    "src": "/images/pagini/meniu-masa.jpg",
+    "src": "/images/pagini/meniuri/src.jpg",
     "alt": "Masă aranjată pentru nuntă, cu farfurii, tacâmuri aurii și meniul invitaților"
   },
   "estimareBuget": {
-    "src": "/images/pagini/complex-riviera-011.jpg",
+    "src": "/images/pagini/estimareBuget/src.JPG",
     "alt": "Cină în grădina Riviera, sub candelabre de cristal"
   },
   "portofoliu": {
-    "src": "/images/pagini/portofoliu-riviera-004.jpg",
+    "src": "/images/pagini/portofoliu/src.jpg",
     "alt": "Cununie civilă sub arcade de flori albe, în grădina Riviera"
   },
   "despre": {
-    "src": "/images/pagini/complex-riviera-015.jpg",
+    "src": "/images/pagini/despre/src.jpg",
     "alt": "Grădina Riviera, pe malul Jiului, văzută de sus"
   },
   "contact": {
-    "src": "/images/pagini/contact-insulita-seara.jpg",
+    "src": "/images/pagini/contact/src.jpg",
     "alt": "Complexul ANNA Events de pe Insulița, seara, cu piscina luminată"
   },
   "turVirtual": {
-    "src": "/images/pagini/tur-virtual-grande.jpg",
+    "src": "/images/pagini/turVirtual/src.jpg",
     "alt": "Salonul Grande, pregătit pentru eveniment"
   },
   "acasaBuget": {
-    "src": "/images/pagini/complex-riviera-011.jpg",
+    "src": "/images/pagini/acasaBuget/src.jpg",
     "alt": "Cină în grădina Riviera, sub candelabre de cristal"
   },
   "tort": {
-    "src": "/images/pagini/tortul-mirilor.jpg",
+    "src": "/images/pagini/tort/src.jpg",
     "alt": "Tort de nuntă cu flori albe, lângă literele luminoase LOVE"
   },
   "apartament": [
     {
-      "src": "/images/pagini/apartamentul-mirilor-007.jpg",
+      "src": "/images/pagini/apartament/0/src.jpg",
       "alt": "Apartamentul mirilor de la Riviera"
     },
     {
-      "src": "/images/pagini/apartamentul-mirilor-005.jpg",
+      "src": "/images/pagini/apartament/1/src.jpg",
       "alt": "Apartamentul mirilor de la Riviera"
     },
     {
-      "src": "/images/pagini/apartamentul-mirilor-009.jpg",
+      "src": "/images/pagini/apartament/2/src.jpg",
       "alt": "Apartamentul mirilor de la Riviera"
     },
     {
-      "src": "/images/pagini/apartamentul-mirilor-011.jpg",
+      "src": "/images/pagini/apartament/3/src.jpg",
       "alt": "Apartamentul mirilor de la Riviera"
     },
     {
-      "src": "/images/pagini/apartamentul-mirilor-019.jpg",
+      "src": "/images/pagini/apartament/4/src.jpg",
       "alt": "Apartamentul mirilor de la Riviera"
     }
   ]
