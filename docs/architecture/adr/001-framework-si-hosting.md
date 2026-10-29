@@ -51,3 +51,8 @@
 - https://vercel.com/pricing
 - https://nextjs.org/docs/app/guides/static-exports
 - docs/architecture/architecture.md §2–3
+
+## Domeniu (2026-10-29)
+- `rivieraevents.ro` e legat de proiectul Vercel `rivieraevents`. Adresa principală e **https://www.rivieraevents.ro**; `rivieraevents.ro` redirecționează permanent (308) spre www. Codul folosește deja www (metadataBase, canonical, sitemap, robots, JSON-LD).
+- Nameserverele sunt la Vercel (`ns1/ns2.vercel-dns.com`), deci **toate înregistrările DNS se administrează din Vercel → Domains → rivieraevents.ro**, inclusiv emailul (MX, SPF, DKIM). La 2026-10-29, în Vercel DNS existau doar înregistrările implicite (CAA, ALIAS), **fără MX**.
+- Keystatic Cloud: autentificarea folosește adresa curentă (`window.location.origin` + `/keystatic/cloud/oauth/callback`, verificat în `@keystatic/core` 0.6.9); pagina de login Keystatic Cloud se deschide de pe domeniul nou fără eroare. Login-ul complet: neverificat.

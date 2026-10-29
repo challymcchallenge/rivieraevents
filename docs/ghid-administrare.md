@@ -17,10 +17,9 @@ Celelalte texte (paginile, saloanele, pachetele, bugetul) **nu** se schimbă de 
 
 ## 1. Intrarea în panou
 
-1. Deschideți **https://www.rivieraevents.ro/keystatic**.
-   - Până se leagă domeniul, adresa e **https://rivieraevents.vercel.app/keystatic**.
-   - Pe adresa vercel.app trebuie să fiți logat și în contul Vercel, pentru că site-ul de test e protejat.
-2. Apăsați **Sign in** și intrați cu contul Keystatic Cloud.
+1. Deschideți **https://www.rivieraevents.ro/keystatic** (domeniul e legat din 2026-10-29; și `rivieraevents.ro` fără www duce acolo).
+   - Adresa veche, rivieraevents.vercel.app, cere și login în contul Vercel. Folosiți-o doar dacă domeniul are o problemă.
+2. Apăsați **Log in with Keystatic Cloud** și intrați cu contul Keystatic Cloud.
 3. Pot lucra **maximum 3 persoane** (planul gratuit). Persoanele noi le invită administratorul contului Keystatic Cloud, din **Team → Members**.
 
 **Ce se întâmplă la salvare:**
