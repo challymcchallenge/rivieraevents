@@ -23,8 +23,9 @@
       "discriminant": "imagine",
       "value": {
         "imagine": "/images/hero/slideuri/2/value/imagine.jpg",
-        "punctFocal": "45% 60%",
-        "alt": "Aleea ceremoniei din grădină, cu trandafiri roșii și candelabre de cristal"
+        "imagineMobil": "/images/hero/slideuri/2/value/imagineMobil.jpg",
+        "punctFocal": "50% 50%",
+        "alt": "Grădina Riviera pregătită pentru ceremonie, văzută de sus"
       }
     },
     {
@@ -33,22 +34,13 @@
         "imagine": "/images/hero/slideuri/3/value/imagine.jpg",
         "imagineMobil": "/images/hero/slideuri/3/value/imagineMobil.jpg",
         "punctFocal": "50% 50%",
-        "alt": "Grădina Riviera pregătită pentru ceremonie, văzută de sus"
-      }
-    },
-    {
-      "discriminant": "imagine",
-      "value": {
-        "imagine": "/images/hero/slideuri/4/value/imagine.jpg",
-        "imagineMobil": "/images/hero/slideuri/4/value/imagineMobil.jpg",
-        "punctFocal": "50% 50%",
         "alt": "Salonul Rosa, cu candelabrul floral și pereții de sticlă spre grădină"
       }
     },
     {
       "discriminant": "imagine",
       "value": {
-        "imagine": "/images/hero/slideuri/5/value/imagine.jpg",
+        "imagine": "/images/hero/slideuri/4/value/imagine.jpg",
         "punctFocal": "50% 55%",
         "alt": "Salonul Noblesse, cu ferestre din podea până în tavan"
       }
@@ -56,8 +48,8 @@
     {
       "discriminant": "imagine",
       "value": {
-        "imagine": "/images/hero/slideuri/6/value/imagine.jpg",
-        "imagineMobil": "/images/hero/slideuri/6/value/imagineMobil.jpg",
+        "imagine": "/images/hero/slideuri/5/value/imagine.jpg",
+        "imagineMobil": "/images/hero/slideuri/5/value/imagineMobil.jpg",
         "punctFocal": "50% 50%",
         "alt": "Salonul Premiere, cu tavan drapat și draperii calde"
       }
@@ -65,7 +57,7 @@
     {
       "discriminant": "imagine",
       "value": {
-        "imagine": "/images/hero/slideuri/7/value/imagine.jpg",
+        "imagine": "/images/hero/slideuri/6/value/imagine.jpg",
         "punctFocal": "50% 45%",
         "alt": "Mirii la turnul de șampanie, sub arcada de flori albe"
       }
@@ -73,7 +65,7 @@
     {
       "discriminant": "imagine",
       "value": {
-        "imagine": "/images/hero/slideuri/8/value/imagine.jpg",
+        "imagine": "/images/hero/slideuri/7/value/imagine.jpg",
         "punctFocal": "60% 50%",
         "alt": "Apartamentul mirilor, cu cadă și pat dublu"
       }
