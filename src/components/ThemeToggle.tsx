@@ -6,7 +6,8 @@ import { AnimatedThemeToggler } from '@/components/ui/animated-theme-toggler';
 export const THEME_KEY = 'riviera-tema';
 
 /** Script inline din <head>: aplică tema salvată înainte de prima afișare, ca să nu clipească pagina. */
-export const themeInitScript = `try{var t=localStorage.getItem('${THEME_KEY}');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}`;
+// Tot aici: limba aleasă (ADR-008), ca etichetele din meniu să apară direct în engleză.
+export const themeInitScript = `try{var t=localStorage.getItem('${THEME_KEY}');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;if(localStorage.getItem('riviera-limba')==='en')document.documentElement.dataset.lang='en';}catch(e){}`;
 
 export default function ThemeToggle({ className = '' }: { className?: string }) {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');

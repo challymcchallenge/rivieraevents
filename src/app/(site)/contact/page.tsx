@@ -39,7 +39,7 @@ export default function ContactPage() {
             <div>
               <h2 className="text-[clamp(26px,4vw,34px)]">Telefon și email</h2>
               <ul className="mt-3 space-y-1">
-                {site.telefoane.map((t) => <li key={t.numar}><a href={telLink(t.numar)} className="text-lg hover:underline">{t.numar}</a> <span className="text-sm text-muted">· {t.rol}</span></li>)}
+                {site.telefoane.map((t) => <li key={t.numar}><a href={telLink(t.numar)} translate="no" className="text-lg hover:underline">{t.numar}</a> <span className="text-sm text-muted">· {t.rol}</span></li>)}
                 <li className="pt-2"><a href={`mailto:${site.email}`} className="hover:underline">{site.email}</a></li>
               </ul>
             </div>

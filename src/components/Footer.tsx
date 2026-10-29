@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getCatalog, getSite } from '@/lib/content';
-import { NAV } from '@/lib/nav';
+import Bilingual from '@/components/Bilingual';
+import { NAV, NAV_EXTRA } from '@/lib/nav';
 import { telLink } from '@/lib/whatsapp';
 
 export default function Footer() {
@@ -16,13 +17,13 @@ export default function Footer() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/brand/logo-3-transparent.svg" alt="Riviera Events by ANNA" width={92} height={36} className="mb-4 hidden h-9 w-auto dark:block" />
           <p>{site.complexe.riviera.adresa}</p>
-          <ul className="mt-3 space-y-1">
+          <ul translate="no" className="mt-3 space-y-1">
             {site.telefoane.map((t) => (
               <li key={t.numar}><a href={telLink(t.numar)} className="hover:text-text">{t.numar}</a></li>
             ))}
             <li><a href={`mailto:${site.email}`} className="hover:text-text">{site.email}</a></li>
             {catalog && (
-              <li className="pt-2">
+              <li translate="yes" className="pt-2">
                 {catalog.extern
                   ? <a href={catalog.href} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-text">{catalog.eticheta}<span className="sr-only"> (se deschide într-un tab nou)</span></a>
                   : <a href={catalog.href} download={catalog.numeFisier} className="underline underline-offset-4 hover:text-text">{catalog.eticheta} (PDF, {catalog.mb} MB)</a>}
@@ -31,8 +32,8 @@ export default function Footer() {
           </ul>
         </div>
         <FooterCol title="Site">
-          {[{ href: '/', label: 'Acasă' }, ...NAV, { href: '/estimare-buget', label: 'Estimare buget' }, { href: '/despre', label: 'Despre' }].map((n) => (
-            <li key={n.href}><Link href={n.href} className="hover:text-text">{n.label}</Link></li>
+          {[NAV_EXTRA.acasa, ...NAV, NAV_EXTRA.buget, NAV_EXTRA.despre].map((n) => (
+            <li key={n.href}><Link href={n.href} className="hover:text-text"><Bilingual ro={n.label} en={n.en} /></Link></li>
           ))}
         </FooterCol>
         <FooterCol title={site.reteaAnna.titlu}>
@@ -53,7 +54,7 @@ export default function Footer() {
             ? <a key={l.url} href={l.url} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-6 items-center underline underline-offset-4">{l.text}</a>
             : <Link key={l.url} href={l.url} className="inline-flex min-h-6 items-center underline underline-offset-4">{l.text}</Link>;
         })}
-        <p className="w-full">
+        <p translate="no" className="w-full">
           © {new Date().getFullYear()} {firma.denumire} · CUI {firma.cui} · {firma.registruComertului} · {firma.sediu}
         </p>
       </nav>

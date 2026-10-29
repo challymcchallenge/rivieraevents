@@ -30,7 +30,7 @@ export default function MenuTabs({ meniuri }: { meniuri: Meniu[] }) {
       <div role="tablist" aria-label="Meniuri" onKeyDown={onKey} className="-mx-4 flex gap-1 overflow-x-auto border-b border-line px-4 lg:mx-0 lg:px-0">
         {meniuri.map((x, i) => (
           <button key={x.id} ref={(el) => { tabs.current[i] = el; }} role="tab" id={`tab-${x.id}`} aria-selected={i === active}
-            aria-controls={`panel-${x.id}`} tabIndex={i === active ? 0 : -1} onClick={() => setActive(i)}
+            aria-controls={`panel-${x.id}`} tabIndex={i === active ? 0 : -1} onClick={() => setActive(i)} translate="no"
             className={`relative min-h-12 shrink-0 px-4 font-heading text-xl whitespace-nowrap transition-colors lg:text-2xl ${i === active ? 'text-text' : 'text-muted hover:text-text'}`}>
             {x.nume}
             {i === active && <motion.span layoutId="menu-underline" className="absolute inset-x-2 -bottom-px h-0.5 bg-accent" transition={reduce ? { duration: 0 } : { type: 'spring', stiffness: 380, damping: 32 }} />}
@@ -58,7 +58,7 @@ export default function MenuTabs({ meniuri }: { meniuri: Meniu[] }) {
           </ol>
           {m.galerie.length > 0 && (
             <div className="mt-14">
-              <h3 className="text-[clamp(26px,4vw,34px)]">Pozele meniului {m.nume}</h3>
+              <h3 className="text-[clamp(26px,4vw,34px)]">Pozele meniului <span translate="no">{m.nume}</span></h3>
               <p className="mt-1 mb-6 text-sm text-muted">{m.galerie.length} poze, în ordinea în care se servesc felurile. Apăsați pe o poză ca să o vedeți mare.</p>
               <Gallery images={m.galerie} />
             </div>

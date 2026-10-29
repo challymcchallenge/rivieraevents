@@ -160,6 +160,16 @@ Meniu: **Pagini → Catalog de evenimente (PDF)**.
 
 ---
 
+## 7c. Versiunea în engleză
+
+- Steagurile din header (RO / EN) traduc site-ul **automat, cu Google Translate**, direct în browserul vizitatorului (ADR-008). Nu există pagini separate în engleză.
+- **Nu aveți nimic de tradus:** orice text nou, inclusiv din Keystatic, apare tradus automat.
+- **Ce nu se traduce intenționat:** numele saloanelor, ale meniurilor (Gold, Silver…) și ale clienților din testimoniale, telefoanele, datele firmei, titlul „SAVE THE DATE”.
+- **Meniul de sus și de jos** (Saloane, Pachete…) are traducerea scrisă de noi (Venues, Packages…), pentru că Google traduce prost cuvintele izolate. Se schimbă din `src/lib/nav.ts` (echipa tehnică).
+- **Limitări:** traducerea automată poate avea greșeli și nu se poate corecta din panou. Mesajele de WhatsApp precompletate, emailul formularului și catalogul PDF rămân în română.
+
+---
+
 ## 8. Reguli pentru poze
 
 | | Recomandare |

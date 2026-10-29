@@ -137,3 +137,13 @@ h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 600; letter-spac
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* Google Translate (ADR-008, doar după ce vizitatorul alege EN): fără bara de sus, balonul de la hover și evidențierea textului. */
+body { top: 0 !important; }
+iframe.skiptranslate, .skiptranslate > iframe, .goog-te-banner-frame { display: none !important; }
+#goog-gt-tt, .goog-te-balloon-frame, .goog-tooltip { display: none !important; }
+.goog-text-highlight { background: none !important; box-shadow: none !important; }
+/* Etichete scurte traduse de noi (componenta Bilingual): se vede limba din data-lang de pe <html>. */
+.lang-en { display: none; }
+:root[data-lang="en"] .lang-en { display: inline; }
+:root[data-lang="en"] .lang-ro { display: none; }

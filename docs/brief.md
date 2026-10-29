@@ -253,4 +253,6 @@ Legendă: ✅ există (confirmat de client sau vizibil pe annaevents.ro) · ❓ 
 
 > **Modificare 2026-10-28 (regula 8, GATE 4):** site-ul are două teme (luminoasă implicită, întunecată) cu comutator; butonul WhatsApp devine buton rotund cu logo oficial și bulă (model biztech.ro); footerul are linkuri spre confidențialitate, cookies, termeni, ANPC și SAL. Linkul SOL/ODR nu se pune: platforma UE s-a închis la 20.07.2025.
 
+> **Modificare 2026-10-29 (regula 8):** clientul a cerut și engleza. Conținutul rămâne scris doar în română, iar comutatorul RO/EN din header traduce site-ul automat, cu Google Translate, în browser (ADR-008). Nu există pagini `/en/`.
+
 > **Modificare 2026-10-28 (regula 8):** formularul de contact devine formular de calificare în 5 pași (obligatoriu: tip, dată, nume, telefon, email; opțional: saloane, meniu, buget, extra, stadiu, sursă). WhatsApp rămâne canalul principal. Formularul e alternativa pentru cine vrea să trimită toate detaliile odată.

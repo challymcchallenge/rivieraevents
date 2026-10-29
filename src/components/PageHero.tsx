@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 
 /** Antetul paginilor interioare: poză cu gradient, titlu, subtitlu și butonul principal al paginii. */
 export default function PageHero({ title, subtitle, image, alt, children, compact = false }: {
-  title: string; subtitle?: string; image: string; alt: string; children?: ReactNode; compact?: boolean;
+  title: ReactNode; subtitle?: string; image: string; alt: string; children?: ReactNode; compact?: boolean;
 }) {
   return (
     <section className={`relative flex items-end text-hero-text ${compact ? 'min-h-[52svh] lg:min-h-[56vh]' : 'min-h-[64svh] lg:min-h-[70vh]'}`}>

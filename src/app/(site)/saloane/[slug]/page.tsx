@@ -42,7 +42,7 @@ export default async function SalonPage({ params }: { params: Promise<{ slug: st
 
   return (
     <>
-      <PageHero title={salon.nume} subtitle={salon.descriereScurta} image={salon.imaginePrincipala.src} alt={salon.imaginePrincipala.alt}>
+      <PageHero title={<span translate="no">{salon.nume}</span>} subtitle={salon.descriereScurta} image={salon.imaginePrincipala.src} alt={salon.imaginePrincipala.alt}>
         <a href={wa} target="_blank" rel="noopener noreferrer" className="btn bg-[#FFFEFA] text-[#1E1E1E] dark:bg-btn dark:text-btn-text"><WaIcon />Cereți oferta pentru {scurt}</a>
         {salon.tur360 && <TourButton url={salon.tur360} title={`Tur virtual 360, ${salon.nume}`} className="btn2 border-hero-text text-hero-text" />}
       </PageHero>

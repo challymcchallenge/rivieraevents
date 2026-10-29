@@ -10,7 +10,7 @@ export default function SalonCard({ salon, compact = false, sizes }: { salon: Sa
           sizes={sizes ?? (compact ? '(min-width:1024px) 25vw, 50vw' : '(min-width:1024px) 33vw, 100vw')}
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" />
       </div>
-      <h3 className={`mt-3 ${compact ? 'text-2xl' : 'text-3xl'}`}>{salon.nume.replace('Salon ', '')}</h3>
+      <h3 translate="no" className={`mt-3 ${compact ? 'text-2xl' : 'text-3xl'}`}>{salon.nume.replace('Salon ', '')}</h3>
       <p className="mt-1 text-[13px] font-semibold tracking-[.08em] text-accent-text uppercase">
         până la {salon.capacitate.nunta} de invitați
       </p>

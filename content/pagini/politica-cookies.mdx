@@ -26,6 +26,7 @@ Cookie-urile sunt fișiere mici pe care un site le salvează în browserul dumne
 |---|---|---|---|
 | Tema aleasă (luminoasă sau întunecată) | `localStorage`, cheia `riviera-tema` | ca site-ul să rămână cum l-ați ales | până o ștergeți din browser |
 | Bula WhatsApp închisă | `sessionStorage` | ca bula să nu mai apară în aceeași vizită | până închideți fereastra |
+| Limba aleasă (română sau engleză) | `localStorage`, cheia `riviera-limba` | ca site-ul să rămână în limba aleasă | până o ștergeți din browser |
 
 Aceste informații rămân în browserul dumneavoastră și nu ajung la noi.
 
@@ -38,6 +39,19 @@ Unele elemente vin de la alte site-uri și se încarcă **numai după ce apăsa�
 - **Harta:** pe site e doar o imagine, iar linkul „Deschide în Google Maps” vă duce pe site-ul Google.
 
 După click, aceste site-uri pot pune propriile cookie-uri, după regulile lor. Până atunci, nu se încarcă nimic de la ele.
+
+## Traducerea în engleză (Google Translate)
+
+Butonul cu steagul englez traduce site-ul automat, cu **Google Translate**, un serviciu Google. **Până nu îl apăsați, nu se încarcă nimic de la Google.**
+
+După ce alegeți engleza:
+- textul paginilor pe care le vizitați se trimite la Google, ca să fie tradus;
+- site-ul salvează cookie-ul `googtrans`, cu limba aleasă, ca traducerea să continue pe paginile următoare;
+- Google poate pune propriile cookie-uri, după regulile lui: [policies.google.com/technologies/cookies](https://policies.google.com/technologies/cookies).
+
+Traducerea e automată și poate avea greșeli. Varianta în română e cea valabilă. Butonul cu steagul românesc oprește traducerea și șterge cookie-ul `googtrans`.
+
+<!-- [NEED: verificare juridică: Google Translate pornit doar la cererea vizitatorului, fără banner de acord (ADR-008)] -->
 
 ## Cum ștergeți datele salvate
 

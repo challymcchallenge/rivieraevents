@@ -14,7 +14,7 @@ function Card({ t, short = false }: { t: Testimonial; short?: boolean }) {
   return (
     <figure className="flex h-full flex-col justify-between rounded-img bg-surface-2 p-6 text-left">
       <blockquote className={`font-heading text-xl leading-snug ${short ? 'line-clamp-[9]' : ''}`}>„{t.text}”</blockquote>
-      <figcaption className="mt-4 text-sm text-muted"><strong className="font-semibold text-text">{t.nume}</strong><br />{when(t)}</figcaption>
+      <figcaption className="mt-4 text-sm text-muted"><strong translate="no" className="font-semibold text-text">{t.nume}</strong><br />{when(t)}</figcaption>
     </figure>
   );
 }
