@@ -7,17 +7,25 @@ import { X } from 'lucide-react';
 const SEEN = 'riviera-bula-wa';
 
 /**
- * Buton rotund WhatsApp + bulă (design-system.md §4). Bula apare o singură dată pe sesiune,
- * după ce vizitatorul a derulat dincolo de imaginea de sus sau după 20 s, și nu apare pe /contact.
+ * Buton rotund WhatsApp + bulă (design-system.md §4). Bula apare O SINGURĂ DATĂ în browserul vizitatorului
+ * (localStorage, cererea clientului 2026-10-29: „apare o dată, după închidere niciodată”), după ce vizitatorul
+ * a derulat dincolo de imaginea de sus sau după 20 s, și nu apare pe /contact. La trecerea pe altă pagină dispare.
+ * Fără localStorage (stocare blocată), bula nu apare deloc, ca să nu revină la fiecare pagină.
  */
 export default function WhatsAppWidget({ href, text, buton }: { href: string; text: string; buton: string }) {
   const pathname = usePathname();
   const [show, setShow] = useState(false);
 
   useEffect(() => {
+    setShow(false);
     if (pathname.startsWith('/contact')) return;
-    try { if (sessionStorage.getItem(SEEN)) return; } catch { /* fără sessionStorage: arătăm bula normal */ }
-    const open = () => setShow(true);
+    try { if (localStorage.getItem(SEEN)) return; } catch { return; }
+    const open = () => {
+      setShow(true);
+      try { localStorage.setItem(SEEN, '1'); } catch { /* ignorat */ }
+      window.clearTimeout(t);
+      window.removeEventListener('scroll', onScroll);
+    };
     const onScroll = () => { if (window.scrollY > window.innerHeight * 0.85) open(); };
     const t = window.setTimeout(open, 20000);
     window.addEventListener('scroll', onScroll, { passive: true });
@@ -26,7 +34,7 @@ export default function WhatsAppWidget({ href, text, buton }: { href: string; te
 
   const close = () => {
     setShow(false);
-    try { sessionStorage.setItem(SEEN, '1'); } catch { /* ignorat */ }
+    try { localStorage.setItem(SEEN, '1'); } catch { /* ignorat */ }
   };
 
   return (

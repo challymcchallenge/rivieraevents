@@ -133,7 +133,7 @@ Butonul rotund WhatsApp e verde pe fundal deschis (1.97:1). E logo de brand, dec
   - Text din `site.json` → `whatsapp.bula`. Buton verde „Deschideți WhatsApp”, cu text `--color-wa-text`.
 - **Când apare bula:**
   - Abia după ce vizitatorul a derulat dincolo de hero, sau după 20 de secunde. Pe mobil nu trebuie să acopere butoanele din hero.
-  - O singură dată pe sesiune. Închiderea se ține minte în `sessionStorage`.
+  - **O singură dată, definitiv** (modificat 2026-10-29, cererea clientului: bula revenea la fiecare vizită și deranja). Prima afișare se ține minte în `localStorage` (`riviera-bula-wa`); la trecerea pe altă pagină bula dispare. Fără `localStorage`, bula nu apare. Butonul rotund rămâne mereu.
   - Nu mută focusul. Apare cu fade de 200ms, sau fără animație la `prefers-reduced-motion`.
   - Nu apare pe `/contact`, unde formularul e principalul canal.
 - **Mesajul WhatsApp:** ambele butoane deschid `https://wa.me/40746085555?text=…`, cu textul implicit și marcajul de sursă din `site.json`.
