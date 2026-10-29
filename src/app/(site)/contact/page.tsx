@@ -60,7 +60,10 @@ export default function ContactPage() {
             </div>
             <div>
               <h2 className="text-[clamp(26px,4vw,34px)]">Parcare gratuită</h2>
-              <p className="mt-3">{site.parcare.text}</p>
+              <p className="mt-3">Pentru toți invitații, la ambele complexe:</p>
+              {(['riviera', 'insulita'] as const).map((k) => (
+                <p key={k} className="mt-3"><strong className="font-semibold">{site.complexe[k].nume}:</strong> {site.parcare[k].text}</p>
+              ))}
             </div>
             <div>
               <h2 className="text-[clamp(26px,4vw,34px)]">Vizitarea saloanelor</h2>

@@ -271,8 +271,14 @@
   ],
   "_notaSOL": "Linkul SOL/ODR (ec.europa.eu/consumers/odr) NU se pune: platforma UE a fost închisă la 20.07.2025 (Regulamentul UE 2024/3228), iar obligația de a o afișa a dispărut.",
   "parcare": {
-    "scurt": "gratuită: în parcarea complexului, pe marginea străzii sau la complexul comercial de vizavi",
-    "text": "Parcarea e gratuită pentru toți invitații. Puteți lăsa mașina în parcarea privată a complexului, pe marginea străzii sau în parcarea complexului comercial de vizavi.",
-    "_nota": "Client, 2026-10-29: parcare gratuită în parcările private ale complexelor, pe laterala străzii și în parcarea complexului comercial de vizavi."
+    "riviera": {
+      "scurt": "gratuită: în parcarea complexului, pe marginea străzii sau la complexul comercial de vizavi",
+      "text": "în parcarea privată a complexului, pe marginea străzii sau în parcarea complexului comercial de vizavi."
+    },
+    "insulita": {
+      "scurt": "gratuită, în parcarea privată a complexului",
+      "text": "în parcarea privată a complexului."
+    },
+    "_nota": "Client, 2026-10-29: parcare gratuită în parcările private ale complexelor; marginea străzii și complexul comercial de vizavi doar la Riviera. [NEED: de confirmat dacă și la Insulița se poate parca pe marginea străzii]"
   }
 }
