@@ -1,63 +1,62 @@
 {
   "salon": "Estuar",
   "imaginePrincipala": {
-    "src": "/images/saloane/estuar/estuar-001.jpg",
+    "src": "/images/saloane/estuar/imaginePrincipala/src.jpg",
     "alt": "Salon Estuar, vedere de ansamblu"
   },
   "coperta": {
-    "src": "/images/saloane/estuar/estuar-001.jpg",
+    "src": "/images/saloane/estuar/coperta/src.jpg",
     "alt": "Salon Estuar, vedere de ansamblu"
   },
   "galerie": [
     {
-      "src": "/images/saloane/estuar/estuar-001.jpg",
+      "src": "/images/saloane/estuar/galerie/0/src.jpg",
       "alt": "Salon Estuar, amenajat pentru un eveniment (1)"
     },
     {
-      "src": "/images/saloane/estuar/estuar-002.jpg",
+      "src": "/images/saloane/estuar/galerie/1/src.jpg",
       "alt": "Salon Estuar, amenajat pentru un eveniment (2)"
     },
     {
-      "src": "/images/saloane/estuar/estuar-003.jpg",
+      "src": "/images/saloane/estuar/galerie/2/src.jpg",
       "alt": "Salon Estuar, amenajat pentru un eveniment (3)"
     },
     {
-      "src": "/images/saloane/estuar/estuar-004.jpg",
+      "src": "/images/saloane/estuar/galerie/3/src.jpg",
       "alt": "Salon Estuar, amenajat pentru un eveniment (4)"
     },
     {
-      "src": "/images/saloane/estuar/estuar-005.jpg",
+      "src": "/images/saloane/estuar/galerie/4/src.jpg",
       "alt": "Salon Estuar, amenajat pentru un eveniment (5)"
     },
     {
-      "src": "/images/saloane/estuar/estuar-006.jpg",
+      "src": "/images/saloane/estuar/galerie/5/src.jpg",
       "alt": "Salon Estuar, amenajat pentru un eveniment (6)"
     },
     {
-      "src": "/images/saloane/estuar/estuar-007.jpg",
+      "src": "/images/saloane/estuar/galerie/6/src.jpg",
       "alt": "Salon Estuar, amenajat pentru un eveniment (7)"
     },
     {
-      "src": "/images/saloane/estuar/estuar-008.jpg",
+      "src": "/images/saloane/estuar/galerie/7/src.jpg",
       "alt": "Salon Estuar, amenajat pentru un eveniment (8)"
     },
     {
-      "src": "/images/saloane/estuar/estuar-009.jpg",
+      "src": "/images/saloane/estuar/galerie/8/src.jpg",
       "alt": "Salon Estuar, amenajat pentru un eveniment (9)"
     },
     {
-      "src": "/images/saloane/estuar/estuar-010.jpg",
+      "src": "/images/saloane/estuar/galerie/9/src.jpg",
       "alt": "Salon Estuar, amenajat pentru un eveniment (10)"
     },
     {
-      "src": "/images/saloane/estuar/estuar-011.jpg",
+      "src": "/images/saloane/estuar/galerie/10/src.jpg",
       "alt": "Salon Estuar, amenajat pentru un eveniment (11)"
     },
     {
-      "src": "/images/saloane/estuar/estuar-012.jpg",
+      "src": "/images/saloane/estuar/galerie/11/src.jpg",
       "alt": "Salon Estuar, amenajat pentru un eveniment (12)"
     }
   ],
-  "tur360": "https://www.annaevents.ro/tur-virtual/anna_events/sala-estuar/salon_estuar.html",
-  "turApartament": ""
+  "tur360": "https://www.annaevents.ro/tur-virtual/anna_events/sala-estuar/salon_estuar.html"
 }
