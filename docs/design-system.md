@@ -31,7 +31,7 @@
 | `--color-btn` | `#1E1E1E` | `#E02424` | buton principal (în tema întunecată: roșu puțin mai închis decât brandul, ca textul alb să treacă AA) |
 | `--color-btn-text` | `#FFFEFA` | `#FFFFFF` | text pe butonul principal |
 | `--color-btn2-border` / `-text` | `#1E1E1E` | `#FFFEFA` | buton secundar (contur) |
-| `--color-final-bg` | `#1E1E1E` | `#262320` | secțiunea „Vă verificăm data” |
+| `--color-final-bg` | `#1E1E1E` | `#262320` | secțiunea finală „SAVE THE DATE” (numită „Vă verificăm data” până pe 2026-10-29; acum componenta `SaveTheDate`, pe Acasă și la finalul fiecărei pagini de salon) |
 | `--color-popup-bg` | `#FFFFFF` | `#1C1A18` | bula WhatsApp |
 
 ### Comune ambelor teme

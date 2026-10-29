@@ -7,7 +7,7 @@ import PachetCard from '@/components/PachetCard';
 import SalonCard from '@/components/SalonCard';
 import Prose from '@/components/Prose';
 import Testimonials from '@/components/Testimonials';
-import SoftBackground from '@/components/SoftBackground';
+import SaveTheDate from '@/components/SaveTheDate';
 import WaIcon from '@/components/WaIcon';
 import { BlurFade } from '@/components/ui/blur-fade';
 import { getPachete, getPage, getPozePagini, getSaloane, getSlideshow, getTestimoniale, section, type Pachet } from '@/lib/content';
@@ -130,16 +130,7 @@ export default function Home() {
         <Testimonials items={getTestimoniale('riviera')} />
       </section>
 
-      <section className="relative overflow-hidden">
-        <SoftBackground />
-        <div className="wrap relative py-24 text-center lg:py-32">
-          <div className="mx-auto max-w-[620px] rounded-img bg-bg/70 px-6 py-10 backdrop-blur-sm lg:px-12">
-            <h2 className="h2">Vă verificăm data</h2>
-            <Prose text={s('Vă verificăm data')?.body ?? ''} className="mx-auto mt-4 [&_p]:mx-auto" />
-            <a href={wa} target="_blank" rel="noopener noreferrer" className="btn mt-2"><WaIcon />{page.meta.cta.text}</a>
-          </div>
-        </div>
-      </section>
+      <SaveTheDate text={s('Save the date')?.body ?? ''} pagina="pagina principală, save the date" />
     </>
   );
 }

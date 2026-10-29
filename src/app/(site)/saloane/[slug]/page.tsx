@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import PageHero from '@/components/PageHero';
+import SaveTheDate from '@/components/SaveTheDate';
 import Gallery from '@/components/Gallery';
 import SalonCard from '@/components/SalonCard';
 import TourButton from '@/components/TourButton';
@@ -96,6 +97,9 @@ export default async function SalonPage({ params }: { params: Promise<{ slug: st
           </div>
         </div>
       </section>
+
+      <SaveTheDate pagina={`salon ${scurt}, save the date`} salon={scurt}
+        text={`Spuneți-ne data și cam câți invitați aveți. Vă spunem pe WhatsApp dacă salonul ${scurt} e liber și vă trimitem oferta. De regulă vă răspundem în aceeași zi.`} />
     </>
   );
 }
