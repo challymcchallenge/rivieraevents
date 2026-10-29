@@ -45,14 +45,14 @@ export default config({
             fields.select({ label: 'Tip slide', options: [{ label: 'Imagine', value: 'imagine' }, { label: 'Video', value: 'video' }], defaultValue: 'imagine' }),
             {
               imagine: fields.object({
-                imagine: fields.image({ label: 'Imagine (orizontală, min. 1920 px)', directory: 'public/images/hero', publicPath: '/images/hero/', validation: { isRequired: true } }),
-                imagineMobil: fields.image({ label: 'Imagine pentru telefon (verticală, opțional)', directory: 'public/images/hero', publicPath: '/images/hero/' }),
+                imagine: fields.image({ label: 'Imagine pentru calculator și tabletă (orizontală, min. 1920 px)', directory: 'public/images/hero', publicPath: '/images/hero/', validation: { isRequired: true } }),
+                imagineMobil: fields.image({ label: 'Imagine pentru TELEFON (verticală, opțional)', description: 'Goală (Remove) = pe telefon se vede imaginea de mai sus, decupată în jurul punctului focal. Dacă schimbați imaginea de calculator, verificați și poza de aici: altfel telefonul arată altă poză.', directory: 'public/images/hero', publicPath: '/images/hero/' }),
                 punctFocal: fields.text({ label: 'Punct focal pe telefon', description: 'Ex. „50% 50%” = centru; „50% 30%” = mai sus. Folosit doar fără imagine pentru telefon.', defaultValue: '50% 50%' }),
                 alt: fields.text({ label: 'Text alternativ', description: ALT, validation: { length: { min: 5 } } }),
               }),
               video: fields.object({
-                desktop: fields.file({ label: 'Video desktop (MP4 H.264, 16:9, max. 8 MB)', directory: 'public/media/hero', publicPath: '/media/hero/', validation: { isRequired: true } }),
-                mobil: fields.file({ label: 'Video telefon (MP4, 9:16 sau 4:5, max. 4 MB, opțional)', directory: 'public/media/hero', publicPath: '/media/hero/' }),
+                desktop: fields.file({ label: 'Video pentru calculator și tabletă (MP4 H.264, 16:9, max. 8 MB)', directory: 'public/media/hero', publicPath: '/media/hero/', validation: { isRequired: true } }),
+                mobil: fields.file({ label: 'Video pentru TELEFON (MP4, 9:16 sau 4:5, max. 4 MB, opțional)', description: 'Gol = pe telefon rulează video-ul de mai sus, decupat.', directory: 'public/media/hero', publicPath: '/media/hero/' }),
                 poster: fields.image({ label: 'Poster (primul cadru)', directory: 'public/images/hero', publicPath: '/images/hero/', validation: { isRequired: true } }),
                 alt: fields.text({ label: 'Text alternativ', description: ALT, validation: { length: { min: 5 } } }),
               }),
@@ -61,7 +61,12 @@ export default config({
           {
             label: 'Slide-uri (1–10)',
             description: 'Primul slide e cel mai important: îl văd toți vizitatorii. Trageți pentru a schimba ordinea.',
-            itemLabel: (p) => `${p.discriminant === 'video' ? 'Video' : 'Imagine'}: ${(p.value.fields as { alt: { value: string } }).alt.value || 'fără descriere'}`,
+            // În listă se vede și dacă slide-ul are media separată pentru telefon.
+            itemLabel: (p) => {
+              const f = p.value.fields as { alt: { value: string }; imagineMobil?: { value: unknown }; mobil?: { value: unknown } };
+              const telefon = (p.discriminant === 'video' ? f.mobil?.value : f.imagineMobil?.value) ? 'telefon: separat' : 'telefon: aceeași, decupată';
+              return `${p.discriminant === 'video' ? 'Video' : 'Imagine'}: ${f.alt.value || 'fără descriere'} · ${telefon}`;
+            },
             validation: { length: { min: 1, max: 10 } },
           },
         ),

@@ -3,6 +3,14 @@
 ## Status
 **Acceptat: varianta C, doar Vercel Web Analytics pe Hobby** (decizia clientului, 2026-10-28).
 
+> **Modificare 2026-10-29 (cererea clientului):** se adaugă **Google Analytics 4** (`G-XTPH4ERPM0`, din `content/site.json` → `analytics.ga4`), **cu banner de acord** (`CookieConsent.tsx`), ales de client între „cu banner”, „fără banner” (neconform, nerecomandat) și „fără GA”.
+> - GA se încarcă doar după „Accept” (consent mode „de bază”: fără acord nu pleacă nicio cerere spre Google). La „Refuz” sau retragere: `ga-disable-<id>` și ștergerea cookie-urilor `_ga*`.
+> - Cookie-urile GA expiră după 13 luni (`cookie_expires`), nu 2 ani. Alegerea se ține minte 12 luni (`localStorage` `riviera-cookies`), apoi bannerul întreabă din nou. „Setări cookie-uri” în subsol redeschide bannerul.
+> - „Accept” și „Refuz” au aceeași formă și mărime. Bula WhatsApp așteaptă până vizitatorul răspunde la banner.
+> - Vercel Web Analytics rămâne, fără cookie-uri, pentru totalul vizitelor (GA vede doar vizitatorii care acceptă).
+> - Principiul „fără banner” din acest ADR nu mai e valabil. [NEED: retenția datelor GA setată la 14 luni în contul Google Analytics; verificare juridică]
+
+
 **Ce înseamnă:**
 - Se măsoară vizitele, paginile și sursele de trafic, până la 50.000 de evenimente pe lună. Peste limită, colectarea se oprește până luna următoare.
 - **Nu se pot măsura clicurile pe WhatsApp, pe telefon sau în calculator** (evenimentele custom sunt doar pe Pro).

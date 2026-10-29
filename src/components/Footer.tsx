@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getCatalog, getIdentitate, getSite } from '@/lib/content';
 import Bilingual from '@/components/Bilingual';
+import CookieSettingsLink from '@/components/CookieSettingsLink';
 import { NAV, NAV_EXTRA } from '@/lib/nav';
 import { telLink } from '@/lib/whatsapp';
 
@@ -55,6 +56,7 @@ export default function Footer() {
             ? <a key={l.url} href={l.url} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-6 items-center underline underline-offset-4">{l.text}</a>
             : <Link key={l.url} href={l.url} className="inline-flex min-h-6 items-center underline underline-offset-4">{l.text}</Link>;
         })}
+        {site.analytics?.ga4 && <CookieSettingsLink className="inline-flex min-h-6 items-center underline underline-offset-4" />}
         <p translate="no" className="w-full">
           © {new Date().getFullYear()} {firma.denumire} · CUI {firma.cui} · {firma.registruComertului} · {firma.sediu}
         </p>

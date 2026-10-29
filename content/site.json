@@ -280,5 +280,9 @@
       "text": "în parcarea privată a complexului."
     },
     "_nota": "Client, 2026-10-29: parcare gratuită în parcările private ale complexelor; marginea străzii și complexul comercial de vizavi doar la Riviera. [NEED: de confirmat dacă și la Insulița se poate parca pe marginea străzii]"
+  },
+  "analytics": {
+    "ga4": "G-XTPH4ERPM0",
+    "_nota": "Google Analytics 4, doar cu acordul vizitatorului (banner). Gol = fără GA și fără banner. ADR-005, modificat 2026-10-29."
   }
 }

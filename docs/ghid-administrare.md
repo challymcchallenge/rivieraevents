@@ -45,6 +45,11 @@ Meniu: **Pagina principală → Slideshow pagina principală**.
 - **Secunde pe slide:** între 4 și 10 (acum 6).
 - La final: **Save**.
 
+**Poza sau video-ul pentru telefon:** fiecare slide are câmpul **„Imagine pentru TELEFON”** (la video: **„Video pentru TELEFON”**).
+- În lista de slide-uri scrie, la fiecare, „telefon: separat” sau „telefon: aceeași, decupată”.
+- **Când schimbați poza de calculator, verificați și poza de telefon:** altfel telefonul arată în continuare poza veche.
+- **Remove** la poza de telefon = pe telefon se vede poza de calculator, decupată în jurul **punctului focal**.
+
 **Video (clipul profesionist):**
 - Tipul **Video**, apoi încărcați:
   - fișierul pentru desktop: MP4, 16:9, **maximum 8 MB**;

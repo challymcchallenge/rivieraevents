@@ -5,6 +5,7 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppWidget from '@/components/WhatsAppWidget';
+import CookieConsent from '@/components/CookieConsent';
 import { themeInitScript } from '@/components/ThemeToggle';
 import JsonLd from '@/components/JsonLd';
 import { getIdentitate, getSite } from '@/lib/content';
@@ -47,6 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main id="continut">{children}</main>
         <Footer />
         <WhatsAppWidget href={wa} text={site.whatsapp.bula.text} buton={site.whatsapp.bula.buton} />
+        {site.analytics?.ga4 && <CookieConsent gaId={site.analytics.ga4} />}
         <Analytics />
       </body>
     </html>

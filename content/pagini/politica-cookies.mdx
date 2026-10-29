@@ -1,14 +1,14 @@
 ---
 seoTitlu: "Politica de cookies | Riviera Târgu Jiu"
-seoDescriere: "rivieraevents.ro nu folosește cookie-uri de publicitate sau urmărire. Aflați ce salvăm în browser și cum se încarcă video-urile, tururile și harta."
+seoDescriere: "rivieraevents.ro nu folosește cookie-uri de publicitate. Google Analytics pornește doar cu acordul dumneavoastră. Aflați ce salvăm în browser și cum vă schimbați alegerea."
 h1: "Politica de cookies"
-subtitlu: "Pe scurt: nu folosim cookie-uri de urmărire, deci nu vă cerem acordul printr-un banner."
+subtitlu: "Pe scurt: fără publicitate. Statisticile Google Analytics pornesc doar dacă apăsați „Accept”."
 cta:
   text: "Scrieți-ne pe WhatsApp"
   actiune: whatsapp
 ---
 
-<!-- CIORNĂ după ADR-004 și ADR-005. Se actualizează dacă se adaugă un instrument care pune cookie-uri. [NEED: verificare juridică înainte de lansare] -->
+<!-- CIORNĂ după ADR-004 și ADR-005 (modificat 2026-10-29: Google Analytics 4 cu banner de acord). [NEED: verificare juridică înainte de lansare] -->
 
 ## Ce sunt cookie-urile
 
@@ -16,9 +16,18 @@ Cookie-urile sunt fișiere mici pe care un site le salvează în browserul dumne
 
 ## Ce folosește rivieraevents.ro
 
-**Cookie-uri de urmărire sau publicitate:** nu folosim.
+**Cookie-uri de publicitate:** nu folosim.
 
-**Statistici de trafic:** folosim Vercel Web Analytics, care numără vizitele fără cookie-uri și fără să vă identifice. Datele sunt agregate, iar identificatorul tehnic al cererii se șterge după 24 de ore.
+**Statistici de trafic, fără cookie-uri:** folosim Vercel Web Analytics, care numără vizitele fără cookie-uri și fără să vă identifice. Datele sunt agregate, iar identificatorul tehnic al cererii se șterge după 24 de ore.
+
+**Google Analytics, doar cu acordul dumneavoastră:** la prima vizită vă întrebăm printr-un banner. **Până nu apăsați „Accept”, nu se încarcă nimic de la Google.** Dacă acceptați, Google Analytics 4 (Google Ireland Limited) ne arată ce pagini sunt vizitate, de pe ce tip de dispozitiv și din ce oraș, aproximativ, ca să îmbunătățim site-ul. Nu folosim datele pentru reclame.
+
+| Cookie | Al cui | De ce | Cât timp |
+|---|---|---|---|
+| `_ga` | Google Analytics | deosebește vizitatorii între ei, fără nume sau email | 13 luni |
+| `_ga_XTPH4ERPM0` | Google Analytics | ține minte vizita curentă | 13 luni |
+
+Dacă apăsați „Refuz” (sau vă retrageți acordul mai târziu), Google Analytics nu pornește, iar cookie-urile `_ga` existente se șterg. **Vă puteți schimba oricând alegerea din linkul „Setări cookie-uri”, din subsolul fiecărei pagini.** Detalii despre cum folosește Google datele: [policies.google.com/technologies/partner-sites](https://policies.google.com/technologies/partner-sites).
 
 **Preferințe salvate în browser (nu cookie-uri):**
 
@@ -27,6 +36,7 @@ Cookie-urile sunt fișiere mici pe care un site le salvează în browserul dumne
 | Tema aleasă (luminoasă sau întunecată) | `localStorage`, cheia `riviera-tema` | ca site-ul să rămână cum l-ați ales | până o ștergeți din browser |
 | Bula WhatsApp afișată | `localStorage`, cheia `riviera-bula-wa` | ca mesajul WhatsApp să apară o singură dată | până o ștergeți din browser |
 | Limba aleasă (română sau engleză) | `localStorage`, cheia `riviera-limba` | ca site-ul să rămână în limba aleasă | până o ștergeți din browser |
+| Alegerea din bannerul de cookie-uri | `localStorage`, cheia `riviera-cookies` | ca să nu vă întrebăm la fiecare pagină | 12 luni, apoi vă întrebăm din nou |
 
 Aceste informații rămân în browserul dumneavoastră și nu ajung la noi.
 
@@ -55,7 +65,7 @@ Traducerea e automată și poate avea greșeli. Varianta în română e cea vala
 
 ## Cum ștergeți datele salvate
 
-Din setările browserului puteți șterge oricând datele site-urilor, inclusiv preferința de temă de pe rivieraevents.ro.
+Din setările browserului puteți șterge oricând datele site-urilor, inclusiv preferințele și cookie-urile de pe rivieraevents.ro. Acordul pentru Google Analytics îl schimbați din „Setări cookie-uri”, în subsol.
 
 ## Întrebări
 

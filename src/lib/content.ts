@@ -62,6 +62,7 @@ export type Site = {
   telefoane: { numar: string; rol: string }[]; email: string;
   complexe: Record<'riviera' | 'insulita', { nume: string; adresa: string; descriereLocatie: string; galerieExterior?: Img[] }>;
   parcare: Record<'riviera' | 'insulita', { scurt: string; text: string }>;
+  analytics?: { ga4?: string };
   social: Record<'facebook' | 'instagram' | 'youtube', string>;
   reteaAnna: { titlu: string; principal: { nume: string; url: string }; linkuri: { nume: string; url: string }[] };
   linkuriLegale: { text: string; url: string }[];

@@ -3,6 +3,7 @@
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { X } from 'lucide-react';
+import { DONE_EVENT } from '@/components/CookieConsent';
 
 const SEEN = 'riviera-bula-wa';
 
@@ -21,15 +22,25 @@ export default function WhatsAppWidget({ href, text, buton }: { href: string; te
     if (pathname.startsWith('/contact')) return;
     try { if (localStorage.getItem(SEEN)) return; } catch { return; }
     const open = () => {
+      // nu peste bannerul de cookie-uri: așteptăm răspunsul vizitatorului
+      if (document.documentElement.dataset.cookieBanner === 'open') {
+        window.addEventListener(DONE_EVENT, later, { once: true });
+        window.clearTimeout(t);
+        window.removeEventListener('scroll', onScroll);
+        return;
+      }
       setShow(true);
       try { localStorage.setItem(SEEN, '1'); } catch { /* ignorat */ }
       window.clearTimeout(t);
       window.removeEventListener('scroll', onScroll);
     };
     const onScroll = () => { if (window.scrollY > window.innerHeight * 0.85) open(); };
+    // după răspunsul la banner, bula vine la 4 s, ca să nu apară două ferestre una după alta
+    let t2 = 0;
+    const later = () => { t2 = window.setTimeout(open, 4000); };
     const t = window.setTimeout(open, 20000);
     window.addEventListener('scroll', onScroll, { passive: true });
-    return () => { window.clearTimeout(t); window.removeEventListener('scroll', onScroll); };
+    return () => { window.clearTimeout(t); window.clearTimeout(t2); window.removeEventListener('scroll', onScroll); window.removeEventListener(DONE_EVENT, later); };
   }, [pathname]);
 
   const close = () => {
