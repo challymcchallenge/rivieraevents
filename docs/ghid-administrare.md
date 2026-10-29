@@ -160,6 +160,21 @@ Meniu: **Pagini → Catalog de evenimente (PDF)**.
 
 ---
 
+## 7b2. Logo și favicon
+
+Meniu: **Pagini → Logo și favicon**.
+
+- **Logo cu text alb:** apare peste pozele de sus ale paginilor și în tema întunecată. În panou se vede slab, pe fundal alb: e normal.
+- **Logo cu text negru:** apare în subsol și în meniul de pe telefon, în tema luminoasă.
+  - Pentru ambele: **SVG** (cel mai clar) sau PNG cu fundal transparent, orizontal. Pe site au înălțimea de 40 px; lățimea urmează proporția logoului.
+- **Favicon:** iconița din tabul browserului și de pe ecranul telefonului (dacă vizitatorul salvează site-ul).
+  - **PNG pătrat, minimum 512×512 px, cu fundal plin.** Se vede la 16–32 px, deci un simbol simplu (acum: „R” alb cu bara roșie, pe negru), nu logoul întreg.
+  - La publicare, site-ul face singur din el `favicon.ico` și iconița pentru iPhone.
+  - Browserele țin favicon-ul vechi în memorie câteva zile; ca să-l vedeți pe cel nou imediat, deschideți site-ul într-o fereastră privată.
+- La final: **Save**.
+
+---
+
 ## 7c. Versiunea în engleză
 
 - Steagurile din header (RO / EN) traduc site-ul **automat, cu Google Translate**, direct în browserul vizitatorului (ADR-008). Nu există pagini separate în engleză.

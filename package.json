@@ -5,7 +5,7 @@
   "description": "Site de prezentare Riviera Events by ANNA, Târgu Jiu",
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/check-content.mjs && next build",
+    "build": "node scripts/check-content.mjs && node scripts/favicon.mjs && next build",
     "start": "next start",
     "check:content": "node scripts/check-content.mjs",
     "typecheck": "tsc --noEmit"

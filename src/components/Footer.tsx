@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { getCatalog, getSite } from '@/lib/content';
+import { getCatalog, getIdentitate, getSite } from '@/lib/content';
 import Bilingual from '@/components/Bilingual';
 import { NAV, NAV_EXTRA } from '@/lib/nav';
 import { telLink } from '@/lib/whatsapp';
@@ -8,14 +8,15 @@ export default function Footer() {
   const site = getSite();
   const { firma } = site;
   const catalog = getCatalog();
+  const { deschis, inchis } = getIdentitate();
   return (
     <footer className="border-t border-line pt-16 pb-28 text-sm text-muted lg:pb-10">
       <div className="wrap grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-[2fr_1fr_1fr_1fr]">
         <div className="col-span-2 lg:col-span-1">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/brand/logo-1-transparent.svg" alt="Riviera Events by ANNA" width={92} height={36} className="mb-4 h-9 w-auto dark:hidden" />
+          <img src={inchis.src} alt="Riviera Events by ANNA" width={Math.round(inchis.w * 0.9)} height={36} className="mb-4 h-9 w-auto dark:hidden" />
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/brand/logo-3-transparent.svg" alt="Riviera Events by ANNA" width={92} height={36} className="mb-4 hidden h-9 w-auto dark:block" />
+          <img src={deschis.src} alt="Riviera Events by ANNA" width={Math.round(deschis.w * 0.9)} height={36} className="mb-4 hidden h-9 w-auto dark:block" />
           <p>{site.complexe.riviera.adresa}</p>
           <ul translate="no" className="mt-3 space-y-1">
             {site.telefoane.map((t) => (

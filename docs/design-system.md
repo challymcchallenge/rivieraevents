@@ -110,7 +110,7 @@ Butonul rotund WhatsApp e verde pe fundal deschis (1.97:1). E logo de brand, dec
 - Bula WhatsApp nu acoperă controalele: pe mobil apare abia după ce vizitatorul a derulat dincolo de hero.
 
 ### Header
-- E transparent peste hero, cu text și logo deschise la culoare (`logo-3-transparent.svg`) în ambele teme.
+- E transparent peste hero, cu text și logo deschise la culoare (logoul „cu text alb” din Keystatic) în ambele teme.
 - Pe desktop meniul are 6 linkuri: Saloane, Pachete, Meniuri, Tur virtual, Portofoliu, Contact. Pe mobil e un buton-hamburger de 44×44px.
 - **Comutatorul de temă** e lângă meniu: buton de 44×44px, cu iconiță lună în tema luminoasă și soare în cea întunecată.
   - Atribute: `aria-label="Temă întunecată"` și `aria-pressed`.
@@ -186,11 +186,12 @@ Poză 4:5, apoi numele (Cormorant 30px), capacitatea (eyebrow `--color-accent-te
 ## 6. Iconițe și imagini
 - Iconițele sunt SVG cu linie de 2px, stil Lucide, fără emoji. Iconițele decorative au `aria-hidden`, iar butoanele care au doar iconiță au `aria-label`.
 - Pozele se afișează doar prin `next/image`, cu `sizes` declarat și text alternativ din fișierele de conținut. Doar hero-ul are `priority`.
-- Logo-uri în `assets/brand/`:
-  - `logo-1-transparent.svg`: închis, pentru fundal deschis;
-  - `logo-3-transparent.svg`: deschis, pentru fundal închis și pentru hero;
-  - `whatsapp-192.png`.
-- ☐ Lipsește un logo doar cu simbolul, pentru favicon.
+- **Logo-uri (modificat 2026-10-29):** logo nou de la client, „RIVIERA / BY ANNA EVENTS”, editabil din Keystatic („Logo și favicon”, `content/media/identitate.json`, fișiere în `public/images/brand/`):
+  - logo cu text negru: pentru fundal deschis (subsol și meniul mobil, în tema luminoasă);
+  - logo cu text alb: peste hero și în tema întunecată;
+  - `public/brand/whatsapp-192.png` și steagurile RO/EN rămân fișiere fixe.
+- **Favicon (2026-10-29):** „R”-ul din logo, îngroșat ca să se citească la 16 px, cu bara roșie, pe fundal `#141210` (`scripts/favicon-din-logo.py`). La build, `scripts/favicon.mjs` face din favicon-ul din Keystatic `favicon.ico` (16/32/48) și `apple-touch-icon.png` (180).
+- ⚠ Logoul nou scrie „by ANNA Events”, iar textele site-ului folosesc „Riviera Events by ANNA”. De aliniat cu clientul.
 
 ---
 

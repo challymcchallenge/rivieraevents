@@ -31,7 +31,7 @@ export default config({
   ...(project ? { cloud: { project } } : {}),
   ui: {
     brand: { name: 'Riviera Events' },
-    navigation: { 'Pagina principală': ['slideshow'], Saloane: ['saloane', 'tururi'], Pachete: ['pachete'], Meniuri: ['meniuri'], Pagini: ['pagini', 'catalog'], Portofoliu: ['portofoliu'] },
+    navigation: { 'Pagina principală': ['slideshow'], Saloane: ['saloane', 'tururi'], Pachete: ['pachete'], Meniuri: ['meniuri'], Pagini: ['pagini', 'catalog', 'identitate'], Portofoliu: ['portofoliu'] },
   },
   singletons: {
     slideshow: singleton({
@@ -105,6 +105,16 @@ export default config({
           }),
           { label: 'Apartamentul mirilor (pagina Pachete)', description: 'Prima poză e cea mare. Recomandat 5 poze.', itemLabel: (p) => p.fields.alt.value || 'Poză', validation: { length: { min: 1, max: 9 } } },
         ),
+      },
+    }),
+    identitate: singleton({
+      label: 'Logo și favicon',
+      path: 'content/media/identitate',
+      format: { data: 'json' },
+      schema: {
+        logoDeschis: fields.image({ label: 'Logo cu text alb', description: 'Pe pozele de sus ale paginilor și în tema întunecată. SVG (recomandat) sau PNG cu fundal transparent, orizontal.', directory: 'public/images/brand', publicPath: '/images/brand/', validation: { isRequired: true } }),
+        logoInchis: fields.image({ label: 'Logo cu text negru', description: 'Pe fundal deschis: subsolul site-ului și meniul de pe telefon, în tema luminoasă. SVG sau PNG transparent.', directory: 'public/images/brand', publicPath: '/images/brand/', validation: { isRequired: true } }),
+        favicon: fields.image({ label: 'Favicon (iconița din tabul browserului)', description: 'PNG pătrat, minimum 512×512 px, cu fundal plin. Se vede la 16–32 px: un simbol simplu (ex. „R”), nu logoul întreg.', directory: 'public/images/brand', publicPath: '/images/brand/', validation: { isRequired: true } }),
       },
     }),
     catalog: singleton({

@@ -1,4 +1,4 @@
-import { getSaloane, getSite } from '@/lib/content';
+import { getIdentitate, getSaloane, getSite } from '@/lib/content';
 
 const BASE = 'https://www.rivieraevents.ro';
 
@@ -27,7 +27,7 @@ export default function JsonLd() {
     '@graph': [
       {
         '@type': 'Organization', '@id': `${BASE}/#organizatie`, name: site.nume, legalName: site.firma.denumire, url: BASE,
-        logo: `${BASE}/brand/logo-1-transparent.svg`, telephone: tel, email: site.email, foundingDate: String(site.anInfiintareGrup),
+        logo: `${BASE}${getIdentitate().inchis.src}`, telephone: tel, email: site.email, foundingDate: String(site.anInfiintareGrup),
         sameAs: Object.values(site.social), taxID: site.firma.cui,
       },
       venue('riviera', 'riviera'),

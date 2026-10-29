@@ -85,7 +85,15 @@ export function imageSize(src: string): { w: number; h: number } | null {
   let out: { w: number; h: number } | null = null;
   try {
     const b = fs.readFileSync(path.join(process.cwd(), 'public', src));
-    if (b[0] === 0x89 && b.toString('ascii', 1, 4) === 'PNG') out = { w: b.readUInt32BE(16), h: b.readUInt32BE(20) };
+    const head = b.toString('utf8', 0, Math.min(b.length, 2048));
+    if (/<svg[\s>]/i.test(head)) {
+      // SVG: din width/height sau din viewBox (logourile)
+      const num = (re: RegExp) => { const m = head.match(re); return m ? parseFloat(m[1]) : NaN; };
+      const vb = head.match(/viewBox="[\d.\s-]*?([\d.]+)\s+([\d.]+)"/);
+      const w = num(/<svg[^>]*\swidth="([\d.]+)/), h = num(/<svg[^>]*\sheight="([\d.]+)/);
+      if (w && h) out = { w: Math.round(w), h: Math.round(h) };
+      else if (vb) out = { w: Math.round(parseFloat(vb[1])), h: Math.round(parseFloat(vb[2])) };
+    } else if (b[0] === 0x89 && b.toString('ascii', 1, 4) === 'PNG') out = { w: b.readUInt32BE(16), h: b.readUInt32BE(20) };
     else if (b.toString('ascii', 0, 4) === 'RIFF' && b.toString('ascii', 8, 12) === 'WEBP') {
       const k = b.toString('ascii', 12, 16);
       if (k === 'VP8X') out = { w: 1 + b.readUIntLE(24, 3), h: 1 + b.readUIntLE(27, 3) };
@@ -107,6 +115,15 @@ export function imageSize(src: string): { w: number; h: number } | null {
 const withSize = (im: Img): Img & { w?: number; h?: number } => ({ ...im, ...(imageSize(im.src) ?? {}) });
 
 export const getSite = () => readJson<Site>('site.json');
+
+/** Logourile și favicon-ul (Keystatic, „Logo și favicon”). `deschis` = text alb (pe poze, tema întunecată); `inchis` = text negru. */
+export type Logo = { src: string; w: number; h: number };
+export function getIdentitate(): { deschis: Logo; inchis: Logo; favicon: string } {
+  const d = readJson<{ logoDeschis: string; logoInchis: string; favicon: string }>('media/identitate.json');
+  // înălțimea de afișare e fixă (40 px în header); lățimea urmează proporția logoului încărcat
+  const logo = (src: string): Logo => { const s = imageSize(src) ?? { w: 1379, h: 543 }; return { src, w: Math.round((40 * s.w) / s.h), h: 40 }; };
+  return { deschis: logo(d.logoDeschis), inchis: logo(d.logoInchis), favicon: d.favicon };
+}
 type KSlide = { discriminant: 'imagine'; value: { imagine: string; imagineMobil?: string; punctFocal?: string; alt: string } }
   | { discriminant: 'video'; value: { desktop: string; mobil?: string; poster: string; alt: string } };
 export function getSlideshow(): Slideshow {

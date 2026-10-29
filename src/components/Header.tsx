@@ -11,7 +11,8 @@ import { NAV, NAV_EXTRA } from '@/lib/nav';
 
 
 /** Header transparent peste imaginea de sus a fiecărei pagini; text și logo deschise în ambele teme. */
-export default function Header({ waHref }: { waHref: string }) {
+type Logo = { src: string; w: number; h: number };
+export default function Header({ waHref, logo }: { waHref: string; logo: { deschis: Logo; inchis: Logo } }) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   useEffect(() => setOpen(false), [pathname]);
@@ -27,7 +28,7 @@ export default function Header({ waHref }: { waHref: string }) {
       <div className="wrap flex h-[72px] items-center justify-between">
         <Link href="/" aria-label="Riviera Events by ANNA, pagina principală" translate="no" className="notranslate shrink-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/brand/logo-3-transparent.svg" alt="" width={102} height={40} className="h-10 w-auto" />
+          <img src={logo.deschis.src} alt="" width={logo.deschis.w} height={logo.deschis.h} className="h-10 w-auto" />
         </Link>
         <nav aria-label="Principal" className="hidden gap-7 text-sm font-medium lg:flex">
           {NAV.map((n) => (
@@ -49,9 +50,9 @@ export default function Header({ waHref }: { waHref: string }) {
         className="fixed inset-0 z-40 bg-bg text-text lg:hidden">
         <div className="wrap flex h-[72px] items-center justify-between">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/brand/logo-1-transparent.svg" alt="" width={102} height={40} className="h-10 w-auto dark:hidden" />
+          <img src={logo.inchis.src} alt="" width={logo.inchis.w} height={logo.inchis.h} className="h-10 w-auto dark:hidden" />
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/brand/logo-3-transparent.svg" alt="" width={102} height={40} className="hidden h-10 w-auto dark:block" />
+          <img src={logo.deschis.src} alt="" width={logo.deschis.w} height={logo.deschis.h} className="hidden h-10 w-auto dark:block" />
           <button type="button" className="grid size-11 place-items-center" aria-label="Închide meniul" onClick={() => setOpen(false)}>
             <X aria-hidden size={26} />
           </button>
