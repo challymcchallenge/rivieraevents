@@ -1,63 +1,62 @@
 {
   "salon": "Magic",
   "imaginePrincipala": {
-    "src": "/images/saloane/magic/magic-022.jpg",
+    "src": "/images/saloane/magic/imaginePrincipala/src.jpg",
     "alt": "Salon Magic, vedere de ansamblu"
   },
   "coperta": {
-    "src": "/images/saloane/magic/magic-022.jpg",
+    "src": "/images/saloane/magic/coperta/src.jpg",
     "alt": "Salon Magic, vedere de ansamblu"
   },
   "galerie": [
     {
-      "src": "/images/saloane/magic/magic-022.jpg",
+      "src": "/images/saloane/magic/galerie/0/src.jpg",
       "alt": "Salon Magic, amenajat pentru un eveniment (1)"
     },
     {
-      "src": "/images/saloane/magic/magic-001.jpg",
+      "src": "/images/saloane/magic/galerie/1/src.jpg",
       "alt": "Salon Magic, amenajat pentru un eveniment (2)"
     },
     {
-      "src": "/images/saloane/magic/magic-003.jpg",
+      "src": "/images/saloane/magic/galerie/2/src.jpg",
       "alt": "Salon Magic, amenajat pentru un eveniment (3)"
     },
     {
-      "src": "/images/saloane/magic/magic-005.jpg",
+      "src": "/images/saloane/magic/galerie/3/src.jpg",
       "alt": "Salon Magic, amenajat pentru un eveniment (4)"
     },
     {
-      "src": "/images/saloane/magic/magic-007.jpg",
+      "src": "/images/saloane/magic/galerie/4/src.jpg",
       "alt": "Salon Magic, amenajat pentru un eveniment (5)"
     },
     {
-      "src": "/images/saloane/magic/magic-009.jpg",
+      "src": "/images/saloane/magic/galerie/5/src.jpg",
       "alt": "Salon Magic, amenajat pentru un eveniment (6)"
     },
     {
-      "src": "/images/saloane/magic/magic-011.jpg",
+      "src": "/images/saloane/magic/galerie/6/src.jpg",
       "alt": "Salon Magic, amenajat pentru un eveniment (7)"
     },
     {
-      "src": "/images/saloane/magic/magic-013.jpg",
+      "src": "/images/saloane/magic/galerie/7/src.jpg",
       "alt": "Salon Magic, amenajat pentru un eveniment (8)"
     },
     {
-      "src": "/images/saloane/magic/magic-015.jpg",
+      "src": "/images/saloane/magic/galerie/8/src.jpg",
       "alt": "Salon Magic, amenajat pentru un eveniment (9)"
     },
     {
-      "src": "/images/saloane/magic/magic-017.jpg",
+      "src": "/images/saloane/magic/galerie/9/src.jpg",
       "alt": "Salon Magic, amenajat pentru un eveniment (10)"
     },
     {
-      "src": "/images/saloane/magic/magic-019.jpg",
+      "src": "/images/saloane/magic/galerie/10/src.jpg",
       "alt": "Salon Magic, amenajat pentru un eveniment (11)"
     },
     {
-      "src": "/images/saloane/magic/magic-021.jpg",
+      "src": "/images/saloane/magic/galerie/11/src.jpg",
       "alt": "Salon Magic, amenajat pentru un eveniment (12)"
     }
   ],
-  "tur360": "https://www.annaevents.ro/tur-virtual/anna_events/sala-noua/tour.html",
-  "turApartament": ""
+  "tur360": "https://www.annaevents.ro/tur-virtual/anna_events/sala-noua/tour.html"
 }
