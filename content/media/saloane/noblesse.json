@@ -1,60 +1,60 @@
 {
   "salon": "Noblesse",
   "imaginePrincipala": {
-    "src": "/images/saloane/noblesse/noblesse-005.jpg",
+    "src": "/images/saloane/noblesse/imaginePrincipala/src.jpg",
     "alt": "Salon Noblesse, vedere de ansamblu"
   },
   "coperta": {
-    "src": "/images/saloane/noblesse/noblesse-005.jpg",
+    "src": "/images/saloane/noblesse/coperta/src.jpg",
     "alt": "Salon Noblesse, vedere de ansamblu"
   },
   "galerie": [
     {
-      "src": "/images/saloane/noblesse/noblesse-001.jpg",
+      "src": "/images/saloane/noblesse/galerie/0/src.jpg",
       "alt": "Salon Noblesse, amenajat pentru un eveniment (1)"
     },
     {
-      "src": "/images/saloane/noblesse/noblesse-003.jpg",
+      "src": "/images/saloane/noblesse/galerie/1/src.jpg",
       "alt": "Salon Noblesse, amenajat pentru un eveniment (2)"
     },
     {
-      "src": "/images/saloane/noblesse/noblesse-005.jpg",
+      "src": "/images/saloane/noblesse/galerie/2/src.jpg",
       "alt": "Salon Noblesse, amenajat pentru un eveniment (3)"
     },
     {
-      "src": "/images/saloane/noblesse/noblesse-007.jpg",
+      "src": "/images/saloane/noblesse/galerie/3/src.jpg",
       "alt": "Salon Noblesse, amenajat pentru un eveniment (4)"
     },
     {
-      "src": "/images/saloane/noblesse/noblesse-009.jpg",
+      "src": "/images/saloane/noblesse/galerie/4/src.jpg",
       "alt": "Salon Noblesse, amenajat pentru un eveniment (5)"
     },
     {
-      "src": "/images/saloane/noblesse/noblesse-011.jpg",
+      "src": "/images/saloane/noblesse/galerie/5/src.jpg",
       "alt": "Salon Noblesse, amenajat pentru un eveniment (6)"
     },
     {
-      "src": "/images/saloane/noblesse/noblesse-013.jpg",
+      "src": "/images/saloane/noblesse/galerie/6/src.jpg",
       "alt": "Salon Noblesse, amenajat pentru un eveniment (7)"
     },
     {
-      "src": "/images/saloane/noblesse/noblesse-015.jpg",
+      "src": "/images/saloane/noblesse/galerie/7/src.jpg",
       "alt": "Salon Noblesse, amenajat pentru un eveniment (8)"
     },
     {
-      "src": "/images/saloane/noblesse/noblesse-017.jpg",
+      "src": "/images/saloane/noblesse/galerie/8/src.jpg",
       "alt": "Salon Noblesse, amenajat pentru un eveniment (9)"
     },
     {
-      "src": "/images/saloane/noblesse/noblesse-019.jpg",
+      "src": "/images/saloane/noblesse/galerie/9/src.jpg",
       "alt": "Salon Noblesse, amenajat pentru un eveniment (10)"
     },
     {
-      "src": "/images/saloane/noblesse/noblesse-021.jpg",
+      "src": "/images/saloane/noblesse/galerie/10/src.jpg",
       "alt": "Salon Noblesse, amenajat pentru un eveniment (11)"
     },
     {
-      "src": "/images/saloane/noblesse/noblesse-023.jpg",
+      "src": "/images/saloane/noblesse/galerie/11/src.jpg",
       "alt": "Salon Noblesse, amenajat pentru un eveniment (12)"
     }
   ],
