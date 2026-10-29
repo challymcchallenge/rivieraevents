@@ -1,5 +1,7 @@
 # Animații și interactivitate: opțiuni
 
+> **Modificare 2026-10-29 (pe iPhone/iPad lipseau secțiuni):** `blur-fade` nu mai folosește `filter: blur()`, doar opacitate și o deplasare de 12 px. Motivul: după apariție, fiecare secțiune păstra `filter: blur(0px)`, iar WebKit ținea câte un strat grafic separat (8 pe Acasă, unele cu poze mari); pe iOS memoria de straturi se termină și Safari nu mai desenează unele secțiuni. În plus, conținutul vine **vizibil din server**: doar secțiunile de sub ecran se ascund, după ce rulează JavaScript, și apar la derulare. Primul meniu din tab-uri apare fără animație. `backdrop-blur` a fost scos din SAVE THE DATE și 404. Verificat în WebKit 26 (Playwright), profil iPhone 15 și iPad Air; neverificat pe dispozitiv real.
+
 > **Decizie client (2026-10-28):** pachetul **Echilibrat** + **fundaluri animate 3D**. Varianta aleasă e descrisă în secțiunea „Fundal animat 3D: Silk” de la final. Am semnalat riscul de performanță pe mobil, iar măsurile de protecție sunt obligatorii.
 
 Data: 2026-10-28.

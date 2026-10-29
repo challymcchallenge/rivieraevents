@@ -16,7 +16,7 @@ export default function SaveTheDate({ text, pagina, salon }: { text: string; pag
     <section className="relative overflow-hidden">
       <SoftBackground />
       <div className="wrap relative py-24 text-center lg:py-32">
-        <div className="mx-auto max-w-[620px] rounded-img bg-bg/70 px-6 py-10 backdrop-blur-sm lg:px-12">
+        <div className="mx-auto max-w-[620px] rounded-img bg-bg/80 px-6 py-10 lg:px-12">
           <h2 lang="en" translate="no" className="h2 tracking-[.08em] uppercase">Save the date</h2>
           <Prose text={text} className="mx-auto mt-4 [&_p]:mx-auto" />
           <a href={wa} target="_blank" rel="noopener noreferrer" className="btn mt-2"><WaIcon />Verificați data pe WhatsApp</a>
