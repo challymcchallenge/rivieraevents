@@ -61,6 +61,18 @@ export default function Footer() {
           © {new Date().getFullYear()} {firma.denumire} · CUI {firma.cui} · {firma.registruComertului} · {firma.sediu}
         </p>
       </nav>
+      <div translate="no" className="wrap mt-8 border-t border-line pt-6 text-center">
+        <h3 className="text-lg leading-snug text-text">
+          Designed &amp; built with <span role="img" aria-label="dragoste">❤️</span> by Biztech Consulting&nbsp;SRL
+        </h3>
+        <p className="mt-2 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-[13px]">
+          <a href="https://www.biztech.ro" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-6 items-center underline underline-offset-4 hover:text-text">www.biztech.ro<span className="sr-only"> (se deschide într-un tab nou)</span></a>
+          <span aria-hidden="true">|</span>
+          <a href="tel:+40772295031" className="inline-flex min-h-6 items-center hover:text-text">+40 772 295 031</a>
+          <span aria-hidden="true">|</span>
+          <span>Târgu-Jiu</span>
+        </p>
+      </div>
     </footer>
   );
 }
